@@ -1,19 +1,19 @@
-# Day 1 — 2021–2025 results
+# Someone Was Walking Here
 
-[Explore the interactive crash map](map.html)
+[Explore the map](map.html)
 
-716 unique events passed validation: 137 fatal crashes and 579 serious-injury crashes without a recorded fatality.
+Fatal crashes involving pedestrians · Denver · 2021–2025.
 
-Pedestrian involvement: 573; bicycle involvement: 143; both: 0. Events involving both modes are counted once overall.
+126 unique mapped fatal crash events involve pedestrians. One walking-person symbol represents one crash, not one pedestrian death. The current records do not establish which person died.
 
-Severity applies to the crash; involvement flags do not identify who was injured. These are crash counts, not numbers of injured or killed people. Source coverage is unverified; these counts are not a complete annual crash total. No exposure-adjusted risk or statistical hotspot inference is made. See the adjacent QA JSON for exclusions and the input checksum; see README.md for methods and licensing.
+The original walking-person SVG is embedded in the HTML with a light halo. Occurrence times use America/Denver, labeled MST or MDT. Symbols are anchored at the recorded location; overlapping events can hide one another.
 
-Severity uses positive injury counts or explicit FATAL/SBI offense labels; offense labels do not supply missing person counts.
+| Year | Mapped fatal crashes involving pedestrians |
+| --- | ---: |
+| 2021 | 21 |
+| 2022 | 25 |
+| 2023 | 33 |
+| 2024 | 20 |
+| 2025 | 27 |
 
-| Year | Mapped crashes | Fatal | Serious injury only |
-| --- | ---: | ---: | ---: |
-| 2021 | 163 | 22 | 141 |
-| 2022 | 125 | 29 | 96 |
-| 2023 | 164 | 35 | 129 |
-| 2024 | 143 | 20 | 123 |
-| 2025 | 121 | 31 | 90 |
+Source: City of Denver Open Data Catalog · CC BY 3.0. AI-assisted analysis and original SVG/cartographic design. See README.md and the adjacent QA JSON for selection and limitations.

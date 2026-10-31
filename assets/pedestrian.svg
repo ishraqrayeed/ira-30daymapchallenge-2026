@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80">
+  <title>Walking-person symbol — original project artwork</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#f5f1e8" stroke-width="11">
+      <path d="M31 25 26 43 18 57 11 69M26 43 39 53 45 69M31 25 20 32 13 43M31 25 40 36 51 41"/>
+    </g>
+    <g stroke="#a64032" stroke-width="7">
+      <path d="M31 25 26 43 18 57 11 69M26 43 39 53 45 69M31 25 20 32 13 43M31 25 40 36 51 41"/>
+    </g>
+  </g>
+  <circle cx="35" cy="12" r="6.4" fill="#a64032" stroke="#f5f1e8" stroke-width="2"/>
+</svg>

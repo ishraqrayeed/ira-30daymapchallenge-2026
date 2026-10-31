@@ -11,9 +11,9 @@
   "unknown_mode_rows": 0,
   "offense_only_severity_rows": 573,
   "duplicate_rows_collapsed": 0,
-  "mapped_incidents": 716,
-  "fatal_crashes": 137,
-  "serious_injury_only_crashes": 579,
+  "mapped_incidents": 126,
+  "fatal_crashes": 126,
+  "serious_injury_only_crashes": 0,
   "year": [
     2021,
     2025
@@ -21,39 +21,39 @@
   "annual_counts": [
     {
       "year": 2021,
-      "mapped_incidents": 163,
-      "fatal_crashes": 22,
-      "serious_injury_only_crashes": 141
+      "mapped_incidents": 21,
+      "fatal_crashes": 21,
+      "serious_injury_only_crashes": 0
     },
     {
       "year": 2022,
-      "mapped_incidents": 125,
-      "fatal_crashes": 29,
-      "serious_injury_only_crashes": 96
+      "mapped_incidents": 25,
+      "fatal_crashes": 25,
+      "serious_injury_only_crashes": 0
     },
     {
       "year": 2023,
-      "mapped_incidents": 164,
-      "fatal_crashes": 35,
-      "serious_injury_only_crashes": 129
+      "mapped_incidents": 33,
+      "fatal_crashes": 33,
+      "serious_injury_only_crashes": 0
     },
     {
       "year": 2024,
-      "mapped_incidents": 143,
+      "mapped_incidents": 20,
       "fatal_crashes": 20,
-      "serious_injury_only_crashes": 123
+      "serious_injury_only_crashes": 0
     },
     {
       "year": 2025,
-      "mapped_incidents": 121,
-      "fatal_crashes": 31,
-      "serious_injury_only_crashes": 90
+      "mapped_incidents": 27,
+      "fatal_crashes": 27,
+      "serious_injury_only_crashes": 0
     }
   ],
-  "pedestrian_involved_crashes": 573,
-  "bicycle_involved_crashes": 143,
+  "pedestrian_involved_crashes": 126,
+  "bicycle_involved_crashes": 0,
   "both_modes_crashes": 0,
-  "scope": "Pedestrian- or bicycle-involved severe crashes identified by counts or explicit offense labels",
+  "scope": "Fatal crashes involving pedestrians",
   "detail_coverage": {
     "location": 0,
     "neighborhood": 0,
@@ -67,6 +67,10 @@
     "fatality_modes": 0,
     "serious_injury_modes": 0
   },
+  "edition": "Someone Was Walking Here",
+  "counted_unit": "Unique crash event, not an individual pedestrian death",
+  "analysis_mapped_incidents": 716,
+  "excluded_from_story_scope": 590,
   "inputs": [
     {
       "year": 2021,

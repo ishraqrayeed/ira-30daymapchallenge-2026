@@ -42,11 +42,15 @@ if origin="$(git remote get-url origin 2>/dev/null)"; then
 fi
 
 # Stage only the intended project paths; source caches and local settings stay out.
-git add -- .gitignore .github README.md PLAN.md 30DayMapChallenge_2026_CODEX_PLAN.md \
-  LICENSE requirements.txt environment.yml src scripts templates tests maps docs flagship \
+git add -- .gitignore .github README.md PLAN.md \
+  LICENSE requirements.txt environment.yml src scripts templates assets tests maps docs flagship \
   data/raw/.gitkeep data/interim/.gitkeep data/processed/.gitkeep
+# Retire the tracked setup plan while keeping its local archive ignored.
+if git ls-files --error-unmatch -- 30DayMapChallenge_2026_CODEX_PLAN.md >/dev/null 2>&1; then
+  git add -u -- 30DayMapChallenge_2026_CODEX_PLAN.md
+fi
 if ! git diff --cached --quiet; then
-  git commit -m "Publish Day 1 pedestrian and bicycle crash map and portfolio scaffold"
+  git commit -m "Publish Someone Was Walking Here and update project documentation"
 fi
 
 if ! git remote get-url origin >/dev/null 2>&1; then

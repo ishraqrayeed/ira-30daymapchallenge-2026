@@ -32,17 +32,24 @@ select.value = 'all'; listener();
 assert.equal(updated.layers[0].props.data.length, 3);
 assert.equal(records.length, 3, 'Filtering must not mutate the original points');
 
-// Also check the actual export retains pixel radii without a fatal-size clamp.
+// Check the actual story export uses an embedded walking-person icon and the
+// agreed fatal-crash-involvement scope, without retaining the old map artifact.
 const html = fs.readFileSync(path.join(__dirname, '../maps/day01-points/map.html'), 'utf8');
 const json = html.match(/const jsonInput = (\{[\s\S]*?\n\});/);
 assert.ok(json, 'Export must include deck.gl input');
 const config = JSON.parse(json[1]);
 const exported = config.layers.find(l => l.id === 'crash-points');
-assert.equal(exported.radiusUnits, 'pixels');
-assert.ok(exported.radiusMaxPixels >= 7.5);
+assert.equal(exported['@@type'], 'IconLayer');
+assert.equal(exported.sizeUnits, 'pixels');
+assert.equal(exported.getIcon, '@@=icon_name');
+assert.equal(exported.loadOptions.image.type, 'image');
+assert.ok(exported.iconAtlas.startsWith('data:image/svg+xml;base64,'));
+assert.ok(exported.data.length > 0);
 for (const point of exported.data) {
-  assert.equal(point.radius, point.severity === 'Fatal' ? 7.5 : 4.5);
-  assert.equal(typeof point.pedestrian, 'boolean');
-  assert.equal(typeof point.bicycle, 'boolean');
+  assert.equal(point.icon_name, 'pedestrian');
+  assert.equal(point.severity, 'Fatal');
+  assert.equal(point.pedestrian, true);
 }
-console.log('Passed: mode filtering, overlapping involvement, reset, scope label, and exported marker hierarchy.');
+assert.ok(html.includes('One symbol = one fatal crash'));
+assert.ok(!html.includes('id="mode-filter"'));
+console.log('Passed: shared filter logic and current fatal-pedestrian-involvement icon export.');

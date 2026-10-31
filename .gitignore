@@ -21,3 +21,5 @@ data/processed/*
 *.gpkg
 *.tif
 *.tiff
+
+.local-notes/
