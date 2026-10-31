@@ -17,6 +17,9 @@ class PagesBuild(unittest.TestCase):
             root = Path(directory)
             source = root / 'maps/day01-points'
             source.mkdir(parents=True)
+            templates = root / 'templates'
+            templates.mkdir()
+            (templates / 'portfolio-index.html').write_text('<a href="./day01-points/">Day 1 — Points</a>')
             config = {'layers': [{'id': 'crash-points', 'data': [{'severity': 'Fatal'}]}]}
             (source / 'map.html').write_text('const jsonInput = ' + json.dumps(config, indent=2) + ';')
             (source / 'map.qa.json').write_text('{"mapped_incidents":1}')
@@ -26,9 +29,14 @@ class PagesBuild(unittest.TestCase):
             (raw / 'not-for-publication.json').write_text('{"raw": true}')
             output = module.build(root)
             expected = {'index.html', 'day01/index.html', 'day01/map.qa.json',
-                        'day01/map.results.md', '.nojekyll'}
+                        'day01/map.results.md', 'day01-points/index.html',
+                        'day01-points/map.qa.json', 'day01-points/map.results.md', '.nojekyll'}
             self.assertEqual({str(p.relative_to(output)) for p in output.rglob('*') if p.is_file()}, expected)
             self.assertEqual((output / 'day01/map.results.md').read_text(), '[Map](index.html)')
+            self.assertIn('href="./day01-points/"', (output / 'index.html').read_text())
+            self.assertNotIn('const jsonInput', (output / 'index.html').read_text())
+            self.assertEqual((output / 'day01-points/index.html').read_text(), (source / 'map.html').read_text())
+            self.assertIn('0;url=../day01-points/', (output / 'day01/index.html').read_text())
             (source / 'map.qa.json').write_text('{"mapped_incidents":2}')
             with self.assertRaises(ValueError):
                 module.build(root)

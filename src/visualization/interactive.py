@@ -39,6 +39,7 @@ def export_crash_html(points: gpd.GeoDataFrame, year: int | str, output: Path) -
                       line_width_min_pixels=0.65, line_width_max_pixels=0.65)
     bounds = geo.total_bounds.tolist()
     view = pdk.data_utils.compute_view([[bounds[0], bounds[1]], [bounds[2], bounds[3]]])
+    view.zoom += 0.8
     # Custom non-Mapbox raster URLs use the bundled renderer without a token.
     tooltip = {
         'text': '{occurrence_denver}\n{involvement} involved\n{severity}',

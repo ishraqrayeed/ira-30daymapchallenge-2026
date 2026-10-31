@@ -114,3 +114,9 @@ The [original plan](30DayMapChallenge_2026_CODEX_PLAN.md) defines the scope.
 The supplied 2026 theme list still needs independent official verification.
 Project code and artwork licensing awaits an owner-selected license; third-party
 licenses apply separately. See [LICENSE](LICENSE).
+
+## Published site structure
+
+The Pages build places the portfolio index at the site root and the Day 1 map
+at `/day01-points/`. The earlier `/day01/` link redirects there. Run the publish
+script to deploy local changes. Future days will receive their own theme paths.

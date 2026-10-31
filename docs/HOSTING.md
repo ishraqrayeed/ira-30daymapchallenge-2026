@@ -31,15 +31,15 @@ After deployment succeeds, the expected URLs are:
 
 - Repository: https://github.com/ishraqrayeed/ira-30daymapchallenge-2026
 - Site root: https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/
-- Day 1: https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day01/
+- Day 1: https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day01-points/
 
 These are intended addresses, not a claim that deployment has already completed.
 
 ## Site packaging
 
 `scripts/build_pages.py` checks the generated map against its QA count and copies
-only the HTML and reports to `_site`. Initially the root opens Day 1 directly;
-a later portfolio gallery can replace that entry point. `/day01/` remains stable.
+the HTML and reports to `_site`. The root is now a portfolio index linking to
+Day 1 at `/day01-points/`. The previous `/day01/` address redirects to that map.
 The HTML embeds the selected public event data and requests JavaScript and OSM
 tiles in the reader's browser. No Python backend or geospatial installs are
 required on the Pages deployment runner.
@@ -63,3 +63,8 @@ been performed by this setup step.
 References:
 - [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+
+## Routing update
+
+The initial site opened Day 1 at the root. The revised build separates the portfolio
+index from the Day 1 map. Publish again to apply this change to the live site.
