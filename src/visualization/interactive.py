@@ -41,10 +41,10 @@ def export_crash_html(points: gpd.GeoDataFrame, year: int | str, output: Path, e
                          icon_atlas=f'"{icon}"',
                          icon_mapping={'pedestrian': {'x': 0, 'y': 0, 'width': 64, 'height': 80,
                                                       'anchorX': 32, 'anchorY': 40, 'mask': False}},
-                         get_icon='icon_name', get_position='position', get_size=22,
+                         get_icon='icon_name', get_position='position', get_size=19.4,
                          get_color=[255, 255, 255, 255],
                          load_options={'image': {'type': 'image', 'decode': True}},
-                         size_units='"pixels"', size_min_pixels=16, size_max_pixels=28,
+                         size_units='"pixels"', size_min_pixels=14.1, size_max_pixels=24.6,
                          billboard=True, alpha_cutoff=0.1)
     else:
         layer = pdk.Layer('ScatterplotLayer', records, id='crash-points', pickable=True,

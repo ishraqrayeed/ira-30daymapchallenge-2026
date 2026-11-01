@@ -83,9 +83,9 @@ The 64 × 80 SVG works with the current deck.gl atlas or a Leaflet `L.icon`:
 ```js
 const pedestrianIcon = L.icon({
   iconUrl: 'assets/pedestrian.svg',
-  iconSize: [17.6, 22],
-  iconAnchor: [8.8, 11], // Center on the crash coordinate, matching Day 1.
-  popupAnchor: [0, -11],
+  iconSize: [15.52, 19.4],
+  iconAnchor: [7.76, 9.7], // Center on the crash coordinate, matching Day 1.
+  popupAnchor: [0, -9.7],
 });
 ```
 

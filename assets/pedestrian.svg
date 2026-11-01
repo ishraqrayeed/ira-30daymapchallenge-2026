@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80">
   <title>Front-facing pedestrian symbol</title>
-  <g fill="#963f3b" stroke="#f5f1e8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="#963f3b" stroke="#f5f1e8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="32" cy="11" r="8"/>
     <path d="M27 22H37C43 22 47 27 47 33V47C47 53 40 53 40 47V71C40 78 33 78 32 74C31 78 24 78 24 71V47C24 53 17 53 17 47V33C17 27 21 22 27 22Z"/>
     <path d="M24 34V47M40 34V47M32 54V74" fill="none"/>
