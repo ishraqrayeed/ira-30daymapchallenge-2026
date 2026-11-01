@@ -37,6 +37,23 @@ class PagesBuild(unittest.TestCase):
             self.assertNotIn('const jsonInput', (output / 'index.html').read_text())
             self.assertEqual((output / 'day01-points/index.html').read_text(), (source / 'map.html').read_text())
             self.assertIn('0;url=../day01-points/', (output / 'day01/index.html').read_text())
+            second = root / 'maps/day02-lines'
+            second.mkdir()
+            data2 = {'trails': [{'id': 'a', 'points': [[0, 0, 8000, 0], [1, 1, 8100, .1]]}],
+                     'totals': {'segments': 1, 'miles': .1}}
+            (second / 'map.html').write_text('const MAP_DATA = ' + json.dumps(data2) + ';')
+            qa2 = {'mapped_segments': 1, 'elevation_samples': 2, 'totals': data2['totals']}
+            (second / 'map.qa.json').write_text(json.dumps(qa2))
+            (second / 'map.results.md').write_text('[Map](map.html)')
+            (second / 'README.md').write_text('Sources and methods')
+            module.build(root)
+            self.assertTrue((output / 'day02-lines/index.html').is_file())
+            self.assertEqual((output / 'day02-lines/map.results.md').read_text(), '[Map](index.html)')
+            self.assertEqual((output / 'day01-points/index.html').read_text(), (source / 'map.html').read_text())
+            (second / 'map.qa.json').write_text(json.dumps({**qa2, 'mapped_segments': 2}))
+            with self.assertRaises(ValueError):
+                module.build(root)
+            (second / 'map.qa.json').write_text(json.dumps(qa2))
             (source / 'map.qa.json').write_text('{"mapped_incidents":2}')
             with self.assertRaises(ValueError):
                 module.build(root)

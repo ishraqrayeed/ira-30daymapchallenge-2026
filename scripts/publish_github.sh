@@ -6,6 +6,7 @@ project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$project_root"
 account="ishraqrayeed"
 repository="$account/ira-30daymapchallenge-2026"
+commit_message="${1:-Publish map portfolio updates}"
 
 command -v gh >/dev/null || { echo "Install GitHub CLI first: brew install gh"; exit 1; }
 if ! login="$(gh api user --jq .login)"; then
@@ -20,7 +21,10 @@ fi
 
 python3 scripts/build_pages.py
 python3 -m unittest discover -s tests -q
-if command -v node >/dev/null; then node tests/test_map_controls.js; fi
+if command -v node >/dev/null; then
+  node tests/test_map_controls.js
+  if [[ -f maps/day02-lines/map.html ]]; then node tests/test_trail_controls.js; fi
+fi
 
 if git_root="$(git rev-parse --show-toplevel 2>/dev/null)"; then
   [[ "$git_root" == "$project_root" ]] || { echo "Project is inside a different Git repository; stopping."; exit 1; }
@@ -42,15 +46,16 @@ if origin="$(git remote get-url origin 2>/dev/null)"; then
 fi
 
 # Stage only the intended project paths; source caches and local settings stay out.
-git add -- .gitignore .github README.md PLAN.md \
+git add -- .gitignore .github AGENTS.md README.md PLAN.md \
   LICENSE requirements.txt environment.yml src scripts templates assets tests maps docs flagship \
-  data/raw/.gitkeep data/interim/.gitkeep data/processed/.gitkeep
+  data/raw/.gitkeep data/interim/.gitkeep data/processed/.gitkeep \
+  ':(exclude)maps/**/*.png'
 # Retire the tracked setup plan while keeping its local archive ignored.
 if git ls-files --error-unmatch -- 30DayMapChallenge_2026_CODEX_PLAN.md >/dev/null 2>&1; then
   git add -u -- 30DayMapChallenge_2026_CODEX_PLAN.md
 fi
 if ! git diff --cached --quiet; then
-  git commit -m "Publish Someone Was Walking Here and update project documentation"
+  git commit -m "$commit_message"
 fi
 
 if ! git remote get-url origin >/dev/null 2>&1; then

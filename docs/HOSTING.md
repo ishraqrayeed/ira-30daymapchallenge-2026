@@ -2,6 +2,7 @@
 
 - [Portfolio](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/)
 - [Day 1 — Points](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day01-points/)
+- [Day 2 — Lines](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day02-lines/)
 - [Repository](https://github.com/ishraqrayeed/ira-30daymapchallenge-2026)
 
 ## Publish an update
@@ -21,6 +22,7 @@ gh auth login --hostname github.com --web --git-protocol https --scopes repo,wor
 `scripts/build_pages.py` packages only the generated HTML and reports in `_site`.
 The root is a map index; Day 1 lives at `/day01-points/`. The earlier `/day01/`
 address redirects there. Raw data caches are not published.
+Day 2 lives at `/day02-lines/`; its HTML includes the terrain and trail data.
 
 After deployment, check the symbols, basemap, Denver-time tooltips, attribution,
 and mobile layout at the public URL. Updates are manually triggered, so pushing

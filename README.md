@@ -15,6 +15,17 @@ A month of maps about transportation, mobility, and the places we live.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day01-points/) ·
 [Data and methods](maps/day01-points/README.md)
 
+## Day 2 — Lines
+
+### Every Line a Climb
+
+Rocky Mountain National Park's hiking trails, colored by elevation, in a circular
+terrain map. Click or tap a trail segment to explore its elevation profile.
+
+[Data and methods](maps/day02-lines/README.md)
+
+Local preview: `python3 scripts/preview_map.py --directory maps/day02-lines --port 8002`
+
 ## Run locally
 
 ```sh
@@ -42,9 +53,12 @@ browser. Capture screenshots there for social posts.
 ```sh
 python -m unittest discover -s tests -v
 node tests/test_map_controls.js
+node tests/test_trail_controls.js
 python scripts/build_pages.py
 bash scripts/publish_github.sh
 ```
 
 See [hosting instructions](docs/HOSTING.md) for the GitHub connection and deployment.
 Source attribution and limitations are documented with each map.
+
+[Daily workflow and next-day notes](docs/WORKFLOW.md) · [Design reference](docs/DESIGN.md)
