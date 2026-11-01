@@ -75,6 +75,19 @@ of exposure-adjusted risk. Missing locations, unreported events, and changing
 classifications affect coverage. Overlapping symbols can hide multiple crashes.
 Current basemap streets may differ from those at the time of the crash.
 
-The [walking-person SVG](../../assets/pedestrian.svg) is original project artwork.
+The [pedestrian SVG](../../assets/pedestrian.svg) is lightweight vector artwork
+recreated from `assets/pedestrian_v2.png`: a front-facing neutral silhouette,
+muted dark red fill, and thin cream halo. The reference raster is not embedded.
+The 64 × 80 SVG works with the current deck.gl atlas or a Leaflet `L.icon`:
+
+```js
+const pedestrianIcon = L.icon({
+  iconUrl: 'assets/pedestrian.svg',
+  iconSize: [17.6, 22],
+  iconAnchor: [8.8, 11], // Center on the crash coordinate, matching Day 1.
+  popupAnchor: [0, -11],
+});
+```
+
 Code, artwork, and styling were developed with Codex assistance and reviewed by
 the author.
