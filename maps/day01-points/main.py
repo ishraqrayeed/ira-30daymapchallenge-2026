@@ -81,7 +81,6 @@ def render(source: Path | list[Path], year: int | tuple[int, int], output: Path,
             '| Year | Mapped fatal crashes involving pedestrians |\n| --- | ---: |\n' +
             '\n'.join(f"| {r['year']} | {r['mapped_incidents']} |" for r in stats['annual_counts']) +
             '\n\nSource: City of Denver Open Data Catalog · CC BY 3.0. '
-            'AI-assisted analysis and original SVG/cartographic design. '
             'See README.md and the adjacent QA JSON for selection and limitations.\n')
     print(json.dumps(stats, indent=2))
     return stats

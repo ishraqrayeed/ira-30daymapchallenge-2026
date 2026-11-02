@@ -88,6 +88,3 @@ const pedestrianIcon = L.icon({
   popupAnchor: [0, -9.7],
 });
 ```
-
-Code, artwork, and styling were developed with Codex assistance and reviewed by
-the author.

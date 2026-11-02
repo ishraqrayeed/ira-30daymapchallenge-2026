@@ -1,26 +1,112 @@
 {
+  "peak_landmarks": [
+    {
+      "name": "Longs Peak",
+      "lon": -105.6151153,
+      "lat": 40.2550135,
+      "rank": 1,
+      "dx": -7,
+      "dy": -12,
+      "source": "https://en.wikipedia.org/wiki/Longs_Peak",
+      "point": [
+        640.019,
+        712.156
+      ]
+    },
+    {
+      "name": "Mount Meeker",
+      "lon": -105.6050027,
+      "lat": 40.2485958,
+      "rank": 2,
+      "dx": 9,
+      "dy": 18,
+      "source": "https://en.wikipedia.org/wiki/Mount_Meeker",
+      "point": [
+        656.183,
+        725.734
+      ]
+    },
+    {
+      "name": "Chiefs Head Peak",
+      "lon": -105.6411682,
+      "lat": 40.2490788,
+      "rank": 3,
+      "dx": -10,
+      "dy": 17,
+      "source": "https://en.wikipedia.org/wiki/Chiefs_Head_Peak",
+      "point": [
+        598.047,
+        724.312
+      ]
+    }
+  ],
+  "peak_source": {
+    "checked": "2026-11-01",
+    "coordinate_crs": "EPSG:4326",
+    "source_note": "The three highest named park peaks, ranked by elevation. Coordinates from linked Wikipedia articles (CC BY-SA 4.0); checked 2026-11-01. Small dots mark exact summit positions.",
+    "peaks": [
+      {
+        "name": "Longs Peak",
+        "lon": -105.6151153,
+        "lat": 40.2550135,
+        "rank": 1,
+        "dx": -7,
+        "dy": -12,
+        "source": "https://en.wikipedia.org/wiki/Longs_Peak"
+      },
+      {
+        "name": "Mount Meeker",
+        "lon": -105.6050027,
+        "lat": 40.2485958,
+        "rank": 2,
+        "dx": 9,
+        "dy": 18,
+        "source": "https://en.wikipedia.org/wiki/Mount_Meeker"
+      },
+      {
+        "name": "Chiefs Head Peak",
+        "lon": -105.6411682,
+        "lat": 40.2490788,
+        "rank": 3,
+        "dx": -10,
+        "dy": 17,
+        "source": "https://en.wikipedia.org/wiki/Chiefs_Head_Peak"
+      }
+    ]
+  },
   "source_features": 466,
-  "mapped_segments": 299,
-  "source_features_in_retained_name_groups": 462,
+  "mapped_segments": 158,
+  "source_features_in_retained_name_groups": 387,
   "cleanup": {
     "input_clipped_pieces": 489,
-    "minimum_segment_length_metres": 100,
+    "minimum_segment_length_metres": 804.672,
+    "minimum_segment_length_miles": 0.5,
     "precision_grid_metres": null,
-    "omitted_short_piece_miles": 1.604,
+    "isolated_piece_rule": "footprint max width/height < 600 m and distance to every other retained-length segment > 100 m",
+    "isolated_pieces": [
+      {
+        "id": "17-19",
+        "name": "Beaver Meadows / Moraine Park Complex Trail",
+        "miles": 0.505
+      }
+    ],
+    "omitted_isolated_piece_miles": 0.505,
+    "omitted_short_piece_miles": 35.647,
     "length_change_after_dissolve_miles": 0.32
   },
   "exclusions": {
     "not_existing_hiking_use": 2,
-    "merged_pieces_shorter_than_100m": 63
+    "merged_pieces_shorter_than_half_mile": 203,
+    "isolated_compact_segments": 1
   },
   "source_features_clipped": 28,
   "totals": {
-    "segments": 299,
-    "miles": 349.2,
-    "min": 7736,
+    "segments": 158,
+    "miles": 314.7,
+    "min": 7780,
     "max": 14248
   },
-  "elevation_samples": 25697,
+  "elevation_samples": 22816,
   "missing_elevation_samples": 0,
   "crs": "EPSG:26913",
   "dem_grid_spacing_metres": 22.04234573949206,

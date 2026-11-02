@@ -16,4 +16,4 @@ The original walking-person SVG is embedded in the HTML with a light halo. Occur
 | 2024 | 20 |
 | 2025 | 27 |
 
-Source: City of Denver Open Data Catalog · CC BY 3.0. AI-assisted analysis and original SVG/cartographic design. See README.md and the adjacent QA JSON for selection and limitations.
+Source: City of Denver Open Data Catalog · CC BY 3.0. See README.md and the adjacent QA JSON for selection and limitations.

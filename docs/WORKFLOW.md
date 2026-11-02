@@ -34,7 +34,7 @@ another day, stop it or pass a different `--port`. Open the printed HTTP URL.
 Review the title, scope, legend, source credits, default extent, visual hierarchy,
 and tooltips. Inspect the intended screenshot size and a narrow mobile viewport.
 Confirm symbols and basemap tiles actually appear. Keep overlays small; put
-methods, detailed limitations, and the brief AI disclosure in the README.
+methods and detailed limitations in the README.
 
 The final deliverable is HTML. The user captures a screenshot after tiles load,
 with the cursor off the features and source credits visible.

@@ -30,6 +30,18 @@ class Trails(unittest.TestCase):
         # Filtering after merging keeps both short pieces as one meaningful line.
         self.assertTrue(all(p.length >= 100 for p in result))
 
+    def test_compact_fragment_cleanup_preserves_connected_loops_and_long_paths(self):
+        def trail(name, coordinates):
+            return {"id": name, "name": name, "points": coordinates, "miles": 0.6}
+        loop = [(0, 0), (300, 0), (300, 300), (0, 300), (0, 0)]
+        connected = trail("loop", loop)
+        neighbor = trail("connector", [(300, 0), (1200, 0)])
+        isolated = trail("detached compact", [(3000+x, y) for x, y in loop])
+        long = trail("detached long", [(5000, 0), (6000, 0)])
+        kept, omitted = day2.remove_isolated_compact_segments([connected, neighbor, isolated, long], 1)
+        self.assertEqual([t["id"] for t in kept], ["loop", "connector", "detached long"])
+        self.assertEqual([t["id"] for t in omitted], ["detached compact"])
+
     def test_bilinear_sampling_pixel_centers_and_outside_coverage(self):
         affine = from_origin(0, 40, 10, 10)
         grid = np.array([[2000, 2100, 2200], [2200, 2300, 2400], [2400, 2500, 2600]])

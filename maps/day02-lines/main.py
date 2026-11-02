@@ -27,7 +27,8 @@ from src.data.download import write_json
 
 DAY = Path(__file__).resolve().parent
 CACHE = ROOT / "data/raw/day02-lines"
-PALETTE = [[7500, "#3F7054"], [9000, "#71834F"], [10500, "#B58A45"],
+MIN_SEGMENT_METRES = 0.5 * 1609.344
+PALETTE = [[7500, "#38694D"], [9000, "#697B48"], [10500, "#B58A45"],
            [12000, "#B65D40"], [14000, "#76546F"]]
 
 
@@ -49,6 +50,19 @@ def line_parts(geometry):
     elif hasattr(geometry, "geoms"):
         for part in geometry.geoms:
             yield from line_parts(part)
+
+
+def remove_isolated_compact_segments(mapped, metres_per_unit):
+    """Omit tiny detached footprints; retain connected paths and genuine loops."""
+    geometries = [LineString([p[:2] for p in t["points"]]) for t in mapped]
+    keep, omitted = [], []
+    for i, (trail, geometry) in enumerate(zip(mapped, geometries)):
+        xmin, ymin, xmax, ymax = geometry.bounds
+        footprint = max(xmax - xmin, ymax - ymin) * metres_per_unit
+        isolated = all(geometry.distance(other) * metres_per_unit > 100
+                       for j, other in enumerate(geometries) if j != i)
+        (omitted if footprint < 600 and isolated else keep).append(trail)
+    return keep, omitted
 
 
 def bilinear(grid, affine, xy):
@@ -158,8 +172,8 @@ def main():
         for part_number, part in enumerate(dissolve_named_parts(grouped[key])):
             post_dissolve_metres += part.length
             part = part.simplify(2, preserve_topology=True)
-            if part.length < 100:
-                exclusions["merged_pieces_shorter_than_100m"] += 1
+            if part.length < MIN_SEGMENT_METRES:
+                exclusions["merged_pieces_shorter_than_half_mile"] += 1
                 omitted_metres += part.length
                 continue
             fingerprint = part.normalize().wkb
@@ -180,6 +194,8 @@ def main():
                            "name": names[key],
                            "points": points, "miles": round(float(distances[-1]), 3),
                            "min": round(float(heights.min())), "max": round(float(heights.max()))})
+    mapped, isolated_pieces = remove_isolated_compact_segments(mapped, span / 1000)
+    exclusions["isolated_compact_segments"] = len(isolated_pieces)
     if not mapped:
         raise ValueError("No hiking segments mapped")
     rings = []
@@ -189,18 +205,29 @@ def main():
                           for x, y in ring.simplify(15).coords])
     totals = {"segments": len(mapped), "miles": round(sum(t["miles"] for t in mapped), 1),
               "min": min(t["min"] for t in mapped), "max": max(t["max"] for t in mapped)}
-    data = {"trails": mapped, "boundary": rings, "palette": PALETTE,
+    peak_source = json.loads((DAY / "peaks.json").read_text())
+    peaks = []
+    for peak in peak_source["peaks"]:
+        point = screen(*projection(peak["lon"], peak["lat"]))
+        if not all(0 < v < 1000 for v in point) or sum((v-500)**2 for v in point) >= 500**2:
+            raise ValueError(f"Peak outside circular map: {peak['name']}")
+        peaks.append({**peak, "point": [round(v, 3) for v in point]})
+    data = {"peaks": peaks, "trails": mapped, "boundary": rings, "palette": PALETTE,
             "metresPerUnit": span / 1000, "totals": totals}
     html = (DAY / "template.html").read_text()
     html = html.replace("__MAP_DATA__", json.dumps(data, separators=(",", ":"), allow_nan=False).replace("<", "\\u003c"))
     html = html.replace("__TERRAIN__", base64.b64encode(buffer.getvalue()).decode())
     html = html.replace("__MILES__", f'{totals["miles"]:,.0f}')
     (DAY / "map.html").write_text(html)
-    qa = {"source_features": len(trails), "mapped_segments": len(mapped),
+    qa = {"peak_landmarks": peaks, "peak_source": peak_source, "source_features": len(trails), "mapped_segments": len(mapped),
           "source_features_in_retained_name_groups": len(retained_source_ids),
           "cleanup": {"input_clipped_pieces": raw_piece_count,
-                      "minimum_segment_length_metres": 100,
+                      "minimum_segment_length_metres": MIN_SEGMENT_METRES,
+                      "minimum_segment_length_miles": 0.5,
                       "precision_grid_metres": None,
+                      "isolated_piece_rule": "footprint max width/height < 600 m and distance to every other retained-length segment > 100 m",
+                      "isolated_pieces": [{"id": t["id"], "name": t["name"], "miles": t["miles"]} for t in isolated_pieces],
+                      "omitted_isolated_piece_miles": round(sum(t["miles"] for t in isolated_pieces), 3),
                       "omitted_short_piece_miles": round(omitted_metres / 1609.344, 3),
                       "length_change_after_dissolve_miles": round((pre_dissolve_metres-post_dissolve_metres)/1609.344, 3)},
           "exclusions": dict(exclusions), "source_features_clipped": len(clipped_sources),
@@ -215,7 +242,7 @@ def main():
         f'{totals["segments"]} mapped trail segments; approximately {totals["miles"]:,.1f} miles '
         f'of selected linework inside the NPS boundary. Sampled elevations span '
         f'{totals["min"]:,}–{totals["max"]:,} feet.\n\n'
-        'Segments are dataset pieces, not complete hikes. Distances describe linework; '
+        'Only segments at least 0.5 miles long are shown. Segments are dataset pieces, not complete hikes. Distances describe linework; '
         'no route completion, current access, or difficulty is inferred. '
         '[Sources and methods](README.md).\n')
     print(json.dumps({**totals, "grid_spacing_m": resolution, "exclusions": dict(exclusions)}, indent=2))

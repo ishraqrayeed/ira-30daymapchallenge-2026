@@ -18,8 +18,7 @@ direction. Work on the requested day only.
   Pages packager; do not overwrite an earlier day's map to publish a new one.
 - Test data selection and interactive behavior. Visually review desktop and mobile;
   export validation alone cannot confirm that browser symbols rendered correctly.
-- Keep source caches, credentials, and `.local-notes/` out of Git. Record brief AI
-  assistance disclosure in the day's documentation, not in the map overlay.
+- Keep source caches, credentials, and `.local-notes/` out of Git.
 - Publish only when requested. Draft social posts when asked; do not post them.
 - Check actual Git/network access before deployment. This environment has previously
   blocked Git metadata writes and outbound requests. A DNS failure is not evidence

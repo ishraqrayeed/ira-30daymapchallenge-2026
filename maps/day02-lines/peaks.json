@@ -1,0 +1,34 @@
+{
+  "checked": "2026-11-01",
+  "coordinate_crs": "EPSG:4326",
+  "source_note": "The three highest named park peaks, ranked by elevation. Coordinates from linked Wikipedia articles (CC BY-SA 4.0); checked 2026-11-01. Small dots mark exact summit positions.",
+  "peaks": [
+    {
+      "name": "Longs Peak",
+      "lon": -105.6151153,
+      "lat": 40.2550135,
+      "rank": 1,
+      "dx": -7,
+      "dy": -12,
+      "source": "https://en.wikipedia.org/wiki/Longs_Peak"
+    },
+    {
+      "name": "Mount Meeker",
+      "lon": -105.6050027,
+      "lat": 40.2485958,
+      "rank": 2,
+      "dx": 9,
+      "dy": 18,
+      "source": "https://en.wikipedia.org/wiki/Mount_Meeker"
+    },
+    {
+      "name": "Chiefs Head Peak",
+      "lon": -105.6411682,
+      "lat": 40.2490788,
+      "rank": 3,
+      "dx": -10,
+      "dy": 17,
+      "source": "https://en.wikipedia.org/wiki/Chiefs_Head_Peak"
+    }
+  ]
+}

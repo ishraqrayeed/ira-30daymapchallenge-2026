@@ -28,5 +28,3 @@ Commands for the actual download, analysis, and local HTTP preview.
 ## Limitations
 
 Explain the specific uncertainties and interpretations unsupported by the data.
-
-Brief AI-assistance disclosure, where applicable.

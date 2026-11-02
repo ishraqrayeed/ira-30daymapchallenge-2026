@@ -50,10 +50,6 @@ git add -- .gitignore .github AGENTS.md README.md PLAN.md \
   LICENSE requirements.txt environment.yml src scripts templates assets tests maps docs flagship \
   data/raw/.gitkeep data/interim/.gitkeep data/processed/.gitkeep \
   ':(exclude)maps/**/*.png'
-# Retire the tracked setup plan while keeping its local archive ignored.
-if git ls-files --error-unmatch -- 30DayMapChallenge_2026_CODEX_PLAN.md >/dev/null 2>&1; then
-  git add -u -- 30DayMapChallenge_2026_CODEX_PLAN.md
-fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"
 fi

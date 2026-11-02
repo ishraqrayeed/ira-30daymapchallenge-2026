@@ -132,7 +132,6 @@ class CrashValidation(unittest.TestCase):
             self.assertIn('tile.openstreetmap.org', html)
             self.assertIn('OpenStreetMap contributors', html)
             self.assertIn('map-heading', html)
-            self.assertNotIn('AI-assisted analysis and cartography', html)
             self.assertNotIn('validated crash events. Pan', html)
             self.assertIn('occurrence_denver', html)
             self.assertIn('Not in snapshot', html)
