@@ -1,0 +1,28 @@
+{
+  "merges": {
+    "osm-node-9900947175": {
+      "into": "nyc-41259230",
+      "reason": "Same Indo Pak Halal name and 2173 2nd Avenue address; ordinal street spelling differs. https://www.indopakhalal.com/"
+    },
+    "osm-node-14309350101": {
+      "into": "nyc-50192992",
+      "reason": "Same Shah's corner establishment, Hancock Place / W 125th Street, 28m separation; business confirms 362 W 125th. https://www.shahshalalfood.com/harlem-ny/"
+    },
+    "osm-node-11715036338": {
+      "into": "osm-node-11715036337",
+      "reason": "Conservative physical-premises merge: same Madina Halal business root, same 402 E 11th St address, 8m apart. Grocery and deli are counted as one location."
+    },
+    "osm-node-6407832773": {
+      "into": "nyc-50179766",
+      "reason": "B&B Restaurant and BB Halal Food are the same physical establishment: OSM phone +1-646-429-8174 matches the business website at 165 W 26th Street. 58.57m geocoding separation. https://bbhalalfoodinc.com/location/"
+    }
+  },
+  "exclude": {
+    "osm-node-12542895723": "OSM fixme explicitly says may be closed, resurvey; conservative exclusion pending verification"
+  },
+  "reviewed": "2026-11-02",
+  "note": "These are record-identity decisions, never manually assigned cluster memberships. Other nearby pairs have distinct names and/or storefront addresses and are retained provisionally. Current operation is not independently verified.",
+  "retained_same_brand": {
+    "osm-node-12047107430 | osm-node-7004462869": "Two nearby Hooda trucks are explicitly cross-referenced as separate locations in OSM notes. Business website confirms multiple Columbia-area locations. https://www.hoodafoods.com/Home"
+  }
+}

@@ -36,6 +36,18 @@ Modeled metro + walking accessibility from Farmgate, Dhaka, Bangladesh.
 [Static poster](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day03-polygons/poster.html) ·
 [Data and methods](maps/day03-polygons/README.md)
 
+## Day 4 — Clusters
+
+### Halal in Manhattan
+
+121 identifiable halal food locations compiled from public sources. DBSCAN groups
+92 locations into fourteen spatial clusters; 29 remain unclustered. Not a census.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day04-clusters/) ·
+[Data and methods](maps/day04-clusters/README.md)
+
+Local preview: `python3 scripts/preview_map.py --directory maps/day04-clusters --port 8004`
+
 ## Run locally
 
 ```sh

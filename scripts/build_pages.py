@@ -19,6 +19,41 @@ DAY3_FILES = ('poster.html', 'README.md', 'map.qa.json', 'map.results.md',
               'dhaka_labels.geojson')
 
 
+DAY4_FILES = ('README.md', 'map.qa.json', 'map.results.md', 'config.json',
+              'source-manifest.json', 'record-review.json', 'visual-review.json', 'day04_audit.json',
+              'analysis.json', 'dbscan_parameter_sweep.csv',
+              'manhattan_halal_locations.csv', 'manhattan_halal_locations.geojson',
+              'manhattan_halal_clusters.geojson', 'manhattan_boundary.geojson',
+              'poc.html', 'poc.qa.json')
+
+
+def day4_artifacts(root: Path) -> tuple[Path, dict] | None:
+    source = root / 'maps/day04-clusters'
+    if not (source / 'map.qa.json').exists():
+        return None
+    qa = json.loads((source / 'map.qa.json').read_text())
+    for field in ('all_points_match_dataset', 'all_points_in_manhattan',
+                  'explicit_halal_evidence_all_locations',
+                  'dbscan_recomputed_projected_metres',
+                  'all_envelopes_valid_and_cover_members', 'labels_match_clusters'):
+        if not qa[field]:
+            raise ValueError(f'Day 4 QA failed: {field}')
+    for name, digest in {**qa['artifact_sha256'], 'map.html': qa['html_sha256'],
+                         'config.json': qa['config_sha256']}.items():
+        if hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
+            raise ValueError(f'Day 4 changed after QA: {name}')
+    match = re.search(r'const MAP_DATA=(\{[^\n]+\});', (source / 'map.html').read_text())
+    if not match:
+        raise ValueError('Day 4 embedded data missing')
+    data = json.loads(match[1])
+    if data['stats'] != qa['statistics'] or len(data['points']) != qa['locations']:
+        raise ValueError('Day 4 map and QA disagree')
+    for name in DAY4_FILES:
+        if not (source / name).is_file():
+            raise ValueError(f'Day 4 public artifact missing: {name}')
+    return source, data
+
+
 def day3_artifacts(root: Path) -> tuple[Path, dict] | None:
     source = root / 'maps/day03-polygons'
     if not (source / 'map.html').exists():
@@ -70,6 +105,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
     destination = destination or root / "_site"
     second_day = day2_artifacts(root)
     third_day = day3_artifacts(root)
+    fourth_day = day4_artifacts(root)
     source = root / "maps/day01-points"
     html = source / "map.html"
     qa = source / "map.qa.json"
@@ -96,6 +132,10 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
         for name in ('', 'index.html', *DAY3_FILES):
             if (destination / 'day03-polygons' / name).is_symlink():
                 raise ValueError(f'Refusing to overwrite a Day 3 symlink: {name}')
+    if fourth_day:
+        for name in ('', 'index.html', *DAY4_FILES):
+            if (destination / 'day04-clusters' / name).is_symlink():
+                raise ValueError(f'Refusing to overwrite a Day 4 symlink: {name}')
     day.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(root / "templates/portfolio-index.html", destination / "index.html")
     shutil.copyfile(html, day / "index.html")
@@ -133,6 +173,17 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             else:
                 shutil.copyfile(source3 / name, day3 / name)
         print('Packaged Day 3 metro accessibility, poster and public polygon data')
+    if fourth_day:
+        source4, data4 = fourth_day
+        day4 = destination / 'day04-clusters'
+        day4.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source4 / 'map.html', day4 / 'index.html')
+        for name in DAY4_FILES:
+            if name.endswith('.md'):
+                (day4 / name).write_text((source4 / name).read_text().replace('(map.html)', '(index.html)'))
+            else:
+                shutil.copyfile(source4 / name, day4 / name)
+        print(f"Packaged {len(data4['points'])} Day 4 halal food locations")
     (destination / ".nojekyll").touch()
     print(f"Packaged {len(points):,} crash events for Pages: {destination}")
     return destination

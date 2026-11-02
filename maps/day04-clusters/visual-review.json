@@ -1,0 +1,20 @@
+{
+  "desktop": "Minimal layout: smaller title/subtitle, slightly larger map, editorial line with aligned legend, source credits and feature popups. Aggregate statistics, view switch, north arrow and scale removed.",
+  "mobile": {
+    "width_css_px": 390,
+    "review": "Header/statistics and complete map reviewed. Labels, points, legend, attribution and tap popup are legible."
+  },
+  "interactions": [
+    "Keyboard focus opens cluster and point details",
+    "Point popup includes provenance links",
+    "Mobile-size point selection opens source-backed location details",
+    "Escape closes details"
+  ],
+  "date": "2026-11-02",
+  "artifacts": "Browser review only; no PNG export.",
+  "outline_revision": "58% amber, non-scaling 1px stroke, 7.5% fill. Concave envelopes use a 140m margin so outlines clear point symbols; constrained to 225m member support and borough. No memberships changed.",
+  "layout_revision": "Smaller title/subtitle; map enlarged slightly. Legend moved into left column, aligned with the editorial line. North arrow and scale removed. Mobile retains legend beneath the map. Source credits retained.",
+  "model_revision": "Minimum samples changed from 5 to the user-selected 3 at unchanged 450m. All 14 envelopes and post-analysis names recomputed; five largest labeled. 92 clustered, 29 noise, 76% displayed.",
+  "statistics_revision": "Removed all three hero statistics from the left column; cluster counts remain available in feature popups and geographic labels.",
+  "view_control_revision": "Removed Individual locations \u2192 Spatial clusters switch and its JavaScript. The default cluster map remains interactive through point and envelope popups."
+}

@@ -4,6 +4,7 @@
 - [Day 1 — Points](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day01-points/)
 - [Day 2 — Lines](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day02-lines/)
 - [Day 3 — Polygons](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day03-polygons/)
+- [Day 4 — Clusters](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day04-clusters/)
 - [Repository](https://github.com/ishraqrayeed/ira-30daymapchallenge-2026)
 
 ## Publish an update
@@ -31,3 +32,6 @@ an edit alone does not publish it.
 
 Day 3 lives at `/day03-polygons/`, with a static `poster.html` view, public
 accessibility polygons, station data, municipal boundaries and methodology notes.
+
+Day 4 lives at `/day04-clusters/`: the minimal interactive Manhattan halal-food
+cluster map, with sourced processed data and analysis reports packaged separately.

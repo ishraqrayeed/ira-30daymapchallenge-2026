@@ -1,0 +1,670 @@
+{
+  "selected": {
+    "epsilon_m": 450,
+    "min_samples": 3,
+    "crs": "EPSG:32618",
+    "units": "metres"
+  },
+  "rationale": "450 m retains the reviewed neighborhood-scale distance. The user selected minimum 3 to include small concentrations, rather than requiring five locations in a core neighborhood. This includes trios and more small groups. The unchanged source dataset gives 14 clusters at this setting; no target cluster count was imposed. The previous minimum 5 produced 6 clusters. Smaller groups are threshold-sensitive; geographic names were reviewed again after recomputing memberships.",
+  "source_sensitivity": {
+    "all_sources": {
+      "locations": 121,
+      "clusters": 14,
+      "clustered": 92,
+      "noise": 29,
+      "cluster_sizes": [
+        25,
+        11,
+        10,
+        7,
+        6,
+        5,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "osm_only": {
+      "locations": 108,
+      "clusters": 14,
+      "clustered": 84,
+      "noise": 24,
+      "cluster_sizes": [
+        25,
+        9,
+        6,
+        6,
+        6,
+        5,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "explicit_diet_tag_only": {
+      "locations": 101,
+      "clusters": 12,
+      "clustered": 75,
+      "noise": 26,
+      "cluster_sizes": [
+        24,
+        9,
+        6,
+        6,
+        6,
+        5,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "food_service_only": {
+      "locations": 110,
+      "clusters": 11,
+      "clustered": 74,
+      "noise": 36,
+      "cluster_sizes": [
+        18,
+        11,
+        10,
+        7,
+        6,
+        5,
+        4,
+        4,
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "parameter_sensitivity": [
+    {
+      "epsilon_m": 350,
+      "min_samples": 3,
+      "best_membership_jaccard": {
+        "0": 1.0,
+        "1": 0.72,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 0.545,
+        "6": 1.0,
+        "7": 0.8,
+        "8": 0.833,
+        "9": 1.0,
+        "10": 0.0,
+        "11": 1.0,
+        "12": 0.0,
+        "13": 0.75
+      }
+    },
+    {
+      "epsilon_m": 450,
+      "min_samples": 4,
+      "best_membership_jaccard": {
+        "0": 0.0,
+        "1": 0.96,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 0.0,
+        "5": 0.818,
+        "6": 0.0,
+        "7": 1.0,
+        "8": 1.0,
+        "9": 1.0,
+        "10": 0.0,
+        "11": 1.0,
+        "12": 1.0,
+        "13": 1.0
+      }
+    },
+    {
+      "epsilon_m": 450,
+      "min_samples": 5,
+      "best_membership_jaccard": {
+        "0": 0.0,
+        "1": 0.96,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 0.0,
+        "5": 0.636,
+        "6": 0.0,
+        "7": 1.0,
+        "8": 1.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0
+      }
+    },
+    {
+      "epsilon_m": 550,
+      "min_samples": 3,
+      "best_membership_jaccard": {
+        "0": 0.065,
+        "1": 0.543,
+        "2": 0.152,
+        "3": 0.217,
+        "4": 0.214,
+        "5": 0.786,
+        "6": 0.214,
+        "7": 0.357,
+        "8": 0.429,
+        "9": 1.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 0.4,
+        "13": 0.4
+      }
+    }
+  ],
+  "hdbscan": {
+    "implementation": "sklearn.cluster.HDBSCAN",
+    "min_cluster_size": 3,
+    "min_samples": 3,
+    "cluster_selection_method": "eom",
+    "clusters": 19,
+    "noise": 16,
+    "cluster_sizes": [
+      21,
+      10,
+      10,
+      8,
+      6,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "hdbscan_decision": "Retain DBSCAN for an explicit common spatial scale and visually explainable rule. HDBSCAN is a sensitivity check, not ground truth; see its cluster sizes and noise in this report.",
+  "geometry": {
+    "method": "GEOS concave hull ratio .35; buffer 140m; intersect union of member 225m buffers and Manhattan boundary. No simplification in export.",
+    "qa": [
+      {
+        "cluster_id": 0,
+        "concave_area_m2": 1697.3121011589756,
+        "convex_area_m2": 1697.3121011589756,
+        "final_envelope_area_m2": 161472.75961255791,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Tribeca-Civic Center": 2,
+          "Chinatown-Two Bridges": 1
+        }
+      },
+      {
+        "cluster_id": 1,
+        "concave_area_m2": 868002.0876003237,
+        "convex_area_m2": 1572532.9812940357,
+        "final_envelope_area_m2": 1637396.6112306511,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Gramercy": 2,
+          "Lower East Side": 5,
+          "East Village": 17,
+          "SoHo-Little Italy-Hudson Square": 1
+        }
+      },
+      {
+        "cluster_id": 2,
+        "concave_area_m2": 78193.67805983529,
+        "convex_area_m2": 95157.52998360727,
+        "final_envelope_area_m2": 331735.3152872311,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Greenwich Village": 6,
+          "West Village": 1
+        }
+      },
+      {
+        "cluster_id": 3,
+        "concave_area_m2": 51512.24970058796,
+        "convex_area_m2": 102232.44350690686,
+        "final_envelope_area_m2": 324030.73426923767,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Murray Hill-Kips Bay": 6,
+          "Gramercy": 4
+        }
+      },
+      {
+        "cluster_id": 4,
+        "concave_area_m2": 23954.44858569184,
+        "convex_area_m2": 23954.448585691833,
+        "final_envelope_area_m2": 216547.78900480265,
+        "all_members_covered": true,
+        "nta_counts": {
+          "East Midtown-Turtle Bay": 2,
+          "Murray Hill-Kips Bay": 1
+        }
+      },
+      {
+        "cluster_id": 5,
+        "concave_area_m2": 492646.4889537524,
+        "convex_area_m2": 751534.2646741299,
+        "final_envelope_area_m2": 980567.6607405924,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Midtown South-Flatiron-Union Square": 3,
+          "Hell's Kitchen": 4,
+          "Midtown-Times Square": 3,
+          "Chelsea-Hudson Yards": 1
+        }
+      },
+      {
+        "cluster_id": 6,
+        "concave_area_m2": 10277.211724565126,
+        "convex_area_m2": 10277.211724565124,
+        "final_envelope_area_m2": 179943.51938765263,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Midtown-Times Square": 3
+        }
+      },
+      {
+        "cluster_id": 7,
+        "concave_area_m2": 62668.56035002824,
+        "convex_area_m2": 62668.56035002824,
+        "final_envelope_area_m2": 278847.1708235829,
+        "all_members_covered": true,
+        "nta_counts": {
+          "East Midtown-Turtle Bay": 4,
+          "Midtown-Times Square": 1
+        }
+      },
+      {
+        "cluster_id": 8,
+        "concave_area_m2": 26190.227400481857,
+        "convex_area_m2": 71184.10915106705,
+        "final_envelope_area_m2": 287908.45199376065,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper East Side-Lenox Hill-Roosevelt Island": 5,
+          "East Midtown-Turtle Bay": 1
+        }
+      },
+      {
+        "cluster_id": 9,
+        "concave_area_m2": 28797.16273297304,
+        "convex_area_m2": 28797.16273297304,
+        "final_envelope_area_m2": 284705.2892533273,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper East Side-Lenox Hill-Roosevelt Island": 4
+        }
+      },
+      {
+        "cluster_id": 10,
+        "concave_area_m2": 60850.64844583005,
+        "convex_area_m2": 60850.64844583005,
+        "final_envelope_area_m2": 279735.28034167783,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper East Side-Carnegie Hill": 1,
+          "Upper East Side-Yorkville": 2
+        }
+      },
+      {
+        "cluster_id": 11,
+        "concave_area_m2": 54571.381466773826,
+        "convex_area_m2": 69858.50148990357,
+        "final_envelope_area_m2": 288064.3855527985,
+        "all_members_covered": true,
+        "nta_counts": {
+          "East Harlem (South)": 4
+        }
+      },
+      {
+        "cluster_id": 12,
+        "concave_area_m2": 9465.013177475666,
+        "convex_area_m2": 9465.013177475663,
+        "final_envelope_area_m2": 236803.7065073961,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Harlem (South)": 4
+        }
+      },
+      {
+        "cluster_id": 13,
+        "concave_area_m2": 86796.34838705907,
+        "convex_area_m2": 86796.34838705909,
+        "final_envelope_area_m2": 315280.5248363256,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper West Side-Manhattan Valley": 1,
+          "Morningside Heights": 3
+        }
+      }
+    ]
+  },
+  "interpretation": {
+    "0": {
+      "cluster_id": 0,
+      "name": "Civic Center / Chinatown",
+      "locations": 3,
+      "neighborhood_membership": {
+        "Tribeca-Civic Center": 2,
+        "Chinatown-Two Bridges": 1
+      },
+      "centroid": [
+        -74.00082795315646,
+        40.71786750275521
+      ],
+      "member_ids": [
+        "osm-node-2563988663",
+        "osm-node-2563990318",
+        "osm-node-8333740839"
+      ]
+    },
+    "1": {
+      "cluster_id": 1,
+      "name": "East Village / Lower East Side",
+      "locations": 25,
+      "neighborhood_membership": {
+        "Gramercy": 2,
+        "Lower East Side": 5,
+        "East Village": 17,
+        "SoHo-Little Italy-Hudson Square": 1
+      },
+      "centroid": [
+        -73.98644820014441,
+        40.726710538091
+      ],
+      "member_ids": [
+        "nyc-50012258",
+        "nyc-50169729",
+        "osm-node-10073955919",
+        "osm-node-10229466403",
+        "osm-node-10270349361",
+        "osm-node-10270699213",
+        "osm-node-11565456366",
+        "osm-node-11715036337",
+        "osm-node-11971148917",
+        "osm-node-12324390279",
+        "osm-node-12720721096",
+        "osm-node-13514824809",
+        "osm-node-2549928994",
+        "osm-node-2555128941",
+        "osm-node-2704034212",
+        "osm-node-2826754276",
+        "osm-node-3246839603",
+        "osm-node-3676993348",
+        "osm-node-5978837401",
+        "osm-node-5987826185",
+        "osm-node-5987980588",
+        "osm-node-6910793421",
+        "osm-node-7067158485",
+        "osm-node-9642113264",
+        "osm-node-9709984690"
+      ]
+    },
+    "2": {
+      "cluster_id": 2,
+      "name": "Greenwich Village",
+      "locations": 7,
+      "neighborhood_membership": {
+        "Greenwich Village": 6,
+        "West Village": 1
+      },
+      "centroid": [
+        -74.0002491416555,
+        40.73066364940949
+      ],
+      "member_ids": [
+        "nyc-50163232",
+        "osm-node-2562454103",
+        "osm-node-5099589357",
+        "osm-node-5514228220",
+        "osm-node-5561024647",
+        "osm-node-5932979098",
+        "osm-node-9920390979"
+      ]
+    },
+    "3": {
+      "cluster_id": 3,
+      "name": "Kips Bay / Gramercy",
+      "locations": 10,
+      "neighborhood_membership": {
+        "Murray Hill-Kips Bay": 6,
+        "Gramercy": 4
+      },
+      "centroid": [
+        -73.9814901597209,
+        40.74079695689794
+      ],
+      "member_ids": [
+        "nyc-50186266",
+        "osm-node-2300348739",
+        "osm-node-2704105170",
+        "osm-node-2706918154",
+        "osm-node-4426744326",
+        "osm-node-6061789674",
+        "osm-node-7362789424",
+        "osm-node-8097608582",
+        "osm-node-9188375882",
+        "osm-node-9276228950"
+      ]
+    },
+    "4": {
+      "cluster_id": 4,
+      "name": "Turtle Bay / Murray Hill",
+      "locations": 3,
+      "neighborhood_membership": {
+        "East Midtown-Turtle Bay": 2,
+        "Murray Hill-Kips Bay": 1
+      },
+      "centroid": [
+        -73.9709659119367,
+        40.751214883791675
+      ],
+      "member_ids": [
+        "osm-node-3829591977",
+        "osm-node-3843628369",
+        "osm-node-5254559387"
+      ]
+    },
+    "5": {
+      "cluster_id": 5,
+      "name": "Midtown West / Chelsea",
+      "locations": 11,
+      "neighborhood_membership": {
+        "Midtown South-Flatiron-Union Square": 3,
+        "Hell's Kitchen": 4,
+        "Midtown-Times Square": 3,
+        "Chelsea-Hudson Yards": 1
+      },
+      "centroid": [
+        -73.99123215084346,
+        40.75453879730543
+      ],
+      "member_ids": [
+        "nyc-50116944",
+        "nyc-50172104",
+        "nyc-50179766",
+        "osm-node-10838413854",
+        "osm-node-11558110355",
+        "osm-node-13186112048",
+        "osm-node-13357853589",
+        "osm-node-13357893399",
+        "osm-node-4754291326",
+        "osm-way-265282545",
+        "osm-way-265301776"
+      ]
+    },
+    "6": {
+      "cluster_id": 6,
+      "name": "Sixth Avenue / Midtown",
+      "locations": 3,
+      "neighborhood_membership": {
+        "Midtown-Times Square": 3
+      },
+      "centroid": [
+        -73.98045882378385,
+        40.75711016796201
+      ],
+      "member_ids": [
+        "osm-node-12646644780",
+        "osm-node-12956856877",
+        "osm-node-4709047192"
+      ]
+    },
+    "7": {
+      "cluster_id": 7,
+      "name": "Midtown East",
+      "locations": 5,
+      "neighborhood_membership": {
+        "East Midtown-Turtle Bay": 4,
+        "Midtown-Times Square": 1
+      },
+      "centroid": [
+        -73.97038541384666,
+        40.757165434024515
+      ],
+      "member_ids": [
+        "nyc-50169951",
+        "osm-node-12917611587",
+        "osm-node-13248217771",
+        "osm-node-9392834432",
+        "osm-node-9920390981"
+      ]
+    },
+    "8": {
+      "cluster_id": 8,
+      "name": "Lenox Hill / Sutton Place",
+      "locations": 6,
+      "neighborhood_membership": {
+        "Upper East Side-Lenox Hill-Roosevelt Island": 5,
+        "East Midtown-Turtle Bay": 1
+      },
+      "centroid": [
+        -73.96209390676792,
+        40.761408377495094
+      ],
+      "member_ids": [
+        "osm-node-11062619196",
+        "osm-node-12720480767",
+        "osm-node-14304875686",
+        "osm-node-2711023702",
+        "osm-node-2718138992",
+        "osm-node-6418623098"
+      ]
+    },
+    "9": {
+      "cluster_id": 9,
+      "name": "Upper East Side / First Avenue",
+      "locations": 4,
+      "neighborhood_membership": {
+        "Upper East Side-Lenox Hill-Roosevelt Island": 4
+      },
+      "centroid": [
+        -73.95471499353809,
+        40.769304401080525
+      ],
+      "member_ids": [
+        "osm-node-10982600247",
+        "osm-node-11590260824",
+        "osm-node-6649647161",
+        "osm-node-7085207165"
+      ]
+    },
+    "10": {
+      "cluster_id": 10,
+      "name": "Yorkville / Carnegie Hill",
+      "locations": 3,
+      "neighborhood_membership": {
+        "Upper East Side-Carnegie Hill": 1,
+        "Upper East Side-Yorkville": 2
+      },
+      "centroid": [
+        -73.95156500645795,
+        40.77849488586128
+      ],
+      "member_ids": [
+        "osm-node-3451081915",
+        "osm-node-5729312617",
+        "osm-node-9712624545"
+      ]
+    },
+    "11": {
+      "cluster_id": 11,
+      "name": "East Harlem South",
+      "locations": 4,
+      "neighborhood_membership": {
+        "East Harlem (South)": 4
+      },
+      "centroid": [
+        -73.94689891448222,
+        40.788104587794514
+      ],
+      "member_ids": [
+        "nyc-50181493",
+        "osm-node-2761716454",
+        "osm-node-9572028344",
+        "osm-way-1039477323"
+      ]
+    },
+    "12": {
+      "cluster_id": 12,
+      "name": "Harlem South",
+      "locations": 4,
+      "neighborhood_membership": {
+        "Harlem (South)": 4
+      },
+      "centroid": [
+        -73.95253076117719,
+        40.803147566938094
+      ],
+      "member_ids": [
+        "nyc-50158804",
+        "osm-node-12414103703",
+        "osm-node-9049400010",
+        "osm-way-271290745"
+      ]
+    },
+    "13": {
+      "cluster_id": 13,
+      "name": "Morningside Heights / Broadway",
+      "locations": 4,
+      "neighborhood_membership": {
+        "Upper West Side-Manhattan Valley": 1,
+        "Morningside Heights": 3
+      },
+      "centroid": [
+        -73.96395390438072,
+        40.806589520260275
+      ],
+      "member_ids": [
+        "osm-node-11955118212",
+        "osm-node-12047107430",
+        "osm-node-7004462869",
+        "osm-node-9484086236"
+      ]
+    }
+  },
+  "caveat": "Descriptive concentrations in this source sample, not statistically significant clusters or a census of halal food."
+}

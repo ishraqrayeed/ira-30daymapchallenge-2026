@@ -8,7 +8,7 @@ import unittest
 
 
 class PagesBuild(unittest.TestCase):
-    def test_day3_release_preserves_previous_maps_and_excludes_caches(self):
+    def test_day4_release_preserves_previous_maps_and_excludes_caches(self):
         repository = Path(__file__).resolve().parents[1]
         spec = importlib.util.spec_from_file_location('release_pages', repository / 'scripts/build_pages.py')
         module = importlib.util.module_from_spec(spec)
@@ -22,7 +22,34 @@ class PagesBuild(unittest.TestCase):
                 self.assertEqual((output / day / 'index.html').read_bytes(),
                                  (repository / 'maps' / day / 'map.html').read_bytes())
             self.assertNotIn('data/raw', '\n'.join(str(p) for p in output.rglob('*')))
+            day4 = output / 'day04-clusters'
+            self.assertEqual({p.name for p in day4.iterdir()}, {'index.html', *module.DAY4_FILES})
+            self.assertEqual((output / 'day03-polygons/index.html').read_bytes(),
+                             (repository / 'maps/day03-polygons/map.html').read_bytes())
+            self.assertEqual((day4 / 'index.html').read_bytes(),
+                             (repository / 'maps/day04-clusters/map.html').read_bytes())
+            self.assertIn('Halal in Manhattan', (output / 'index.html').read_text())
+            self.assertNotIn('(map.html)', (day4 / 'README.md').read_text())
+
             self.assertNotIn('(map.html)', (day3 / 'README.md').read_text())
+
+    def test_day4_package_rejects_changed_processed_data(self):
+        import shutil
+        repository = Path(__file__).resolve().parents[1]
+        spec = importlib.util.spec_from_file_location('day4_release', repository / 'scripts/build_pages.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            day = root / 'maps/day04-clusters'
+            day.mkdir(parents=True)
+            for name in ('map.html', *module.DAY4_FILES):
+                shutil.copyfile(repository / 'maps/day04-clusters' / name, day / name)
+            self.assertEqual(module.day4_artifacts(root)[1]['total'], 121)
+            csv = day / 'manhattan_halal_locations.csv'
+            csv.write_text(csv.read_text() + '\n')
+            with self.assertRaisesRegex(ValueError, 'Day 4 changed after QA'):
+                module.day4_artifacts(root)
 
     def test_public_package_excludes_raw_data_and_rewrites_report_link(self):
         script = Path(__file__).resolve().parents[1] / 'scripts/build_pages.py'
