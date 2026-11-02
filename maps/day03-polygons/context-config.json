@@ -1,0 +1,14 @@
+{
+  "city_names": ["Dhaka North City Corporation", "Dhaka South City Corporation"],
+  "city_pcodes": ["BD30262500", "BD30262000"],
+  "city_source": "https://data.humdata.org/dataset/cod-ab-bgd",
+  "city_api": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-bgd",
+  "display_city_simplification_m": 80,
+  "display_city_max_segment_m": 100,
+  "display_city_chaikin_iterations": 1,
+  "display_fill_holes_below_m2": 50000,
+  "display_preserve_water_above_m2": 25000,
+  "display_isochrone_simplification_m": 10,
+  "colors": {"15": "#359B94", "30": "#376B73", "45": "#293F49"},
+  "label_osm_nodes": {"Uttara": 141466267, "Mirpur": 8953925035, "Agargaon": 8968735495, "Gulshan": 9439896189, "Dhanmondi": 5162463804, "Motijheel": 8953203672}
+}

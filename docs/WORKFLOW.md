@@ -43,7 +43,7 @@ with the cursor off the features and source credits visible.
 
 Add the finished day to `templates/portfolio-index.html` and extend
 `scripts/build_pages.py` to package its named route and reports. The packager
-  supports **Days 1 and 2**; it does not automatically discover new days.
+  supports **Days 1, 2, and 3**; it does not automatically discover new days.
 
 Run checks appropriate to the new code. Existing checks are:
 

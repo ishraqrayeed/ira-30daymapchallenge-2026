@@ -3,6 +3,7 @@
 - [Portfolio](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/)
 - [Day 1 — Points](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day01-points/)
 - [Day 2 — Lines](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day02-lines/)
+- [Day 3 — Polygons](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day03-polygons/)
 - [Repository](https://github.com/ishraqrayeed/ira-30daymapchallenge-2026)
 
 ## Publish an update
@@ -27,3 +28,6 @@ Day 2 lives at `/day02-lines/`; its HTML includes the terrain and trail data.
 After deployment, check the symbols, basemap, Denver-time tooltips, attribution,
 and mobile layout at the public URL. Updates are manually triggered, so pushing
 an edit alone does not publish it.
+
+Day 3 lives at `/day03-polygons/`, with a static `poster.html` view, public
+accessibility polygons, station data, municipal boundaries and methodology notes.

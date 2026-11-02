@@ -1,0 +1,25 @@
+{
+  "source": "https://download.geofabrik.de/asia/bangladesh.html",
+  "download_url": "https://download.geofabrik.de/asia/bangladesh-latest.osm.pbf",
+  "pbf_sha256": "093033def0632f71d2773841c9803f844e3a97e86d8bcde5d9dad6a91d1ad153",
+  "retrieved_utc": "2026-11-02T18:24:40.455835+00:00",
+  "snapshot": {
+    "osmosis_replication_timestamp": "2026-11-01T21:21:36Z",
+    "osmosis_replication_sequence_number": "4926",
+    "generator": "osmium/1.16.0"
+  },
+  "bbox_wgs84": [
+    90.3,
+    23.68,
+    90.47,
+    23.91
+  ],
+  "walking_way_count": 31754,
+  "walking_node_count": 170308,
+  "restricted_barrier_nodes": 23,
+  "walk_xml_sha256": "963878cf566bcbb7018d4125926026439269b34980a5bb4f242cd7aa5110c250",
+  "context_sha256": "ec22eeb60cfd5594c91b74fb94256f728b90139db6014c2b18eb0b0c011b83cb",
+  "license": "Open Database License (ODbL) 1.0; \u00a9 OpenStreetMap contributors",
+  "fixed_snapshot_url": "https://download.geofabrik.de/asia/bangladesh-261102.osm.pbf",
+  "citylines_crosscheck_sha256": "50c03eb48fbf9ce60ad85d3dfe15bb80f10b83c291f74f078eac593068244426"
+}

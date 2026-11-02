@@ -4,8 +4,47 @@ import json
 from pathlib import Path
 import re
 import shutil
+import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
+
+DAY3_FILES = ('poster.html', 'README.md', 'map.qa.json', 'map.results.md',
+              'context.qa.json', 'config.json', 'context-config.json',
+              'source-manifest.json', 'boundary-source.json',
+              'farmgate_15min.geojson', 'farmgate_30min.geojson', 'farmgate_45min.geojson',
+              'farmgate_accessibility.geojson', 'farmgate_display_bands.geojson',
+              'dhaka_mrt6_stations.csv', 'dhaka_mrt6_stations.geojson',
+              'estimated_rail_segments.csv', 'dhaka_city_boundary.geojson',
+              'dhaka_city_corporations.geojson', 'dhaka_city_geofence.geojson',
+              'dhaka_labels.geojson')
+
+
+def day3_artifacts(root: Path) -> tuple[Path, dict] | None:
+    source = root / 'maps/day03-polygons'
+    if not (source / 'map.html').exists():
+        return None
+    qa = json.loads((source / 'map.qa.json').read_text())
+    context = json.loads((source / 'context.qa.json').read_text())
+    if not qa['nested'] or not qa['valid_geometries']:
+        raise ValueError('Day 3 accessibility QA failed')
+    for filename, recorded in [('config.json', qa['config_sha256']),
+                               ('context-config.json', context['context_config_sha256']),
+                               ('farmgate_accessibility.geojson', context['cumulative_isochrone_sha256'])]:
+        if hashlib.sha256((source / filename).read_bytes()).hexdigest() != recorded:
+            raise ValueError('Day 3 data or configuration changed after QA')
+    for filename in ['map.html', 'poster.html']:
+        match = re.search(r'const MAP_DATA=(\{[^\n]+\});', (source / filename).read_text())
+        if not match:
+            raise ValueError('Day 3 is missing embedded map data')
+        data = json.loads(match[1])
+        if data['stats'] != qa['statistics'] or data['city_percentage'] != context['percentage_45min']:
+            raise ValueError('Day 3 poster and calculated statistics disagree')
+    if abs(context['intersection_45min_km2'] / context['city_area_km2'] * 100 - context['percentage_45min']) > 1e-9:
+        raise ValueError('Day 3 city percentage balance failed')
+    for name in DAY3_FILES:
+        if not (source / name).is_file():
+            raise ValueError(f'Day 3 public artifact is missing: {name}')
+    return source, data
 
 
 def day2_artifacts(root: Path) -> tuple[Path, dict] | None:
@@ -30,6 +69,7 @@ def day2_artifacts(root: Path) -> tuple[Path, dict] | None:
 def build(root: Path = ROOT, destination: Path | None = None) -> Path:
     destination = destination or root / "_site"
     second_day = day2_artifacts(root)
+    third_day = day3_artifacts(root)
     source = root / "maps/day01-points"
     html = source / "map.html"
     qa = source / "map.qa.json"
@@ -52,6 +92,10 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
                          "day02-lines/map.results.md", "day02-lines/README.md"]:
             if (destination / relative).is_symlink():
                 raise ValueError(f"Refusing to overwrite a symlink: {relative}")
+    if third_day:
+        for name in ('', 'index.html', *DAY3_FILES):
+            if (destination / 'day03-polygons' / name).is_symlink():
+                raise ValueError(f'Refusing to overwrite a Day 3 symlink: {name}')
     day.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(root / "templates/portfolio-index.html", destination / "index.html")
     shutil.copyfile(html, day / "index.html")
@@ -78,6 +122,17 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
         report2 = (source2 / "map.results.md").read_text().replace("(map.html)", "(index.html)")
         (day2 / "map.results.md").write_text(report2)
         print(f'Packaged {len(data2["trails"]):,} Day 2 trail segments')
+    if third_day:
+        source3, _ = third_day
+        day3 = destination / 'day03-polygons'
+        day3.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source3 / 'map.html', day3 / 'index.html')
+        for name in DAY3_FILES:
+            if name.endswith('.md'):
+                (day3 / name).write_text((source3 / name).read_text().replace('(map.html)', '(index.html)'))
+            else:
+                shutil.copyfile(source3 / name, day3 / name)
+        print('Packaged Day 3 metro accessibility, poster and public polygon data')
     (destination / ".nojekyll").touch()
     print(f"Packaged {len(points):,} crash events for Pages: {destination}")
     return destination

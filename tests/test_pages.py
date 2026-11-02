@@ -8,6 +8,22 @@ import unittest
 
 
 class PagesBuild(unittest.TestCase):
+    def test_day3_release_preserves_previous_maps_and_excludes_caches(self):
+        repository = Path(__file__).resolve().parents[1]
+        spec = importlib.util.spec_from_file_location('release_pages', repository / 'scripts/build_pages.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as directory:
+            output = module.build(repository, Path(directory))
+            day3 = output / 'day03-polygons'
+            self.assertEqual({p.name for p in day3.iterdir()}, {'index.html', *module.DAY3_FILES})
+            self.assertIn('Dhaka in 45 Minutes', (output / 'index.html').read_text())
+            for day in ['day01-points', 'day02-lines']:
+                self.assertEqual((output / day / 'index.html').read_bytes(),
+                                 (repository / 'maps' / day / 'map.html').read_bytes())
+            self.assertNotIn('data/raw', '\n'.join(str(p) for p in output.rglob('*')))
+            self.assertNotIn('(map.html)', (day3 / 'README.md').read_text())
+
     def test_public_package_excludes_raw_data_and_rewrites_report_link(self):
         script = Path(__file__).resolve().parents[1] / 'scripts/build_pages.py'
         spec = importlib.util.spec_from_file_location('build_pages', script)

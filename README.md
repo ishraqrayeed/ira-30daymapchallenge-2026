@@ -26,6 +26,16 @@ terrain map. Click or tap a trail segment to explore its elevation profile.
 
 Local preview: `python3 scripts/preview_map.py --directory maps/day02-lines --port 8002`
 
+## Day 3 — Polygons
+
+### Dhaka in 45 Minutes
+
+Modeled metro + walking accessibility from Farmgate, Dhaka, Bangladesh.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day03-polygons/) ·
+[Static poster](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day03-polygons/poster.html) ·
+[Data and methods](maps/day03-polygons/README.md)
+
 ## Run locally
 
 ```sh
