@@ -48,6 +48,15 @@ Modeled metro + walking accessibility from Farmgate, Dhaka, Bangladesh.
 
 Local preview: `python3 scripts/preview_map.py --directory maps/day04-clusters --port 8004`
 
+## Day 5 — Sight
+
+### What Messi Saw
+
+The geometric goal opening from Lionel Messi's 35 recorded 2026 World Cup shots.
+
+[Open the portrait](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day05-sight/) ·
+[Data and methods](maps/day05-sight/README.md)
+
 ## Run locally
 
 ```sh

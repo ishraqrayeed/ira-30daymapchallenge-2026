@@ -32,6 +32,33 @@ class PagesBuild(unittest.TestCase):
             self.assertNotIn('(map.html)', (day4 / 'README.md').read_text())
 
             self.assertNotIn('(map.html)', (day3 / 'README.md').read_text())
+            day5 = output / 'day05-sight'
+            self.assertEqual({p.name for p in day5.iterdir()},
+                             {'index.html', 'interactive.html', *module.DAY5_FILES})
+            self.assertEqual((day5 / 'index.html').read_bytes(),
+                             (repository / 'maps/day05-sight/poster.html').read_bytes())
+            self.assertEqual((day5 / 'interactive.html').read_bytes(),
+                             (repository / 'maps/day05-sight/map.html').read_bytes())
+            self.assertIn('What Messi Saw', (output / 'index.html').read_text())
+            self.assertFalse(list(day5.glob('*.csv')))
+
+    def test_day5_package_rejects_changed_poster(self):
+        import shutil
+        repository = Path(__file__).resolve().parents[1]
+        spec = importlib.util.spec_from_file_location('day5_release', repository / 'scripts/build_pages.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            day = root / 'maps/day05-sight'
+            day.mkdir(parents=True)
+            for name in ('map.html', *module.DAY5_FILES):
+                shutil.copyfile(repository / 'maps/day05-sight' / name, day / name)
+            self.assertEqual(len(module.day5_artifacts(root)[1]['shots']), 35)
+            poster = day / 'poster.html'
+            poster.write_text(poster.read_text().replace('WHAT MESSI', 'Changed title', 1))
+            with self.assertRaisesRegex(ValueError, 'Day 5 artifact changed after QA'):
+                module.day5_artifacts(root)
 
     def test_day4_package_rejects_changed_processed_data(self):
         import shutil

@@ -1,0 +1,178 @@
+{
+  "title": "WHAT MESSI SAW",
+  "subtitle": "Every shot begins with an angle.",
+  "matches": 8,
+  "appearances": 8,
+  "total_shots": 35,
+  "non_penalty_shots": 33,
+  "goals": 8,
+  "assists": 4,
+  "goal_involvements": 12,
+  "career_world_cup_goals": 21,
+  "penalties": 2,
+  "shootout_shots": 0,
+  "geometry_summary_population": "33 non-penalty attempts; both match penalties shown but excluded from summaries",
+  "median_distance_m": 18.68960604235935,
+  "median_sight_angle_deg": 19.44312945396543,
+  "widest": {
+    "source_event_id": "1953892:600",
+    "match": "Argentina v Algeria",
+    "opponent": "Algeria",
+    "date": "2026-06-16",
+    "source_date": "2026-06-17",
+    "minute": 59,
+    "second": 42,
+    "clock": "59:42",
+    "period": 2,
+    "source_x": 91.7,
+    "source_y": 52.3,
+    "shot_x": 97.08771929824562,
+    "shot_y": 35.75375,
+    "distance_to_goal_m": 8.104309036917018,
+    "sight_angle_deg": 47.9264841252243,
+    "outcome": "Goal",
+    "source_outcome": "Goal",
+    "is_goal": true,
+    "is_penalty": false,
+    "body_part": "Right foot",
+    "shot_type": "Other",
+    "source_url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_argentina_vs_algeria_2026-06-17_events.csv",
+    "fifa_report_url": "https://www.fifatrainingcentre.com/media/native/tournaments/fifa-world-cup/2026/PMSR-M19-ARG-V-ALG.pdf"
+  },
+  "narrowest": {
+    "source_event_id": "1953892:369",
+    "match": "Argentina v Algeria",
+    "opponent": "Algeria",
+    "date": "2026-06-16",
+    "source_date": "2026-06-17",
+    "minute": 36,
+    "second": 13,
+    "clock": "36:13",
+    "period": 1,
+    "source_x": 65.8,
+    "source_y": 73.3,
+    "shot_x": 69.73636363636363,
+    "shot_y": 50.2364331210191,
+    "distance_to_goal_m": 38.82197586522488,
+    "sight_angle_deg": 9.804259191178335,
+    "outcome": "Off target",
+    "source_outcome": "MissedShots",
+    "is_goal": false,
+    "is_penalty": false,
+    "body_part": "Left foot",
+    "shot_type": "Direct free kick",
+    "source_url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_argentina_vs_algeria_2026-06-17_events.csv",
+    "fifa_report_url": "https://www.fifatrainingcentre.com/media/native/tournaments/fifa-world-cup/2026/PMSR-M19-ARG-V-ALG.pdf"
+  },
+  "mean_goal_angle_deg": 29.729404642530067,
+  "mean_non_goal_angle_deg": 20.276461214939754,
+  "heroes": [
+    {
+      "event_id": "1953892:600",
+      "label": "Widest view",
+      "number": 1
+    },
+    {
+      "event_id": "1953892:369",
+      "label": "Narrowest view",
+      "number": 2
+    },
+    {
+      "event_id": "1953895:970",
+      "label": "Longest goal",
+      "number": 3
+    }
+  ],
+  "pitch_metres": [
+    105,
+    68
+  ],
+  "goalposts_metres": [
+    [
+      105.0,
+      30.34
+    ],
+    [
+      105.0,
+      37.66
+    ]
+  ],
+  "source_coordinate_system": "Opta 0\u2013100; attack increasing x; increasing y bottom to top",
+  "conversion": "Piecewise linear interpolation between pitch markings, using published mplsoccer Opta/custom landmarks",
+  "xg_available": false,
+  "complete_shot_end_xy_available": false,
+  "publication_ready": false,
+  "publication_hold": "Event-data reuse terms require clarification before public distribution",
+  "match_validation": [
+    {
+      "opponent": "Algeria",
+      "shots": 6,
+      "goals": 3,
+      "fifa_attempts": 6,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M019-ARG-ALG"
+    },
+    {
+      "opponent": "Austria",
+      "shots": 7,
+      "goals": 2,
+      "fifa_attempts": 7,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M043-ARG-AUT"
+    },
+    {
+      "opponent": "Cabo Verde",
+      "shots": 9,
+      "goals": 1,
+      "fifa_attempts": 9,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M086-ARG-CPV"
+    },
+    {
+      "opponent": "Egypt",
+      "shots": 5,
+      "goals": 1,
+      "fifa_attempts": 5,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M095-ARG-EGY"
+    },
+    {
+      "opponent": "Switzerland",
+      "shots": 4,
+      "goals": 0,
+      "fifa_attempts": 4,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M100-ARG-SUI"
+    },
+    {
+      "opponent": "England",
+      "shots": 1,
+      "goals": 0,
+      "fifa_attempts": 1,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M102-ENG-ARG"
+    },
+    {
+      "opponent": "Jordan",
+      "shots": 2,
+      "goals": 1,
+      "fifa_attempts": 2,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M070-JOR-ARG"
+    },
+    {
+      "opponent": "Spain",
+      "shots": 1,
+      "goals": 0,
+      "fifa_attempts": 1,
+      "minute_multiset_matches": true,
+      "fifa_match_id": "2026-M104-ESP-ARG"
+    }
+  ],
+  "caveats": [
+    "Source attempt definition retained, including FIFA referee-event entry.",
+    "Source clock displayed verbatim; it can differ from official goal-minute labels.",
+    "Source SavedShot includes stopped/blocked attempts; outcome is qualified where possible.",
+    "Actual stadium dimensions and defenders, goalkeeper, orientation, and control are not modeled."
+  ]
+}

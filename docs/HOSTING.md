@@ -35,3 +35,7 @@ accessibility polygons, station data, municipal boundaries and methodology notes
 
 Day 4 lives at `/day04-clusters/`: the minimal interactive Manhattan halal-food
 cluster map, with sourced processed data and analysis reports packaged separately.
+
+Day 5 lives at `/day05-sight/`: the approved 4:5 geometric shot study.
+`poster.html` repeats the primary portrait; `interactive.html` retains the wider
+interactive view. Raw source caches and separate event CSVs are not packaged.

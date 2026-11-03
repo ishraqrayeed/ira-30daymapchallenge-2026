@@ -27,6 +27,39 @@ DAY4_FILES = ('README.md', 'map.qa.json', 'map.results.md', 'config.json',
               'poc.html', 'poc.qa.json')
 
 
+DAY5_FILES = ('poster.html', 'README.md', 'map.qa.json', 'layout.qa.json',
+              'analysis.json', 'source-manifest.json', 'map.results.md')
+
+
+def day5_artifacts(root: Path) -> tuple[Path, dict] | None:
+    source = root / 'maps/day05-sight'
+    if not (source / 'poster.html').exists():
+        return None
+    qa = json.loads((source / 'layout.qa.json').read_text())
+    if not qa.get('publication_authorized'):
+        raise ValueError('Day 5 publication has not been authorized')
+    data = None
+    for name in ('map.html', *DAY5_FILES):
+        if not (source / name).is_file():
+            raise ValueError(f'Day 5 artifact missing: {name}')
+    for name, digest in qa['release_sha256'].items():
+        if hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
+            raise ValueError(f'Day 5 artifact changed after QA: {name}')
+    for name in ('map.html', 'poster.html'):
+        match = re.search(r'const MAP_DATA=(\{[^\n]+\});', (source / name).read_text())
+        if not match:
+            raise ValueError(f'Day 5 embedded events missing: {name}')
+        embedded = json.loads(match[1])
+        if data is not None and embedded != data:
+            raise ValueError('Day 5 poster and interactive data disagree')
+        data = embedded
+        if len(data['shots']) != qa['markers'] or len({s['source_event_id'] for s in data['shots']}) != qa['markers']:
+            raise ValueError('Day 5 event count or identifiers disagree')
+        if sum(s['is_goal'] for s in data['shots']) != data['summary']['goals']:
+            raise ValueError('Day 5 goal count disagrees')
+    return source, data
+
+
 def day4_artifacts(root: Path) -> tuple[Path, dict] | None:
     source = root / 'maps/day04-clusters'
     if not (source / 'map.qa.json').exists():
@@ -106,6 +139,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
     second_day = day2_artifacts(root)
     third_day = day3_artifacts(root)
     fourth_day = day4_artifacts(root)
+    fifth_day = day5_artifacts(root)
     source = root / "maps/day01-points"
     html = source / "map.html"
     qa = source / "map.qa.json"
@@ -136,6 +170,10 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
         for name in ('', 'index.html', *DAY4_FILES):
             if (destination / 'day04-clusters' / name).is_symlink():
                 raise ValueError(f'Refusing to overwrite a Day 4 symlink: {name}')
+    if fifth_day:
+        for name in ('', 'index.html', 'interactive.html', *DAY5_FILES):
+            if (destination / 'day05-sight' / name).is_symlink():
+                raise ValueError(f'Refusing to overwrite a Day 5 symlink: {name}')
     day.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(root / "templates/portfolio-index.html", destination / "index.html")
     shutil.copyfile(html, day / "index.html")
@@ -184,6 +222,19 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             else:
                 shutil.copyfile(source4 / name, day4 / name)
         print(f"Packaged {len(data4['points'])} Day 4 halal food locations")
+    if fifth_day:
+        source5, data5 = fifth_day
+        day5 = destination / 'day05-sight'
+        day5.mkdir(parents=True, exist_ok=True)
+        # The approved portrait is the primary page; retain the wider view too.
+        shutil.copyfile(source5 / 'poster.html', day5 / 'index.html')
+        shutil.copyfile(source5 / 'map.html', day5 / 'interactive.html')
+        for name in DAY5_FILES:
+            if name.endswith('.md'):
+                (day5 / name).write_text((source5 / name).read_text().replace('(map.html)', '(interactive.html)'))
+            else:
+                shutil.copyfile(source5 / name, day5 / name)
+        print(f"Packaged {len(data5['shots'])} Day 5 shots and the approved portrait")
     (destination / ".nojekyll").touch()
     print(f"Packaged {len(points):,} crash events for Pages: {destination}")
     return destination
