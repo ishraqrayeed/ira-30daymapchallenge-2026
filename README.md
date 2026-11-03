@@ -22,9 +22,8 @@ A month of maps about transportation, mobility, and the places we live.
 Rocky Mountain National Park's hiking trails, colored by elevation, in a circular
 terrain map. Click or tap a trail segment to explore its elevation profile.
 
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day02-lines/) ·
 [Data and methods](maps/day02-lines/README.md)
-
-Local preview: `python3 scripts/preview_map.py --directory maps/day02-lines --port 8002`
 
 ## Day 3 — Polygons
 
@@ -33,7 +32,6 @@ Local preview: `python3 scripts/preview_map.py --directory maps/day02-lines --po
 Modeled metro + walking accessibility from Farmgate, Dhaka, Bangladesh.
 
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day03-polygons/) ·
-[Static poster](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day03-polygons/poster.html) ·
 [Data and methods](maps/day03-polygons/README.md)
 
 ## Day 4 — Clusters
@@ -46,15 +44,13 @@ Modeled metro + walking accessibility from Farmgate, Dhaka, Bangladesh.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day04-clusters/) ·
 [Data and methods](maps/day04-clusters/README.md)
 
-Local preview: `python3 scripts/preview_map.py --directory maps/day04-clusters --port 8004`
-
 ## Day 5 — Sight
 
 ### What Messi Saw
 
 The geometric goal opening from Lionel Messi's 35 recorded 2026 World Cup shots.
 
-[Open the portrait](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day05-sight/) ·
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day05-sight/) ·
 [Data and methods](maps/day05-sight/README.md)
 
 ## Run locally
