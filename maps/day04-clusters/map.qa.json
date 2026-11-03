@@ -38,7 +38,7 @@
   "labels_match_clusters": true,
   "csv_sha256": "42e85c5266e88933465003d4892f1009f09f65bc81acce3c283a5f52c2741980",
   "config_sha256": "6cb1e9222aa813d71676c025281935ce2c1393aeeaa40daf67ca8cc74bb3376f",
-  "html_sha256": "de9f691e80a278343a6bbc20c45c72e747222371e0bcbd363d27e070b89eda32",
+  "html_sha256": "ea2969f8d79dda8af4f07a48465584f7442835c37ea970740d8e5370297dfcf2",
   "artifact_sha256": {
     "manhattan_halal_locations.csv": "42e85c5266e88933465003d4892f1009f09f65bc81acce3c283a5f52c2741980",
     "manhattan_halal_clusters.geojson": "f6cb901b0f9ef2352548b102216f0eb64165ad746697a1a0b2de4b55da2aeb76",
