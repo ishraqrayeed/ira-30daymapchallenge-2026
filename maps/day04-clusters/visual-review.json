@@ -16,5 +16,16 @@
   "layout_revision": "Smaller title/subtitle; map enlarged slightly. Legend moved into left column, aligned with the editorial line. North arrow and scale removed. Mobile retains legend beneath the map. Source credits retained.",
   "model_revision": "Minimum samples changed from 5 to the user-selected 3 at unchanged 450m. All 14 envelopes and post-analysis names recomputed; five largest labeled. 92 clustered, 29 noise, 76% displayed.",
   "statistics_revision": "Removed all three hero statistics from the left column; cluster counts remain available in feature popups and geographic labels.",
-  "view_control_revision": "Removed Individual locations \u2192 Spatial clusters switch and its JavaScript. The default cluster map remains interactive through point and envelope popups."
+  "view_control_revision": "Removed Individual locations \u2192 Spatial clusters switch and its JavaScript. The default cluster map remains interactive through point and envelope popups.",
+  "polish_revision": {
+    "date": "2026-11-03",
+    "composition": "Map column shifted 15 CSS px left; proportions unchanged. Legend bottom aligned to silhouette using 80/940 of SVG height as lower inset. Headline weight 800 \u2192 700; HALAL 900 \u2192 800.",
+    "envelopes": "Stroke 1 \u2192 0.8px; stroke opacity .58 \u2192 .42; fill .075 \u2192 .045. Geometry unchanged.",
+    "points": "Gray uses existing muted palette color; radius 2.8 \u2192 3; yellow radius 3.5 \u2192 3.7.",
+    "callouts": "15px labels, 18px counts; leader opacity .78 and width .9px, behind markers, anchored to nearest actual cluster member to centroid.",
+    "footer": "Centered source credits only: OSM/Geofabrik, NYC DOHMH, NYC DCP. Source link has no underline; methodology and dates remain in README.",
+    "data": "Original and final embedded MAP_DATA objects identical.",
+    "footer_layout": "Single centered source-credit line on desktop; wraps on mobile.",
+    "png_export": "User declined separate PNG output; interactive HTML remains the deliverable."
+  }
 }
