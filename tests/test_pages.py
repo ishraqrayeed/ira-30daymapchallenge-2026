@@ -36,9 +36,9 @@ class PagesBuild(unittest.TestCase):
             self.assertEqual({p.name for p in day5.iterdir()},
                              {'index.html', 'interactive.html', *module.DAY5_FILES})
             self.assertEqual((day5 / 'index.html').read_bytes(),
-                             (repository / 'maps/day05-sight/poster.html').read_bytes())
-            self.assertEqual((day5 / 'interactive.html').read_bytes(),
                              (repository / 'maps/day05-sight/map.html').read_bytes())
+            self.assertIn('content="0;url=./"', (day5 / 'interactive.html').read_text())
+            self.assertEqual((day5 / 'interactive.html').read_bytes(), (day5 / 'poster.html').read_bytes())
             self.assertIn('What Messi Saw', (output / 'index.html').read_text())
             self.assertFalse(list(day5.glob('*.csv')))
 
@@ -55,7 +55,7 @@ class PagesBuild(unittest.TestCase):
             for name in ('map.html', *module.DAY5_FILES):
                 shutil.copyfile(repository / 'maps/day05-sight' / name, day / name)
             self.assertEqual(len(module.day5_artifacts(root)[1]['shots']), 35)
-            poster = day / 'poster.html'
+            poster = day / 'map.html'
             poster.write_text(poster.read_text().replace('WHAT MESSI', 'Changed title', 1))
             with self.assertRaisesRegex(ValueError, 'Day 5 artifact changed after QA'):
                 module.day5_artifacts(root)

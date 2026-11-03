@@ -71,35 +71,24 @@ Goal-mouth y/z and pass endpoints are not misused as shot destinations.
 
 ## Design and QA
 
-**WHAT MESSI SAW / Every shot begins with an angle.** The dedicated
-[portrait poster](poster.html) has a 1080 × 1350 artboard and automatically fits
-within the visible browser area at normal zoom, including a 1400 × 900 laptop.
-The existing wider [interactive map](map.html) remains available.
+**WHAT MESSI SAW / Every shot begins with an angle.** The single compact
+[map](map.html) uses a 1620 × 1350 artboard, 50% wider than the original portrait.
+MESSI and goal markers remain blue; the page, pitch, lines and other attempts use
+neutral grays. Four evenly spaced statistics—shots, goals, median view and median distance—sit
+below the pitch, followed by the legend and source. Counts and medians are
+checked against the embedded events.
+The explanatory sentences and visible penalty-median note were removed; the
+calculation still excludes the two penalties as documented above.
 
-The portrait uses neutral page gray `#f7f8f7`, pale sage `#dce3d8`, gray-green markings `#839087`, graphite
-construction lines `#4d5c60`, and Argentina blue `#75aadb` for goals. Georgia
-serif headline (82 px), angles and statistics (70 px) use regular weight;
-technical labels use 22–24 px monospaced type. Context is quieter than numbers.
-
-The display crop is centred on the goal at artboard (540, 425), with equal
-20 px/m axis scales: **1.43×** V2's geometry scale. The visible metric extent is
-x=67.45–105 m, y=10.2–57.8 m. Cropping changes no recorded location or calculation.
-Goal width remains 7.32 m; the posts share one goal line. The farthest shot has
-45.7 artboard pixels before the bottom field edge; the goal frame has 61 pixels
-of clearance below the statistics. The stronger goal frame is graphite `#354247` with 3 px strokes and outlined
-posts; outer visible verticals are 25% quieter. The summary unit is 60% of the
-number size. Hero annotations retain short leaders and safe margins.
-The narrowest annotation says **OFF TARGET**,
-verified against the processed outcome. Three compact annotations, 35 markers
-and 70 sight lines remain. No new analysis or hero selection was run.
-
-Six existing automated checks pass. Additional layout checks verify the centred
-posts, equal scales, all embedded events, data/code checksums and unclipped point
-centres. Chrome review covered the native artboard and approximately 540/360 px
-feed presentations; the full poster was then checked at normal browser zoom.
-Click inspection and Escape dismissal work. Final layout details are in
-[layout QA](layout.qa.json). Source type is intentionally small; the two real
-penalty events share a position. No PNG export was added. Days 1–4 are unchanged. The Pages packager includes Day 5 as a separate route.
+Pitch coordinates retain equal 20 px/m axis scales. The wider crop shows more
+of the pitch without stretching geometry or moving any recorded shot. All 35
+markers, 70 sight lines and three annotations remain. Seven geometry/data/layout checks
+pass. Chrome review covered desktop and 540/360 px feed presentations. The pitch
+is #EFEFEF; ordinary sight lines are subdued, the three featured shots retain
+moderate emphasis, and goalposts render above the sight lines. Smaller text has
+stronger contrast; callouts sit in open space. Extra padding below the context
+line keeps the header separate from the goal. Previous poster and interactive
+URLs redirect to this one map. No PNG export.
 
 ## Coverage, limitations and release status
 
@@ -118,6 +107,6 @@ event coordinates. No football provider was scraped by this project.
 Raw source caches and processed CSV/JSON remain under ignored
 `data/raw/day05-sight/` and `data/processed/day05-sight/`. See
 [source manifest](source-manifest.json), [analysis](analysis.json), and
-[automated QA](map.qa.json). The approved portrait is the primary `/day05-sight/` page; the wider map is
-available as `interactive.html`. Source-stage analysis metadata is retained
+[automated QA](map.qa.json). The compact portrait is the only map at `/day05-sight/`. Previous poster and
+interactive URLs redirect to it. Source-stage analysis metadata is retained
 unchanged; publication authorization is recorded separately in layout QA.

@@ -33,7 +33,7 @@ DAY5_FILES = ('poster.html', 'README.md', 'map.qa.json', 'layout.qa.json',
 
 def day5_artifacts(root: Path) -> tuple[Path, dict] | None:
     source = root / 'maps/day05-sight'
-    if not (source / 'poster.html').exists():
+    if not (source / 'map.html').exists():
         return None
     qa = json.loads((source / 'layout.qa.json').read_text())
     if not qa.get('publication_authorized'):
@@ -45,13 +45,13 @@ def day5_artifacts(root: Path) -> tuple[Path, dict] | None:
     for name, digest in qa['release_sha256'].items():
         if hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
             raise ValueError(f'Day 5 artifact changed after QA: {name}')
-    for name in ('map.html', 'poster.html'):
+    for name in ('map.html',):
         match = re.search(r'const MAP_DATA=(\{[^\n]+\});', (source / name).read_text())
         if not match:
             raise ValueError(f'Day 5 embedded events missing: {name}')
         embedded = json.loads(match[1])
         if data is not None and embedded != data:
-            raise ValueError('Day 5 poster and interactive data disagree')
+            raise ValueError('Day 5 embedded data disagree')
         data = embedded
         if len(data['shots']) != qa['markers'] or len({s['source_event_id'] for s in data['shots']}) != qa['markers']:
             raise ValueError('Day 5 event count or identifiers disagree')
@@ -226,12 +226,15 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
         source5, data5 = fifth_day
         day5 = destination / 'day05-sight'
         day5.mkdir(parents=True, exist_ok=True)
-        # The approved portrait is the primary page; retain the wider view too.
-        shutil.copyfile(source5 / 'poster.html', day5 / 'index.html')
-        shutil.copyfile(source5 / 'map.html', day5 / 'interactive.html')
+        # One compact map; preserve old published URLs as redirects.
+        shutil.copyfile(source5 / 'map.html', day5 / 'index.html')
+        redirect = '<!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=./"><title>What Messi Saw</title><a href="./">Open the map</a></html>\n'
+        (day5 / 'interactive.html').write_text(redirect)
         for name in DAY5_FILES:
-            if name.endswith('.md'):
-                (day5 / name).write_text((source5 / name).read_text().replace('(map.html)', '(interactive.html)'))
+            if name == 'poster.html':
+                (day5 / name).write_text(redirect)
+            elif name.endswith('.md'):
+                (day5 / name).write_text((source5 / name).read_text().replace('(map.html)', '(index.html)'))
             else:
                 shutil.copyfile(source5 / name, day5 / name)
         print(f"Packaged {len(data5['shots'])} Day 5 shots and the approved portrait")

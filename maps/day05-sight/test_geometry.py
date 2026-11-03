@@ -3,6 +3,8 @@ import json
 import math
 import re
 import unittest
+import statistics
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 
 from geometry import normalize, sight_geometry, POSTS
@@ -61,6 +63,26 @@ class GeometryTests(unittest.TestCase):
         self.assertEqual(len(nodes.labels),3)
         summary=json.loads((HERE/'analysis.json').read_text())
         self.assertEqual({a['data-event'] for a in nodes.labels},{h['event_id'] for h in summary['heroes']})
+
+    def test_four_metrics_goal_markers_and_export_bounds(self):
+        page=(HERE/'map.html').read_text()
+        data=json.loads(re.search(r'const MAP_DATA=(\{[^\n]+\});',page)[1])
+        svg=ET.fromstring(re.search(r'(<svg.*?</svg>)',page,re.S)[1])
+        self.assertEqual(svg.attrib['viewBox'],'0 0 1620 1350')
+        metrics=[e for e in svg.iter('text') if e.get('class')=='stat-value']
+        self.assertEqual(len(metrics),4)
+        centers=[float(e.get('x')) for e in metrics]
+        self.assertEqual([b-a for a,b in zip(centers,centers[1:])],[320,320,320])
+        attempts=data['shots'];nonpen=[s for s in attempts if not s['is_penalty']]
+        expected=[str(len(attempts)),str(sum(s['is_goal'] for s in attempts)),
+                  f"{statistics.median(s['sight_angle_deg'] for s in nonpen):.1f}°",
+                  f"{statistics.median(s['distance_to_goal_m'] for s in nonpen):.1f}m"]
+        self.assertEqual([''.join(e.itertext()) for e in metrics],expected)
+        goals=[e for e in svg.iter('g') if {'goal','marker'}<=set(e.get('class','').split())]
+        self.assertEqual(len(goals),8)
+        self.assertIn('.goal .shot-dot{fill:var(--blue)',page)
+        self.assertIn('--green:#efefef',page)
+        self.assertNotIn('@@',page)
 
 
 if __name__=='__main__': unittest.main()

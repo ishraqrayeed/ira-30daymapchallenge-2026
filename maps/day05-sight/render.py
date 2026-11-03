@@ -57,39 +57,12 @@ def render():
         dots.append(f'<g class="{classes} marker" data-event="{key}" tabindex="0" role="button" aria-label="{title}" transform="translate({x:.3f} {y:.3f})">'
                     f'<title>{title}</title><circle class="hit-target" r="12"/>{ring}<circle class="shot-dot" r="{5.5 if row["is_goal"] else 4}"/></g>')
 
-    # Fixed annotation lanes, with leader origins derived from actual selected events.
-    labels=[]
-    lanes={1:(610,154, 'right'),2:(650,466,'right'),3:(154,352,'left')}
-    for key,hero in heroes.items():
-        row=next(r for r in rows if r['source_event_id']==key)
-        x,y=point(row); lx,ly,side=lanes[hero['number']]
-        end_x=lx-14 if side=='right' else lx+126
-        elbow=x+30 if side=='right' else x-34
-        labels.append(f'<g class="annotation" data-event="{key}">'
-            f'<path class="leader" d="M{x+6 if side=="right" else x-6:.2f} {y:.2f} H{elbow:.2f} L{end_x:.2f} {ly+5:.2f}"/>'
-            f'<circle class="hero-ring" cx="{x:.3f}" cy="{y:.3f}" r="8"/>'
-            f'<text class="callout-value" x="{lx}" y="{ly}">{row["sight_angle_deg"]:.1f}°</text>'
-            f'<text class="callout-label" x="{lx}" y="{ly+22}">{hero["number"]:02d} / {hero["label"].upper()}</text>'
-            f'<text class="callout-detail" x="{lx}" y="{ly+43}">{row["distance_to_goal_m"]:.1f} m · {"GOAL" if row["is_goal"] else "ATTEMPT"} v {html.escape(row["opponent"].upper())}</text></g>')
-    # An actual angle arc on the widest view, drawn between its two goalpost rays.
-    widest=summary['widest']; wx,wy=point(widest)
-    bearings=sorted(math.atan2(py-wy,px-wx) for px,py in posts)
-    a,b=[(wx+28*math.cos(t),wy+28*math.sin(t)) for t in bearings]
-    labels.append(f'<path class="angle-arc" d="M{a[0]:.3f} {a[1]:.3f} A28 28 0 0 1 {b[0]:.3f} {b[1]:.3f}"/>')
-    svg=''.join(shape)+ '<g class="cones">'+''.join(cones)+'</g><g class="rays">'+''.join(rays)+'</g><g class="dots">'+''.join(dots)+'</g>'+''.join(labels)
-    svg+='<text class="pitch-caption" x="450" y="587" text-anchor="middle">THE ATTACKING 45 METRES · ALL 35 RECORDED ATTEMPTS</text>'
-    svg+='<text class="penalty-caption" x="468" y="215">2 penalties · same spot</text>'
-    payload=json.dumps(dict(shots=rows,summary=summary),separators=(',',':')).replace('<','\\u003c')
-    template=(HERE/'template.html').read_text()
-    result=template.replace('@@SVG@@',svg).replace('@@DATA@@',payload)
-    result=result.replace('@@MEDIAN_ANGLE@@',f'{summary["median_sight_angle_deg"]:.1f}').replace('@@MEDIAN_DISTANCE@@',f'{summary["median_distance_m"]:.1f}')
-    (HERE/'map.html').write_text(result)
     render_portrait(rows, summary, shape, cones, rays, dots)
     print(f'Rendered {len(rows)} real events; {len(heroes)} annotations')
 
 
 def render_portrait(rows, summary, shape, cones, rays, dots):
-    """Reflow the existing geometry, at equal axis scales, onto a 4:5 artboard."""
+    """Reflow the existing geometry, at equal axis scales, onto the 1620 × 1350 artboard."""
     # Reuse all 35 markers and all 70 rays. Only the display extent changes.
     # 20 pixels/metre versus 14 in V2: a 1.43× isotropic viewport zoom.
     # Goal-centred cross-pitch range y=10.2–57.8 m; visible x=67.45–105 m.
@@ -106,21 +79,21 @@ def render_portrait(rows, summary, shape, cones, rays, dots):
     portrait_shape.insert(0, '<path class="pitch-line" d="M110 92 H790"/>')
     portrait_shape = [s for s in portrait_shape if 'goal-dimension' not in s and 'dimension-text' not in s]
     portrait_dots = [d.replace('r="5.5"', 'r="4.5"').replace('r="4"', 'r="3.2"') for d in dots]
-    geometry = ('<defs><clipPath id="pitch-crop"><rect x="64" y="352" width="952" height="824"/></clipPath></defs>'
-                '<rect class="field" x="64" y="425" width="952" height="751"/>'
+    geometry = ('<defs><clipPath id="pitch-crop"><rect x="-245" y="352" width="1570" height="824"/></clipPath></defs>'
+                '<rect class="field" x="-245" y="425" width="1570" height="751"/>'
                 '<g clip-path="url(#pitch-crop)"><g transform="translate(-360 241) scale(2)">'
-                + ''.join(portrait_shape)
+                + ''.join(s for s in portrait_shape if not any(c in s for c in ['class="goal-frame"','class="goal-mouth"','class="goalpost"']))
                 + '<g class="cones">'+''.join(cones)+'</g><g class="rays">'+''.join(rays)
-                + '</g><g class="dots">'+''.join(portrait_dots)+'</g></g></g>')
+                + '</g><g class="goal-foreground">'+''.join(s for s in portrait_shape if any(c in s for c in ['class="goal-frame"','class="goal-mouth"','class="goalpost"']))+'</g><g class="dots">'+''.join(portrait_dots)+'</g></g></g>')
     labels=[]
-    lanes={1:(690,602),2:(570,1068),3:(165,903)}
+    lanes={1:(975,580),2:(905,1068),3:(-30,903)}
     for hero in summary['heroes']:
         row=next(r for r in rows if r['source_event_id']==hero['event_id'])
         x=-360+2*(110+row['shot_y']*10)
         y=241+2*(92+(105-row['shot_x'])*10)
         lx,ly=lanes[hero['number']]
-        target = {1:(672,y),2:(822,y),3:(410,y)}[hero['number']]
-        origin=x-11 if hero['number'] in (2,3) else x+11
+        target = {1:(957,y),2:(889,y),3:(250,y)}[hero['number']]
+        origin=x-11 if hero['number']==3 else x+11
         caption=hero['label'].upper()
         if hero['label']=='Widest view':
             caption += ' · GOAL'
@@ -134,16 +107,14 @@ def render_portrait(rows, summary, shape, cones, rays, dots):
             f'<text class="callout-label" x="{lx}" y="{ly+34}">{html.escape(caption)}</text>'
             f'<text class="callout-detail" x="{lx}" y="{ly+66}">{html.escape(row["opponent"])} · {row["distance_to_goal_m"]:.1f} m</text></g>')
     payload=json.dumps(dict(shots=rows,summary=summary),separators=(',',':')).replace('<','\\u003c')
-    # Preserve the existing inspection handlers; only SVG hero labels differ.
-    template=(HERE/'template.html').read_text()
-    script=template.split('<script>',1)[1].split('</script>',1)[0]
-    script=script.split("const list=document.getElementById('mobile-heroes');",1)[0]
-    script=script.replace('@@DATA@@',payload)
-    result=(HERE/'poster-template.html').read_text().replace('@@GEOMETRY@@',geometry+''.join(labels))
+    script=(HERE/'interaction-template.js').read_text().replace('@@DATA@@',payload)
+    result=(HERE/'template.html').read_text().replace('@@GEOMETRY@@',geometry+''.join(labels))
     result=result.replace('@@SCRIPT@@',script).replace('@@SHOTS@@',str(summary['total_shots']))
+    result=result.replace('@@GOALS@@',str(sum(bool(row['is_goal']) for row in rows)))
+    assert summary['total_shots']==len(rows) and summary['goals']==sum(bool(row['is_goal']) for row in rows)
     result=result.replace('@@MEDIAN_ANGLE@@',f'{summary["median_sight_angle_deg"]:.1f}')
     result=result.replace('@@MEDIAN_DISTANCE@@',f'{summary["median_distance_m"]:.1f}')
-    (HERE/'poster.html').write_text(result)
+    (HERE/'map.html').write_text(result)
 
 
 if __name__=='__main__':
