@@ -124,4 +124,6 @@ checks its SHA-256 and never silently accepts a changed extract. To rerender onl
 the styling/context, run `prepare_context.py`, then `render.py`; this preserves all
 travel-time calculations. The source municipal subset and label points are saved
 with their attribution so that rerendering does not require new network access.
-No PNG export or external basemap is required. Publication route: `/day03-polygons/`; static view: `/day03-polygons/poster.html`.
+The map page retains source credits; explanatory notes, method/data/poster links
+and the expandable methodology are omitted from the visual. Full methods remain
+here. No PNG export or external basemap is required. Publication route: `/day03-polygons/`; static view: `/day03-polygons/poster.html`.

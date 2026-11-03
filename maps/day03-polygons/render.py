@@ -127,7 +127,7 @@ def main():
                                 'color': colors[m], 'export_topology_inset_m': .001}, 'geometry': mapping(export_geometry)})
     (DAY / 'farmgate_display_bands.geojson').write_text(json.dumps({'type':'FeatureCollection','features':display_features},separators=(',',':'))+'\n')
     (DAY / 'map.html').write_text(template.replace('__MODE__', 'interactive'))
-    (DAY / 'poster.html').write_text(template.replace('__MODE__', 'static').replace('id="method-link" href="#methodology"', 'id="method-link" href="README.md"'))
+    (DAY / 'poster.html').write_text(template.replace('__MODE__', 'static'))
     rows = '\n'.join(f'| {m} min | {stats[m]["area_km2"]:.3f} | {stats[m]["reachable_stations"]} |' for m in [15, 30, 45])
     (DAY / 'map.results.md').write_text('# Dhaka in 45 Minutes\n\n[Interactive map](map.html) · [Static poster](poster.html) · [Method](README.md)\n\n'
         '| Budget | Modeled street envelope, km² | Metro-reachable stations |\n| --- | ---: | ---: |\n' + rows +
