@@ -8,7 +8,7 @@ OpenRouteService, visualized in Kepler.gl, and laid out in PowerPoint in about
 10 minutes. The repository plan calls Day 7 “10 minute map”; the supplied title
 uses “Accessibility”.
 
-[View the map](map.html) · [Supplied caption](post.md)
+[View the map](map.html)
 
 The image reports 25 miles and 30 minutes driving. These are the creator's route
 estimates, not live traffic information. Original route geometry, request date,

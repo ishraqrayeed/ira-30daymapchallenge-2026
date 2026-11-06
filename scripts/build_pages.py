@@ -286,12 +286,12 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
     source7 = root / 'maps/day07-10-minute'
     if (source7 / 'map.html').is_file():
         day7 = destination / 'day07-10-minute'
-        for name in ('', 'index.html', 'day7.png', 'README.md', 'post.md'):
+        for name in ('', 'index.html', 'day7.png', 'README.md'):
             if (day7 / name).is_symlink():
                 raise ValueError(f'Refusing to overwrite a Day 7 symlink: {name}')
         day7.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source7 / 'map.html', day7 / 'index.html')
-        for name in ('day7.png', 'README.md', 'post.md'):
+        for name in ('day7.png', 'README.md'):
             shutil.copyfile(source7 / name, day7 / name)
         print('Packaged Day 7 approved screenshot and supplied caption')
     (destination / ".nojekyll").touch()
