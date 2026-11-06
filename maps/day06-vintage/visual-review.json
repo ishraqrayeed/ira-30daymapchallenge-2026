@@ -1,0 +1,45 @@
+{
+  "png_reviewed": true,
+  "composition": "Original GIS footprints, OSM street geometry and USGS-derived contours; no archival raster used.",
+  "dimensions_px": [
+    2400,
+    3000
+  ],
+  "desktop_fit_reviewed": false,
+  "desktop_zoom_reviewed": false,
+  "mobile_fit_reviewed": false,
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "browser": "Google Chrome over local HTTP",
+  "checks": [
+    "Title and subtitle fully visible",
+    "Brick-red footprints stand out from pale context",
+    "Contour lines remain subordinate",
+    "Source credits and viewer controls remain available on mobile",
+    "GIS renderer validates vector-only map layers",
+    "Fine footprint inspection requires zoom at phone size"
+  ],
+  "publication_authorized": false,
+  "prior_browser_review": {
+    "desktop_fit_reviewed": true,
+    "desktop_zoom_reviewed": true,
+    "mobile_fit_reviewed": true,
+    "mobile_viewport": [
+      390,
+      844
+    ]
+  },
+  "refinement_png_reviewed": true,
+  "refinement_checks": [
+    "Main map enlarged to the downtown core; footprints and streets substantially more legible",
+    "Full-inventory inset and red main-extent locator verified",
+    "Colorado Avenue, Oak, Fir, Pine and San Miguel River labels visibly rendered",
+    "Three verified landmark numbers match a compact key",
+    "Contour context remains subordinate",
+    "Original inventory checksum unchanged"
+  ],
+  "png_sha256": "26d241bfa3b56d8520e035aaee518e15856ae1f1900a44bfd3a091f1faeb5d33",
+  "refinement_browser_review": "Not repeated: native Chrome computer-use requests timed out twice; browser access host unavailable. Exported PNG inspected directly. Viewer markup and aspect ratio are unchanged."
+}

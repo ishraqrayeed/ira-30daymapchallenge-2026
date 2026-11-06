@@ -1,0 +1,355 @@
+{
+  "source_records": 1131,
+  "source_geometry": "Polygon",
+  "source_crs": "EPSG:26913",
+  "processing_crs": "EPSG:26913",
+  "field_audit": {
+    "PIN": {
+      "type": "String",
+      "nonblank": 1023,
+      "distinct": 737,
+      "top_values": {
+        " ": 75,
+        "": 33,
+        "477901250018": 8,
+        "456536311026": 6,
+        "456536318056": 6,
+        "477901207110": 5,
+        "477901123014": 5,
+        "456536326029": 4,
+        "456536319007": 4,
+        "456536326064": 4,
+        "477901119006": 4,
+        "456536326004": 4,
+        "456535200011": 4,
+        "477901204005": 3,
+        "456536409004": 3,
+        "477901114003": 3,
+        "456536305002": 3,
+        "456536315021": 3,
+        "477901213013": 3,
+        "456536420005": 3
+      }
+    },
+    "status": {
+      "type": "String",
+      "nonblank": 1115,
+      "distinct": 8,
+      "top_values": {
+        "existing": 1006,
+        "new": 52,
+        "changed": 28,
+        "old structures map": 16,
+        "": 16,
+        "demolished": 9,
+        "unknown": 3,
+        "Galloping Goose": 1
+      }
+    },
+    "Rating": {
+      "type": "String",
+      "nonblank": 401,
+      "distinct": 7,
+      "top_values": {
+        "": 730,
+        "Contributing": 158,
+        "Supporting": 120,
+        "Noncontributing without qualifications": 71,
+        "Noncontributing with qualifications": 31,
+        "Local Landmark": 19,
+        "Significant Landmark Interior": 2
+      }
+    },
+    "OBJECTID": {
+      "type": "Integer",
+      "nonblank": 1131,
+      "distinct": 1131,
+      "top_values": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1
+      }
+    },
+    "x": {
+      "type": "Real",
+      "nonblank": 1098,
+      "distinct": 1085,
+      "top_values": {
+        "": 33,
+        "252954.540093141": 4,
+        "252492.058868541": 2,
+        "252585.822160396": 2,
+        "252410.441769963": 2,
+        "252495.948554281": 2,
+        "252531.955584218": 2,
+        "253202.85077339": 2,
+        "252455.158555796": 2,
+        "252569.499733408": 2,
+        "253130.972131458": 2,
+        "252809.525291355": 2,
+        "252757.691360156": 2,
+        "252577.550303954": 1,
+        "252555.56174026": 1,
+        "252565.495348883": 1,
+        "252567.63285492": 1,
+        "252757.387825788": 1,
+        "252890.526513758": 1,
+        "252905.609360428": 1
+      }
+    },
+    "y": {
+      "type": "Real",
+      "nonblank": 1098,
+      "distinct": 1085,
+      "top_values": {
+        "": 33,
+        "4202610.36645805": 4,
+        "4202682.75100613": 2,
+        "4202668.01049926": 2,
+        "4202712.93719433": 2,
+        "4202770.67166978": 2,
+        "4202793.13664561": 2,
+        "4202568.12242971": 2,
+        "4202818.93411642": 2,
+        "4202777.09097914": 2,
+        "4202588.03849058": 2,
+        "4202772.98080422": 2,
+        "4202621.31362714": 2,
+        "4202589.45071652": 1,
+        "4202583.04986689": 1,
+        "4202577.54963329": 1,
+        "4202594.45100207": 1,
+        "4202821.85208397": 1,
+        "4202690.35098182": 1,
+        "4202684.60928363": 1
+      }
+    },
+    "comment": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "reviewdate": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "desc_": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "action_req": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "value": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "reviewer": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "class": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "custom": {
+      "type": "String",
+      "nonblank": 0,
+      "distinct": 2,
+      "top_values": {
+        " ": 1098,
+        "": 33
+      }
+    },
+    "BLDG_ID": {
+      "type": "Integer",
+      "nonblank": 1115,
+      "distinct": 1102,
+      "top_values": {
+        "": 16,
+        "643": 4,
+        "150": 2,
+        "200": 2,
+        "239": 2,
+        "288": 2,
+        "300": 2,
+        "316": 2,
+        "386": 2,
+        "560": 2,
+        "777": 2,
+        "905": 2,
+        "1013": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1
+      }
+    },
+    "Shape__Area": {
+      "type": "Real",
+      "nonblank": 1131,
+      "distinct": 1123,
+      "top_values": {
+        "43.45703125": 2,
+        "202.484375": 2,
+        "101.765625": 2,
+        "33.3515625": 2,
+        "119.3828125": 2,
+        "73.171875": 2,
+        "354.30078125": 2,
+        "34.17578125": 2,
+        "242.37109375": 1,
+        "74.1796875": 1,
+        "96.859375": 1,
+        "194.07421875": 1,
+        "507.94140625": 1,
+        "37.39453125": 1,
+        "282.9921875": 1,
+        "285.09765625": 1,
+        "182.56640625": 1,
+        "73.3203125": 1,
+        "241.40234375": 1,
+        "105.90625": 1
+      }
+    },
+    "Shape__Length": {
+      "type": "Real",
+      "nonblank": 1131,
+      "distinct": 1131,
+      "top_values": {
+        "83.68634607297417": 1,
+        "34.70597144164342": 1,
+        "44.84914876975722": 1,
+        "64.69154795248942": 1,
+        "111.23240818742254": 1,
+        "25.288624531822112": 1,
+        "82.95895790322261": 1,
+        "72.93375123364352": 1,
+        "59.593596208111094": 1,
+        "34.27834403684712": 1,
+        "67.17897209746775": 1,
+        "43.946636295413384": 1,
+        "70.74166603204156": 1,
+        "61.966097356880745": 1,
+        "62.59448629221254": 1,
+        "73.92080390071379": 1,
+        "55.3568208541192": 1,
+        "219.25585251651725": 1,
+        "66.27436293835007": 1,
+        "35.116001536329144": 1
+      }
+    }
+  },
+  "rating_counts": {
+    "Noncontributing with qualifications": 31,
+    "NULL": 730,
+    "Contributing": 158,
+    "Supporting": 120,
+    "Noncontributing without qualifications": 71,
+    "Local Landmark": 19,
+    "Significant Landmark Interior": 2
+  },
+  "status_counts": {
+    "existing": 1006,
+    "new": 52,
+    "demolished": 9,
+    "unknown": 3,
+    "changed": 28,
+    "old structures map": 16,
+    "Galloping Goose": 1,
+    "NULL": 16
+  },
+  "display_class_counts": {
+    "other_or_unrated": 813,
+    "historic_rating": 293,
+    "legacy": 25
+  },
+  "historic_rating_records_including_legacy": 299,
+  "pre1900_count": null,
+  "undated_records": 1131,
+  "date_inference_performed": false,
+  "source_geometry_repairs_in_display_layer": [],
+  "contours": 244,
+  "contour_interval_m": 50,
+  "dem_range_m": [
+    2638.034423828125,
+    4142.22607421875
+  ],
+  "survey_review": {
+    "gis_date_fields": [],
+    "survey_index": "https://www.telluride.gov/391/2013-Telluride-Historic-Architectural-Su",
+    "consulted_form": "https://www.telluride.gov/DocumentCenter/View/2117/ColoradoAvenue103W-REVISED?bidId=",
+    "sample_address": "103 W. Colorado Avenue",
+    "sample_resource_id": "5SM.1541",
+    "sample_parcel": "477901119003",
+    "sample_construction_estimate": 1886,
+    "sample_date_is_estimate": true,
+    "sample_page": 3,
+    "sample_parcel_matches_in_inventory": 0,
+    "join_applied": false,
+    "reason": "Sample survey parcel not found in GIS PIN. Survey log uses site IDs and primary/secondary resources; source GIS has no matching site IDs or addresses. No dates propagated by proximity, district period, or shared parcel assumptions. A complete audited survey-to-footprint crosswalk is outside this first version.",
+    "pre1900_count": null,
+    "verified_joined_pre1900_records": 0,
+    "undated_records": 1131
+  },
+  "extents": {
+    "inventory_source": "249349.6865334839967545,4202116.8924561897292733 : 253893.5499670740100555,4204170.4100803602486849",
+    "streets": "249709.0062057439936325,4200893.7994421999901533 : 255558.7886316330113914,4204687.8179201297461987",
+    "Terrain contours": "248540.9127130970009603,4198558.5216712299734354 : 255818.0165376320073847,4206927.1910694399848580"
+  }
+}

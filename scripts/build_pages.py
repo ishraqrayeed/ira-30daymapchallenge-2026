@@ -31,6 +31,39 @@ DAY5_FILES = ('poster.html', 'README.md', 'map.qa.json', 'layout.qa.json',
               'analysis.json', 'source-manifest.json', 'map.results.md')
 
 
+DAY6_FILES = ('README.md', 'source-manifest.json', 'data-audit.json',
+              'survey-review.json', 'label-evidence.json', 'final-polish.qa.json', 'map.qa.json', 'validation.json', 'visual-review.json',
+              'web-data.qa.json', 'web.qa.json', 'highres-export.qa.json', 'linkedin-export.qa.json')
+
+
+DAY6_WEB_FILES = ('web/map-data.json', 'web/style.css', 'web/map-controls.js', 'web/app.js',
+                  'web/vendor/leaflet.js', 'web/vendor/leaflet.css', 'web/vendor/LEAFLET-LICENSE.txt')
+DAY6_EXPORTS = ('exports/day06_telluride.png', 'exports/day06_telluride_linkedin.png',
+                'exports/day06_telluride_3000x3750.png')
+
+
+def day6_artifacts(root: Path) -> Path | None:
+    source = root / 'maps/day06-vintage'
+    if not (source / 'exports/day06_telluride.png').exists():
+        return None
+    qa = json.loads((source / 'validation.json').read_text())
+    layout = json.loads((source / 'map.qa.json').read_text())
+    if not qa['passed'] or not qa['all_print_layers_vector'] or qa['archival_rasters_used']:
+        raise ValueError('Day 6 vector map validation failed')
+    if hashlib.sha256((source / 'exports/day06_telluride.png').read_bytes()).hexdigest() != layout['png_sha256']:
+        raise ValueError('Day 6 poster changed after QA')
+    web = json.loads((source / 'web.qa.json').read_text())
+    if not web['automated_checks_passed']:
+        raise ValueError('Day 6 interactive checks failed')
+    for name, digest in web['asset_sha256'].items():
+        if hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
+            raise ValueError(f'Day 6 browser asset changed after QA: {name}')
+    for name in ('map.html', *DAY6_FILES, *DAY6_WEB_FILES, *DAY6_EXPORTS):
+        if not (source / name).is_file():
+            raise ValueError(f'Day 6 artifact missing: {name}')
+    return source
+
+
 def day5_artifacts(root: Path) -> tuple[Path, dict] | None:
     source = root / 'maps/day05-sight'
     if not (source / 'map.html').exists():
@@ -140,6 +173,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
     third_day = day3_artifacts(root)
     fourth_day = day4_artifacts(root)
     fifth_day = day5_artifacts(root)
+    sixth_day = day6_artifacts(root)
     source = root / "maps/day01-points"
     html = source / "map.html"
     qa = source / "map.qa.json"
@@ -238,6 +272,17 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             else:
                 shutil.copyfile(source5 / name, day5 / name)
         print(f"Packaged {len(data5['shots'])} Day 5 shots and the approved portrait")
+    if sixth_day:
+        day6 = destination / 'day06-vintage'
+        for name in ('', 'index.html', *DAY6_FILES, *DAY6_WEB_FILES, *DAY6_EXPORTS):
+            if (day6 / name).is_symlink():
+                raise ValueError(f'Refusing to overwrite a Day 6 symlink: {name}')
+        day6.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(sixth_day / 'map.html', day6 / 'index.html')
+        for name in (*DAY6_FILES, *DAY6_WEB_FILES, *DAY6_EXPORTS):
+            (day6 / name).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(sixth_day / name, day6 / name)
+        print('Packaged Day 6 interactive vector atlas and 11.25 MP print export')
     (destination / ".nojekyll").touch()
     print(f"Packaged {len(points):,} crash events for Pages: {destination}")
     return destination

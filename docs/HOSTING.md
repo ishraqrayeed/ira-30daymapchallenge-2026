@@ -38,3 +38,7 @@ cluster map, with sourced processed data and analysis reports packaged separatel
 
 Day 5 lives at `/day05-sight/`: the approved 1620 × 1350 geometric shot study.
 `poster.html` and `interactive.html` redirect to the sole compact portrait. Raw source caches and separate event CSVs are not packaged.
+
+Day 6 lives at `/day06-vintage/`: the interactive Leaflet Telluride atlas,
+with locally bundled assets, public vector geometry, rating filters and verified
+landmark popups. Source caches remain excluded.

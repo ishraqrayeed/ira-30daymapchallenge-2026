@@ -1,0 +1,20 @@
+{
+  "dimensions_px": [
+    3000,
+    3750
+  ],
+  "megapixels": 11.25,
+  "aspect_ratio": "4:5",
+  "layout_render_dpi": 375,
+  "bytes": 2423576,
+  "rendered_from_qgis_vectors": true,
+  "upscaled_from_smaller_png": false,
+  "master_and_inventory_unchanged": true,
+  "editable_social_layout": "LinkedIn \u2014 larger type",
+  "sha256": "41c277efac80fe8c838b53d781b0ff192803478d4f915d84edd96962e5682140",
+  "original_sha256": {
+    "qgis/day06_telluride.qgz": "65bd79a4edb42ee966c5b655a8489bfe6af561e46b24d12ca663ed131811ab4a",
+    "exports/day06_telluride.png": "26d241bfa3b56d8520e035aaee518e15856ae1f1900a44bfd3a091f1faeb5d33",
+    "data/processed/telluride_inventory.gpkg": "161147f77e8c6a5811afb1bd87035fc3e992ca06d6a59bc08dfe0ed90dd631a0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "dimensions_px": [
+    1080,
+    1350
+  ],
+  "aspect_ratio": "4:5",
+  "bytes": 634444,
+  "format": "PNG",
+  "rendered_from_existing_qgis_layout": true,
+  "crop_or_stretch_applied": false,
+  "high_resolution_master_project_and_inventory_unchanged": true,
+  "output_sha256": "c2a79446f5f51402842263ebfce64e25fedeed98270af5c495782cba35c0e467",
+  "original_sha256": {
+    "qgis/day06_telluride.qgz": "47f96477bb0ba9e2177f720d7483226cb38ced343c371c83acbb49ca91cbd95d",
+    "exports/day06_telluride.png": "26d241bfa3b56d8520e035aaee518e15856ae1f1900a44bfd3a091f1faeb5d33",
+    "data/processed/telluride_inventory.gpkg": "161147f77e8c6a5811afb1bd87035fc3e992ca06d6a59bc08dfe0ed90dd631a0"
+  },
+  "specification_source": "https://www.linkedin.com/help/linkedin/answer/a527229/share-photos-or-videos?lang=en"
+}

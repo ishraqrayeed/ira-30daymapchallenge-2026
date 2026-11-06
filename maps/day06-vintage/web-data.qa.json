@@ -1,0 +1,22 @@
+{
+  "source_records": 1131,
+  "historic_rated_footprints": 293,
+  "unique_objectids": 1131,
+  "landmarks": 3,
+  "vector_layers": [
+    "buildings",
+    "streets",
+    "contours",
+    "river",
+    "landmarks",
+    "labels"
+  ],
+  "coordinate_crs": "EPSG:4326",
+  "contour_simplification_m": 1.0,
+  "inventory_simplified": false,
+  "public_properties": "Allowlisted rating, status, classification and source identifiers; no inferred dates",
+  "original_inventory_sha256": "161147f77e8c6a5811afb1bd87035fc3e992ca06d6a59bc08dfe0ed90dd631a0",
+  "source_inventory_unchanged": true,
+  "web_data_sha256": "5c327845411db161267f0ffabb9ca0686643d1cbe25a1ba5a3e235b73dd5728c",
+  "web_data_bytes": 1915622
+}

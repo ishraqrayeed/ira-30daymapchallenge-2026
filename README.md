@@ -53,6 +53,16 @@ The geometric goal opening from Lionel Messi's 35 recorded 2026 World Cup shots.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day05-sight/) ·
 [Data and methods](maps/day05-sight/README.md)
 
+## Day 6 — Vintage
+
+### TELLURIDE
+
+*Echoes of a Mining Town* — 293 footprints with historic ratings over fine USGS
+terrain contours. Preservation ratings do not imply construction dates.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day06-vintage/) ·
+[Data, QGIS project and reproduction](maps/day06-vintage/README.md)
+
 ## Run locally
 
 ```sh

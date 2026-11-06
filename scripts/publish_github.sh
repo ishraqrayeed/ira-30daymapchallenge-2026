@@ -24,6 +24,7 @@ python3 -m unittest discover -s tests -q
 if command -v node >/dev/null; then
   node tests/test_map_controls.js
   if [[ -f maps/day02-lines/map.html ]]; then node tests/test_trail_controls.js; fi
+  if [[ -f maps/day06-vintage/web/map-data.json ]]; then node tests/test_telluride_controls.js; fi
 fi
 
 if git_root="$(git rev-parse --show-toplevel 2>/dev/null)"; then
@@ -50,6 +51,12 @@ git add -- .gitignore .github AGENTS.md README.md PLAN.md \
   LICENSE requirements.txt environment.yml src scripts templates assets tests maps docs flagship \
   data/raw/.gitkeep data/interim/.gitkeep data/processed/.gitkeep \
   ':(exclude)maps/**/*.png'
+# Day 6 explicitly requires downloadable print exports. Keep other screenshot PNGs excluded.
+if [[ -f maps/day06-vintage/exports/day06_telluride.png ]]; then
+  git add -- maps/day06-vintage/exports/day06_telluride.png \
+    maps/day06-vintage/exports/day06_telluride_linkedin.png \
+    maps/day06-vintage/exports/day06_telluride_3000x3750.png
+fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"
 fi
