@@ -57,6 +57,10 @@ if [[ -f maps/day06-vintage/exports/day06_telluride.png ]]; then
     maps/day06-vintage/exports/day06_telluride_linkedin.png \
     maps/day06-vintage/exports/day06_telluride_3000x3750.png
 fi
+# Day 7 is the user-approved screenshot, published unchanged.
+if [[ -f maps/day07-10-minute/day7.png ]]; then
+  git add -- maps/day07-10-minute/day7.png
+fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"
 fi

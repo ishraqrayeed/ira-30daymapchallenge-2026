@@ -63,6 +63,15 @@ terrain contours. Preservation ratings do not imply construction dates.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day06-vintage/) ·
 [Data, QGIS project and reproduction](maps/day06-vintage/README.md)
 
+## Day 7 — Accessibility
+
+### Same city. Quite the journey.
+
+Denver Union Station to Denver International Airport: the supplied map, unchanged.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day07-10-minute/) ·
+[Map notes](maps/day07-10-minute/README.md)
+
 ## Run locally
 
 ```sh
