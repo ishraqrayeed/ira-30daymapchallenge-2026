@@ -61,6 +61,10 @@ fi
 if [[ -f maps/day07-10-minute/day7.png ]]; then
   git add -- maps/day07-10-minute/day7.png
 fi
+# Day 8 explicitly includes a downloadable LinkedIn poster.
+if [[ -f maps/day08-utopia/poster.png ]]; then
+  git add -- maps/day08-utopia/poster.png
+fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"
 fi

@@ -72,6 +72,16 @@ Denver Union Station to Denver International Airport: the supplied map, unchange
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day07-10-minute/) ·
 [Map notes](maps/day07-10-minute/README.md)
 
+## Day 8 — Utopia
+
+### What If DFW Had NYC’s Subway?
+
+An alternate reality where the Metroplex runs on rails. Ten fictional services
+connect real locations across Dallas–Fort Worth.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day08-utopia/) ·
+[Data, methods and poster](maps/day08-utopia/README.md)
+
 ## Run locally
 
 ```sh
