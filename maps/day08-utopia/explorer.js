@@ -34,8 +34,8 @@ function computeLabels(points,zoomLevel,chosen,width,height,measureText){
  for(const p of candidates){
   const major=majorIds.has(p.id),size=major?13:12,weight=major?750:600,text=stationById[p.id].name,tw=measureText(text,size,weight),gap=p.radius+7;
   const choices=[[gap,-8,'start'],[gap,size+5,'start'],[-gap,-8,'end'],[-gap,size+5,'end'],[0,-gap-3,'middle'],[0,gap+size,'middle'],[gap+10,4,'start'],[-gap-10,4,'end'],[0,-gap-20,'middle'],[0,gap+size+16,'middle']];
-  for(const [dx,dy,anchor] of choices){const x=p.x+dx,y=p.y+dy,left=x-(anchor==='end'?tw:anchor==='middle'?tw/2:0),box=[left-3,y-size-2,left+tw+3,y+4];
-   if(box[0]<6||box[2]>width-6||box[1]<6||box[3]>height-6)continue;
+  for(const [dx,dy,anchor] of choices){const x=p.x+dx,y=p.y+dy,left=x-(anchor==='end'?tw:anchor==='middle'?tw/2:0),box=[left-5,y-size-4,left+tw+5,y+6];
+   if(box[0]<10||box[2]>width-10||box[1]<10||box[3]>height-10)continue;
    if(boxes.some(b=>overlaps(box,b))||obstacles.some(b=>overlaps(box,b)))continue;
    placed.push({id:p.id,text,x,y,anchor,size,weight,box,muted:!!chosen&&!memberships[p.id].has(chosen)});boxes.push(box);break;
   }
