@@ -4,6 +4,7 @@ import concurrent.futures, hashlib, json, urllib.request, datetime
 ROOT=Path(__file__).resolve().parents[2]
 CACHE=ROOT/'data/raw/day08-utopia'
 SOURCES={
+'gnis-tx.zip':'https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/DomesticNames_TX_Text.zip',
 'places.zip':'https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_48_place_500k.zip',
 'airports.csv':'https://davidmegginson.github.io/ourairports-data/airports.csv',
 'dart.zip':'https://www.dart.org/transitdata/latest/google_transit.zip',

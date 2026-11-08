@@ -25,6 +25,7 @@ if command -v node >/dev/null; then
   node tests/test_map_controls.js
   if [[ -f maps/day02-lines/map.html ]]; then node tests/test_trail_controls.js; fi
   if [[ -f maps/day06-vintage/web/map-data.json ]]; then node tests/test_telluride_controls.js; fi
+  if [[ -f maps/day08-utopia/web.qa.json ]]; then python3 maps/day08-utopia/validate_web.py; fi
 fi
 
 if git_root="$(git rev-parse --show-toplevel 2>/dev/null)"; then
@@ -63,7 +64,7 @@ if [[ -f maps/day07-10-minute/day7.png ]]; then
 fi
 # Day 8 explicitly includes a downloadable LinkedIn poster.
 if [[ -f maps/day08-utopia/poster.png ]]; then
-  git add -- maps/day08-utopia/poster.png
+  git add -- maps/day08-utopia/poster.png maps/day08-utopia/day08-utopia-final.png
 fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"

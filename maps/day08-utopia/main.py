@@ -46,7 +46,8 @@ for f in existing:
  else:complexes.append((p,[f['properties']]))
 save('existing-stations.geojson',fc(existing));save('existing-routes.geojson',fc(rail))
 osm=J(RAW/'osm.json');elements=osm['elements'];places={e['tags']['name']:e for e in elements if e['type']=='node' and 'name' in e.get('tags',{}) and 'place' in e['tags']}
-places_census=gpd.read_file('zip://'+str(RAW/'places.zip')).set_index('NAME')
+gniszip=zipfile.ZipFile(RAW/'gnis-tx.zip')
+gnis={r['feature_name']:r for r in csv.DictReader(io.StringIO(gniszip.read('Text/DomesticNames_TX.txt').decode('utf-8-sig')),delimiter='|') if r['feature_class']=='Populated Place' and r['county_name'] in ['Dallas','Tarrant','Denton','Collin']}
 stations={}
 def a(key,source,label=None):
  f=anchors[source];stations[key]={'id':key,'name':label or f['properties']['name'].title().replace(' Station',''),'coordinates':f['geometry']['coordinates'],'anchor':'Existing rail station','source':source};return key
@@ -54,7 +55,7 @@ def o(key,name,label=None):
  if name in places:
   e=places[name];coord=[e['lon'],e['lat']];source='osm:'+str(e['id']);anchor='Fictional stop at a real OSM place'
  else:
-  row=places_census.loc[name];g=row.geometry.representative_point();coord=[g.x,g.y];source='census-place:'+row.GEOID;anchor='Fictional stop at Census place interior point'
+  r=gnis[name];coord=[float(r['prim_long_dec']),float(r['prim_lat_dec'])];source='USGS-GNIS:'+r['feature_id'];anchor='Fictional stop at official populated-place reference point'
  stations[key]={'id':key,'name':label or name,'coordinates':coord,'anchor':anchor,'source':source};return key
 # Shared IDs define interchanges exactly; no fabricated geographic coordinates.
 for key,source,label in [
@@ -70,7 +71,7 @@ SERVICES=[
  ('4','#007b43','North Dallas','frisco thecolony addison utd richardson forest park smu uptown arts deepellum fairpark lawnview buckner'),
  ('A','#0039a6','Airport Express','fw northside mercantile ironhorse smithfield grapevine dfwnorth dfw belt lascolinas university irving dallas'),
  ('C','#267bc0','Crosstown','southlake grapevine dfwnorth dfw euless centre gp arlington'),
- ('E','#713e9b','Eastern Arc','lewisville thecolony frisco allen mckinney plano cityline utd garland mesquite'),
+ ('E','#713e9b','Eastern Arc','lewisville thecolony frisco allen plano cityline jupiter garland mesquite'),
  ('B','#ff6319','Love & Culture','keller haltom fw tp arlington gp oakcliff zoo cedars dallas victory medical inwood love bachman lascolinas dfw'),
  ('D','#d69c00','Mid-Cities','fw trinitylakes hurst bell bedford euless dfw dfwnorth carrollton addison utd cityline jupiter garland'),
  ('F','#00a1de','Lakes & Arts','westmoreland tyler oakcliff dallas arts uptown smu whiterock lakehighlands jupiter garland')]

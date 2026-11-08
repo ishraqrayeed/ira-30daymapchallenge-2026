@@ -2,7 +2,7 @@
   "passed": true,
   "network_components": 1,
   "valid_coordinates": 74,
-  "edges": 95,
+  "edges": 94,
   "stations": 74,
   "services": 10,
   "source_anchored_all": true,
@@ -14,10 +14,13 @@
     3000
   ],
   "release_sha256": {
-    "map.html": "44832c76a837746e5fe39f362b52b73440b1b98603b3fc0ee133ba8a36f74451",
-    "poster.svg": "d92cc55d530a749c93a617a41b5b3339f35dc109c89d33796798a95b7020aca6",
-    "poster.png": "d50455fd52c8a976182ac1973944ae2c5b3f603821ff3dbc1e3787fc08f919c6",
-    "stations.geojson": "c7cd065cfbba3c2660ab2b458ea3fda59262352ec65cae2462e665aedd11e0d7",
-    "routes.geojson": "bba845e94df88466c094ca0a295f4cb06c5b51ab9b1777ab2924622d4cc810f4"
-  }
+    "map.html": "a7d134c4d7776e932ab6d40223312a3221727e7c10a38bc698969611152959fc",
+    "poster.svg": "969db1b0497be20e2911b172f4032a46a21779222b5c09d3571b3f79a68c4e11",
+    "poster.png": "8c7a83f185f0d68c88a115986fddcc8f81acb4d1df3b87855e95920cd73cc04c",
+    "stations.geojson": "0b8b4a99ba2b8e539a2d6e5697f905d8d71e1fa136136ad2e8c1d4cda61c423d",
+    "routes.geojson": "0d806dfcdd9b4518562c95d7b39816d21bc85b10eb28c11aca77a709fbaf7103"
+  },
+  "study_outline_matches_four_county_union": true,
+  "primary_output": "interactive HTML",
+  "web_qa": "web.qa.json"
 }

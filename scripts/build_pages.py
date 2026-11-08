@@ -300,9 +300,12 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
         if not qa8['passed'] or qa8['network_components'] != 1:
             raise ValueError('Day 8 network validation failed')
         day8 = destination / 'day08-utopia'
-        files8 = ('map.html', 'poster.png', 'poster.svg', 'README.md', 'map.qa.json',
+        files8 = ('map.html', 'poster.png', 'poster.svg', 'poster.html', 'poster-export.json', 'day08-utopia-final.png',
+                  'poster-offsets.json', 'poster-layout.qa.json', 'README.md', 'map.qa.json',
                   'source-manifest.json', 'benchmark.json', 'stations.geojson', 'routes.geojson',
-                  'existing-stations.geojson', 'existing-routes.geojson', 'context.geojson', 'boundaries.geojson')
+                  'existing-stations.geojson', 'existing-routes.geojson', 'context.geojson', 'boundaries.geojson',
+                  'study-region.geojson', 'streets.geojson', 'basemap-water.geojson',
+                  'basemap-highways.geojson', 'web.qa.json', 'explorer.js')
         for name in ('', 'index.html', *files8):
             if (day8 / name).is_symlink():
                 raise ValueError(f'Refusing to overwrite a Day 8 symlink: {name}')

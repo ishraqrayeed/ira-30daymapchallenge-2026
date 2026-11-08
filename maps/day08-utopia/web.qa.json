@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "primary_output": "interactive HTML",
+  "map_artboard_only": true,
+  "network_data_unchanged": true,
+  "stations": 74,
+  "services": 10,
+  "basemap_water_features": 60,
+  "basemap_highway_segments": 333,
+  "interaction_checks": [
+    "all ten filters and toggles",
+    "legend/dropdown/all synchronization",
+    "all 74 popup service memberships",
+    "37 transfer classifications",
+    "label collision checks at multiple zooms",
+    "markers never hidden",
+    "wheel and pinch zoom",
+    "bounded pan",
+    "camera reset",
+    "rail explanation and toggle",
+    "square layout and large scrollable legend"
+  ],
+  "tested_widths": [
+    1100,
+    390
+  ],
+  "square_aspect_ratio": "1:1",
+  "static_poster_unchanged": true,
+  "browser_visual_review": "Pending user check; native browser navigation interrupted by concurrent UI changes.",
+  "artifact_sha256": {
+    "map.html": "a7d134c4d7776e932ab6d40223312a3221727e7c10a38bc698969611152959fc",
+    "template.html": "fc9d6197cc89b66cd1549e14b8ca0cf6ff9310921df8bef88b8b346ecadcc793",
+    "explorer.js": "a9f47d9ad5443b7fa7ef79245bb8475b546a80b2aae44f32cb8604a42312754a",
+    "render.py": "ac171f6b0cb1d54d4340003a54fb14c45b7a747c3a4b8f808d25b4d23eed1f05",
+    "basemap-water.geojson": "4685a00f6aaae2583417fec5a3fead5dbadee536287b4f57f33b9d315e78c319",
+    "basemap-highways.geojson": "aead81d8f7f2f2e12ae7b96290c92baab4b3ec7fe1a3775dcef3686e9707eaed"
+  }
+}
