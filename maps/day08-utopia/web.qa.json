@@ -26,10 +26,10 @@
   ],
   "square_aspect_ratio": "1:1",
   "static_poster_unchanged": true,
-  "browser_visual_review": "Pending user check; native browser navigation interrupted by concurrent UI changes.",
+  "browser_visual_review": "Chrome Reality mode visually reviewed; found and corrected corridor casings masking existing rail. Final desktop/mobile visual review remains incomplete due concurrent browser changes.",
   "artifact_sha256": {
-    "map.html": "a7d134c4d7776e932ab6d40223312a3221727e7c10a38bc698969611152959fc",
-    "template.html": "fc9d6197cc89b66cd1549e14b8ca0cf6ff9310921df8bef88b8b346ecadcc793",
+    "map.html": "6ba47cab2b9ffd024df82b0cae91df34775b08956667bec666b6c380ce743609",
+    "template.html": "e0ca77c03ee05ec5692a96d5b6383177c9e7367ce20ae16bfa96b8554f53515c",
     "explorer.js": "a9f47d9ad5443b7fa7ef79245bb8475b546a80b2aae44f32cb8604a42312754a",
     "render.py": "ac171f6b0cb1d54d4340003a54fb14c45b7a747c3a4b8f808d25b4d23eed1f05",
     "basemap-water.geojson": "4685a00f6aaae2583417fec5a3fead5dbadee536287b4f57f33b9d315e78c319",

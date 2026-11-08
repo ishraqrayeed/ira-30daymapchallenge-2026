@@ -20,6 +20,7 @@ existing=root.find('.//s:g[@id="existing"]',ns)
 assert existing is not None and all(float(p.attrib['stroke-width'])==1.7 and p.attrib['stroke-dasharray']=='5 5' for p in existing)
 assert 'aspect-ratio:1/1' in page and 'overflow-x:auto' in page
 assert {p.attrib['data-station-type'] for p in root.findall('.//s:g[@class="station"]',ns)}=={'local','transfer','major'}
+assert '.reality #network' in page
 assert '__APP__' not in page
 sources=json.loads((H/'poster-layout.qa.json').read_text())['preserved_data_sha256']
 for name in ['map-data.json','stations.geojson','routes.geojson','benchmark.json','poster-offsets.json']:
@@ -28,7 +29,7 @@ water=json.loads((H/'basemap-water.geojson').read_text())['features'];roads=json
 assert {f['properties']['county'] for f in water}=={'Dallas','Tarrant','Denton','Collin'}
 assert all(f['properties']['kind']=='highway' for f in roads)
 subprocess.run(['node',str(H/'test_controls.js')],check=True)
-qa={'passed':True,'primary_output':'interactive HTML','map_artboard_only':True,'network_data_unchanged':True,'stations':74,'services':10,'basemap_water_features':len(water),'basemap_highway_segments':len(roads),'interaction_checks':['all ten filters and toggles','legend/dropdown/all synchronization','all 74 popup service memberships','37 transfer classifications','label collision checks at multiple zooms','markers never hidden','wheel and pinch zoom','bounded pan','camera reset','rail explanation and toggle','square layout and large scrollable legend'],'tested_widths':[1100,390],'square_aspect_ratio':'1:1','static_poster_unchanged':True,'browser_visual_review':'Pending user check; native browser navigation interrupted by concurrent UI changes.','artifact_sha256':{n:hashlib.sha256((H/n).read_bytes()).hexdigest() for n in ['map.html','template.html','explorer.js','render.py','basemap-water.geojson','basemap-highways.geojson']}}
+qa={'passed':True,'primary_output':'interactive HTML','map_artboard_only':True,'network_data_unchanged':True,'stations':74,'services':10,'basemap_water_features':len(water),'basemap_highway_segments':len(roads),'interaction_checks':['all ten filters and toggles','legend/dropdown/all synchronization','all 74 popup service memberships','37 transfer classifications','label collision checks at multiple zooms','markers never hidden','wheel and pinch zoom','bounded pan','camera reset','rail explanation and toggle','square layout and large scrollable legend'],'tested_widths':[1100,390],'square_aspect_ratio':'1:1','static_poster_unchanged':True,'browser_visual_review':'Chrome Reality mode visually reviewed; found and corrected corridor casings masking existing rail. Final desktop/mobile visual review remains incomplete due concurrent browser changes.','artifact_sha256':{n:hashlib.sha256((H/n).read_bytes()).hexdigest() for n in ['map.html','template.html','explorer.js','render.py','basemap-water.geojson','basemap-highways.geojson']}}
 (H/'web.qa.json').write_text(json.dumps(qa,indent=2)+'\n')
 p=H/'map.qa.json';q=json.loads(p.read_text());q['primary_output']='interactive HTML';q['web_qa']='web.qa.json';q.setdefault('release_sha256',{})['map.html']=qa['artifact_sha256']['map.html'];p.write_text(json.dumps(q,indent=2)+'\n')
 print('PASS geographic web view, full four-county water and highway basemap, unchanged transit data and interactive controls')
