@@ -22,7 +22,7 @@ function computeLabels(points,zoomLevel,chosen,width,height,measureText){
  const obstacles=visible.map(p=>[p.x-p.radius-3,p.y-p.radius-3,p.x+p.radius+3,p.y+p.radius+3]);
  const candidates=visible.filter(p=>{
   if(majorIds.has(p.id))return true;
-  if(terminalIds.has(p.id))return zoomLevel>=1.4;
+  if(terminalIds.has(p.id))return true;
   if(chosen&&memberships[p.id].has(chosen))return zoomLevel>=1.65;
   if(memberships[p.id].size>=2)return zoomLevel>=1.9;
   return zoomLevel>=2.8;
@@ -32,12 +32,18 @@ function computeLabels(points,zoomLevel,chosen,width,height,measureText){
  });
  const placed=[],boxes=[];
  for(const p of candidates){
-  const major=majorIds.has(p.id),size=major?13:12,weight=major?750:600,text=stationById[p.id].name,tw=measureText(text,size,weight),gap=p.radius+7;
+  const major=majorIds.has(p.id),size=major?(width<600?13:18):12,weight=major?750:600,text=stationById[p.id].name,gap=p.radius+7;
+  const lines=p.id==='dallas'?(zoomLevel<1.9?['Downtown Dallas']:['Downtown Dallas',text]):[text];
+  const tw=Math.max(...lines.map(t=>measureText(t,size,weight))),lineHeight=size*1.12,extra=(lines.length-1)*lineHeight;
   const choices=[[gap,-8,'start'],[gap,size+5,'start'],[-gap,-8,'end'],[-gap,size+5,'end'],[0,-gap-3,'middle'],[0,gap+size,'middle'],[gap+10,4,'start'],[-gap-10,4,'end'],[0,-gap-20,'middle'],[0,gap+size+16,'middle']];
-  for(const [dx,dy,anchor] of choices){const x=p.x+dx,y=p.y+dy,left=x-(anchor==='end'?tw:anchor==='middle'?tw/2:0),box=[left-5,y-size-4,left+tw+5,y+6];
+  // Major destinations can use farther clear positions around dense clusters.
+  if(major)for(const distance of [25,40,60,85,110,145,180])for(const dx of [-distance,0,distance])for(const dy of [-distance,0,distance])for(const anchor of ['start','end','middle'])choices.push([dx,dy,anchor]);
+  function* placements(){yield* choices;if(major){const fallback=[];for(let y=size+15;y<height-extra-15;y+=8)for(let x=15;x<width-tw-15;x+=8)fallback.push([x-p.x,y-p.y,'start']);fallback.sort((a,b)=>Math.hypot(a[0],a[1])-Math.hypot(b[0],b[1]));yield* fallback;}}
+
+  for(const [dx,dy,anchor] of placements()){const x=p.x+dx,y=p.y+dy,left=x-(anchor==='end'?tw:anchor==='middle'?tw/2:0),box=[left-5,y-size-4,left+tw+5,y+extra+6];
    if(box[0]<10||box[2]>width-10||box[1]<10||box[3]>height-10)continue;
    if(boxes.some(b=>overlaps(box,b))||obstacles.some(b=>overlaps(box,b)))continue;
-   placed.push({id:p.id,text,x,y,anchor,size,weight,box,muted:!!chosen&&!memberships[p.id].has(chosen)});boxes.push(box);break;
+   placed.push({id:p.id,text,lines,lineHeight,x,y,anchor,size,weight,box,muted:!!chosen&&!memberships[p.id].has(chosen)});boxes.push(box);break;
   }
  }
  return placed;
@@ -45,7 +51,7 @@ function computeLabels(points,zoomLevel,chosen,width,height,measureText){
 let currentLabels=[];
 function drawLabels(){
  currentLabels=computeLabels(stationPoints,level,selected,canvas.clientWidth,canvas.clientHeight,measure);labelsGroup.replaceChildren();const ratio=scale*W/1130;
- for(const l of currentLabels){const text=document.createElementNS(NS,'text');text.textContent=l.text;text.setAttribute('data-label',l.id);text.setAttribute('class','map-label');text.setAttribute('x',35+(l.x-tx)/ratio);text.setAttribute('y',305+(l.y-ty)/ratio);text.setAttribute('text-anchor',l.anchor);text.style.fontSize=(l.size/ratio)+'px';text.style.fontWeight=String(l.weight);text.style.fill='#172326';text.style.paintOrder='stroke';text.style.stroke='#f4f1e8';text.style.strokeWidth=String(3/ratio);text.style.strokeLinejoin='round';text.style.opacity=l.muted?'.4':'1';labelsGroup.append(text)}
+ for(const l of currentLabels){const text=document.createElementNS(NS,'text');for(let i=0;i<l.lines.length;i++){const span=document.createElementNS(NS,'tspan');span.textContent=l.lines[i];span.setAttribute('x',35+(l.x-tx)/ratio);span.setAttribute('dy',i?l.lineHeight/ratio:0);text.append(span);}text.setAttribute('data-label',l.id);text.setAttribute('class','map-label');text.setAttribute('x',35+(l.x-tx)/ratio);text.setAttribute('y',305+(l.y-ty)/ratio);text.setAttribute('text-anchor',l.anchor);text.style.fontSize=(l.size/ratio)+'px';text.style.fontWeight=String(l.weight);text.style.fill='#172326';text.style.paintOrder='stroke';text.style.stroke='#f4f1e8';text.style.strokeWidth=String(3/ratio);text.style.strokeLinejoin='round';text.style.opacity=l.muted?'.4':'1';labelsGroup.append(text)}
 }
 function routeBadge(id,popup=false){const p=routes[id],button=document.createElement('button');button.type='button';button.dataset.select=id;button.setAttribute('aria-label',`Highlight ${id} · ${p.name}`);button.setAttribute('aria-pressed',String(selected===id));
  if(popup){button.className='popup-route';button.textContent=id;button.style.background=p.color}else{button.className='route-choice';const badge=document.createElement('span'),name=document.createElement('span');badge.className='badge';badge.textContent=id;badge.style.background=p.color;name.textContent=p.name;button.append(badge,name)}
