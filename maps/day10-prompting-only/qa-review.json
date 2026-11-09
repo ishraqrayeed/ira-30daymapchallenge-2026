@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-08",
+  "scope": "Day 10 geographic correctness and zoom imagery; no deployment",
+  "geographic_tests": {
+    "result": "PASS",
+    "command": "node maps/day10-prompting-only/test_geo.js",
+    "global_coordinate_cases": 8029,
+    "includes": [
+      "Dhaka supplied coordinate example",
+      "Denver",
+      "London",
+      "equator",
+      "both poles",
+      "antimeridian",
+      "all six presets",
+      "180-degree central separation",
+      "double antipode",
+      "center-crossing 12742 km diameter",
+      "local country/ocean containment"
+    ]
+  },
+  "browser": {
+    "result": "PASS",
+    "browser": "Chrome, local HTTP",
+    "checks": [
+      "Dhaka to South Pacific Ocean",
+      "Denver to Indian Ocean",
+      "named preset labels",
+      "destination hidden until journey",
+      "rapid interaction guards",
+      "interior renders",
+      "marker coordinates match calculation",
+      "camera position and center ellipsoid ray match antipode",
+      "both directions of ellipsoid endpoint occlusion",
+      "displayed destination matches rendered marker",
+      "cross-section inspect/return",
+      "replay",
+      "reset",
+      "mid-journey reset cancels stale reveal",
+      "no captured console.error/runtime/unhandled promise errors"
+    ],
+    "city_imagery": {
+      "result": "PASS",
+      "location": "Dhaka",
+      "camera_height_m": 12000,
+      "checks": [
+        "actual camera reaches city scale",
+        "detail layer fully visible",
+        "tiles loaded",
+        "native browser screenshot visually inspected; buildings and streets resolved"
+      ]
+    },
+    "limits": "Desktop verification. Existing mobile styling preserved; no new mobile visual review in this focused fix."
+  },
+  "assets_sha256": {
+    "geo.js": "fa6e774737213edc4ba41d89dab947afb489a59b1738eecaf77e14ea19eb48b3",
+    "app.js": "a15174e0dc68a5e812d109dbdf96f2eb3651d387c5f65337b65e7d4d98c75556",
+    "map.html": "058df87a8a5fa476dddfbe0e3b798b2b9cf8bcc567240cf48495816bc6f25acb",
+    "style.css": "a0961b0d5551bf7df059daa414fe18b4f84b129ef4ca00abb2d221b3658f0db3"
+  }
+}

@@ -92,6 +92,16 @@ Compare and animate ten GHSL estimates of the valley’s developed footprint,
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day09-urban-rural/) ·
 [Data and methods](maps/day09-urban-rural/README.md)
 
+## Day 10 — Prompt Only
+
+### The Other Side of Earth
+
+Choose a city or any point on Earth, then travel through a schematic planetary
+cross-section to its calculated antipode.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day10-prompting-only/) ·
+[Sources and method](maps/day10-prompting-only/README.md)
+
 ## Run locally
 
 ```sh

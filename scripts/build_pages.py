@@ -42,6 +42,39 @@ DAY6_EXPORTS = ('exports/day06_telluride.png', 'exports/day06_telluride_linkedin
                 'exports/day06_telluride_3000x3750.png')
 
 
+DAY10_FILES = ('map.html', 'app.js', 'geo.js', 'style.css', 'README.md', 'qa-review.json',
+               'data/earth.jpg', 'data/admin_0_countries.geojson',
+               'data/geography_marine_polys.geojson', 'data/sources.json')
+
+
+def package_day10(root: Path, destination: Path) -> None:
+    """Package the antipode exhibit and its local Cesium runtime."""
+    source = root / 'maps/day10-prompting-only'
+    if not (source / 'map.html').is_file():
+        return
+    qa = json.loads((source / 'qa-review.json').read_text())
+    if qa['geographic_tests']['result'] != 'PASS' or qa['browser']['result'] != 'PASS':
+        raise ValueError('Day 10 geographic/browser QA has not passed')
+    for name, digest in qa['assets_sha256'].items():
+        if hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
+            raise ValueError(f'Day 10 asset changed after QA: {name}')
+    files = (*DAY10_FILES, *(str(p.relative_to(source)) for p in sorted((source / 'vendor').rglob('*')) if p.is_file()))
+    if not (source / 'vendor/Cesium/Cesium.js').is_file():
+        raise ValueError('Day 10 bundled Cesium runtime is missing')
+    target = destination / 'day10-prompting-only'
+    for name in files:
+        if not (source / name).is_file() or (source / name).is_symlink():
+            raise ValueError(f'Day 10 asset missing or symlinked: {name}')
+        relative = Path('index.html' if name == 'map.html' else name)
+        if target.is_symlink() or any((target / part).is_symlink() for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 10 symlink: {name}')
+    for name in files:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 10 antipode globe, geography and local Cesium runtime')
+
+
 def day6_artifacts(root: Path) -> Path | None:
     source = root / 'maps/day06-vintage'
     if not (source / 'exports/day06_telluride.png').exists():
@@ -333,6 +366,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day10(root, destination)
     (destination / ".nojekyll").touch()
     print(f"Packaged {len(points):,} crash events for Pages: {destination}")
     return destination
