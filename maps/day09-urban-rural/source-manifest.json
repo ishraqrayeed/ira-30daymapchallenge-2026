@@ -1,0 +1,205 @@
+{
+  "retrieved_utc": "2026-11-08",
+  "study_bbox_wgs84": [
+    -115.48,
+    35.96,
+    -114.98,
+    36.34
+  ],
+  "building_query_bbox_wgs84": [
+    -115.4,
+    36.05,
+    -115.05,
+    36.25
+  ],
+  "land_cover": {
+    "name": "USGS NLCD 2021 Land Cover L48",
+    "url": "https://www.mrlc.gov/geoserver/mrlc_display/wcs",
+    "coverage": "mrlc_display:NLCD_2021_Land_Cover_L48",
+    "terms": "USGS public-domain data; cite MRLC / USGS",
+    "epoch": 2021,
+    "source_resolution_m": 30
+  },
+  "buildings": {
+    "name": "OpenStreetMap height-tagged closed building ways",
+    "endpoint": "https://overpass.private.coffee/api/interpreter",
+    "terms": "ODbL 1.0; \u00a9 OpenStreetMap contributors",
+    "license": "https://www.openstreetmap.org/copyright",
+    "height_method": "Explicit height tag, converted feet to meters when present. No levels-to-height estimates. Not validated as measured LiDAR heights.",
+    "coverage": "Selective 526 buildings; excludes untagged footprints, relations and building:part-only geometries."
+  },
+  "lidar_investigation": {
+    "endpoint": "https://tnmaccess.nationalmap.gov/api/v1/products",
+    "dataset": "Lidar Point Cloud (LPC)",
+    "results": {
+      "strip": {
+        "total_intersecting_tiles": 22,
+        "sample_tiles": [
+          {
+            "title": "USGS Lidar Point Cloud NV_ClarkCounty_B22 773360_26737040",
+            "sizeInBytes": 560016802,
+            "publicationDate": "2023-06-15",
+            "metaUrl": "https://www.sciencebase.gov/catalog/item/648f0e8ad34ef77fcaffbda4",
+            "boundingBox": {
+              "minX": -115.1866351,
+              "maxX": -115.1686865,
+              "minY": 36.09658556,
+              "maxY": 36.11115089
+            }
+          },
+          {
+            "title": "USGS Lidar Point Cloud NV_ClarkCounty_B22 773360_26742320",
+            "sizeInBytes": 754775251,
+            "publicationDate": "2023-06-15",
+            "metaUrl": "https://www.sciencebase.gov/catalog/item/648f0f14d34ef77fcaffc26a",
+            "boundingBox": {
+              "minX": -115.1865622,
+              "maxX": -115.1686103,
+              "minY": 36.11109036,
+              "maxY": 36.12565568
+            }
+          },
+          {
+            "title": "USGS Lidar Point Cloud NV_ClarkCounty_B22 773360_26747600",
+            "sizeInBytes": 525581948,
+            "publicationDate": "2023-06-15",
+            "metaUrl": "https://www.sciencebase.gov/catalog/item/648f0e9dd34ef77fcaffbe52",
+            "boundingBox": {
+              "minX": -115.1864892,
+              "maxX": -115.1685339,
+              "minY": 36.12559512,
+              "maxY": 36.14016044
+            }
+          }
+        ]
+      },
+      "west": {
+        "total_intersecting_tiles": 31,
+        "sample_tiles": [
+          {
+            "title": "USGS Lidar Point Cloud NV_ClarkCounty_B22 720560_26747600",
+            "sizeInBytes": 164356736,
+            "publicationDate": "2023-06-15",
+            "metaUrl": "https://www.sciencebase.gov/catalog/item/648f0e95d34ef77fcaffbe06",
+            "boundingBox": {
+              "minX": -115.3522691,
+              "maxX": -115.347358,
+              "minY": 36.12608068,
+              "maxY": 36.14059516
+            }
+          },
+          {
+            "title": "USGS Lidar Point Cloud NV_ClarkCounty_B22 720560_26752880",
+            "sizeInBytes": 656469349,
+            "publicationDate": "2023-06-15",
+            "metaUrl": "https://www.sciencebase.gov/catalog/item/648f0ed7d34ef77fcaffc00a",
+            "boundingBox": {
+              "minX": -115.3652406,
+              "maxX": -115.3473145,
+              "minY": 36.14058567,
+              "maxY": 36.15512453
+            }
+          },
+          {
+            "title": "USGS Lidar Point Cloud NV_ClarkCounty_B22 720560_26758160",
+            "sizeInBytes": 683889795,
+            "publicationDate": "2023-06-15",
+            "metaUrl": "https://www.sciencebase.gov/catalog/item/648f0f32d34ef77fcaffc390",
+            "boundingBox": {
+              "minX": -115.3652004,
+              "maxX": -115.3472711,
+              "minY": 36.15509062,
+              "maxY": 36.16962946
+            }
+          }
+        ]
+      }
+    },
+    "used": false,
+    "reason": "Strip sample LAZ tiles are 525\u2013755 MB each; avoid bulk download / unreliable DSM minus DTM processing. No local PDAL installed. DEM and explicit OSM height fallback used."
+  },
+  "terrain": {
+    "name": "Esri Terrain 3D",
+    "url": "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
+    "terms": "Esri Master License Agreement; stream only, no offline tile export",
+    "item": "https://www.arcgis.com/home/item.html?id=7029fb60158543ad845c7e1527af11e4",
+    "vertical_units": "meters, orthometric per service metadata",
+    "coverage_date": "Multi-source, variable acquisition dates; not verified as Clark County LiDAR",
+    "token_required_for_tested_endpoint": false
+  },
+  "imagery": {
+    "name": "Esri World Imagery",
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "terms": "Esri Master License Agreement; stream only, no tile redistribution",
+    "item": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+    "coverage_date": "Mosaic; variable acquisition dates, not synchronous with NLCD or OSM"
+  },
+  "cesium": {
+    "version": "1.127.0",
+    "license": "Apache-2.0",
+    "cdn": "https://cdn.jsdelivr.net/npm/cesium@1.127.0/Build/Cesium/",
+    "ion_required": false
+  },
+  "places": {
+    "name": "US Census BAS 2026 incorporated cities and Census designated places",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer",
+    "layers": [
+      11,
+      12
+    ],
+    "terms": "US Census public domain",
+    "display_simplification_m": 10,
+    "counts": {
+      "cities": 3,
+      "cdps": 9
+    }
+  },
+  "topographic_basemap": {
+    "name": "Esri World Topographic Map",
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+    "terms": "Esri Master License Agreement; stream only, retain contributor attribution"
+  },
+  "cinematic_analysis": {
+    "method_script": "prepare_cinematic.py",
+    "crs": "EPSG:32611",
+    "boundary": "Existing NLCD 2021 500 m grid developed footprint, largest connected component exterior",
+    "selected_location": {
+      "lon": -115.01520157760292,
+      "lat": 36.175012475752276,
+      "name": "Eastern Sunrise Manor / Frenchman Mountain transition"
+    },
+    "site_evaluation": "Compared three Esri imagery previews; refined latitude using NLCD west/east zonal contrast",
+    "context_source": "https://www.clarkcountynv.gov/assets/documents/government/departments/comprehensive_planning_department/divisions/advanced_planning_division/cc-masterplan-web.pdf",
+    "reveal_method": "Distance bands originate at selected real eastern edge; 75 m near it, coarser farther away; intersected with whole urban footprint and local desert polygon. No silver line.",
+    "buffer_approximation": "128 segments per quadrant, simplified by at most 0.5 m before shared ring differences; independently tested within 2 m. Original developed footprint and border unchanged.",
+    "imagery_previews": "Local source cache only, not redistributed with site",
+    "distant_globe_surface": "Reference ellipsoid above 2000 km camera altitude avoids polar terrain cap artifact; real DEM below that altitude."
+  },
+  "globe_imagery": {
+    "name": "NASA GIBS BlueMarble_ShadedRelief_Bathymetry",
+    "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+    "service_parameters": {
+      "service": "WMS",
+      "version": "1.1.1",
+      "request": "GetMap",
+      "layers": "BlueMarble_ShadedRelief_Bathymetry",
+      "format": "image/jpeg",
+      "srs": "EPSG:4326",
+      "bbox": "-180,-90,180,90",
+      "width": 2048,
+      "height": 1024
+    },
+    "coverage": "Global satellite composite; not current-date photography",
+    "local_asset": "data/nasa-blue-marble.jpg",
+    "sha256": "b7c2ee592bae14fc1a60f4a2c75475693156cbbe093e057a1646d938df706d6a",
+    "attribution": "NASA GIBS / Blue Marble",
+    "method": "Direct WMS download; no AI imagery or image synthesis"
+  },
+  "active_project": "GHSL historical Las Vegas 1975\u20132020",
+  "historical_source": {
+    "metadata": "data/history.json",
+    "license": "CC BY 4.0, European Commission JRC",
+    "source": "https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php",
+    "temporal_warning": "Five-year model estimates, not independent observed footprints; 2020 source-extrapolated from 2018."
+  }
+}

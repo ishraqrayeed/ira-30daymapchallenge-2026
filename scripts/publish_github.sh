@@ -66,6 +66,10 @@ fi
 if [[ -f maps/day08-utopia/poster.png ]]; then
   git add -- maps/day08-utopia/poster.png maps/day08-utopia/day08-utopia-final.png
 fi
+# Day 9 PNGs are classified geographic textures required by the interactive map.
+if [[ -f maps/day09-urban-rural/data/history.json ]]; then
+  git add -- maps/day09-urban-rural/data/history/*.png
+fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"
 fi

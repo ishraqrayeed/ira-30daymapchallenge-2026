@@ -1,0 +1,38 @@
+{
+  "strip": {
+    "lon": -115.1728,
+    "lat": 36.1126,
+    "usgs_epqs": {
+      "location": {
+        "x": -115.1728,
+        "y": 36.1126,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "locationId": 0,
+      "value": "642.165161133",
+      "rasterId": 38111,
+      "resolution": 1
+    }
+  },
+  "desert": {
+    "lon": -115.419,
+    "lat": 36.151,
+    "usgs_epqs": {
+      "location": {
+        "x": -115.419,
+        "y": 36.151,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "locationId": 0,
+      "value": "1103.170410156",
+      "rasterId": 121511,
+      "resolution": 1
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "target": {
+    "lon": -115.01520157760292,
+    "lat": 36.175012475752276,
+    "range": 5000,
+    "heading": 0,
+    "pitch": -86
+  },
+  "regional": {
+    "lon": -115.19,
+    "lat": 36.16,
+    "range": 100000,
+    "heading": 0,
+    "pitch": -90
+  },
+  "world": {
+    "lon": -105,
+    "lat": 35,
+    "range": 22000000,
+    "heading": 0,
+    "pitch": -90
+  },
+  "duration_seconds": 10,
+  "band_step_m": 75,
+  "max_reveal_distance_m": 30675,
+  "local_reveal_distance_m": 4500,
+  "reveal_origin": "selected real eastern boundary, not all perimeter edges",
+  "area_crs": "EPSG:32611",
+  "selection": "Sunrise Manor / Frenchman Mountain eastern edge at 36.175 N; central imagery candidate selected over southern irregular edge and northern airfield. Refined from 36.190 N using NLCD contrast.",
+  "comparison": {
+    "west": {
+      "developed_pct": 90.49,
+      "sample_area_km2": 7.5
+    },
+    "east": {
+      "developed_pct": 1.73,
+      "sample_area_km2": 7.5
+    }
+  },
+  "urban_area_m2": 1006750000.0000054,
+  "local_urban_area_m2": 20234489.998534,
+  "desert_area_m2": 26805510.001465995,
+  "edge_length_m": 14171.02000293706,
+  "bands": 132,
+  "geometry_qa": {
+    "valid": true,
+    "overlap_m2": 0.0,
+    "partition_error_m2": 0.0,
+    "bands_cover_both_landscapes": true
+  },
+  "limitations": [
+    "Boundary resolution is 500 m NLCD zonal classification, not parcels or a surveyed urban limit",
+    "Desert polygon is outside the developed footprint within the study window, including roads and small isolated development",
+    "Esri imagery and NLCD 2021 differ in acquisition dates"
+  ]
+}

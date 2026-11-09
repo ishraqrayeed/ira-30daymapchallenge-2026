@@ -82,6 +82,16 @@ connect real locations across Dallas–Fort Worth.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day08-utopia/) ·
 [Data, methods and poster](maps/day08-utopia/README.md)
 
+## Day 9 — Urban–Rural
+
+### Las Vegas — The Desert That Became a City
+
+Compare and animate ten GHSL estimates of the valley’s developed footprint,
+1975–2020, over contemporary satellite imagery.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day09-urban-rural/) ·
+[Data and methods](maps/day09-urban-rural/README.md)
+
 ## Run locally
 
 ```sh

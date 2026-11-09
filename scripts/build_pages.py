@@ -313,6 +313,26 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
         for name in files8:
             shutil.copyfile(source8 / name, day8 / ('index.html' if name == 'map.html' else name))
         print('Packaged Day 8 fictional DFW subway and poster')
+    source9 = root / 'maps/day09-urban-rural'
+    if (source9 / 'map.html').is_file():
+        day9 = destination / 'day09-urban-rural'
+        files9 = ('map.html', 'app.js', 'cinematic-core.js', 'style.css', 'README.md',
+                  'source-manifest.json', 'qa-review.json', 'elevation-check.json',
+                  'data/nasa-blue-marble.jpg', 'data/history.json',
+                  'data/history-footprints.geojson', 'data/history-changes.geojson',
+                  *(str(p.relative_to(source9)) for p in sorted((source9 / 'data/history').glob('*.png'))))
+        for name in ('', 'index.html', 'data', *files9):
+            if (day9 / name).is_symlink():
+                raise ValueError(f'Refusing to overwrite a Day 9 symlink: {name}')
+        for name in files9:
+            if not (source9 / name).is_file():
+                raise ValueError(f'Day 9 artifact missing: {name}')
+        day9.mkdir(parents=True, exist_ok=True)
+        for name in files9:
+            target9 = day9 / ('index.html' if name == 'map.html' else name)
+            target9.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source9 / name, target9)
+        print('Packaged Day 9 Cesium landscape and processed GIS layers')
     (destination / ".nojekyll").touch()
     print(f"Packaged {len(points):,} crash events for Pages: {destination}")
     return destination
