@@ -1,0 +1,307 @@
+{
+  "passed": true,
+  "main_map_frame_share_below_subtitle": 0.7692,
+  "route_stroke_increase_percent": 50,
+  "interchange_radius": 8.2,
+  "ordinary_radius": 4.5,
+  "visible_main_station_labels": 23,
+  "hidden_minor_labels": 53,
+  "all_eight_major_destinations_visible": true,
+  "main_label_bounds_and_text_collisions_checked": true,
+  "station_positions_checked_against_geographic_projection": true,
+  "network_and_source_files_unchanged": true,
+  "preserved_data_sha256": {
+    "map.html": "4fcc26ccfef901ffa14d4c7d85a249930788b04f0d7a2e37c2a17b768e671748",
+    "map-data.json": "c9d59ca0c2ed5fd5518a1d143a9cf426913ee898f23287537fbdc0e3ab7aee90",
+    "stations.geojson": "0b8b4a99ba2b8e539a2d6e5697f905d8d71e1fa136136ad2e8c1d4cda61c423d",
+    "routes.geojson": "0d806dfcdd9b4518562c95d7b39816d21bc85b10eb28c11aca77a709fbaf7103",
+    "source-manifest.json": "e3a296da95edca99a8c6d3091eebf938fa0ba0490f52cc3631a8413ab4f6ccab",
+    "poster-offsets.json": "5bf4a9bd3d7e4bdec19b9dc1c1824d9c6d1ff0796cade889f191170ffe9e83c4",
+    "benchmark.json": "90c201f6f745209e273a807b938704f6861448f57d326210465786f5664ed493"
+  },
+  "export_pixels": [
+    2400,
+    3000
+  ],
+  "visual_review": [
+    "2400x3000 in four 1:1 crops",
+    "800x1000 feed preview"
+  ],
+  "publication": "local revision only",
+  "interactive_map": "Updated to final poster artboard for localhost at user request; network data and controls retained",
+  "artifact_sha256": {
+    "poster.svg": "969db1b0497be20e2911b172f4032a46a21779222b5c09d3571b3f79a68c4e11",
+    "poster.png": "8c7a83f185f0d68c88a115986fddcc8f81acb4d1df3b87855e95920cd73cc04c",
+    "day08-utopia-final.png": "8c7a83f185f0d68c88a115986fddcc8f81acb4d1df3b87855e95920cd73cc04c",
+    "map.html": "4fcc26ccfef901ffa14d4c7d85a249930788b04f0d7a2e37c2a17b768e671748",
+    "poster-offsets.json": "5bf4a9bd3d7e4bdec19b9dc1c1824d9c6d1ff0796cade889f191170ffe9e83c4"
+  },
+  "route_stroke_previous": 5.7,
+  "route_stroke_current": 8.55,
+  "inset_removed": true,
+  "roads_removed_from_poster": true,
+  "verified_transfer_count": 37,
+  "transfer_definition": "Distinct station ID served by two or more distinct services; crossings excluded",
+  "transfer_station_services": {
+    "dallas": [
+      "1",
+      "2",
+      "3",
+      "A",
+      "B",
+      "F"
+    ],
+    "westend": [
+      "1",
+      "2",
+      "3"
+    ],
+    "arts": [
+      "1",
+      "4",
+      "F"
+    ],
+    "victory": [
+      "2",
+      "3",
+      "B"
+    ],
+    "uptown": [
+      "2",
+      "4",
+      "F"
+    ],
+    "smu": [
+      "2",
+      "4",
+      "F"
+    ],
+    "park": [
+      "2",
+      "4"
+    ],
+    "forest": [
+      "2",
+      "4"
+    ],
+    "richardson": [
+      "2",
+      "4"
+    ],
+    "cityline": [
+      "2",
+      "D",
+      "E"
+    ],
+    "plano": [
+      "2",
+      "E"
+    ],
+    "utd": [
+      "4",
+      "D"
+    ],
+    "addison": [
+      "4",
+      "D"
+    ],
+    "carrollton": [
+      "3",
+      "D"
+    ],
+    "bachman": [
+      "3",
+      "B"
+    ],
+    "inwood": [
+      "3",
+      "B"
+    ],
+    "medical": [
+      "3",
+      "B"
+    ],
+    "irving": [
+      "1",
+      "A"
+    ],
+    "lascolinas": [
+      "A",
+      "B"
+    ],
+    "dfw": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "dfwnorth": [
+      "A",
+      "C",
+      "D"
+    ],
+    "grapevine": [
+      "A",
+      "C"
+    ],
+    "fw": [
+      "1",
+      "A",
+      "B",
+      "D"
+    ],
+    "trinitylakes": [
+      "1",
+      "D"
+    ],
+    "lewisville": [
+      "3",
+      "E"
+    ],
+    "garland": [
+      "D",
+      "E",
+      "F"
+    ],
+    "jupiter": [
+      "D",
+      "E",
+      "F"
+    ],
+    "deepellum": [
+      "1",
+      "4"
+    ],
+    "fairpark": [
+      "1",
+      "4"
+    ],
+    "arlington": [
+      "1",
+      "B",
+      "C"
+    ],
+    "gp": [
+      "1",
+      "B",
+      "C"
+    ],
+    "mesquite": [
+      "1",
+      "E"
+    ],
+    "frisco": [
+      "4",
+      "E"
+    ],
+    "oakcliff": [
+      "2",
+      "B",
+      "F"
+    ],
+    "euless": [
+      "C",
+      "D"
+    ],
+    "thecolony": [
+      "4",
+      "E"
+    ],
+    "allen": [
+      "2",
+      "E"
+    ]
+  },
+  "uniform_background_no_boundary_fragments": true,
+  "documented_display_offsets": {
+    "units": "SVG artboard units; display only",
+    "scope": "Downtown Dallas and its immediate northwest approach",
+    "source_coordinates_modified": false,
+    "offsets": {
+      "dallas": [
+        -19,
+        18.3
+      ],
+      "westend": [
+        -20.4,
+        -3.9
+      ],
+      "akard": [
+        -0.2,
+        1.6
+      ],
+      "arts": [
+        4,
+        -18.6
+      ],
+      "deepellum": [
+        21,
+        -14.6
+      ],
+      "fairpark": [
+        14.4,
+        3.8
+      ],
+      "victory": [
+        -8.7,
+        -18.2
+      ],
+      "uptown": [
+        0.7,
+        -22.2
+      ],
+      "cedars": [
+        2.7,
+        14.2
+      ],
+      "inwood": [
+        -5.3,
+        -20.7
+      ],
+      "medical": [
+        -13.5,
+        -9.3
+      ],
+      "market": [
+        -22.1,
+        2.7
+      ]
+    }
+  },
+  "terminal_count": 15,
+  "terminal_names": {
+    "dallas": "Dallas Union",
+    "dfw": "DFW Airport",
+    "fw": "Fort Worth Central",
+    "denton": "Downtown Denton",
+    "lewisville": "Old Town Lewisville",
+    "garland": "Downtown Garland",
+    "buckner": "Buckner",
+    "westmoreland": "Westmoreland",
+    "arlington": "Arlington",
+    "mesquite": "Mesquite",
+    "frisco": "Frisco",
+    "mckinney": "McKinney",
+    "southlake": "Southlake",
+    "keller": "Keller",
+    "cedarhill": "Cedar Hill"
+  },
+  "terminal_labels_exact_dataset_names": true,
+  "verified_station_count": 74,
+  "count_deduplication": "Unique station IDs and unique geographic locations verified; distinct service IDs per station",
+  "label_leaders_avoid_other_station_symbols": true,
+  "additional_header_padding_export_px": 36,
+  "downtown_dallas_area_label": {
+    "text": "DOWNTOWN DALLAS",
+    "station_or_transfer_added": false,
+    "font_size": 22,
+    "position": [
+      860,
+      890
+    ]
+  },
+  "additional_fort_worth_labels": [
+    "North Side",
+    "T&P"
+  ]
+}

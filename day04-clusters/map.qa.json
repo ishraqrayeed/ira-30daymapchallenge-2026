@@ -1,0 +1,50 @@
+{
+  "all_points_match_dataset": true,
+  "all_points_in_manhattan": true,
+  "explicit_halal_evidence_all_locations": true,
+  "no_duplicate_ids_or_exact_name_coordinates": true,
+  "dbscan_recomputed_projected_metres": true,
+  "all_envelopes_valid_and_cover_members": true,
+  "statistics": {
+    "epsilon_m": 450.0,
+    "min_samples": 3,
+    "metric": "Euclidean",
+    "crs": "EPSG:32618",
+    "units": "metres",
+    "core_locations": 85,
+    "clusters": 14,
+    "clustered_locations": 92,
+    "noise_locations": 29,
+    "percentage_clustered": 76.03,
+    "membership_counts": {
+      "-1": 29,
+      "0": 3,
+      "1": 25,
+      "2": 7,
+      "3": 10,
+      "4": 3,
+      "5": 11,
+      "6": 3,
+      "7": 5,
+      "8": 6,
+      "9": 4,
+      "10": 3,
+      "11": 4,
+      "12": 4,
+      "13": 4
+    }
+  },
+  "locations": 121,
+  "labels_match_clusters": true,
+  "csv_sha256": "42e85c5266e88933465003d4892f1009f09f65bc81acce3c283a5f52c2741980",
+  "config_sha256": "6cb1e9222aa813d71676c025281935ce2c1393aeeaa40daf67ca8cc74bb3376f",
+  "html_sha256": "ea2969f8d79dda8af4f07a48465584f7442835c37ea970740d8e5370297dfcf2",
+  "artifact_sha256": {
+    "manhattan_halal_locations.csv": "42e85c5266e88933465003d4892f1009f09f65bc81acce3c283a5f52c2741980",
+    "manhattan_halal_clusters.geojson": "f6cb901b0f9ef2352548b102216f0eb64165ad746697a1a0b2de4b55da2aeb76",
+    "manhattan_boundary.geojson": "04b8a2f0336118b501b6f1ece4363c34d27fab6dc921c2bf263550baecb33d50",
+    "analysis.json": "e96c99a210c137e1408af6fe3004374cef24e413513cfe8bf1719d5098661293",
+    "day04_audit.json": "79cf80993e20bd7c3fd8e2afde9331e33a831c47c4093283f644b58b36531d1b"
+  },
+  "caveat": "No known duplicates after reviewed identity merges; source staleness and co-location ambiguity cannot be ruled out."
+}

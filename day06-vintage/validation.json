@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "full_source_attributes_and_geometry_preserved": true,
+  "source_records": 1131,
+  "street_edges": 430,
+  "contour_features": 244,
+  "all_print_layers_vector": true,
+  "archival_rasters_used": false,
+  "construction_years_inferred": false,
+  "pre1900_count": null,
+  "all_source_records_undated": true,
+  "display_classes": {
+    "other_or_unrated": 813,
+    "historic_rating": 293,
+    "legacy": 25
+  },
+  "project_reopened": true,
+  "png_dimensions": [
+    2400,
+    3000
+  ],
+  "unchanged_geopackage_verified": true,
+  "linear_map_scale_multiplier": 2.2848,
+  "graphic_legend_swatches_verified": 3,
+  "highlighted_footprints_verified": 293,
+  "downtown_highlighted_footprints": 292,
+  "full_inventory_visible_in_inset": true,
+  "inset_extent_locator_verified": true
+}

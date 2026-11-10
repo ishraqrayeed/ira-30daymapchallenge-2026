@@ -1,0 +1,55 @@
+{
+  "units": "SVG artboard units; display only",
+  "scope": "Downtown Dallas and its immediate northwest approach",
+  "source_coordinates_modified": false,
+  "offsets": {
+    "dallas": [
+      -19,
+      18.3
+    ],
+    "westend": [
+      -20.4,
+      -3.9
+    ],
+    "akard": [
+      -0.2,
+      1.6
+    ],
+    "arts": [
+      4,
+      -18.6
+    ],
+    "deepellum": [
+      21,
+      -14.6
+    ],
+    "fairpark": [
+      14.4,
+      3.8
+    ],
+    "victory": [
+      -8.7,
+      -18.2
+    ],
+    "uptown": [
+      0.7,
+      -22.2
+    ],
+    "cedars": [
+      2.7,
+      14.2
+    ],
+    "inwood": [
+      -5.3,
+      -20.7
+    ],
+    "medical": [
+      -13.5,
+      -9.3
+    ],
+    "market": [
+      -22.1,
+      2.7
+    ]
+  }
+}

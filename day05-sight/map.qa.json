@@ -1,0 +1,17 @@
+{
+  "all_35_events_have_coordinates": true,
+  "all_8_matches_crosschecked": true,
+  "all_source_minute_multisets_match_fifa": true,
+  "unique_event_ids": true,
+  "penalties_at_11_metres": true,
+  "all_points_in_pitch": true,
+  "goal_width_m": 7.32,
+  "penalty_sight_angle_deg": 36.807381798785855,
+  "central_angle_greater_than_wide": true,
+  "near_angle_greater_than_far": true,
+  "shots": 35,
+  "goals": 8,
+  "geometry_population": 33,
+  "publication_ready": false,
+  "processed_csv_sha256": "4235609b1e76ff5e3eb6f5df00c8e457d58362bfdc657ceaee186f7fc90b271a"
+}

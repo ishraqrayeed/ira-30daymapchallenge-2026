@@ -1,0 +1,33 @@
+{
+  "automated_checks_passed": true,
+  "interactive_vector_features": 1131,
+  "historic_rated_footprints": 293,
+  "verified_landmarks": 3,
+  "checks": [
+    "unique source IDs and class counts",
+    "rating popup content and HTML escaping",
+    "classification filter toggles",
+    "landmark selection and selected popup",
+    "downtown and full-town extents",
+    "terrain toggle",
+    "rating dialog",
+    "data load error handling",
+    "local asset and print download paths",
+    "JavaScript syntax",
+    "11.25 MP export checksum"
+  ],
+  "browser_visual_review_passed": false,
+  "browser_visual_review_limit": "Browser runtime lists no connected browsers; in-app browser reports unavailable. Desktop and mobile visual review of the new interactive page could not be completed in this session.",
+  "publication_authorized": true,
+  "authorization": "User requested a GitHub Page like the other days.",
+  "asset_sha256": {
+    "map.html": "c62d1ccef123ece8cb900aeba2a1b3dc8b5a09108b848c484dbc4fa2defc60fd",
+    "web/map-data.json": "5c327845411db161267f0ffabb9ca0686643d1cbe25a1ba5a3e235b73dd5728c",
+    "web/style.css": "32b0e2b6c563f109ff0ee6886e49b16a51aafcb0c5d7c0768660fae415e3434a",
+    "web/map-controls.js": "fffff6f9c398342ea42a5868b307c91a18381e9c5a3f3ebbae02e9ac8f5e4908",
+    "web/app.js": "eac077491c4bd8d4f0f2255681ba7faffb960c78c402551fb4d0e9b239295864",
+    "web/vendor/leaflet.js": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+    "web/vendor/leaflet.css": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+    "web/vendor/LEAFLET-LICENSE.txt": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+  }
+}

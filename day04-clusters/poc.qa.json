@@ -1,0 +1,9 @@
+{
+  "locations": 121,
+  "models_recomputed": 20,
+  "all_points_inside_manhattan": true,
+  "all_hulls_cover_members": true,
+  "all_model_counts_match": true,
+  "csv_sha256": "42e85c5266e88933465003d4892f1009f09f65bc81acce3c283a5f52c2741980",
+  "stage": "Exploratory comparison; default matches the reviewed final model"
+}

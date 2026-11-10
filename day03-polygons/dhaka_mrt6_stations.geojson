@@ -1,0 +1,485 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Uttara North",
+        "latitude": 23.869106699999996,
+        "longitude": 90.3675303,
+        "station_order": 1,
+        "source": "https://www.openstreetmap.org/node/10292253840",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 63.2409129550356,
+        "rail_snap_m": 15.656525630616935,
+        "metro_minutes_from_farmgate": 25.688407039160936,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 9894415499,
+            "snap_distance_m": 70.08636837468849,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3675303,
+          23.869106699999996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Uttara Center",
+        "latitude": 23.859720700000004,
+        "longitude": 90.3651833,
+        "station_order": 2,
+        "source": "https://www.openstreetmap.org/node/10292253837",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 10.17628605728972,
+        "rail_snap_m": 5.857410883290915,
+        "metro_minutes_from_farmgate": 23.406577307835086,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 12850190291,
+            "snap_distance_m": 75.66096733629651,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3651833,
+          23.859720700000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Uttara South",
+        "latitude": 23.845904399999995,
+        "longitude": 90.3631526,
+        "station_order": 3,
+        "source": "https://www.openstreetmap.org/node/10292253843",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 11.325820820621125,
+        "rail_snap_m": 7.0154193488437855,
+        "metro_minutes_from_farmgate": 20.377908486409346,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 13135781240,
+            "snap_distance_m": 20.33172585848115,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3631526,
+          23.845904399999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Pallabi",
+        "latitude": 23.826157399999996,
+        "longitude": 90.3641863,
+        "station_order": 4,
+        "source": "https://www.openstreetmap.org/node/6292785241",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 8.571522114135648,
+        "rail_snap_m": 2.650387663748192,
+        "metro_minutes_from_farmgate": 16.254921026369626,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 476669769,
+            "snap_distance_m": 17.151956563311128,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3641863,
+          23.826157399999996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Mirpur 11",
+        "latitude": 23.819095899999994,
+        "longitude": 90.3652809,
+        "station_order": 5,
+        "source": "https://www.openstreetmap.org/node/10294007262",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 16.00632176312012,
+        "rail_snap_m": 2.823520434538921,
+        "metro_minutes_from_farmgate": 14.454554250142008,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 4380106699,
+            "snap_distance_m": 6.287595494869478,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3652809,
+          23.819095899999994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Mirpur 10",
+        "latitude": 23.8083649,
+        "longitude": 90.3682614,
+        "station_order": 6,
+        "source": "https://www.openstreetmap.org/node/6292785240",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 26.95239306260198,
+        "rail_snap_m": 1.8434534512166953,
+        "metro_minutes_from_farmgate": 11.944137869180278,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 4206195375,
+            "snap_distance_m": 1.4182102728872577,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3682614,
+          23.8083649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Kazipara",
+        "latitude": 23.7992408,
+        "longitude": 90.3719878,
+        "station_order": 7,
+        "source": "https://www.openstreetmap.org/node/10294007258",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 30.08446543729696,
+        "rail_snap_m": 3.323096864420803,
+        "metro_minutes_from_farmgate": 9.672299935895511,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 208516164,
+            "snap_distance_m": 23.337385826962365,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3719878,
+          23.7992408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Shewrapara",
+        "latitude": 23.7909631,
+        "longitude": 90.3755087,
+        "station_order": 8,
+        "source": "https://www.openstreetmap.org/node/6292785237",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 2.61228928565592,
+        "rail_snap_m": 3.5296289320977805,
+        "metro_minutes_from_farmgate": 7.559100505100027,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 12102727017,
+            "snap_distance_m": 22.195895796220977,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3755087,
+          23.7909631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Agargaon",
+        "latitude": 23.7784275,
+        "longitude": 90.3800503,
+        "station_order": 9,
+        "source": "https://www.openstreetmap.org/node/6292785236",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 10.200739524577989,
+        "rail_snap_m": 11.531423604070115,
+        "metro_minutes_from_farmgate": 4.656135136320495,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 3717811427,
+            "snap_distance_m": 14.616522624438995,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3800503,
+          23.7784275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Bijoy Sarani",
+        "latitude": 23.766545337022084,
+        "longitude": 90.38311138567897,
+        "station_order": 10,
+        "source": "https://www.openstreetmap.org/way/1125773738",
+        "coordinate_definition": "station building centroid",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 22.832015748699302,
+        "rail_snap_m": 17.10889907677735,
+        "metro_minutes_from_farmgate": 1.9093625947204895,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 1554704098,
+            "snap_distance_m": 36.58575441588849,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.38311138567897,
+          23.766545337022084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Farmgate",
+        "latitude": 23.759042993553102,
+        "longitude": 90.38708776957866,
+        "station_order": 11,
+        "source": "https://www.openstreetmap.org/way/1125768748",
+        "coordinate_definition": "station building centroid",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 75.25808406652118,
+        "rail_snap_m": 3.9436610540441785,
+        "metro_minutes_from_farmgate": 0.0,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 14309822091,
+            "snap_distance_m": 54.43737985993228,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.38708776957866,
+          23.759042993553102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Karwan Bazar",
+        "latitude": 23.751265599999996,
+        "longitude": 90.3927762,
+        "station_order": 12,
+        "source": "https://www.openstreetmap.org/node/10294576119",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 32.633640892699404,
+        "rail_snap_m": 5.836468747780563,
+        "metro_minutes_from_farmgate": 1.8850883602232453,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 2320379662,
+            "snap_distance_m": 20.735792021141826,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3927762,
+          23.751265599999996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Shahbagh",
+        "latitude": 23.739464999999996,
+        "longitude": 90.3959846,
+        "station_order": 13,
+        "source": "https://www.openstreetmap.org/node/10294553581",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 13.003482293359054,
+        "rail_snap_m": 67.79171234243822,
+        "metro_minutes_from_farmgate": 4.512131244026044,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": 4892566480,
+            "network_node": 4892566480,
+            "snap_distance_m": 0.0,
+            "station_center_fallback": false
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3959846,
+          23.739464999999996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Dhaka University",
+        "latitude": 23.7316827,
+        "longitude": 90.3968231,
+        "station_order": 14,
+        "source": "https://www.openstreetmap.org/node/10294553569",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 35.366086999664454,
+        "rail_snap_m": 2.6142441052704903,
+        "metro_minutes_from_farmgate": 6.601901923668276,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 2320155074,
+            "snap_distance_m": 11.580459746500178,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3968231,
+          23.7316827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Bangladesh Secretariat",
+        "latitude": 23.7300126,
+        "longitude": 90.4074836,
+        "station_order": 15,
+        "source": "https://www.openstreetmap.org/node/10294553574",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 39.41776207234427,
+        "rail_snap_m": 5.348874121027834,
+        "metro_minutes_from_farmgate": 9.269056093815534,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 5838723973,
+            "snap_distance_m": 5.819583651749102,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4074836,
+          23.7300126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_name": "Motijheel",
+        "latitude": 23.7280587,
+        "longitude": 90.4190551,
+        "station_order": 16,
+        "source": "https://www.openstreetmap.org/node/10997298523",
+        "coordinate_definition": "mapped station node",
+        "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+        "coordinate_crosscheck_distance_m": 134.24232318736514,
+        "rail_snap_m": 3.272170218286179,
+        "metro_minutes_from_farmgate": 11.81159296083906,
+        "walking_access_points": [
+          {
+            "osm_entrance_node": null,
+            "network_node": 6139734195,
+            "snap_distance_m": 10.702047089909811,
+            "station_center_fallback": true
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4190551,
+          23.7280587
+        ]
+      }
+    }
+  ]
+}

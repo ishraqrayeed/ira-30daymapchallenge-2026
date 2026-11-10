@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "network_components": 1,
+  "valid_coordinates": 74,
+  "edges": 94,
+  "stations": 74,
+  "services": 10,
+  "source_anchored_all": true,
+  "all_routes_pass_through_stations": true,
+  "shared_interchange_ids": true,
+  "independent_validation_passed": true,
+  "poster_pixels": [
+    2400,
+    3000
+  ],
+  "release_sha256": {
+    "map.html": "d0985dc6208ba17275f03dcf16945eb7a9feb3ec6f74e93378c195864d7e3bcd",
+    "poster.svg": "969db1b0497be20e2911b172f4032a46a21779222b5c09d3571b3f79a68c4e11",
+    "poster.png": "8c7a83f185f0d68c88a115986fddcc8f81acb4d1df3b87855e95920cd73cc04c",
+    "stations.geojson": "0b8b4a99ba2b8e539a2d6e5697f905d8d71e1fa136136ad2e8c1d4cda61c423d",
+    "routes.geojson": "0d806dfcdd9b4518562c95d7b39816d21bc85b10eb28c11aca77a709fbaf7103"
+  },
+  "study_outline_matches_four_county_union": true,
+  "primary_output": "interactive HTML",
+  "web_qa": "web.qa.json"
+}

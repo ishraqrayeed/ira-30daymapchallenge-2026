@@ -1,0 +1,63 @@
+{
+  "project": "Las Vegas 1975\u20132020 swipe comparison and historical timeline",
+  "date": "2026-11-08",
+  "automated_gis": "PASS: native-grid counts, epoch deltas/gains/losses, vector equal-area agreement and raster display partitions",
+  "timeline_unit_tests": "PASS: nine discrete source epochs and continuous camera interpolation",
+  "browser": "Latest focused Chrome run: PASS, 18 refinement checks; desktop and mobile layouts inspected.",
+  "sources": {
+    "epochs": [
+      1975,
+      1980,
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2015,
+      2020
+    ],
+    "threshold_built_surface_m2": 1000,
+    "first_developed_km2": 289.36,
+    "last_developed_km2": 836.62,
+    "change_pct": 189.1277,
+    "classified_losses_km2": 0
+  },
+  "limitations": [
+    "GHSL modeled five-year estimates, not independent observed footprints",
+    "2020 source-extrapolated from 2018",
+    "Contemporary satellite backdrop, not historical photography",
+    "100 m threshold footprint differs from built-up surface and land conversion",
+    "External imagery/terrain availability; cold preparation may exceed animation duration"
+  ],
+  "performance": "Endpoint textures and basemap prepared before interaction; all epoch layers warmed before playback. No globe flight in visible controls. Approx. 634 MB Chrome tab memory with QA iframe after timeline test; not a benchmark or a guarantee on every GPU/network.",
+  "refinement_review": {
+    "browser": "Chrome",
+    "functional_checks": 18,
+    "result": "PASS",
+    "checked": [
+      "45% identical endpoint opacity",
+      "Dynamic 2020/1975 GIS multiplier",
+      "Swipe geographic clipping",
+      "Camera preserved when switching modes",
+      "Pause/resume",
+      "Ten source epochs reach 2020",
+      "Camera stationary during preparation and playback",
+      "GIS values and final multiplier",
+      "Recording controls/year/stat visibility",
+      "Recording R replay and Space pause/resume",
+      "Escape exits recording",
+      "Reset preserves camera",
+      "Manual epoch selection",
+      "Return to Compare",
+      "No runtime/render errors"
+    ],
+    "visual_review": "Desktop comparison and 390px mobile Compare/Growth reviewed. Muted overlay retains imagery detail; labels sit at upper corners. Expanded mobile panel now hides secondary legend/status to prevent overlap.",
+    "gis_integrity": "SHA-256 comparison confirms all 64 files in data/ unchanged.",
+    "symbology": {
+      "footprint": "#54758A",
+      "opacity": 0.45
+    },
+    "limitations": "Initial layer/imagery preparation requires network access and occurs before playback; performance depends on browser/GPU. Historical estimates remain over contemporary imagery."
+  }
+}

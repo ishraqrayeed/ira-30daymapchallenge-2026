@@ -1,0 +1,17 @@
+{
+  "origin": "Farmgate",
+  "thresholds_minutes": [15, 30, 45],
+  "crs": "EPSG:32646",
+  "walking_kph": 4.8,
+  "station_exit_minutes": 2,
+  "initial_wait_minutes": 0,
+  "full_line_minutes": 38,
+  "intermediate_dwell_minutes": 0.5,
+  "street_envelope_metres": 60,
+  "minimum_component_m2": 2500,
+  "extraction_bbox_wgs84": [90.30, 23.68, 90.47, 23.91],
+  "stations_north_to_south": ["Uttara North", "Uttara Center", "Uttara South", "Pallabi", "Mirpur 11", "Mirpur 10", "Kazipara", "Shewrapara", "Agargaon", "Bijoy Sarani", "Farmgate", "Karwan Bazar", "Shahbagh", "Dhaka University", "Bangladesh Secretariat", "Motijheel"],
+  "time_source": "https://online.thedailystar.net/news/bangladesh/transport/news/metro-now-connects-uttara-motijheel-3460821",
+  "operation_source": "https://www.bssnews.net/news/435899",
+  "sequence_source": "https://eservices.rthd.gov.bd/admin/docs/press_release/mrt.pdf"
+}

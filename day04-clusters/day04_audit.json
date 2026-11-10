@@ -1,0 +1,2140 @@
+{
+  "source_counts": {
+    "osm_bbox_candidates": 222,
+    "nyc_inspection_rows_citywide": 1789,
+    "nyc_unique_ids_citywide": 166
+  },
+  "raw_records": 2011,
+  "repeated_inspection_rows_removed": 1623,
+  "candidate_establishments": 388,
+  "duplicates_removed": 12,
+  "duplicate_merges": [
+    {
+      "kept_id": "nyc-41259230",
+      "merged_id": "osm-node-9900947175",
+      "rule": "reviewed_identity",
+      "reason": "Same Indo Pak Halal name and 2173 2nd Avenue address; ordinal street spelling differs. https://www.indopakhalal.com/"
+    },
+    {
+      "kept_id": "nyc-50192992",
+      "merged_id": "osm-node-14309350101",
+      "rule": "reviewed_identity",
+      "reason": "Same Shah's corner establishment, Hancock Place / W 125th Street, 28m separation; business confirms 362 W 125th. https://www.shahshalalfood.com/harlem-ny/"
+    },
+    {
+      "kept_id": "osm-node-11715036337",
+      "merged_id": "osm-node-11715036338",
+      "rule": "reviewed_identity",
+      "reason": "Conservative physical-premises merge: same Madina Halal business root, same 402 E 11th St address, 8m apart. Grocery and deli are counted as one location."
+    },
+    {
+      "kept_id": "nyc-50179766",
+      "merged_id": "osm-node-6407832773",
+      "rule": "reviewed_identity",
+      "reason": "B&B Restaurant and BB Halal Food are the same physical establishment: OSM phone +1-646-429-8174 matches the business website at 165 W 26th Street. 58.57m geocoding separation. https://bbhalalfoodinc.com/location/"
+    },
+    {
+      "kept_id": "nyc-50169951",
+      "merged_id": "osm-node-13965635843",
+      "name": "Shah's Halal Food",
+      "distance_m": 41.83,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    },
+    {
+      "kept_id": "nyc-50169729",
+      "merged_id": "osm-node-14159717767",
+      "name": "Halal Munchies",
+      "distance_m": 34.04,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    },
+    {
+      "kept_id": "nyc-50172711",
+      "merged_id": "osm-node-2759444356",
+      "name": "Shah's Halal Food",
+      "distance_m": 16.64,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    },
+    {
+      "kept_id": "nyc-50162521",
+      "merged_id": "osm-node-2761520412",
+      "name": "Cajun Halal Platters",
+      "distance_m": 25.74,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    },
+    {
+      "kept_id": "nyc-50161087",
+      "merged_id": "osm-node-2761641648",
+      "name": "Halal Chicks",
+      "distance_m": 16.75,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    },
+    {
+      "kept_id": "nyc-50012258",
+      "merged_id": "osm-node-3676953898",
+      "name": "The Halal Guys",
+      "distance_m": 15.36,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    },
+    {
+      "kept_id": "nyc-50177409",
+      "merged_id": "osm-node-5190571558",
+      "name": "Shah's Halal Food",
+      "distance_m": 13.49,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    },
+    {
+      "kept_id": "nyc-50181493",
+      "merged_id": "osm-node-8571998198",
+      "name": "Halal Munchies",
+      "distance_m": 18.07,
+      "rule": "within_60m_and_same_normalized_name_or_same_address_similar_name"
+    }
+  ],
+  "excluded_records": [
+    {
+      "id": "osm-node-2761657514",
+      "name": "Halal Bitez",
+      "reason": "inactive_osm_feature"
+    },
+    {
+      "id": "osm-node-5807539964",
+      "name": "True Care Pharmacy",
+      "reason": "not_identified_food_business"
+    },
+    {
+      "id": "osm-node-8250729430",
+      "name": "Friends Halal",
+      "reason": "not_identified_food_business"
+    },
+    {
+      "id": "osm-node-9476986078",
+      "name": "Fertile Cresent",
+      "reason": "inactive_osm_feature"
+    },
+    {
+      "id": "osm-node-11117676691",
+      "name": "New Foods of India",
+      "reason": "not_identified_food_business"
+    },
+    {
+      "id": "osm-node-11748910404",
+      "name": "African Market",
+      "reason": "not_identified_food_business"
+    },
+    {
+      "id": "osm-node-12542895723",
+      "name": "Sammy's Halal",
+      "reason": "uncertain_operating_status"
+    },
+    {
+      "id": "osm-node-13514627475",
+      "name": "Tashkent Supermarket Halal Food",
+      "reason": "not_identified_food_business"
+    },
+    {
+      "id": "nyc-41139066",
+      "name": "TANJAWI HALAL SANDWICH SHOP",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-41565686",
+      "name": "THE LUTHERAN HALAL CAFE",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-41661199",
+      "name": "MAIN BAKHTAR HALAL KABAB",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50000205",
+      "name": "MIA HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50011784",
+      "name": "HALAL RESTAURANT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50017177",
+      "name": "ALNOOR HALAL DELI",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50048617",
+      "name": "HALAL BUFFET",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50057979",
+      "name": "BIGWELL BAKERY AND HALAL RESTAURANT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50070163",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "no_usable_coordinates"
+    },
+    {
+      "id": "nyc-50075519",
+      "name": "D HACK'S HALAL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50077495",
+      "name": "HALAL XTREME / CROWN FRIED CHICKEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50077620",
+      "name": "HALAL BROS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50077821",
+      "name": "HALAL DYNASTY",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50084095",
+      "name": "HALAL MUSA CHINESE FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50085648",
+      "name": "HALALBEE'S",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50091241",
+      "name": "HD HALAL DINER",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50094454",
+      "name": "HALAL FRIED CHICKEN & PIZZA",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50100914",
+      "name": "EXPRESS AFRICAN HALAL RESTAURANT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50102379",
+      "name": "Castle Chicken Halal Kitchen",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50103203",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50105294",
+      "name": "NEW NO PORK HALAL KITCHEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50107362",
+      "name": "ZAKI'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50107445",
+      "name": "HALAL BROS GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50107558",
+      "name": "HALAL XPRESS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50114370",
+      "name": "BK HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50115214",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50117331",
+      "name": "MAMA G'S HALAL KITCHEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50117849",
+      "name": "HALAL IN-N-OUT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50118522",
+      "name": "BROOKLYN HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50119600",
+      "name": "HALAL EATS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50119837",
+      "name": "FOUTA HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50120410",
+      "name": "Medina Halal",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50121819",
+      "name": "HALAL BROS GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50122619",
+      "name": "ZINGER HALAL EXPRESS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50122897",
+      "name": "HALAL MIX",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50123431",
+      "name": "TAZA HALAL EATS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50124764",
+      "name": "FULTON HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50125943",
+      "name": "FATIMA HALAL RESTAURANT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50126015",
+      "name": "HALALBEE'S",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50127400",
+      "name": "HALAL BROS GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50128030",
+      "name": "HALALIFY",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50131563",
+      "name": "KASHMIR HALAL GYRO",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50133008",
+      "name": "HALAL BROS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50133318",
+      "name": "ZAMZAM HALAL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50134352",
+      "name": "THE HALAL BASKET",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50135173",
+      "name": "HALAL BRO'S GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50135701",
+      "name": "UTICA HALAL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50139758",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50141287",
+      "name": "HALAL PIZZA & GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50141303",
+      "name": "ZINGER HALAL EXPRESS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50142782",
+      "name": "GHOROA HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50145335",
+      "name": "NO. 1 HALAL KITCHEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50145366",
+      "name": "BIGWELL BAKERY & HALAL RESTAURANT 2",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50145434",
+      "name": "HALAL XPRESS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50145561",
+      "name": "HALAL KITCHEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50146543",
+      "name": "HALAL HUT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50147085",
+      "name": "HALAL SAUCED UP",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50148563",
+      "name": "HALAL XTREME",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50148806",
+      "name": "ZINGER HALAL EXPRESS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50148920",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50150322",
+      "name": "HUNCHOS HALAL SPOT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50151745",
+      "name": "THE HALAL BROS NY",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50152484",
+      "name": "HALAL GRILL EAT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50152957",
+      "name": "JAMAICA HALAL WINGS/APNAR CHA GHAR",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50153622",
+      "name": "HALAL ZONE",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50153709",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "no_usable_coordinates"
+    },
+    {
+      "id": "nyc-50153803",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50153817",
+      "name": "KENNEDY CHICKEN AND HALAL EXPRESS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50153884",
+      "name": "ASIAN HALAL KITCHEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50154026",
+      "name": "HALAL GARDEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50154184",
+      "name": "FRANKIE'S PIZZA & HALAL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50155935",
+      "name": "HALAL CHICKEN-N-CHAPLI",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50159478",
+      "name": "HALAL BROS GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50159510",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50159916",
+      "name": "HALAL DONER KABAB",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50159934",
+      "name": "HALAL FRESH FOOD & COFFEE",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50160158",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50160247",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50160259",
+      "name": "HALAL ROYAL CROWN CHICKEN & PIZZA",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50160368",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50161653",
+      "name": "YOUR CHOICE HALAL CHICKEN & PIZZA",
+      "reason": "no_usable_coordinates"
+    },
+    {
+      "id": "nyc-50162952",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163101",
+      "name": "BLAZE HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163288",
+      "name": "Halal Fresh Chinese & Indian Cuisine",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163611",
+      "name": "BK HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163651",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163894",
+      "name": "AD HALAL WEST AFRICAN TASTE RESTAURANT AND MARKET",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163931",
+      "name": "MAZZY'S HALAL SPOT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163943",
+      "name": "HALALICIOUS GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50163951",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50164032",
+      "name": "HALAL GRILL & FRIED CHICKEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50164622",
+      "name": "CHEF'S HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50165521",
+      "name": "HALAL BOYZ",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50165851",
+      "name": "HAMZA & MADINA HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50165969",
+      "name": "HALAL DELI & GROCERY",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50167973",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50168117",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50168612",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50169039",
+      "name": "HALAL GYRO KING 6/SYLHETI SWEETS",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50170555",
+      "name": "RUTLAND HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50170570",
+      "name": "CHACHI'S HALAL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50170996",
+      "name": "INDIAN GRILL HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50171760",
+      "name": "HASAN HALAL CHINESE",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50171789",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50172574",
+      "name": "Halal Crunchies",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50172925",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50175963",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50176128",
+      "name": "HALAL MEALS",
+      "reason": "no_usable_coordinates"
+    },
+    {
+      "id": "nyc-50177153",
+      "name": "HALAL STOP",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50177751",
+      "name": "CRAFTED HALAL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50178159",
+      "name": "HALAL EXPRESS ASIAN FUSION RESTAURANT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50178449",
+      "name": "RICKY'S HALAL PIZZA",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50178626",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50178666",
+      "name": "THE HALAL GUYS (GATE 525)",
+      "reason": "no_usable_coordinates"
+    },
+    {
+      "id": "nyc-50178722",
+      "name": "HALAL KING PIZZA",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50178994",
+      "name": "HALAL N OUT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50179208",
+      "name": "HALAL CHICKEN-N-CHAPLI",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50179285",
+      "name": "SHAH'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50179438",
+      "name": "NAZ'S HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50179776",
+      "name": "HALAL HIBACHI BITES INC.",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50181588",
+      "name": "KENNEDY HALAL CHICKEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50181727",
+      "name": "HALAL N OUT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50182068",
+      "name": "HALAL KRISPY FRIED CHICKEN AND PIZZA",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50184015",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50184364",
+      "name": "HALAL MUNCHIES",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50184855",
+      "name": "HALAL KRISPY",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50185366",
+      "name": "QAZAQ HALAL BBQ",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50186814",
+      "name": "HUNCHOS HALAL SPOT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50187057",
+      "name": "MIA HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50187154",
+      "name": "YOUR CHOICE HALAL CHICKEN & PIZZA",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50188029",
+      "name": "YALA HALAL CASTLETON INC",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50188299",
+      "name": "HALAL DELIGHT",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50189701",
+      "name": "Halal Mix",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50189742",
+      "name": "HALAL STREET EATZ",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50189810",
+      "name": "HALAL HEAVEN",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50191028",
+      "name": "BK HALAL GRILL",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50191763",
+      "name": "SAMY'S HALAL GRILL CORP.",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50192031",
+      "name": "HAMZA & MADINA HALAL FOOD",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50192650",
+      "name": "MANHATTAN VILLE HALAL XPRESS INC.",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50193220",
+      "name": "NO PORK HALAL CHINESE LLC",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50194043",
+      "name": "HALAL GUYS PLUS INC.",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "nyc-50194298",
+      "name": "TACOJEES HALAL GRILL INC",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-1885983744",
+      "name": "Nouri Halal Meat Market",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2017271308",
+      "name": "China Pagoda",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2065172290",
+      "name": "Tangra Asian Fusion",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2491417530",
+      "name": "No Pork Halal Kitchen",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2494071332",
+      "name": "Bombay Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2495726874",
+      "name": "Ali's Trinbago Roti Shop",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2549996743",
+      "name": "Garden Deli & Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2550061118",
+      "name": "Kemo's Hot Kitchen Bites",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2550140508",
+      "name": "Al Baraka Supermarket",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2550149654",
+      "name": "Hadja Marley",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2565041808",
+      "name": "MR Discount",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2565136567",
+      "name": "Safaa Imports",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2568092597",
+      "name": "Fresh to Go",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2568288797",
+      "name": "Elegant",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2568727396",
+      "name": "Cultiva",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2572920295",
+      "name": "A & J Deli Grocery",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2572920337",
+      "name": "Healthy Choice Food Market Deli",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2572981704",
+      "name": "Deniz",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2808742202",
+      "name": "Tex's Chicken & Burgers",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2838706954",
+      "name": "Crafted Halal",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2844905273",
+      "name": "Empire Chicken & Burgers",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2844942095",
+      "name": "D\u00f6ner Haus",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2844999924",
+      "name": "Cardamom",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2846607022",
+      "name": "Shawarma Spot",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2846607034",
+      "name": "Ayam",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2846916800",
+      "name": "Hello Bangladesh",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-2847001233",
+      "name": "Cali Bun",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-3584290132",
+      "name": "Gaia Masala & Burger",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4193980124",
+      "name": "Atlantic Halal Meat",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4204715384",
+      "name": "Al-Zahraa Groceries & Halal Meat",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4204758328",
+      "name": "Sabry's",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4768083425",
+      "name": "Safir Mediterranean",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4870096821",
+      "name": "Halal Munchies",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4931621734",
+      "name": "Alrawda Meat Market & Grocery",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4931633945",
+      "name": "Texas Chicken & Burgers",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-4960141099",
+      "name": "Al-Noor Halal Grocery",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5081230407",
+      "name": "Tanjawi Halal Sandwich Shop",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5104084656",
+      "name": "Watany",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5172257681",
+      "name": "Texas Chicken & Burgers",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5338901935",
+      "name": "Mr. Chang Halal Chinese",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5403595290",
+      "name": "Shawarma House",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5432358550",
+      "name": "Halal Meat Market",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5530949900",
+      "name": "Fertile Cresent",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5530949901",
+      "name": "Moon Palace Deli",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5534469364",
+      "name": "Melinda's Halal Meat Market",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5566990629",
+      "name": "Jeuri Live Poultry Inc",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5627868448",
+      "name": "Crown Chicken & Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5627875250",
+      "name": "Bakhter Halal Food Cart",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5635871132",
+      "name": "Top City Gourmet",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5712402440",
+      "name": "Halal City",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5723993614",
+      "name": "Crown Fried Chicken",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5745808910",
+      "name": "Halal Meat & Grocery",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5766152071",
+      "name": "Bedouin Tent",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5782486184",
+      "name": "Balkh Shish Kabab House",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5782951772",
+      "name": "Middle Eastern Groceries",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-5905417712",
+      "name": "Masala Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-6175434121",
+      "name": "Kitchen Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-6307293916",
+      "name": "Dastaan Indian Kitchen",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-6329651376",
+      "name": "Mia Halal Food",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-6594768414",
+      "name": "Oh! Calcutta",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-6883693021",
+      "name": "Halal Munchies",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-7253304019",
+      "name": "Natural & Organic Deli",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-8110365548",
+      "name": "Yummy Yummy in my Tummy",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-8676906661",
+      "name": "Aldar",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-8706963619",
+      "name": "Fulton Food Court",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-8941943727",
+      "name": "Pita Hot",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-9403176563",
+      "name": "Bagel Nest",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-9512186334",
+      "name": "Organics II Deli",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-9834601277",
+      "name": "Halal Munchies",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-9920390980",
+      "name": "King of Falafel & Shawarma",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-9923265668",
+      "name": "Slappin Chick",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-10155740451",
+      "name": "Zam Zam Halal",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-10173785370",
+      "name": "Unnamed halal food establishment (node/10173785370)",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-10621412745",
+      "name": "Grand Gourmet Deli",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-10742589881",
+      "name": "Raj's Indian Kitchen",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-10929027731",
+      "name": "MCH Halal Meat",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-10998186055",
+      "name": "Diaby African Market & Grocery",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-10998186063",
+      "name": "Z Halal Restaurant",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-11498508001",
+      "name": "Krazy Pizza & Wings",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-11753942427",
+      "name": "The Broski Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12037270026",
+      "name": "Flaming Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12164672203",
+      "name": "Al Quds Halal Meat & Mediterranean Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12164678229",
+      "name": "Halal Munchies",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12164684990",
+      "name": "Zyara Halal Shawarma",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12195365777",
+      "name": "Chocolate House",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12503852602",
+      "name": "Chick Rocks",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12505650080",
+      "name": "Sarkus Japan",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12613560949",
+      "name": "Alnour",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12829477259",
+      "name": "Eatzy Thai",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12842754599",
+      "name": "Mumbai Place",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12844709779",
+      "name": "Curry in Handi",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12977783168",
+      "name": "Krave It",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-12980136947",
+      "name": "Saffron Indian Cuisine",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-13141964901",
+      "name": "Shah\u2019s Halal Food",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-13186099585",
+      "name": "D\u00f6ner Haus",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-13607702109",
+      "name": "Indian Kitchen",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-13913221301",
+      "name": "Maya Mexican Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-13929988175",
+      "name": "Naya",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-14181628724",
+      "name": "MH Halal Food",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-14181628725",
+      "name": "Indian Biryani House",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-node-14181628727",
+      "name": "Habiba B&B l",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-way-275278174",
+      "name": "Texas Chicken & Burgers",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-way-281355419",
+      "name": "Truva Cafe & Grill",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-way-1184529862",
+      "name": "Taqwa Grocery & Meat Market",
+      "reason": "outside_manhattan"
+    },
+    {
+      "id": "osm-way-1563979239",
+      "name": "Shangrila",
+      "reason": "outside_manhattan"
+    }
+  ],
+  "exclusion_counts": {
+    "inactive_osm_feature": 2,
+    "not_identified_food_business": 5,
+    "uncertain_operating_status": 1,
+    "outside_manhattan": 242,
+    "no_usable_coordinates": 5
+  },
+  "final_unique_locations": 121,
+  "unresolved_close_pairs": [
+    {
+      "ids": [
+        "osm-node-12917611587",
+        "nyc-50169951"
+      ],
+      "names": [
+        "Himalayan Curry House",
+        "SHAH'S HALAL FOOD"
+      ],
+      "distance_m": 15.03
+    },
+    {
+      "ids": [
+        "osm-node-2555128941",
+        "osm-node-11971148917"
+      ],
+      "names": [
+        "The Italian Slice",
+        "Little Myanmar"
+      ],
+      "distance_m": 38.99
+    },
+    {
+      "ids": [
+        "osm-node-2706918154",
+        "osm-node-2300348739"
+      ],
+      "names": [
+        "Lahori Kabab",
+        "Haandi"
+      ],
+      "distance_m": 37.44
+    },
+    {
+      "ids": [
+        "osm-node-2718138992",
+        "osm-node-11062619196"
+      ],
+      "names": [
+        "Halal Grill Bites",
+        "Firecracker Wings"
+      ],
+      "distance_m": 56.25
+    },
+    {
+      "ids": [
+        "osm-node-2718138992",
+        "osm-node-14304875686"
+      ],
+      "names": [
+        "Halal Grill Bites",
+        "YoYo Chicken"
+      ],
+      "distance_m": 17.21
+    },
+    {
+      "ids": [
+        "osm-node-2826754276",
+        "nyc-50169729"
+      ],
+      "names": [
+        "Unnamed halal food establishment (node/2826754276)",
+        "HALAL MUNCHIES"
+      ],
+      "distance_m": 35.44
+    },
+    {
+      "ids": [
+        "osm-node-5561024647",
+        "osm-node-5099589357"
+      ],
+      "names": [
+        "Butter Smashburgers",
+        "Mint Masala"
+      ],
+      "distance_m": 21.32
+    },
+    {
+      "ids": [
+        "osm-node-6061789674",
+        "nyc-50186266"
+      ],
+      "names": [
+        "2nd Av Pizza",
+        "NYC HALAL DELIGHT"
+      ],
+      "distance_m": 22.0
+    },
+    {
+      "ids": [
+        "osm-node-9276228950",
+        "osm-node-9188375882"
+      ],
+      "names": [
+        "Forefeathers Chicken Madness",
+        "Beef Up Noodle"
+      ],
+      "distance_m": 36.2
+    },
+    {
+      "ids": [
+        "osm-node-9642113264",
+        "osm-node-10073955919"
+      ],
+      "names": [
+        "Mamoun's Falafel",
+        "Birria L.E.S."
+      ],
+      "distance_m": 23.65
+    },
+    {
+      "ids": [
+        "osm-node-9642113264",
+        "osm-node-7067158485"
+      ],
+      "names": [
+        "Mamoun's Falafel",
+        "Butter"
+      ],
+      "distance_m": 52.63
+    },
+    {
+      "ids": [
+        "osm-way-271290745",
+        "osm-node-12414103703"
+      ],
+      "names": [
+        "Texas Chicken & Burgers",
+        "Hew Harlem Halal Meat"
+      ],
+      "distance_m": 6.98
+    }
+  ],
+  "crs": "EPSG:32618 / WGS 84 UTM zone 18N; metres",
+  "scope": "Identifiable halal food locations compiled from public sources. Not a census.",
+  "geocoding": "None: original NYC coordinates and OSM nodes/way representative points.",
+  "dbscan_selected": {
+    "epsilon_m": 450.0,
+    "min_samples": 3,
+    "metric": "Euclidean",
+    "crs": "EPSG:32618",
+    "units": "metres",
+    "core_locations": 85,
+    "clusters": 14,
+    "clustered_locations": 92,
+    "noise_locations": 29,
+    "percentage_clustered": 76.03,
+    "membership_counts": {
+      "-1": 29,
+      "0": 3,
+      "1": 25,
+      "2": 7,
+      "3": 10,
+      "4": 3,
+      "5": 11,
+      "6": 3,
+      "7": 5,
+      "8": 6,
+      "9": 4,
+      "10": 3,
+      "11": 4,
+      "12": 4,
+      "13": 4
+    }
+  },
+  "analysis_status": "Descriptive source-sample clustering supports visualization with explicit coverage limitations",
+  "cluster_interpretation": {
+    "0": {
+      "cluster_id": 0,
+      "name": "Civic Center / Chinatown",
+      "locations": 3,
+      "neighborhood_membership": {
+        "Tribeca-Civic Center": 2,
+        "Chinatown-Two Bridges": 1
+      },
+      "centroid": [
+        -74.00082795315646,
+        40.71786750275521
+      ],
+      "member_ids": [
+        "osm-node-2563988663",
+        "osm-node-2563990318",
+        "osm-node-8333740839"
+      ]
+    },
+    "1": {
+      "cluster_id": 1,
+      "name": "East Village / Lower East Side",
+      "locations": 25,
+      "neighborhood_membership": {
+        "Gramercy": 2,
+        "Lower East Side": 5,
+        "East Village": 17,
+        "SoHo-Little Italy-Hudson Square": 1
+      },
+      "centroid": [
+        -73.98644820014441,
+        40.726710538091
+      ],
+      "member_ids": [
+        "nyc-50012258",
+        "nyc-50169729",
+        "osm-node-10073955919",
+        "osm-node-10229466403",
+        "osm-node-10270349361",
+        "osm-node-10270699213",
+        "osm-node-11565456366",
+        "osm-node-11715036337",
+        "osm-node-11971148917",
+        "osm-node-12324390279",
+        "osm-node-12720721096",
+        "osm-node-13514824809",
+        "osm-node-2549928994",
+        "osm-node-2555128941",
+        "osm-node-2704034212",
+        "osm-node-2826754276",
+        "osm-node-3246839603",
+        "osm-node-3676993348",
+        "osm-node-5978837401",
+        "osm-node-5987826185",
+        "osm-node-5987980588",
+        "osm-node-6910793421",
+        "osm-node-7067158485",
+        "osm-node-9642113264",
+        "osm-node-9709984690"
+      ]
+    },
+    "2": {
+      "cluster_id": 2,
+      "name": "Greenwich Village",
+      "locations": 7,
+      "neighborhood_membership": {
+        "Greenwich Village": 6,
+        "West Village": 1
+      },
+      "centroid": [
+        -74.0002491416555,
+        40.73066364940949
+      ],
+      "member_ids": [
+        "nyc-50163232",
+        "osm-node-2562454103",
+        "osm-node-5099589357",
+        "osm-node-5514228220",
+        "osm-node-5561024647",
+        "osm-node-5932979098",
+        "osm-node-9920390979"
+      ]
+    },
+    "3": {
+      "cluster_id": 3,
+      "name": "Kips Bay / Gramercy",
+      "locations": 10,
+      "neighborhood_membership": {
+        "Murray Hill-Kips Bay": 6,
+        "Gramercy": 4
+      },
+      "centroid": [
+        -73.9814901597209,
+        40.74079695689794
+      ],
+      "member_ids": [
+        "nyc-50186266",
+        "osm-node-2300348739",
+        "osm-node-2704105170",
+        "osm-node-2706918154",
+        "osm-node-4426744326",
+        "osm-node-6061789674",
+        "osm-node-7362789424",
+        "osm-node-8097608582",
+        "osm-node-9188375882",
+        "osm-node-9276228950"
+      ]
+    },
+    "4": {
+      "cluster_id": 4,
+      "name": "Turtle Bay / Murray Hill",
+      "locations": 3,
+      "neighborhood_membership": {
+        "East Midtown-Turtle Bay": 2,
+        "Murray Hill-Kips Bay": 1
+      },
+      "centroid": [
+        -73.9709659119367,
+        40.751214883791675
+      ],
+      "member_ids": [
+        "osm-node-3829591977",
+        "osm-node-3843628369",
+        "osm-node-5254559387"
+      ]
+    },
+    "5": {
+      "cluster_id": 5,
+      "name": "Midtown West / Chelsea",
+      "locations": 11,
+      "neighborhood_membership": {
+        "Midtown South-Flatiron-Union Square": 3,
+        "Hell's Kitchen": 4,
+        "Midtown-Times Square": 3,
+        "Chelsea-Hudson Yards": 1
+      },
+      "centroid": [
+        -73.99123215084346,
+        40.75453879730543
+      ],
+      "member_ids": [
+        "nyc-50116944",
+        "nyc-50172104",
+        "nyc-50179766",
+        "osm-node-10838413854",
+        "osm-node-11558110355",
+        "osm-node-13186112048",
+        "osm-node-13357853589",
+        "osm-node-13357893399",
+        "osm-node-4754291326",
+        "osm-way-265282545",
+        "osm-way-265301776"
+      ]
+    },
+    "6": {
+      "cluster_id": 6,
+      "name": "Sixth Avenue / Midtown",
+      "locations": 3,
+      "neighborhood_membership": {
+        "Midtown-Times Square": 3
+      },
+      "centroid": [
+        -73.98045882378385,
+        40.75711016796201
+      ],
+      "member_ids": [
+        "osm-node-12646644780",
+        "osm-node-12956856877",
+        "osm-node-4709047192"
+      ]
+    },
+    "7": {
+      "cluster_id": 7,
+      "name": "Midtown East",
+      "locations": 5,
+      "neighborhood_membership": {
+        "East Midtown-Turtle Bay": 4,
+        "Midtown-Times Square": 1
+      },
+      "centroid": [
+        -73.97038541384666,
+        40.757165434024515
+      ],
+      "member_ids": [
+        "nyc-50169951",
+        "osm-node-12917611587",
+        "osm-node-13248217771",
+        "osm-node-9392834432",
+        "osm-node-9920390981"
+      ]
+    },
+    "8": {
+      "cluster_id": 8,
+      "name": "Lenox Hill / Sutton Place",
+      "locations": 6,
+      "neighborhood_membership": {
+        "Upper East Side-Lenox Hill-Roosevelt Island": 5,
+        "East Midtown-Turtle Bay": 1
+      },
+      "centroid": [
+        -73.96209390676792,
+        40.761408377495094
+      ],
+      "member_ids": [
+        "osm-node-11062619196",
+        "osm-node-12720480767",
+        "osm-node-14304875686",
+        "osm-node-2711023702",
+        "osm-node-2718138992",
+        "osm-node-6418623098"
+      ]
+    },
+    "9": {
+      "cluster_id": 9,
+      "name": "Upper East Side / First Avenue",
+      "locations": 4,
+      "neighborhood_membership": {
+        "Upper East Side-Lenox Hill-Roosevelt Island": 4
+      },
+      "centroid": [
+        -73.95471499353809,
+        40.769304401080525
+      ],
+      "member_ids": [
+        "osm-node-10982600247",
+        "osm-node-11590260824",
+        "osm-node-6649647161",
+        "osm-node-7085207165"
+      ]
+    },
+    "10": {
+      "cluster_id": 10,
+      "name": "Yorkville / Carnegie Hill",
+      "locations": 3,
+      "neighborhood_membership": {
+        "Upper East Side-Carnegie Hill": 1,
+        "Upper East Side-Yorkville": 2
+      },
+      "centroid": [
+        -73.95156500645795,
+        40.77849488586128
+      ],
+      "member_ids": [
+        "osm-node-3451081915",
+        "osm-node-5729312617",
+        "osm-node-9712624545"
+      ]
+    },
+    "11": {
+      "cluster_id": 11,
+      "name": "East Harlem South",
+      "locations": 4,
+      "neighborhood_membership": {
+        "East Harlem (South)": 4
+      },
+      "centroid": [
+        -73.94689891448222,
+        40.788104587794514
+      ],
+      "member_ids": [
+        "nyc-50181493",
+        "osm-node-2761716454",
+        "osm-node-9572028344",
+        "osm-way-1039477323"
+      ]
+    },
+    "12": {
+      "cluster_id": 12,
+      "name": "Harlem South",
+      "locations": 4,
+      "neighborhood_membership": {
+        "Harlem (South)": 4
+      },
+      "centroid": [
+        -73.95253076117719,
+        40.803147566938094
+      ],
+      "member_ids": [
+        "nyc-50158804",
+        "osm-node-12414103703",
+        "osm-node-9049400010",
+        "osm-way-271290745"
+      ]
+    },
+    "13": {
+      "cluster_id": 13,
+      "name": "Morningside Heights / Broadway",
+      "locations": 4,
+      "neighborhood_membership": {
+        "Upper West Side-Manhattan Valley": 1,
+        "Morningside Heights": 3
+      },
+      "centroid": [
+        -73.96395390438072,
+        40.806589520260275
+      ],
+      "member_ids": [
+        "osm-node-11955118212",
+        "osm-node-12047107430",
+        "osm-node-7004462869",
+        "osm-node-9484086236"
+      ]
+    }
+  },
+  "source_sensitivity": {
+    "all_sources": {
+      "locations": 121,
+      "clusters": 14,
+      "clustered": 92,
+      "noise": 29,
+      "cluster_sizes": [
+        25,
+        11,
+        10,
+        7,
+        6,
+        5,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "osm_only": {
+      "locations": 108,
+      "clusters": 14,
+      "clustered": 84,
+      "noise": 24,
+      "cluster_sizes": [
+        25,
+        9,
+        6,
+        6,
+        6,
+        5,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "explicit_diet_tag_only": {
+      "locations": 101,
+      "clusters": 12,
+      "clustered": 75,
+      "noise": 26,
+      "cluster_sizes": [
+        24,
+        9,
+        6,
+        6,
+        6,
+        5,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "food_service_only": {
+      "locations": 110,
+      "clusters": 11,
+      "clustered": 74,
+      "noise": 36,
+      "cluster_sizes": [
+        18,
+        11,
+        10,
+        7,
+        6,
+        5,
+        4,
+        4,
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "final_source_counts": {
+    "NYC DOHMH | OpenStreetMap": 11,
+    "NYC DOHMH": 13,
+    "OpenStreetMap": 97
+  },
+  "hdbscan": {
+    "implementation": "sklearn.cluster.HDBSCAN",
+    "min_cluster_size": 3,
+    "min_samples": 3,
+    "cluster_selection_method": "eom",
+    "clusters": 19,
+    "noise": 16,
+    "cluster_sizes": [
+      21,
+      10,
+      10,
+      8,
+      6,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "geometry": {
+    "method": "GEOS concave hull ratio .35; buffer 140m; intersect union of member 225m buffers and Manhattan boundary. No simplification in export.",
+    "qa": [
+      {
+        "cluster_id": 0,
+        "concave_area_m2": 1697.3121011589756,
+        "convex_area_m2": 1697.3121011589756,
+        "final_envelope_area_m2": 161472.75961255791,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Tribeca-Civic Center": 2,
+          "Chinatown-Two Bridges": 1
+        }
+      },
+      {
+        "cluster_id": 1,
+        "concave_area_m2": 868002.0876003237,
+        "convex_area_m2": 1572532.9812940357,
+        "final_envelope_area_m2": 1637396.6112306511,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Gramercy": 2,
+          "Lower East Side": 5,
+          "East Village": 17,
+          "SoHo-Little Italy-Hudson Square": 1
+        }
+      },
+      {
+        "cluster_id": 2,
+        "concave_area_m2": 78193.67805983529,
+        "convex_area_m2": 95157.52998360727,
+        "final_envelope_area_m2": 331735.3152872311,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Greenwich Village": 6,
+          "West Village": 1
+        }
+      },
+      {
+        "cluster_id": 3,
+        "concave_area_m2": 51512.24970058796,
+        "convex_area_m2": 102232.44350690686,
+        "final_envelope_area_m2": 324030.73426923767,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Murray Hill-Kips Bay": 6,
+          "Gramercy": 4
+        }
+      },
+      {
+        "cluster_id": 4,
+        "concave_area_m2": 23954.44858569184,
+        "convex_area_m2": 23954.448585691833,
+        "final_envelope_area_m2": 216547.78900480265,
+        "all_members_covered": true,
+        "nta_counts": {
+          "East Midtown-Turtle Bay": 2,
+          "Murray Hill-Kips Bay": 1
+        }
+      },
+      {
+        "cluster_id": 5,
+        "concave_area_m2": 492646.4889537524,
+        "convex_area_m2": 751534.2646741299,
+        "final_envelope_area_m2": 980567.6607405924,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Midtown South-Flatiron-Union Square": 3,
+          "Hell's Kitchen": 4,
+          "Midtown-Times Square": 3,
+          "Chelsea-Hudson Yards": 1
+        }
+      },
+      {
+        "cluster_id": 6,
+        "concave_area_m2": 10277.211724565126,
+        "convex_area_m2": 10277.211724565124,
+        "final_envelope_area_m2": 179943.51938765263,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Midtown-Times Square": 3
+        }
+      },
+      {
+        "cluster_id": 7,
+        "concave_area_m2": 62668.56035002824,
+        "convex_area_m2": 62668.56035002824,
+        "final_envelope_area_m2": 278847.1708235829,
+        "all_members_covered": true,
+        "nta_counts": {
+          "East Midtown-Turtle Bay": 4,
+          "Midtown-Times Square": 1
+        }
+      },
+      {
+        "cluster_id": 8,
+        "concave_area_m2": 26190.227400481857,
+        "convex_area_m2": 71184.10915106705,
+        "final_envelope_area_m2": 287908.45199376065,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper East Side-Lenox Hill-Roosevelt Island": 5,
+          "East Midtown-Turtle Bay": 1
+        }
+      },
+      {
+        "cluster_id": 9,
+        "concave_area_m2": 28797.16273297304,
+        "convex_area_m2": 28797.16273297304,
+        "final_envelope_area_m2": 284705.2892533273,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper East Side-Lenox Hill-Roosevelt Island": 4
+        }
+      },
+      {
+        "cluster_id": 10,
+        "concave_area_m2": 60850.64844583005,
+        "convex_area_m2": 60850.64844583005,
+        "final_envelope_area_m2": 279735.28034167783,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper East Side-Carnegie Hill": 1,
+          "Upper East Side-Yorkville": 2
+        }
+      },
+      {
+        "cluster_id": 11,
+        "concave_area_m2": 54571.381466773826,
+        "convex_area_m2": 69858.50148990357,
+        "final_envelope_area_m2": 288064.3855527985,
+        "all_members_covered": true,
+        "nta_counts": {
+          "East Harlem (South)": 4
+        }
+      },
+      {
+        "cluster_id": 12,
+        "concave_area_m2": 9465.013177475666,
+        "convex_area_m2": 9465.013177475663,
+        "final_envelope_area_m2": 236803.7065073961,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Harlem (South)": 4
+        }
+      },
+      {
+        "cluster_id": 13,
+        "concave_area_m2": 86796.34838705907,
+        "convex_area_m2": 86796.34838705909,
+        "final_envelope_area_m2": 315280.5248363256,
+        "all_members_covered": true,
+        "nta_counts": {
+          "Upper West Side-Manhattan Valley": 1,
+          "Morningside Heights": 3
+        }
+      }
+    ]
+  },
+  "csv_sha256": "42e85c5266e88933465003d4892f1009f09f65bc81acce3c283a5f52c2741980",
+  "source_coverage": {
+    "osm_snapshot_utc": "2026-11-01T21:21:36Z",
+    "nyc_record_dates": [
+      "2026-10-30T06:00:20.000",
+      "2026-10-30T06:00:26.000"
+    ],
+    "nyc_non_sentinel_inspection_dates": [
+      "2017-08-10",
+      "2026-10-28"
+    ],
+    "neighborhood_reference_year": 2020
+  }
+}

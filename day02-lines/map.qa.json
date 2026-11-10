@@ -1,0 +1,153 @@
+{
+  "peak_landmarks": [
+    {
+      "name": "Longs Peak",
+      "lon": -105.6151153,
+      "lat": 40.2550135,
+      "rank": 1,
+      "dx": -14,
+      "dy": -36,
+      "source": "https://en.wikipedia.org/wiki/Longs_Peak",
+      "align": "right",
+      "point": [
+        640.019,
+        712.156
+      ]
+    },
+    {
+      "name": "Mount Meeker",
+      "lon": -105.6050027,
+      "lat": 40.2485958,
+      "rank": 2,
+      "dx": 24,
+      "dy": 40,
+      "source": "https://en.wikipedia.org/wiki/Mount_Meeker",
+      "align": "center",
+      "point": [
+        656.183,
+        725.734
+      ]
+    },
+    {
+      "name": "Chiefs Head Peak",
+      "lon": -105.6411682,
+      "lat": 40.2490788,
+      "rank": 3,
+      "dx": -36,
+      "dy": 12,
+      "source": "https://en.wikipedia.org/wiki/Chiefs_Head_Peak",
+      "align": "right",
+      "point": [
+        598.047,
+        724.312
+      ]
+    }
+  ],
+  "peak_source": {
+    "checked": "2026-11-01",
+    "coordinate_crs": "EPSG:4326",
+    "source_note": "The three highest named park peaks, ranked by elevation. Coordinates from linked Wikipedia articles (CC BY-SA 4.0); checked 2026-11-01. Small dots mark exact summit positions.",
+    "peaks": [
+      {
+        "name": "Longs Peak",
+        "lon": -105.6151153,
+        "lat": 40.2550135,
+        "rank": 1,
+        "dx": -14,
+        "dy": -36,
+        "source": "https://en.wikipedia.org/wiki/Longs_Peak",
+        "align": "right"
+      },
+      {
+        "name": "Mount Meeker",
+        "lon": -105.6050027,
+        "lat": 40.2485958,
+        "rank": 2,
+        "dx": 24,
+        "dy": 40,
+        "source": "https://en.wikipedia.org/wiki/Mount_Meeker",
+        "align": "center"
+      },
+      {
+        "name": "Chiefs Head Peak",
+        "lon": -105.6411682,
+        "lat": 40.2490788,
+        "rank": 3,
+        "dx": -36,
+        "dy": 12,
+        "source": "https://en.wikipedia.org/wiki/Chiefs_Head_Peak",
+        "align": "right"
+      }
+    ]
+  },
+  "source_features": 466,
+  "mapped_segments": 158,
+  "source_features_in_retained_name_groups": 387,
+  "cleanup": {
+    "input_clipped_pieces": 489,
+    "minimum_segment_length_metres": 804.672,
+    "minimum_segment_length_miles": 0.5,
+    "precision_grid_metres": null,
+    "isolated_piece_rule": "footprint max width/height < 600 m and distance to every other retained-length segment > 100 m",
+    "isolated_pieces": [
+      {
+        "id": "17-19",
+        "name": "Beaver Meadows / Moraine Park Complex Trail",
+        "miles": 0.505
+      }
+    ],
+    "omitted_isolated_piece_miles": 0.505,
+    "omitted_short_piece_miles": 35.647,
+    "length_change_after_dissolve_miles": 0.32
+  },
+  "exclusions": {
+    "not_existing_hiking_use": 2,
+    "merged_pieces_shorter_than_half_mile": 203,
+    "isolated_compact_segments": 1
+  },
+  "source_features_clipped": 28,
+  "totals": {
+    "segments": 158,
+    "miles": 314.7,
+    "min": 7780,
+    "max": 14248
+  },
+  "elevation_samples": 22816,
+  "missing_elevation_samples": 0,
+  "crs": "EPSG:26913",
+  "dem_grid_spacing_metres": 22.04234573949206,
+  "trail_edit_date_range": [
+    "2021-08-06T19:27:30+00:00",
+    "2026-02-02T23:59:56+00:00"
+  ],
+  "source_manifest": {
+    "retrieved_utc": "2026-10-31T20:02:16.518353+00:00",
+    "sources": {
+      "trails": {
+        "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0",
+        "where": "UNITCODE = 'ROMO'",
+        "sha256": "195cbae75874a2e7328c8b2ca36d7b9a4b927e377e2ad05c3b3a9a0e96705d1f"
+      },
+      "boundary": {
+        "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+        "where": "UNIT_CODE = 'ROMO' AND Status = 'Official'",
+        "sha256": "3389a5e8ed3051fd7ecb0b6a091b513471fbc8a23bbfc7904316d7ae32d184ce"
+      },
+      "elevation": {
+        "url": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+        "parameters": {
+          "bbox": "413831.59168002073,4441015.902641575,466733.22145480145,4493917.532416356",
+          "bboxSR": 26913,
+          "imageSR": 26913,
+          "size": "2400,2400",
+          "format": "tiff",
+          "pixelType": "F32",
+          "interpolation": "RSP_BilinearInterpolation",
+          "renderingRule": "{\"rasterFunction\": \"None\"}",
+          "f": "image"
+        },
+        "sha256": "d34811d8b89d8f5ffe4137d997f7565936484f37958d6c4095578f0f96758ba0"
+      }
+    }
+  }
+}

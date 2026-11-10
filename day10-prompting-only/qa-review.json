@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-08",
+  "scope": "Day 10 geographic correctness and zoom imagery; no deployment",
+  "geographic_tests": {
+    "result": "PASS",
+    "command": "node maps/day10-prompting-only/test_geo.js",
+    "global_coordinate_cases": 8029,
+    "includes": [
+      "Dhaka supplied coordinate example",
+      "Denver",
+      "London",
+      "equator",
+      "both poles",
+      "antimeridian",
+      "all five presets",
+      "180-degree central separation",
+      "double antipode",
+      "center-crossing 12742 km diameter",
+      "local country/ocean containment"
+    ]
+  },
+  "browser": {
+    "result": "PASS",
+    "browser": "Chrome, local HTTP",
+    "checks": [
+      "Dhaka to South Pacific Ocean",
+      "Denver to Indian Ocean",
+      "named preset labels",
+      "destination hidden until journey",
+      "rapid interaction guards",
+      "interior renders",
+      "marker coordinates match calculation",
+      "camera position and center ellipsoid ray match antipode",
+      "both directions of ellipsoid endpoint occlusion",
+      "displayed destination matches rendered marker",
+      "cross-section inspect/return",
+      "replay",
+      "reset",
+      "mid-journey reset cancels stale reveal",
+      "no captured console.error/runtime/unhandled promise errors"
+    ],
+    "city_imagery": {
+      "result": "PASS",
+      "location": "Dhaka",
+      "camera_height_m": 12000,
+      "checks": [
+        "actual camera reaches city scale",
+        "detail layer fully visible",
+        "tiles loaded",
+        "native browser screenshot visually inspected; buildings and streets resolved"
+      ]
+    },
+    "limits": "Desktop verification. Existing mobile styling preserved; no new mobile visual review in this focused fix."
+  },
+  "assets_sha256": {
+    "geo.js": "be6dcced195475539a59c3595731cf1f68bc4be7f107050123ac7af236308dba",
+    "app.js": "b0f37c5c7c3ee677929175b871e7b6939d535b73efe2d3ffa5a5db1fe005b0d4",
+    "map.html": "2c4533e7d559593046275c6b1a083511745a7ce175d806e4ccb77c3ca379eb74",
+    "style.css": "34a0fa3a10f9f11df62714d14f35d4a2ce571b8691e5db809cb5192e0e2b234f"
+  },
+  "readability": {
+    "date": "2026-11-09",
+    "changes": "Small desktop text 15\u201317px, mobile labels at least 14px, mobile footer 13px; larger canvas labels; modest width/spacing adjustments and wrapping for enlarged controls",
+    "checks": "JavaScript syntax and geography regression checks; awaiting visual review",
+    "presets": [
+      "Denver",
+      "Dhaka",
+      "New York",
+      "London",
+      "Tokyo"
+    ],
+    "visual_review": "User reviewed enlarged fonts and five presets over local HTTP and approved publication.",
+    "publication": "Approved by user; deployment status recorded in GitHub Actions"
+  }
+}

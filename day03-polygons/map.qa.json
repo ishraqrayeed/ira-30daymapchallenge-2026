@@ -1,0 +1,135 @@
+{
+  "title": "Dhaka in 45 Minutes",
+  "origin": "Farmgate",
+  "config": {
+    "origin": "Farmgate",
+    "thresholds_minutes": [
+      15,
+      30,
+      45
+    ],
+    "crs": "EPSG:32646",
+    "walking_kph": 4.8,
+    "station_exit_minutes": 2,
+    "initial_wait_minutes": 0,
+    "full_line_minutes": 38,
+    "intermediate_dwell_minutes": 0.5,
+    "street_envelope_metres": 60,
+    "minimum_component_m2": 2500,
+    "extraction_bbox_wgs84": [
+      90.3,
+      23.68,
+      90.47,
+      23.91
+    ],
+    "stations_north_to_south": [
+      "Uttara North",
+      "Uttara Center",
+      "Uttara South",
+      "Pallabi",
+      "Mirpur 11",
+      "Mirpur 10",
+      "Kazipara",
+      "Shewrapara",
+      "Agargaon",
+      "Bijoy Sarani",
+      "Farmgate",
+      "Karwan Bazar",
+      "Shahbagh",
+      "Dhaka University",
+      "Bangladesh Secretariat",
+      "Motijheel"
+    ],
+    "time_source": "https://online.thedailystar.net/news/bangladesh/transport/news/metro-now-connects-uttara-motijheel-3460821",
+    "operation_source": "https://www.bssnews.net/news/435899",
+    "sequence_source": "https://eservices.rthd.gov.bd/admin/docs/press_release/mrt.pdf"
+  },
+  "config_sha256": "d82e21dd8bbe9898056e245258f04b280fde3339c4b61c6dd79e242eea4a4dc5",
+  "statistics": [
+    {
+      "minutes": 15,
+      "area_km2": 5.3918482147741225,
+      "reachable_stations": 12,
+      "reachable_walk_nodes": 3111,
+      "reachable_link_metres": 99529.85393378418,
+      "polygon_parts": 6
+    },
+    {
+      "minutes": 30,
+      "area_km2": 31.767495095568158,
+      "reachable_stations": 16,
+      "reachable_walk_nodes": 22934,
+      "reachable_link_metres": 694485.9364785361,
+      "polygon_parts": 5
+    },
+    {
+      "minutes": 45,
+      "area_km2": 68.88563815296571,
+      "reachable_stations": 16,
+      "reachable_walk_nodes": 49570,
+      "reachable_link_metres": 1551028.1735390115,
+      "polygon_parts": 4
+    }
+  ],
+  "rail": {
+    "osm_relation": 15060935,
+    "track_length_m": 18927.506545672804,
+    "calibration_minutes": 38,
+    "running_minutes": 31.0,
+    "dwell_minutes_per_intermediate_station": 0.5,
+    "station_order_verified_against_route_stops": true
+  },
+  "network": {
+    "walking_graph_nodes": 167646,
+    "walking_graph_edges": 367252,
+    "reachable_node_count": 49569,
+    "network_boundary_clearance_m": 3145.629678213299
+  },
+  "source": {
+    "source": "https://download.geofabrik.de/asia/bangladesh.html",
+    "download_url": "https://download.geofabrik.de/asia/bangladesh-latest.osm.pbf",
+    "pbf_sha256": "093033def0632f71d2773841c9803f844e3a97e86d8bcde5d9dad6a91d1ad153",
+    "retrieved_utc": "2026-11-02T18:24:40.455835+00:00",
+    "snapshot": {
+      "osmosis_replication_timestamp": "2026-11-01T21:21:36Z",
+      "osmosis_replication_sequence_number": "4926",
+      "generator": "osmium/1.16.0"
+    },
+    "bbox_wgs84": [
+      90.3,
+      23.68,
+      90.47,
+      23.91
+    ],
+    "walking_way_count": 31754,
+    "walking_node_count": 170308,
+    "restricted_barrier_nodes": 23,
+    "walk_xml_sha256": "963878cf566bcbb7018d4125926026439269b34980a5bb4f242cd7aa5110c250",
+    "context_sha256": "ec22eeb60cfd5594c91b74fb94256f728b90139db6014c2b18eb0b0c011b83cb",
+    "license": "Open Database License (ODbL) 1.0; © OpenStreetMap contributors"
+  },
+  "nested": true,
+  "valid_geometries": true,
+  "farmgate_verified": {
+    "station_name": "Farmgate",
+    "latitude": 23.759042993553102,
+    "longitude": 90.38708776957866,
+    "station_order": 11,
+    "x": 233682.6298588742,
+    "y": 2629997.391834308,
+    "source": "https://www.openstreetmap.org/way/1125768748",
+    "coordinate_definition": "station building centroid",
+    "coordinate_crosscheck_source": "https://www.citylines.co/api/dhaka/raw_source/stations",
+    "coordinate_crosscheck_distance_m": 75.25808406652118,
+    "rail_snap_m": 3.9436610540441785,
+    "metro_minutes_from_farmgate": 0.0,
+    "walking_access_points": [
+      {
+        "osm_entrance_node": null,
+        "network_node": 14309822091,
+        "snap_distance_m": 54.43737985993228,
+        "station_center_fallback": true
+      }
+    ]
+  }
+}

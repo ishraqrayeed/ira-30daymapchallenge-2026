@@ -1,0 +1,52 @@
+{
+  "dimensions_px": [
+    2400,
+    3000
+  ],
+  "highlighted_records": 293,
+  "unique_objectids": 293,
+  "topologically_duplicate_pairs": [],
+  "unique_geometries": 293,
+  "positive_area_overlaps_over_0_01_m2": [],
+  "statistic": "293 historic-rated inventory footprints",
+  "ratings": {
+    "Contributing": 153,
+    "Supporting": 119,
+    "Local Landmark": 19,
+    "Significant Landmark Interior": 2
+  },
+  "landmarks": [
+    {
+      "name": "San Miguel County Courthouse",
+      "objectid": 1045,
+      "unique_join_verified": true,
+      "marker_inside_original_footprint": true,
+      "source": "https://www.telluride.gov/DocumentCenter/View/2141/ColoradoAvenue305W-Courthouse-5SM1605-REVISED?bidId=",
+      "method": "Unique polygon containing the survey UTM reference transformed from NAD27 / UTM 13N (EPSG:26713) to EPSG:26913; footprint shape and Colorado Avenue frontage checked against the survey description. Survey parcel does not match current GIS PIN."
+    },
+    {
+      "name": "New Sheridan Hotel",
+      "objectid": 446,
+      "unique_join_verified": true,
+      "marker_inside_original_footprint": true,
+      "source": "https://www.telluride.gov/DocumentCenter/View/2138/ColoradoAvenue231-235W-5SM1534-REVISED?bidId=",
+      "method": "Unique exact survey parcel / GIS PIN match; principal footprint and frontage checked."
+    },
+    {
+      "name": "First National Bank of Telluride",
+      "objectid": 831,
+      "unique_join_verified": true,
+      "marker_inside_original_footprint": true,
+      "source": "https://www.telluride.gov/DocumentCenter/View/2131/ColoradoAvenue201W-5SM1537-REVISED?bidId=",
+      "method": "Unique exact survey parcel / GIS PIN match; original historic name retained, with shortened key name."
+    }
+  ],
+  "extent_unchanged": true,
+  "extent": "252195.000000000000,4202155.915178571828 : 253445.000000000000,4203244.084821429104",
+  "inset_linked_to_main": true,
+  "png_sha256": "533dd148f5f5f6a264c16e548ad4e165114edc812509c73360c1b54d042ca9a4",
+  "inventory_sha256_unchanged": "161147f77e8c6a5811afb1bd87035fc3e992ca06d6a59bc08dfe0ed90dd631a0",
+  "legacy_records_excluded": true,
+  "construction_dates_inferred": false,
+  "visual_review": "Export inspected: four street labels visible along streets, landmark anchors unchanged, inset locator and three-column key present, no clipped text."
+}

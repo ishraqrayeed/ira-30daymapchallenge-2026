@@ -1,0 +1,109 @@
+{
+  "input_rows": 731,
+  "missing_id": 0,
+  "invalid_date": 0,
+  "outside_year": 0,
+  "invalid_coordinate": 15,
+  "unknown_severity": 0,
+  "nonsevere_rows": 0,
+  "conflicting_incidents": 0,
+  "other_mode_rows": 0,
+  "unknown_mode_rows": 0,
+  "offense_only_severity_rows": 573,
+  "duplicate_rows_collapsed": 0,
+  "mapped_incidents": 126,
+  "fatal_crashes": 126,
+  "serious_injury_only_crashes": 0,
+  "year": [
+    2021,
+    2025
+  ],
+  "annual_counts": [
+    {
+      "year": 2021,
+      "mapped_incidents": 21,
+      "fatal_crashes": 21,
+      "serious_injury_only_crashes": 0
+    },
+    {
+      "year": 2022,
+      "mapped_incidents": 25,
+      "fatal_crashes": 25,
+      "serious_injury_only_crashes": 0
+    },
+    {
+      "year": 2023,
+      "mapped_incidents": 33,
+      "fatal_crashes": 33,
+      "serious_injury_only_crashes": 0
+    },
+    {
+      "year": 2024,
+      "mapped_incidents": 20,
+      "fatal_crashes": 20,
+      "serious_injury_only_crashes": 0
+    },
+    {
+      "year": 2025,
+      "mapped_incidents": 27,
+      "fatal_crashes": 27,
+      "serious_injury_only_crashes": 0
+    }
+  ],
+  "pedestrian_involved_crashes": 126,
+  "bicycle_involved_crashes": 0,
+  "both_modes_crashes": 0,
+  "scope": "Fatal crashes involving pedestrians",
+  "detail_coverage": {
+    "location": 0,
+    "neighborhood": 0,
+    "road_context": 0,
+    "road_condition": 0,
+    "light_condition": 0,
+    "vehicle_types": 0,
+    "vehicle_movements": 0,
+    "driver_actions": 0,
+    "reported_factors": 0,
+    "fatality_modes": 0,
+    "serious_injury_modes": 0
+  },
+  "edition": "Someone Was Walking Here",
+  "counted_unit": "Unique crash event, not an individual pedestrian death",
+  "analysis_mapped_incidents": 716,
+  "excluded_from_story_scope": 590,
+  "inputs": [
+    {
+      "year": 2021,
+      "sha256": "db34cc3c14f1aaa62cf62cb75441802ff877fb8aef1c6aa54d41f4da10d16830",
+      "retrieved_at": "2026-10-31T03:55:41.384580+00:00"
+    },
+    {
+      "year": 2022,
+      "sha256": "de83145003b24763d9b6179c87a9ac0429e61367c995df47780b63241c60d906",
+      "retrieved_at": "2026-10-31T03:55:42.530019+00:00"
+    },
+    {
+      "year": 2023,
+      "sha256": "e3030bf85a50953f6ff6c003a3b510579df1949d221478b428ac4f587794522f",
+      "retrieved_at": "2026-10-31T03:55:43.615290+00:00"
+    },
+    {
+      "year": 2024,
+      "sha256": "46c11581721db9d70ca4035d12b3a7f3c4a4b22b79885670606f5a5d4c347600",
+      "retrieved_at": "2026-10-31T03:55:44.478184+00:00"
+    },
+    {
+      "year": 2025,
+      "sha256": "dc25b7479d60886f1b8b3a20941105897bf838cd998e7194784c8cef8a0e0a49",
+      "retrieved_at": "2026-10-31T03:55:45.131624+00:00"
+    }
+  ],
+  "input_sha256": {
+    "2021": "db34cc3c14f1aaa62cf62cb75441802ff877fb8aef1c6aa54d41f4da10d16830",
+    "2022": "de83145003b24763d9b6179c87a9ac0429e61367c995df47780b63241c60d906",
+    "2023": "e3030bf85a50953f6ff6c003a3b510579df1949d221478b428ac4f587794522f",
+    "2024": "46c11581721db9d70ca4035d12b3a7f3c4a4b22b79885670606f5a5d4c347600",
+    "2025": "dc25b7479d60886f1b8b3a20941105897bf838cd998e7194784c8cef8a0e0a49"
+  },
+  "retrieved_at": "2026-10-31T03:55:45.131624+00:00"
+}

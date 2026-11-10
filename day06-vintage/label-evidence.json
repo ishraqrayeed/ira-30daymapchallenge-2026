@@ -1,0 +1,60 @@
+{
+  "method": "Names verified in Town architectural survey; marker coordinates come from matched original inventory polygons, not geocoding guesses.",
+  "landmarks": [
+    {
+      "number": 1,
+      "name": "San Miguel County Courthouse",
+      "key_name": "San Miguel County Courthouse",
+      "objectid": 1045,
+      "survey_resource": "5SM.1605",
+      "address": "305 W. Colorado Avenue",
+      "source": "https://www.telluride.gov/DocumentCenter/View/2141/ColoradoAvenue305W-Courthouse-5SM1605-REVISED?bidId=",
+      "name_page": 1,
+      "match": "Unique polygon containing the survey UTM reference transformed from NAD27 / UTM 13N (EPSG:26713) to EPSG:26913; footprint shape and Colorado Avenue frontage checked against the survey description. Survey parcel does not match current GIS PIN.",
+      "survey_utm_nad27": [
+        252852,
+        4202462
+      ],
+      "coordinate_page": 2,
+      "local_review_pdf": "data/label_sources/courthouse.pdf",
+      "review_pdf_sha256": "9f4ddae952aaa40a7291ddf98ebf694c85c98b57ce268f18b767f8c59283ae98"
+    },
+    {
+      "number": 2,
+      "name": "New Sheridan Hotel",
+      "key_name": "New Sheridan Hotel",
+      "objectid": 446,
+      "survey_resource": "5SM.1534",
+      "address": "231\u2013235 W. Colorado Avenue",
+      "source": "https://www.telluride.gov/DocumentCenter/View/2138/ColoradoAvenue231-235W-5SM1534-REVISED?bidId=",
+      "name_page": 1,
+      "pin": "456536411007",
+      "match": "Unique exact survey parcel / GIS PIN match; principal footprint and frontage checked.",
+      "local_review_pdf": "data/label_sources/new_sheridan.pdf",
+      "review_pdf_sha256": "487c37436922290ff4ce311765458e7616ac5afd3e48028798a66b9a2b76f1cb"
+    },
+    {
+      "number": 3,
+      "name": "First National Bank of Telluride",
+      "key_name": "First National Bank",
+      "objectid": 831,
+      "survey_resource": "5SM.1537",
+      "address": "201 (207) W. Colorado Avenue",
+      "source": "https://www.telluride.gov/DocumentCenter/View/2131/ColoradoAvenue201W-5SM1537-REVISED?bidId=",
+      "name_page": 1,
+      "pin": "477901106001",
+      "match": "Unique exact survey parcel / GIS PIN match; original historic name retained, with shortened key name."
+    }
+  ],
+  "streets": [
+    "Colorado Avenue",
+    "Oak Street",
+    "Fir Street",
+    "Pine Street"
+  ],
+  "streets_source": "Existing OSMnx streets layer; named north/south and east/west portions merged for one label per street.",
+  "river": "San Miguel River",
+  "river_source": "Existing cached OSM API XML, name=San Miguel River and waterway=river; original way and node geometry retained.",
+  "dates_assigned": false,
+  "original_inventory_modified": false
+}

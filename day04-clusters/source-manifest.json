@@ -1,0 +1,26 @@
+{
+  "new-york-261101.osm.pbf": {
+    "url": "https://download.geofabrik.de/north-america/us/new-york-261101.osm.pbf",
+    "retrieval_date": "2026-11-02T20:30:54.536027+00:00",
+    "sha256": "08e1f52bbb7c2c349bbfc8c5afad0e45092139be71ba6103473ce30d7127582c",
+    "bytes": 498432060
+  },
+  "boroughs.geojson": {
+    "url": "https://data.cityofnewyork.us/resource/gthc-hcne.geojson",
+    "retrieval_date": "2026-11-02T20:30:54.540056+00:00",
+    "sha256": "be770a4463b68c2bacc0b0443380fe77936be0fb9c1835b5e9de53ff21effc34",
+    "bytes": 3166888
+  },
+  "inspections.json": {
+    "url": "https://data.cityofnewyork.us/resource/43nn-pn8j.json?$where=upper(dba)%20like%20%22%25HALAL%25%22&$limit=50000",
+    "retrieval_date": "2026-11-02T20:30:54.542079+00:00",
+    "sha256": "6493d13358688e29ed88ca495970c4d90195a52043a0ec25089267f74821dc50",
+    "bytes": 1639565
+  },
+  "neighborhoods.geojson": {
+    "url": "https://data.cityofnewyork.us/resource/9nt8-h7nd.geojson",
+    "retrieval_date": "2026-11-02T20:35:52.981768+00:00",
+    "sha256": "6d8f5ee8654ad1ffd6ea3975d50287102b2e98375c641bcd9dc23705a82edfc8",
+    "bytes": 4586084
+  }
+}

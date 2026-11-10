@@ -1,0 +1,16 @@
+{
+  "generator": "maps/day08-utopia/render.py",
+  "exported_utc": "2026-11-08T03:13:55.869069+00:00",
+  "output_png": "/Users/ishraq.ahmed/Documents/repo/codex_test/30daymapchallenge/maps/day08-utopia/day08-utopia-final.png",
+  "compatibility_png": "/Users/ishraq.ahmed/Documents/repo/codex_test/30daymapchallenge/maps/day08-utopia/poster.png",
+  "pixels": [
+    2400,
+    3000
+  ],
+  "png_bytes": 1123014,
+  "png_sha256": "1df681a22b86bb59e4102be07bef8c0f87186227a4853eca99453b525ea5aebd",
+  "generator_sha256": "f79ba892a9e927aa81580d09a325fe8cf7d4bdc640d14d51c5e3c28919fc083b",
+  "fresh_temporary_render": true,
+  "poster_preview": "poster.html?v=1df681a22b86-1794107635793961613",
+  "interactive_html_updated": true
+}

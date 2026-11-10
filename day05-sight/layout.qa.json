@@ -1,0 +1,180 @@
+{
+  "artboard_pixels": [
+    1620,
+    1350
+  ],
+  "fit_rule": "width:min(1620px,100vw,120svh); 6:5 aspect ratio",
+  "palette": {
+    "pitch": "#efefef",
+    "markings": "#898989",
+    "sight_lines": "#565656",
+    "goals": "#75aadb",
+    "other_attempts": "#747474",
+    "page": "#f7f7f7",
+    "goal": "#3d3d3d"
+  },
+  "pixels_per_metre": 20,
+  "previous_portrait_pixels_per_metre": 14,
+  "geometry_scale_increase": 1.4285714285714286,
+  "goalposts_artboard_pixels": [
+    [
+      736.8,
+      353
+    ],
+    [
+      883.2,
+      353
+    ]
+  ],
+  "goal_center_artboard_pixels": [
+    810,
+    353
+  ],
+  "horizontal_metric_extent": [
+    -5.25,
+    73.25
+  ],
+  "longitudinal_metric_extent": [
+    67.45,
+    105
+  ],
+  "visible_orientation": "Attacking goal at top; source x increases upward; source y increases rightward",
+  "goal_width_m": 7.32,
+  "equal_axis_scales": true,
+  "lowest_shot_y_px": 1058.2727272727273,
+  "field_bottom_y_px": 1104,
+  "lowest_shot_to_field_edge_px": 45.72727272727275,
+  "stats_label_baseline_y_px": 1220,
+  "goal_frame_top_y_px": 385,
+  "source_data_and_analytical_code_sha256_unchanged": {
+    "maps/day05-sight/analysis.json": "cbc8f69f80bc352f14879a32b0a121c327d338e1f53d9c9c0fb144404611e144",
+    "maps/day05-sight/geometry.py": "b1dbe3958058e9215cbbf9cf009b633832ccca903ff8b0f58c88ea741f6da091",
+    "maps/day05-sight/process_shots.py": "55f1254e57b7df778e722a3f53953107a60e80e4a8bff992ab571122af814d62",
+    "data/processed/day05-sight/messi_wc2026_shots.json": "5968270dc5d0e22f9c507a317f6e95c6efe1c55be221329cbf9512ecbed03bc2",
+    "data/processed/day05-sight/messi_wc2026_shots.csv": "4235609b1e76ff5e3eb6f5df00c8e457d58362bfdc657ceaee186f7fc90b271a"
+  },
+  "source_events_match_embedded_data": true,
+  "markers": 35,
+  "sight_lines": 70,
+  "heroes": 3,
+  "narrowest_label": "OFF TARGET",
+  "browser_review": {
+    "browser": "Chrome",
+    "whole_poster_fits_at_normal_zoom": true,
+    "review": "Final light-gray pitch and four-metric row reviewed at desktop and side-by-side 540/360 CSS px. Annotations fit without clipping; small source text remains intentionally quiet at phone scale.",
+    "reviewed_approx_widths": [
+      540,
+      360
+    ],
+    "narrowest_left_annotation_verified": false,
+    "narrowest_right_annotation_verified": true
+  },
+  "remaining_visual_concern": "Source text is intentionally quiet at phone-feed size; two penalties share identical coordinates.",
+  "screenshot_export": null,
+  "publication_ready": true,
+  "polish": {
+    "added_stats_goal_gap_px": 31,
+    "goal_frame_stroke_artboard_px": 3,
+    "goal_mouth_stroke_artboard_px": 3.6,
+    "goalpost_radius_artboard_px": 8.4,
+    "goalpost_light_outline_artboard_px": 1.3,
+    "outer_visible_vertical_opacity_before": 0.63,
+    "outer_visible_vertical_opacity_after": 0.47,
+    "main_unit_font_px": 42,
+    "number_font_px": 70,
+    "unit_size_ratio": 0.6,
+    "unit_gap_px": 8,
+    "widest_annotation_origin": [
+      690,
+      602
+    ],
+    "narrowest_annotation_origin": [
+      570,
+      1068
+    ],
+    "narrowest_leader": "One horizontal segment, approximately 32 artboard pixels",
+    "all_analytical_files_unchanged": true,
+    "dimensions": [
+      1620,
+      1350
+    ],
+    "user_visual_approval": true,
+    "visual_review_note": "Final single 1620 \u00d7 1350 composition approved for publication; title restored to What Messi Saw, narrowest annotation on right, widened gray pitch, four statistics."
+  },
+  "alignment": {
+    "pitch_center_x": 810,
+    "stats_column_centers_x": [
+      330,
+      650,
+      970,
+      1290
+    ],
+    "stats_text_anchor": "middle",
+    "legend_row_center_x": 810,
+    "header_center_x": 810,
+    "footer_center_x": 810,
+    "goal_dimension_label_center_x": 810,
+    "header_context_y": 223,
+    "added_space_above_stats_px": 18,
+    "explanation_font_px": 23,
+    "legend_to_explanation_baseline_gap_px": null,
+    "context_to_goal_label_gap_px": 72,
+    "extra_padding_above_context_px": 16
+  },
+  "publication_authorized": true,
+  "publication_authorization": "User approved the final What Messi Saw layout: Publish it.",
+  "release_sha256": {
+    "map.html": "40550dfcff3386254e11583953babd0b02d850a15c31b309e853f8b8d6850ac7",
+    "poster.html": "d548b6fe6d8503fa40a38079921537d5409941b503daf40a8a41ff7a5a0eba5f",
+    "analysis.json": "cbc8f69f80bc352f14879a32b0a121c327d338e1f53d9c9c0fb144404611e144",
+    "source-manifest.json": "dc273c06ce2f4480302f2d8e9ab0df7afd403d6a102f19cc07716ebb00e3323f",
+    "map.qa.json": "be43ac284c55357f28bf8231a66e930b4c3330b14bcc13513c70fbf05887b55a",
+    "README.md": "60281274bfee9b4b8a2aaee9ff4dd8f7b41c06c6621ae5dca7391c7573ed378d",
+    "map.results.md": "55d5c6c12772741645ed11ffd7515818cde1bd79d87b813a92ea245318409873"
+  },
+  "single_version": "Compact portrait is canonical map.html; previous published URLs redirect to it.",
+  "refinement": {
+    "metrics": [
+      "35 SHOTS",
+      "8 GOALS",
+      "19.4\u00b0 MEDIAN VIEW",
+      "18.7 m MEDIAN DISTANCE"
+    ],
+    "counts_match_embedded_events": true,
+    "goal_marker_count": 8,
+    "ordinary_ray_opacity": 0.07,
+    "goal_ray_opacity": 0.11,
+    "featured_ray_opacity": 0.52,
+    "goalpost_layer": "Above cones and rays",
+    "annotation_origins_before_global_translation": {
+      "widest": [
+        975,
+        580
+      ],
+      "longest": [
+        -30,
+        903
+      ],
+      "narrowest": [
+        905,
+        1068
+      ]
+    },
+    "extra_context_padding_px": 32,
+    "tests_passed": 7,
+    "export_dimensions_unchanged": true,
+    "extra_context_top_padding_px": 16,
+    "narrowest_leader": "Short horizontal line from the right edge of the shot ring to x=889, with text starting at x=905.",
+    "final_polish": {
+      "narrowest_text_shift_right_px": null,
+      "leader_shortened_px": null,
+      "pitch_before": "#ebebeb",
+      "pitch_after": "#efefef",
+      "legend_font_weight": 600,
+      "legend_color": "#444444"
+    },
+    "pitch_display_width_px": 1570,
+    "pitch_canvas_side_padding_px": 25
+  },
+  "title": "What Messi Saw"
+}

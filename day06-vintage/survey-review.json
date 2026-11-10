@@ -1,0 +1,31 @@
+{
+  "gis_date_fields": [],
+  "survey_index": "https://www.telluride.gov/391/2013-Telluride-Historic-Architectural-Su",
+  "consulted_form": "https://www.telluride.gov/DocumentCenter/View/2117/ColoradoAvenue103W-REVISED?bidId=",
+  "sample_address": "103 W. Colorado Avenue",
+  "sample_resource_id": "5SM.1541",
+  "sample_parcel": "477901119003",
+  "sample_construction_estimate": 1886,
+  "sample_date_is_estimate": true,
+  "sample_page": 3,
+  "sample_parcel_matches_in_inventory": 0,
+  "join_applied": false,
+  "reason": "Sample survey parcel not found in GIS PIN. Survey log uses site IDs and primary/secondary resources; source GIS has no matching site IDs or addresses. No dates propagated by proximity, district period, or shared parcel assumptions. A complete audited survey-to-footprint crosswalk is outside this first version.",
+  "pre1900_count": null,
+  "verified_joined_pre1900_records": 0,
+  "undated_records": 1131,
+  "refinement_review": {
+    "source": "https://www.telluride.gov/DocumentCenter/View/2131/ColoradoAvenue201W-5SM1537-REVISED?bidId=",
+    "resource_id": "5SM.1537",
+    "address": "201 (207) W. Colorado Avenue",
+    "construction_period": "1891\u20131892",
+    "date_type": "Actual construction range in survey section 25",
+    "source_page": 4,
+    "survey_parcel": "477901106001",
+    "unique_matching_inventory_objectid": 831,
+    "period_source": "https://www.telluride.gov/239/Historic-Preservation",
+    "district_significance_period": "1878\u20131913",
+    "classification_decision": "Keep existing rating symbology. One checked resource does not supply an inventory-wide age classification; no construction year or district period is propagated to existing feature attributes.",
+    "dataset_modified": false
+  }
+}

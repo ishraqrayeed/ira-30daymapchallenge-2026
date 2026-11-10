@@ -1,0 +1,111 @@
+{
+  "title": "TELLURIDE",
+  "subtitle": "Echoes of a Mining Town",
+  "dimensions_px": [
+    2400,
+    3000
+  ],
+  "qgis": "3.44.9-Solothurn",
+  "crs": "EPSG:26913",
+  "all_print_map_layers_vector": true,
+  "archival_images_used": false,
+  "print_layers": [
+    "landmark_labels",
+    "street_labels",
+    "river",
+    "Town historic structures inventory \u00b7 evidence classes",
+    "Contemporary streets \u00b7 OSMnx / OpenStreetMap",
+    "USGS 3DEP \u00b7 50 m contours"
+  ],
+  "map_extent": "252195.0000000000000000,4202155.9151785708963871 : 253445.0000000000000000,4203244.0848214291036129",
+  "label_audit": {
+    "landmarks": [
+      {
+        "number": 1,
+        "name": "San Miguel County Courthouse",
+        "objectid": 1045,
+        "point_on_matched_footprint": true,
+        "match": "Unique polygon containing the survey UTM reference transformed from NAD27 / UTM 13N (EPSG:26713) to EPSG:26913; footprint shape and Colorado Avenue frontage checked against the survey description. Survey parcel does not match current GIS PIN."
+      },
+      {
+        "number": 2,
+        "name": "New Sheridan Hotel",
+        "objectid": 446,
+        "point_on_matched_footprint": true,
+        "match": "Unique exact survey parcel / GIS PIN match; principal footprint and frontage checked."
+      },
+      {
+        "number": 3,
+        "name": "First National Bank of Telluride",
+        "objectid": 831,
+        "point_on_matched_footprint": true,
+        "match": "Unique exact survey parcel / GIS PIN match; original historic name retained, with shortened key name."
+      }
+    ],
+    "street_names": [
+      "Colorado Avenue",
+      "Oak Street",
+      "Fir Street",
+      "Pine Street"
+    ],
+    "river_name": "San Miguel River",
+    "river_osm_way_ids": [
+      "45904274",
+      "45932873",
+      "45939672",
+      "46017584",
+      "46067376"
+    ],
+    "original_inventory_modified": false
+  },
+  "landmark_label_count": 3,
+  "street_label_count": 4,
+  "river_label_count": 1,
+  "main_map_scope": "downtown historic core",
+  "inset_scope": "full inventory extent",
+  "inset_map_extent": "249224.6865334839967545,4201545.6967904120683670 : 254018.5499670740100555,4204741.6057461379095912",
+  "inset_contains_full_inventory": true,
+  "inset_links_to_main_map": true,
+  "previous_refinement_map_width_m": 2331.428571428638,
+  "scale_increase_from_previous": 1.8651428571429103,
+  "main_map_id": "day06-main-map",
+  "inset_map_id": "day06-refinement-inset",
+  "displayed_inventory_records": 919,
+  "displayed_classes": {
+    "other_or_unrated": 606,
+    "historic_rating": 292,
+    "legacy": 21
+  },
+  "labels": [
+    "293 footprints with historic ratings \u00b7 town inventory",
+    "TOWN CONTEXT",
+    "1",
+    "San Miguel County Courthouse",
+    "2",
+    "New Sheridan Hotel",
+    "3",
+    "First National Bank",
+    "Historic ratings",
+    "Other / unrated",
+    "Demolished / legacy",
+    "Contemporary geometry \u00b7 Construction dates not assigned",
+    "Town of Telluride \u00b7 \u00a9 OpenStreetMap contributors (ODbL) \u00b7 USGS 3DEP"
+  ],
+  "pre1900_count": null,
+  "highlighted_source_footprints": 293,
+  "highlighted_distinct_nonnull_bldg_ids": 279,
+  "highlighted_null_bldg_id_records": 10,
+  "statistic_unit": "source polygon footprints, not distinct physical buildings",
+  "linear_scale_multiplier": 2.2848,
+  "original_map_width_m": 2856,
+  "current_map_width_m": 1250.0,
+  "graphic_legend_swatches": 3,
+  "index_contour_interval_m": 250,
+  "minor_contour_interval_m": 50,
+  "gpkg_sha256_before": "161147f77e8c6a5811afb1bd87035fc3e992ca06d6a59bc08dfe0ed90dd631a0",
+  "gpkg_sha256_after": "161147f77e8c6a5811afb1bd87035fc3e992ca06d6a59bc08dfe0ed90dd631a0",
+  "existing_project_refined_in_place": true,
+  "png_sha256": "533dd148f5f5f6a264c16e548ad4e165114edc812509c73360c1b54d042ca9a4",
+  "publication_authorized": false,
+  "final_polish_report": "final-polish.qa.json"
+}

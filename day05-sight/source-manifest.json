@@ -1,0 +1,78 @@
+{
+  "retrieval_date": "2026-11-02",
+  "event_revision": "4674e5c674a852a60def48456d5bbfec0627932a",
+  "crosscheck_revision": "7cc05cdc046f505939bb27f5097e22f9a2cb8a7d",
+  "publication_ready": false,
+  "event_reuse_terms": "No explicit license found; README requests WhoScored and Noah Bair credit. Local research preview only pending reuse clarification.",
+  "crosscheck_license": "CC BY 4.0 for structured dataset; original FIFA PDFs excluded",
+  "files": [
+    {
+      "cache_name": "algeria.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_argentina_vs_algeria_2026-06-17_events.csv",
+      "sha256": "b0ecebb1b49511643ca66f8c6121028a6248c248fcb01573cef970ac21987891",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "argentina_vs_austria_2026-06-22.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_argentina_vs_austria_2026-06-22_events.csv",
+      "sha256": "67448d38ee450b39cacc5915bf617e9c81c39f0514421b64a82ff8590f37ca02",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "argentina_vs_cabo_verde_2026-07-03.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_argentina_vs_cabo_verde_2026-07-03_events.csv",
+      "sha256": "cda5afbc03fc78c46f78dae6d8b3d1a6ba71998eda1e92c00a83cf0c8a6a00b9",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "argentina_vs_egypt_2026-07-07.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_argentina_vs_egypt_2026-07-07_events.csv",
+      "sha256": "2283a3ddce99ecc8856c3d50d25e61db67fb7049226e48e36d1b54361f5e8102",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "argentina_vs_switzerland_2026-07-12.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_argentina_vs_switzerland_2026-07-12_events.csv",
+      "sha256": "dbabdbc5947e5cf2aaf446c1a75b1a4f8dc9eac2235bdecbb04921a5f45bd304",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "england_vs_argentina_2026-07-15.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_england_vs_argentina_2026-07-15_events.csv",
+      "sha256": "f12ce4767d42e4a8d97f473ae7f2ee82e819f1de6d6f786f0a33b234d64c3a8f",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "jordan_vs_argentina_2026-06-28.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_jordan_vs_argentina_2026-06-28_events.csv",
+      "sha256": "513810df4bcb3644cd849302abd0dc2e62c7500982b54480b73748e633a417a1",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "spain_vs_argentina_2026-07-19.csv",
+      "url": "https://raw.githubusercontent.com/nlbair/wc2026-events/4674e5c674a852a60def48456d5bbfec0627932a/data/raw/wc2026_spain_vs_argentina_2026-07-19_events.csv",
+      "sha256": "7ee358b5763776fcbc221b7624c84c54581bd2a97f861f6def6b87374e8de065",
+      "source": "Noah Bair / WhoScored"
+    },
+    {
+      "cache_name": "fifa_attempts_at_goal.csv",
+      "url": "https://raw.githubusercontent.com/Alamyy/Worldcup26/7cc05cdc046f505939bb27f5097e22f9a2cb8a7d/data/csv/attempts_at_goal.csv",
+      "sha256": "4eb6b682f781806f24fa7223ed17ff3f7593b852d630e2a4e831488c61124886",
+      "source": "Hesham El Alamy / FIFA reports"
+    },
+    {
+      "cache_name": "fifa_matches.csv",
+      "url": "https://raw.githubusercontent.com/Alamyy/Worldcup26/7cc05cdc046f505939bb27f5097e22f9a2cb8a7d/data/csv/matches.csv",
+      "sha256": "db45019c35f4d2a837ec9db1423e7117d38bc1b32554211f586f6873d97d0489",
+      "source": "Hesham El Alamy / FIFA reports"
+    },
+    {
+      "cache_name": "fifa_match_appearances.csv",
+      "url": "https://raw.githubusercontent.com/Alamyy/Worldcup26/7cc05cdc046f505939bb27f5097e22f9a2cb8a7d/data/csv/match_appearances.csv",
+      "sha256": "6da9fa82a69475c509bcec6b9d6146087681849207eea87e1215d8ee19495cb5",
+      "source": "Hesham El Alamy / FIFA reports"
+    }
+  ],
+  "coordinate_reference": "https://raw.githubusercontent.com/andrewRowlinson/mplsoccer/main/mplsoccer/soccer/dimensions.py",
+  "coordinate_method_reference": "https://mplsoccer.readthedocs.io/en/latest/gallery/pitch_setup/plot_explain_standardizer.html"
+}

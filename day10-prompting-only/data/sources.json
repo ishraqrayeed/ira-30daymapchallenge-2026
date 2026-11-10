@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_admin_0_countries.geojson",
+    "retrieved": "2026-11-08",
+    "source_sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+    "output_sha256": "268a490429212e862af1c6147166546305e7154a6ad5631759848b16162c1694",
+    "terms": "Public domain; Natural Earth 5.1.2, 1:110m generalized geography"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_marine_polys.geojson",
+    "retrieved": "2026-11-08",
+    "source_sha256": "b9c3f7f557d0ff5217906adc82b66ecdac14aa7438df7e518cf6675d037bceb8",
+    "output_sha256": "5de01a22294edb7cebcbe59079a54d6edef62e0f867707626d8d50bfc2910b13",
+    "terms": "Public domain; Natural Earth 5.1.2, 1:110m generalized geography"
+  }
+]

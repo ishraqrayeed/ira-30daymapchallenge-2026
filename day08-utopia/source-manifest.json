@@ -1,0 +1,144 @@
+[
+  {
+    "file": "places.zip",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_48_place_500k.zip",
+    "bytes": 1719371,
+    "sha256": "3c319b5f82c7b81448a40655f0810e4e3ec54f75ca877109967ab247fca2867e",
+    "retrieved_utc": "2026-11-07T01:27:12.549214+00:00"
+  },
+  {
+    "file": "airports.csv",
+    "url": "https://davidmegginson.github.io/ourairports-data/airports.csv",
+    "bytes": 12757683,
+    "sha256": "e2e65a3ddaf76170c0e2c373cb8b68597bdf3b59d243c4d6db454d48498ba6d7",
+    "retrieved_utc": "2026-11-07T01:27:15.471340+00:00"
+  },
+  {
+    "file": "dart.zip",
+    "url": "https://www.dart.org/transitdata/latest/google_transit.zip",
+    "bytes": 8420769,
+    "sha256": "a6febd53d0cdf6239e7e53245d2e97fe5438b983910c8aa35bf8b4ab4b5ed25b",
+    "retrieved_utc": "2026-11-07T01:27:12.558096+00:00"
+  },
+  {
+    "file": "trinity.zip",
+    "url": "https://gtfsdata.ridetm.org/gtfs/fwtatransitdata.zip",
+    "bytes": 1711446,
+    "sha256": "015389018ee7123508f8f2480f115b7ca736b54bf77ec6d05ffaf6d1a1441209",
+    "retrieved_utc": "2026-11-07T01:27:12.554266+00:00"
+  },
+  {
+    "file": "dcta.zip",
+    "url": "https://gtfs.remix.com/dcta_denton_tx_us.zip",
+    "bytes": 381897,
+    "sha256": "99dce4ef09695dede1e1828a6b4047d2856442bb3c9098f25955ad03df020047",
+    "retrieved_utc": "2026-11-07T01:27:12.554456+00:00"
+  },
+  {
+    "file": "nyc-stations.json",
+    "url": "https://data.ny.gov/resource/39hk-dx4f.json?$limit=5000",
+    "bytes": 285417,
+    "sha256": "40f829816b08434dfd23ddd6e2b75a98ad7bd9bc2c00861c9a257726435cb0cb",
+    "retrieved_utc": "2026-11-07T01:27:12.554374+00:00"
+  },
+  {
+    "file": "nyc-routes.geojson",
+    "url": "https://data.ny.gov/resource/s692-irgq.geojson?$limit=5000",
+    "bytes": 8822409,
+    "sha256": "76c741a558f1e9844d04f68f55c126e7fa106cba3e38cdc4e60cd135b78973a4",
+    "retrieved_utc": "2026-11-07T01:27:12.570739+00:00"
+  },
+  {
+    "file": "counties.zip",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip",
+    "bytes": 11626066,
+    "sha256": "da4051717caec55c75e3748c3608c2a3dbde8d1ff401bbaf4f952e3c3fb63ef1",
+    "retrieved_utc": "2026-11-07T01:27:12.573421+00:00"
+  },
+  {
+    "file": "nyc-boroughs.geojson",
+    "url": "https://data.cityofnewyork.us/resource/gthc-hcne.geojson?$limit=10",
+    "bytes": 3166888,
+    "sha256": "be770a4463b68c2bacc0b0443380fe77936be0fb9c1835b5e9de53ff21effc34",
+    "retrieved_utc": "2026-11-07T01:27:12.563225+00:00"
+  },
+  {
+    "file": "dallas.osm.pbf",
+    "url": "https://download.bbbike.org/osm/bbbike/Dallas/Dallas.osm.pbf",
+    "bytes": 47127744,
+    "sha256": "b57588a34c5e582f3cf5996e124362b4f3438f687b14bf022fc36ceabbbd8be5",
+    "retrieved_utc": "2026-11-07T01:24:23.033582+00:00",
+    "snapshot_last_modified": "2026-10-31T17:04:47Z"
+  },
+  {
+    "file": "gnis-tx.zip",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/DomesticNames_TX_Text.zip",
+    "bytes": 2175513,
+    "sha256": "cd0f744706260d53d4580d52c35fa7c4438418df82f400a68cdaad5856dd92ad",
+    "retrieved_utc": "2026-11-07T03:06:03.437814+00:00"
+  },
+  {
+    "file": "tl_2025_48113_roads.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/ROADS/tl_2025_48113_roads.zip",
+    "bytes": 6288731,
+    "sha256": "09f2aa5cf036b74d1af4d3dd1f925bee1ebd93504c44f87491b36bfff4897d72",
+    "retrieved_utc": "2026-11-07T03:24:06.542678+00:00",
+    "coverage": "Dallas County; 2025 TIGER/Line; US public domain"
+  },
+  {
+    "file": "tl_2025_48439_roads.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/ROADS/tl_2025_48439_roads.zip",
+    "bytes": 6261956,
+    "sha256": "921245f43dc66aea8669604bd61510373b0ecea1117a83b45bc6eadc9cc3107c",
+    "retrieved_utc": "2026-11-07T03:24:09.443682+00:00",
+    "coverage": "Tarrant County; 2025 TIGER/Line; US public domain"
+  },
+  {
+    "file": "tl_2025_48121_roads.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/ROADS/tl_2025_48121_roads.zip",
+    "bytes": 3362618,
+    "sha256": "241291a62b34e376406728f24e19ad87b8dac11ed31335ee36347b92a9afc12a",
+    "retrieved_utc": "2026-11-07T03:24:12.291569+00:00",
+    "coverage": "Denton County; 2025 TIGER/Line; US public domain"
+  },
+  {
+    "file": "tl_2025_48085_roads.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/ROADS/tl_2025_48085_roads.zip",
+    "bytes": 4500248,
+    "sha256": "0f141a1c89e0d2634d20d1a9d5c382a7b22667913a683856c07b41c45350f6e7",
+    "retrieved_utc": "2026-11-07T03:24:13.874128+00:00",
+    "coverage": "Collin County; 2025 TIGER/Line; US public domain"
+  },
+  {
+    "file": "tl_2025_48113_areawater.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/AREAWATER/tl_2025_48113_areawater.zip",
+    "bytes": 1035247,
+    "sha256": "f3525d8f167b9296f240d2f57f82f00362361026dd54c3602170135421c3c00e",
+    "retrieved_utc": "2026-11-08T03:12:13.773662+00:00",
+    "coverage": "Dallas County; 2025 TIGER/Line areal water; US public domain"
+  },
+  {
+    "file": "tl_2025_48439_areawater.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/AREAWATER/tl_2025_48439_areawater.zip",
+    "bytes": 605936,
+    "sha256": "43e89bc5a2bd79775b5e1185be838c94e6fa0a45e9ebf85494c8278349509e6d",
+    "retrieved_utc": "2026-11-08T03:12:15.955085+00:00",
+    "coverage": "Tarrant County; 2025 TIGER/Line areal water; US public domain"
+  },
+  {
+    "file": "tl_2025_48121_areawater.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/AREAWATER/tl_2025_48121_areawater.zip",
+    "bytes": 1360967,
+    "sha256": "1f288fe437116ef3d04c30a556c44a976c327ef6fa92b5df1a06c42c6d42cd61",
+    "retrieved_utc": "2026-11-08T03:12:17.833312+00:00",
+    "coverage": "Denton County; 2025 TIGER/Line areal water; US public domain"
+  },
+  {
+    "file": "tl_2025_48085_areawater.zip",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/AREAWATER/tl_2025_48085_areawater.zip",
+    "bytes": 1181652,
+    "sha256": "cc7d88c66203cf1c6e9d5845c820ae46a3ea24d29f169c20da3aefc22bf353d6",
+    "retrieved_utc": "2026-11-08T03:12:19.140087+00:00",
+    "coverage": "Collin County; 2025 TIGER/Line areal water; US public domain"
+  }
+]
