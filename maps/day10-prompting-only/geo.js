@@ -1,13 +1,13 @@
 /* Pure spherical geography; shared by browser and Node QA. */
 (function(root){
-const presets=[['Denver',39.7392,-104.9903],['Dhaka',23.8103,90.4125],['New York',40.7128,-74.006],['London',51.5074,-.1278],['Tokyo',35.6762,139.6503],['Sydney',-33.8688,151.2093]];
+const presets=[['Denver',39.7392,-104.9903],['Dhaka',23.8103,90.4125],['New York',40.7128,-74.006],['London',51.5074,-.1278],['Tokyo',35.6762,139.6503]];
 // Add 180 degrees, then normalize to [-180, 180). Handles wrapped inputs too.
 function normalize(lon){return ((lon+180)%360+360)%360-180;}
 function antipode(lat,lon){
  if(!Number.isFinite(lat)||Math.abs(lat)>90||!Number.isFinite(lon))throw new RangeError('Invalid latitude/longitude');
  return {lat:-lat,lon:normalize(lon+180)};
 }
-const presetLabels={Denver:'Denver, Colorado, USA',Dhaka:'Dhaka, Bangladesh','New York':'New York, New York, USA',London:'London, United Kingdom',Tokyo:'Tokyo, Japan',Sydney:'Sydney, New South Wales, Australia'};
+const presetLabels={Denver:'Denver, Colorado, USA',Dhaka:'Dhaka, Bangladesh','New York':'New York, New York, USA',London:'London, United Kingdom',Tokyo:'Tokyo, Japan'};
 // Orthographic side view of the selected diameter: project the actual ECEF
 // tunnel into an origin-aligned section plane. No second globe coordinate system.
 function sectionPoint(lat,lon,t){const axis=vector(lat,lon),p=tunnel(lat,lon,t);const along=p.reduce((sum,v,i)=>sum+v*axis[i],0)/6371000;const angle=-Math.PI*.77;return {x:along*Math.cos(angle),y:along*Math.sin(angle)};}

@@ -12,7 +12,7 @@
       "equator",
       "both poles",
       "antimeridian",
-      "all six presets",
+      "all five presets",
       "180-degree central separation",
       "double antipode",
       "center-crossing 12742 km diameter",
@@ -53,9 +53,23 @@
     "limits": "Desktop verification. Existing mobile styling preserved; no new mobile visual review in this focused fix."
   },
   "assets_sha256": {
-    "geo.js": "fa6e774737213edc4ba41d89dab947afb489a59b1738eecaf77e14ea19eb48b3",
-    "app.js": "a15174e0dc68a5e812d109dbdf96f2eb3651d387c5f65337b65e7d4d98c75556",
-    "map.html": "058df87a8a5fa476dddfbe0e3b798b2b9cf8bcc567240cf48495816bc6f25acb",
-    "style.css": "a0961b0d5551bf7df059daa414fe18b4f84b129ef4ca00abb2d221b3658f0db3"
+    "geo.js": "be6dcced195475539a59c3595731cf1f68bc4be7f107050123ac7af236308dba",
+    "app.js": "b0f37c5c7c3ee677929175b871e7b6939d535b73efe2d3ffa5a5db1fe005b0d4",
+    "map.html": "2c4533e7d559593046275c6b1a083511745a7ce175d806e4ccb77c3ca379eb74",
+    "style.css": "34a0fa3a10f9f11df62714d14f35d4a2ce571b8691e5db809cb5192e0e2b234f"
+  },
+  "readability": {
+    "date": "2026-11-09",
+    "changes": "Small desktop text 15\u201317px, mobile labels at least 14px, mobile footer 13px; larger canvas labels; modest width/spacing adjustments and wrapping for enlarged controls",
+    "checks": "JavaScript syntax and geography regression checks; awaiting visual review",
+    "presets": [
+      "Denver",
+      "Dhaka",
+      "New York",
+      "London",
+      "Tokyo"
+    ],
+    "visual_review": "User reviewed enlarged fonts and five presets over local HTTP and approved publication.",
+    "publication": "Approved by user; deployment status recorded in GitHub Actions"
   }
 }

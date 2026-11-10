@@ -12,4 +12,4 @@ assert.equal(G.classify(39,-105,countries,marine).name,'United States of America
 assert.deepEqual(G.classify(0,181,countries,marine),G.classify(0,-179,countries,marine));
 for(const [,lat,lon]of G.presets){const a=G.antipode(lat,lon);assert.notEqual(G.classify(a.lat,a.lon,countries,marine).name,'Unclassified waters / coastal area');}
 assert.throws(()=>G.antipode(91,0),RangeError);assert.throws(()=>G.antipode(0,NaN),RangeError);
-console.log(`PASS ${count} global / wrapped-coordinate cases: involution, 180° separation, diameter, center and rendered section projection. Country/ocean and six preset checks passed.`);
+console.log(`PASS ${count} global / wrapped-coordinate cases: involution, 180° separation, diameter, center and rendered section projection. Country/ocean and five preset checks passed.`);
