@@ -1,0 +1,6 @@
+osmnx==1.9.1
+geopandas>=0.14,<2
+shapely>=2,<3
+pyproj>=3.6,<4
+numpy>=1.26,<3
+scipy>=1.11,<2

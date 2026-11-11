@@ -1,0 +1,78 @@
+{
+  "reviewed": "2026-11-11",
+  "project": "The World in Traffic",
+  "data_checks": {
+    "status": "passed",
+    "command": "python3 maps/day11-sound/validate.py",
+    "maps": 12,
+    "available_recordings": 12,
+    "unavailable": [],
+    "radius_m": 1000,
+    "geometry_preservation": "All ten retained cities have identical SVG path coordinates before and after style regeneration.",
+    "new_maps": [
+      "Sydney: actual OSM road geometry via existing Python pipeline",
+      "Johannesburg: actual OSM road geometry via existing Python pipeline"
+    ],
+    "source_caches": "Ignored data/day11-traffic/; retired city assets archived locally only"
+  },
+  "browser_checks": {
+    "engine": "Safari and Chrome at 100% zoom over scripts/preview_map.py local HTTP",
+    "viewports": [
+      "1366 × 768 desktop",
+      "390 × 844 mobile",
+      "1280 × 650 compact laptop"
+    ],
+    "passed": [
+      "All 12 SVGs render",
+      "4 desktop columns and 2 mobile columns",
+      "No horizontal overflow",
+      "Neutral default and no autoplay",
+      "No default disabled player controls",
+      "Real playback for all 12 available recordings",
+      "One selected and one playing city",
+      "Click active city to pause/resume",
+      "Dynamic selected city and verified creator attribution",
+      "Native media duration and current time",
+      "Progress seeking",
+      "Mute and unmute",
+      "Global player pause/resume",
+      "Sydney playback and pause at mobile viewport",
+      "No observed runtime errors, promise rejections or console errors during automated browser checks",
+      "Space activates and Enter pauses a focused city",
+      "Desktop and mobile visual review of maps, labels, player and attribution",
+      "1280 × 650 default gallery fits vertically",
+      "Complete gallery visible in Chrome at 100% zoom, including source footer",
+      "Johannesburg replacement rendered at desktop/mobile sizes; all twelve recordings exercised in Chrome, including pause/resume and player fit"
+    ],
+    "compact_laptop_selected_player": "Passed for all twelve available recordings at 1280 × 650 in Chrome."
+  },
+  "motion_performance": {
+    "status": "passed",
+    "environment": "Node/jsdom with mock audio analyser and reduced-motion media query",
+    "checks": [
+      "Reduced motion leaves static bars",
+      "Actual analyser sample values drive bar heights",
+      "Pausing cancels animation frames",
+      "One shared audio element"
+    ]
+  },
+  "packaging": {
+    "status": "passed",
+    "scope": "Day 11 package only, temporary output",
+    "contents": "12 SVG maps and 12 MP3 files; no retired cities"
+  },
+  "scope": "File hashes confirm no previous challenge day changed in this refinement turn.",
+  "rights": {
+    "Sydney": "CC0 1.0, thefilmbakery, City Street Weekend.aif",
+    "Dhaka": "Used with permission explicitly confirmed by user; not Creative Commons",
+    "other_available": "Existing CC0 / CC BY sources retained",
+    "Johannesburg": "CC0 1.0, noisymichael, Johannesburg_CBD"
+  },
+  "limitations": [
+    "Unknown exact microphone positions remain distinguished from representative map centers.",
+    "Freesound sources use published HQ previews rather than original masters.",
+    "Mumbai and London preserve shorter 15 s and 17.44 s sources.",
+    "Playback normalization is not a real-world sound-pressure comparison."
+  ],
+  "publication": "Prepared for user-requested GitHub Pages publication; deployment status is tracked by the Pages workflow."
+}

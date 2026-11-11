@@ -102,6 +102,16 @@ cross-section to its calculated antipode.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day10-prompting-only/) ·
 [Sources and method](maps/day10-prompting-only/README.md)
 
+## Day 11 — Sound
+
+### The World in Traffic
+
+Twelve circular OpenStreetMap street networks paired with authentic traffic
+recordings from cities around the world. Choose a city to hear its streets.
+
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day11-sound/) ·
+[Sources and methods](maps/day11-sound/README.md)
+
 ## Run locally
 
 ```sh

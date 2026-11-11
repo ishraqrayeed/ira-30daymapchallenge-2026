@@ -1,0 +1,182 @@
+{
+  "dhaka": {
+    "id": "dhaka",
+    "center_lat_lon": [
+      23.7567,
+      90.3755
+    ],
+    "center_basis": "Representative center at Dhanmondi 27 / Mirpur Road, matching the user-selected video location; not verified camera coordinates.",
+    "crs": "EPSG:32646",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 1147,
+    "sha256": "68658ea79e91049d3dabb930acb6d5e474110f3858a54d3ec773e6c14ea36caf",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T19:08:30.173385+00:00"
+  },
+  "new-york": {
+    "id": "new-york",
+    "center_lat_lon": [
+      40.758,
+      -73.9855
+    ],
+    "center_basis": "Representative urban location: Times Square. Not a verified recording coordinate.",
+    "crs": "EPSG:32618",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 753,
+    "sha256": "20af7b3bb536220a959b0fa9566a1801a28a0024c3ebcaed1ad2c5b76aba2ab2",
+    "download_method": "OSMnx / Overpass",
+    "osm_retrieved_utc": "2026-11-11T19:08:30.545460+00:00"
+  },
+  "mumbai": {
+    "id": "mumbai",
+    "center_lat_lon": [
+      19.055,
+      72.8402
+    ],
+    "center_basis": "Representative urban location: S. V. Road, Bandra. Not a verified recording coordinate.",
+    "crs": "EPSG:32643",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 1303,
+    "sha256": "de1dd3468da03173865e7496488fab52034189ab64df09be86c168dbc93ae8ec",
+    "download_method": "OSMnx / Overpass",
+    "osm_retrieved_utc": "2026-11-11T19:08:30.910905+00:00"
+  },
+  "london": {
+    "id": "london",
+    "center_lat_lon": [
+      51.5154,
+      -0.141
+    ],
+    "center_basis": "Representative urban location: Oxford Circus. Not a verified recording coordinate.",
+    "crs": "EPSG:32630",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 2328,
+    "sha256": "a0eeb95ee08e8ad86ad8b73a62bc74913378bf47bdf8bc8c38e411b3fd5b3358",
+    "download_method": "OSMnx / Overpass",
+    "osm_retrieved_utc": "2026-11-11T19:08:31.506052+00:00"
+  },
+  "tokyo": {
+    "id": "tokyo",
+    "center_lat_lon": [
+      35.6595,
+      139.7005
+    ],
+    "center_basis": "Representative urban location: Shibuya crossing. Not a verified recording coordinate.",
+    "crs": "EPSG:32654",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 2501,
+    "sha256": "867a93ddfd08c2d8c5946d06d36907fef9620ea19532d484c4eaed903c422129",
+    "download_method": "OSMnx / Overpass",
+    "osm_retrieved_utc": "2026-11-11T19:08:32.303709+00:00"
+  },
+  "cairo": {
+    "id": "cairo",
+    "center_lat_lon": [
+      30.0535,
+      31.2387
+    ],
+    "center_basis": "Representative center near Nasser metro square, matching the named recording area; not exact microphone coordinates.",
+    "crs": "EPSG:32636",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 3685,
+    "sha256": "4f7dd8c7f55922c65a29291ba4204b97f4ad4a7e0c1f99d81bd3d66d246d39e7",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T19:08:43.945996+00:00"
+  },
+  "bangkok": {
+    "id": "bangkok",
+    "center_lat_lon": [
+      13.7444,
+      100.5347
+    ],
+    "center_basis": "Representative urban location: Ratchaprasong intersection. Not a verified recording coordinate.",
+    "crs": "EPSG:32647",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 1289,
+    "sha256": "bec739d5a0346bd9ad973218bacce1ad5cfeaa03005f1ffbbbcf2cbec9087c94",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T19:08:55.139518+00:00"
+  },
+  "istanbul": {
+    "id": "istanbul",
+    "center_lat_lon": [
+      41.0369,
+      28.985
+    ],
+    "center_basis": "Representative urban location: Taksim Square. Not a verified recording coordinate.",
+    "crs": "EPSG:32635",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 2428,
+    "sha256": "dcf4aeddaa727ab5f8880c054542172a2873211eaea71367839f448733883232",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T19:11:36.120233+00:00"
+  },
+  "sao-paulo": {
+    "id": "sao-paulo",
+    "center_lat_lon": [
+      -23.5614,
+      -46.6559
+    ],
+    "center_basis": "Representative urban location: Avenida Paulista / MASP. Not a verified recording coordinate.",
+    "crs": "EPSG:32723",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 796,
+    "sha256": "caf550a2c27a05ebe029e85b590b8b46bb6b5e39a5e19efda45e00cf482f9eda",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T19:11:51.964204+00:00"
+  },
+  "mexico-city": {
+    "id": "mexico-city",
+    "center_lat_lon": [
+      19.4354,
+      -99.1404
+    ],
+    "center_basis": "Representative center on Eje Central beside Bellas Artes, matching the named recording area; not exact microphone coordinates.",
+    "crs": "EPSG:32614",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 1177,
+    "sha256": "38c9754a8e558bf8a249aa2709da262c51b57b77a764c67650609c29d049c0cb",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T19:12:12.018063+00:00"
+  },
+  "sydney": {
+    "id": "sydney",
+    "center_lat_lon": [
+      -33.8732,
+      151.2066
+    ],
+    "center_basis": "Representative central urban location: George Street near Town Hall. The source identifies Sydney but not the exact recording street.",
+    "crs": "EPSG:32756",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 1613,
+    "sha256": "3487daf63ec7971168ec6dfccb5d6e40b4c584a3720c3ae2e9afdf8648727a20",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T19:46:20.134049+00:00"
+  },
+  "johannesburg": {
+    "id": "johannesburg",
+    "center_lat_lon": [
+      -26.2055,
+      28.042
+    ],
+    "center_basis": "Representative center at Gandhi Square in Johannesburg CBD, matching the recording district. Exact recording route and microphone positions are unknown.",
+    "crs": "EPSG:32735",
+    "radius_m": 1000,
+    "extraction_distance_m": 1300,
+    "rendered_line_parts": 1716,
+    "sha256": "9060e02c4bfe2a7a3cdfb399350e04beff553ddc29532ad248a5561fdb93e3c9",
+    "download_method": "OSM map API quadrants",
+    "osm_retrieved_utc": "2026-11-11T20:03:37.611602+00:00"
+  }
+}

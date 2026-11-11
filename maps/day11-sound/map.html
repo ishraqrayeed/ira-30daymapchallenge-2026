@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#F8F8F5">
+<title>The World in Traffic · Day 11</title>
+<meta name="description" content="12 cities. 12 streets. 12 soundscapes. An atlas for your ears, drawn from OpenStreetMap and real field recordings.">
+<link rel="stylesheet" href="style.css?v=laptop-fit-2"><script defer src="app.js?v=johannesburg"></script>
+</head>
+<body>
+<header><p class="eyebrow">30DAYMAPCHALLENGE 2026 <span>11 / SOUND</span></p><h1>The World in Traffic</h1><p class="subtitle">12 cities. 12 streets. 12 soundscapes.</p></header>
+<main><section class="gallery" id="gallery" aria-label="Twelve city street maps"></section>
+<section class="listening" aria-label="Recording and playback">
+  <p id="now" role="status">Select a city to hear its streets.</p>
+  <div id="player" hidden>
+    <p id="recording-detail">Traffic field recording · <span id="elapsed">0:00</span> / <span id="duration">0:00</span></p>
+    <div class="controls">
+      <button id="toggle" aria-label="Play selected recording">Play</button>
+      <label class="sr-only" for="progress">Recording progress</label>
+      <input id="progress" type="range" min="0" max="100" value="0" step="0.1" aria-valuetext="0:00" />
+      <button id="mute" aria-pressed="false">Mute</button>
+      <canvas id="waveform" width="160" height="30" aria-hidden="true"></canvas>
+    </div>
+  </div>
+  <p id="credit"></p>
+</section></main>
+<footer><span>Every circle is 2 km across · North up</span><span>Streets © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a></span><a href="DATA_SOURCES.md">Sources &amp; listening notes ↗</a></footer>
+<noscript>This gallery requires JavaScript for city selection and sound playback.</noscript>
+</body></html>

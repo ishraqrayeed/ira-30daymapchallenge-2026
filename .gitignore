@@ -23,3 +23,6 @@ data/processed/*
 *.tiff
 
 .local-notes/
+
+# Day 11 raw OSM responses, source recordings and superseded draft assets
+data/day11-traffic/

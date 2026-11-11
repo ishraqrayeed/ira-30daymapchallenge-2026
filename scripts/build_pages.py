@@ -42,6 +42,34 @@ DAY6_EXPORTS = ('exports/day06_telluride.png', 'exports/day06_telluride_linkedin
                 'exports/day06_telluride_3000x3750.png')
 
 
+DAY11_CITIES = ('dhaka', 'new-york', 'mumbai', 'london', 'tokyo', 'cairo',
+                'bangkok', 'sydney', 'istanbul', 'sao-paulo', 'johannesburg', 'mexico-city')
+DAY11_FILES = ('map.html', 'app.js', 'style.css', 'README.md', 'DATA_SOURCES.md',
+               'recordings.json', 'qa-review.json', 'streets/qa.json') + tuple(
+                   f'streets/{city}.svg' for city in DAY11_CITIES) + tuple(
+                   f'traffic-audio/{city}.mp3' for city in DAY11_CITIES)
+
+
+def package_day11(root: Path, destination: Path) -> None:
+    """Copy only Day 11 public assets; never replace any earlier day."""
+    source = root / 'maps/day11-sound'
+    if not (source / 'map.html').is_file():
+        return
+    target = destination / 'day11-sound'
+    for name in DAY11_FILES:
+        if not (source / name).is_file():
+            raise ValueError(f'Day 11 asset missing: {name}')
+        relative = Path('index.html' if name == 'map.html' else name)
+        if target.is_symlink() or any((target / part).is_symlink()
+                                     for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 11 symlink: {name}')
+    for name in DAY11_FILES:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 11 traffic gallery and credited field recordings')
+
+
 DAY10_FILES = ('map.html', 'app.js', 'geo.js', 'style.css', 'README.md', 'qa-review.json',
                'data/earth.jpg', 'data/admin_0_countries.geojson',
                'data/geography_marine_polys.geojson', 'data/sources.json')
@@ -366,6 +394,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day11(root, destination)
     package_day10(root, destination)
     (destination / ".nojekyll").touch()
     print(f"Packaged {len(points):,} crash events for Pages: {destination}")
