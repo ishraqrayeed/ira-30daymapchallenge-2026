@@ -42,6 +42,33 @@ DAY6_EXPORTS = ('exports/day06_telluride.png', 'exports/day06_telluride_linkedin
                 'exports/day06_telluride_3000x3750.png')
 
 
+DAY12_FILES = ('map.html', 'app.js', 'core.js', 'particles.js', 'style.css',
+               'README.md', 'DATA_SOURCES.md', 'qa-review.json',
+               'data/transmission.geojson', 'data/context.geojson',
+               'data/routes.json', 'data/sources.json', 'data/world.geojson',
+               'vendor/maplibre-gl.js', 'vendor/maplibre-gl.css', 'vendor/LICENSE.txt')
+
+
+def package_day12(root: Path, destination: Path) -> None:
+    """Package local assets, excluding raw caches and browser test harnesses."""
+    source = root / 'maps/day12-power'
+    if not (source / 'map.html').is_file():
+        return
+    target = destination / 'day12-power'
+    for name in DAY12_FILES:
+        if not (source / name).is_file():
+            raise ValueError(f'Day 12 asset missing: {name}')
+        relative = Path('index.html' if name == 'map.html' else name)
+        if target.is_symlink() or any((target / part).is_symlink()
+                                     for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 12 symlink: {name}')
+    for name in DAY12_FILES:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 12 Hoover Dam transmission exhibit')
+
+
 DAY11_CITIES = ('dhaka', 'new-york', 'mumbai', 'london', 'tokyo', 'cairo',
                 'bangkok', 'sydney', 'istanbul', 'sao-paulo', 'johannesburg', 'mexico-city')
 DAY11_FILES = ('map.html', 'app.js', 'style.css', 'README.md', 'DATA_SOURCES.md',
@@ -394,6 +421,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day12(root, destination)
     package_day11(root, destination)
     package_day10(root, destination)
     (destination / ".nojekyll").touch()

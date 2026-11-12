@@ -126,6 +126,13 @@ python scripts/preview_map.py
 The preview opens at `http://127.0.0.1:8000/map.html`. Basemap tiles load in the
 browser. Capture screenshots there for social posts.
 
+## Day 12 — Power
+
+**The Pulse of Hoover Dam** lights archived transmission corridors across the
+Southwest with an artistic electric pulse.
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day12-power/) ·
+[Sources and methods](maps/day12-power/README.md).
+
 ## Project layout
 
 - `maps/`: daily maps, code, and methods.

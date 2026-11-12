@@ -1,0 +1,139 @@
+{
+  "review_date": "2026-11-11",
+  "geographic": {
+    "passed": true,
+    "queried_records": 3997,
+    "retained_source_records": 1268,
+    "display_segments": 1532,
+    "particle_routes": 261,
+    "maximum_simplification_deviation_m": 34.6731,
+    "maximum_sample_distance_from_geometry_m": 0.0023,
+    "checks": [
+      "Complete unique source-ID coverage",
+      "IN SERVICE and known voltage >=115 kV",
+      "Unique display IDs and actual source geometries",
+      "Sampled route alignment",
+      "Lake Mead polygon present",
+      "Hoover plant point within verified query bounds",
+      "Processed output SHA-256 matches"
+    ],
+    "background_checks": [
+      "More than 150 valid worldwide country features",
+      "Whole regional boundary geometry extends beyond transmission extraction bounds",
+      "Transmission and route asset SHA-256 values unchanged"
+    ]
+  },
+  "core": {
+    "passed": true,
+    "checks": [
+      "Smooth monotonic ten-second zoom out from Hoover Dam",
+      "Exact previous regional camera at 10 seconds and afterward",
+      "No pitch or rotation",
+      "Corridor lighting still completes by 4 seconds",
+      "Trails visible by 3.4 seconds"
+    ]
+  },
+  "browser": {
+    "passed": true,
+    "browser": "Chrome on macOS, native UI review plus same-origin QA harness",
+    "viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "particles": {
+      "desktop": 180,
+      "mobile": 72,
+      "rendering": "20-section continuous GPU ribbons with luminous heads and screen-scaled fading tails"
+    },
+    "checks": [
+      "WebGL2 particle layer initialized",
+      "Desktop and phone rendering visually reviewed",
+      "No horizontal overflow; controls within viewport",
+      "Pause freezes time; Play resumes",
+      "Replay resets cinematic sequence",
+      "Camera settles after introduction",
+      "Reduced motion stays static with controls disabled",
+      "No captured console errors, unhandled exceptions, rejections or map errors",
+      "Space pauses and Enter resumes focused playback control",
+      "Attribution and source links present"
+    ],
+    "refinement_checks": {
+      "desktop_1280x720": {
+        "passed": true,
+        "checks": 25,
+        "errors": []
+      },
+      "mobile_390x844": {
+        "passed": true,
+        "checks": 25,
+        "errors": []
+      },
+      "visual_treatment": "Restored thinner 0.8 px cyan active lines, softer glow and original restrained trail widths; retained fast regional start and no Kingman label",
+      "checks": [
+        "Starts over Hoover Dam",
+        "Smooth zoom out to existing regional extent in 10 seconds",
+        "Camera settles after pullback",
+        "Pause and resume",
+        "Replay restarts pullback",
+        "Manual interaction takes over camera",
+        "Fast illumination preserved",
+        "Kingman label remains removed",
+        "No captured console or map errors"
+      ],
+      "reduced_motion_390x844": {
+        "passed": true,
+        "checks": 18,
+        "errors": []
+      },
+      "camera_duration_seconds": 10,
+      "streak_speed_multiplier": 50,
+      "streak_speed_vs_pre_speedup_setting": 20
+    }
+  },
+  "interpretation": "Artistic distance-based illumination, not measured flow or verified Hoover delivery. September 2024 transmission archive.",
+  "repository_checks": {
+    "python_unittest_count": 30,
+    "python_unittest_passed": true,
+    "shared_javascript_controls_passed": true,
+    "isolated_pages_package_passed": true,
+    "previous_day_files_modified": false,
+    "cached_rebuild_passed": true
+  },
+  "final_polish": {
+    "lake_mead_fill": "#0e2a39 at 0.78 opacity; all other water unchanged",
+    "active_line_opacity": {
+      "before": 0.22,
+      "after": 0.2596,
+      "increase_percent": 18
+    },
+    "unchanged": [
+      "Particle shader, speed, brightness and density",
+      "Line width and bloom",
+      "Camera code and initial camera anchor",
+      "Timing",
+      "Shoreline, transmission and sampled route geometry",
+      "Title, subtitle, city labels and footer"
+    ],
+    "hoover_reference": {
+      "coordinates": [
+        -114.7372,
+        36.0163
+      ],
+      "source": "https://www.usbr.gov/projects/index.php?id=122",
+      "shift_from_plant_point_m": 113.9,
+      "camera_anchor_retained": true,
+      "invented_connections": false
+    }
+  },
+  "typography": {
+    "scale_multiplier": 1.2,
+    "desktop_1280x720_passed": true,
+    "mobile_390x844_passed": true
+  }
+}

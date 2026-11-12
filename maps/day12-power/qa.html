@@ -1,0 +1,43 @@
+<!doctype html><meta charset="utf-8"><title>Day 12 browser review</title>
+<style>body{margin:12px;background:#111;color:#eee;font:13px monospace}button{margin:8px;padding:8px}iframe{display:block;border:1px solid #444;max-width:none}pre{white-space:pre-wrap}</style>
+<button onclick="review(false,false)">Desktop QA</button><button onclick="review(true,false)">Mobile QA</button><button onclick="review(true,true)">Reduced motion QA</button><button onclick="document.querySelector('iframe').contentWindow.Pulse.seek(0)">Initial frame</button><button onclick="document.querySelector('iframe').contentWindow.Pulse.seek(.9)">Hoover frame</button><button onclick="document.querySelector('iframe').contentWindow.Pulse.seek(10)">Regional frame</button><pre id="results">Choose a review.</pre><div id="host"></div>
+<script>
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+addEventListener('error',e=>document.querySelector('#results').textContent='QA harness error: '+e.message);
+addEventListener('unhandledrejection',e=>document.querySelector('#results').textContent='QA harness rejection: '+e.reason);
+async function review(mobile,reduced){
+ const output=document.querySelector('#results');output.textContent='Checking…';
+ const iframe=document.createElement('iframe');iframe.width=mobile?390:1280;iframe.height=mobile?844:720;document.querySelector('#host').replaceChildren(iframe);
+ iframe.src='qa-frame.html'+(reduced?'?reduced=1':'');
+ const deadline=Date.now()+25000;while(!iframe.contentWindow?.Pulse?.ready&&Date.now()<deadline)await wait(100);
+ const w=iframe.contentWindow,p=w.Pulse,d=w.document,checks={};
+ checks.loaded=!!p?.ready;if(!checks.loaded){output.textContent=JSON.stringify({checks,error:d.querySelector('#status')?.textContent,childErrors:w.qaErrors,stateErrors:p?.errors,mapLoaded:p?.map?.loaded(),styleLoaded:p?.map?.isStyleLoaded()},null,2);return}
+ checks.webglParticles=p.particlesAvailable;checks.particleCount=p.particleCount===(mobile?72:180);
+ checks.worldBackground=p.map.getSource('world')._data.features.length>150;
+ checks.sourceRecords=p.source.retained_source_records===1268;checks.displaySegments=p.source.rendered_line_parts===1532;
+ checks.noHorizontalOverflow=d.documentElement.scrollWidth<=w.innerWidth;
+ checks.controlsInViewport=['pause','replay'].every(id=>{const b=d.getElementById(id).getBoundingClientRect();return b.left>=0&&b.right<=w.innerWidth&&b.top>=0&&b.bottom<=w.innerHeight});
+ if(reduced){const t=p.time,f=p.frames;await wait(350);checks.reducedStatic=p.paused&&p.time===t&&p.frames===f&&t===10;checks.reducedControls=d.getElementById('pause').disabled&&d.getElementById('replay').disabled}
+ else{
+  d.getElementById('pause').click();const t=p.time;await wait(180);checks.pauseFreezes=p.paused&&p.time===t;
+  d.getElementById('pause').click();await wait(250);checks.resume=p.time>t&&!p.paused;
+  p.seek(0);const startZoom=p.map.getZoom(),startCenter=p.map.getCenter().toArray();checks.hooverStart=startCenter.every((v,i)=>Math.abs(v-(p.source.camera_anchor_coordinates||p.source.hoover_coordinates)[i])<1e-7);
+  p.seek(.9);checks.damFirst=p.map.getPaintProperty('dam-core','circle-opacity')>.8;
+  p.seek(4.5);checks.fastReveal=p.map.getSource('lines')._data.features.filter(f=>f.properties.active).every(f=>f.properties.start+1.2<=4.5);
+  p.seek(5);const middleZoom=p.map.getZoom();p.seek(10);checks.tenSecondPullback=startZoom>middleZoom&&middleZoom>p.map.getZoom()&&!p.cinematic;
+  const finalZoom=p.map.getZoom(),finalCenter=p.map.getCenter().toArray();p.seek(20);checks.settled=p.map.getZoom()===finalZoom&&p.map.getCenter().toArray().every((v,i)=>v===finalCenter[i]);
+  p.map.fire('dragstart',{originalEvent:{type:'mousedown'}});checks.manualTakeover=!p.cinematic;
+  d.getElementById('replay').click();await wait(80);checks.replay=p.time<1&&p.cinematic;
+  p.seek(10);
+
+ }
+ checks.damCoordinate=p.map.getSource('dam')._data.geometry.coordinates.every((v,i)=>v===p.source.hoover_coordinates[i]);
+ checks.noErrors=!p.errors.length&&!(w.qaErrors||[]).length;checks.statusClear=!d.getElementById('status').textContent;
+ checks.titleClear=mobile||p.map.project([-118.2437,34.0522]).x>d.querySelector('header').getBoundingClientRect().right+15;
+ checks.selectedCorridors=p.map.getSource('lines')._data.features.filter(f=>f.properties.active).length===261;
+ checks.noKingmanLabel=![...d.querySelectorAll('.city-label')].some(e=>e.textContent==='Kingman');
+ checks.riverPresent=p.map.getSource('context')._data.features.some(f=>f.properties.kind==='river');
+ checks.sourceLink=!!d.querySelector('footer a[href="DATA_SOURCES.md"]');
+ output.textContent=JSON.stringify({viewport:[w.innerWidth,w.innerHeight],reduced,passed:Object.values(checks).every(Boolean),activeCount:p.map.getSource('lines')._data.features.filter(f=>f.properties.active).length,checksPassed:Object.values(checks).filter(Boolean).length,failed:Object.keys(checks).filter(k=>!checks[k]),errors:[...p.errors,...(w.qaErrors||[])]},null,2);
+}
+</script>
