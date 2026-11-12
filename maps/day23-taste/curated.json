@@ -1,0 +1,603 @@
+[
+  {
+    "id": "nanna",
+    "name": "Nanna Biryani",
+    "name_bn": null,
+    "osm": [
+      "node",
+      2503779412
+    ],
+    "category_ids": [
+      "morog",
+      "biryani"
+    ],
+    "dish_tags": [
+      "Morog Polao",
+      "Mutton Biryani",
+      "Kacchi"
+    ],
+    "signature_food": "Morog Polao",
+    "neighborhood": "Becharam Deuri",
+    "address": "41 Becharam Deuri Lane",
+    "story": "The Becharam Deuri branch is the family business documented in an owner interview. Its chicken polao is the dish to start with.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/serving-polao-mats-becoming-beloved-local-brand-story-haji-nanna-biryani-395186",
+      "https://food.pathao.com/restaurants/ge3tama/hazi-nanna-biryani"
+    ],
+    "flagship": true,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "haji",
+    "name": "Haji Biryani",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4715559653
+    ],
+    "category_ids": [
+      "biryani"
+    ],
+    "dish_tags": [
+      "Mutton Biryani"
+    ],
+    "signature_food": "Mutton Biryani",
+    "neighborhood": "Nazira Bazar",
+    "address": "Kazi Alauddin Road, Nazira Bazar",
+    "story": "A landmark of Old Dhaka’s biryani culture, associated with a distinctive goat-meat and rice preparation. This point identifies the Kazi Alauddin Road establishment.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Haji_biryani",
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174"
+    ],
+    "flagship": true,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "kolkata",
+    "name": "Kolkata Kacchi Ghor",
+    "name_bn": null,
+    "osm": [
+      "node",
+      5984851766
+    ],
+    "category_ids": [
+      "biryani"
+    ],
+    "dish_tags": [
+      "Kacchi"
+    ],
+    "signature_food": "Kacchi",
+    "neighborhood": "Bangshal",
+    "address": "14 Abul Hasnat Road, Sat Rawza",
+    "story": "A kacchi destination on Abul Hasnat Road, included in the Goethe-Institut food-map reporting. This is the Old Dhaka location, not a similarly named Mirpur outlet.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174"
+    ],
+    "flagship": true,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "nirob",
+    "name": "Nirob Hotel",
+    "name_bn": null,
+    "osm": [
+      "way",
+      234110036
+    ],
+    "category_ids": [
+      "bhaat"
+    ],
+    "dish_tags": [
+      "Bhaat",
+      "Bhorta",
+      "Shutki",
+      "Fish",
+      "Bhaji"
+    ],
+    "signature_food": "Bhaat",
+    "neighborhood": "Chankharpul",
+    "address": "113/2 Nazimuddin Road",
+    "story": "Rice, seasonal vegetables and many small plates make this a different kind of food stop. Reporting describes its long-standing role in Old Dhaka’s everyday dining.",
+    "source_urls": [
+      "https://archive.thedailystar.net/2007/2006/06/18/d606182502152.htm",
+      "https://www.eastside.asia/articles/why-dhaka-s-old-timer-eateries-are-still-the-city-s-hotspots"
+    ],
+    "flagship": true,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "beauty",
+    "name": "Beauty Lacchi & Faluda",
+    "name_bn": "বিউটি লাচ্ছি ও ফালুদা",
+    "osm": [
+      "node",
+      4667482634
+    ],
+    "category_ids": [
+      "drinks",
+      "desserts"
+    ],
+    "dish_tags": [
+      "Lacchi",
+      "Faluda",
+      "Lemonade"
+    ],
+    "signature_food": "Lacchi",
+    "neighborhood": "Johnson Road",
+    "address": "30/A Johnson Road, Ray Shaheb Bazar",
+    "story": "The original Johnson Road shop is known for cool dairy drinks and lemonade. Family interviews trace its story across generations.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/beauty-lassi-steps-its-100th-year-260941",
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174",
+      "https://en.wikipedia.org/wiki/Beauty_Lacchi_and_Faluda"
+    ],
+    "flagship": true,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "hanif",
+    "name": "Hanif Biryani",
+    "name_bn": null,
+    "osm": [
+      "node",
+      9522888872
+    ],
+    "category_ids": [
+      "biryani"
+    ],
+    "dish_tags": [
+      "Biryani"
+    ],
+    "signature_food": "Biryani",
+    "neighborhood": "Nazira Bazar",
+    "address": "Kazi Alauddin Road, Nazira Bazar",
+    "story": "One of the biryani names repeatedly documented in Old Dhaka food reporting. The selected storefront is the Nazira Bazar location opposite Haji Biryani.",
+    "source_urls": [
+      "https://www.thedailystar.net/news-detail-64909",
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "royal",
+    "name": "Royal Restaurant",
+    "name_bn": null,
+    "osm": [
+      "way",
+      438431607
+    ],
+    "category_ids": [
+      "biryani",
+      "kebab",
+      "drinks"
+    ],
+    "dish_tags": [
+      "Kacchi",
+      "Kebab",
+      "Naan",
+      "Badam Sharbat"
+    ],
+    "signature_food": "Kacchi",
+    "neighborhood": "Lalbagh",
+    "address": "Nur Fattah Lane, Lalbagh",
+    "story": "A Lalbagh dining landmark where rice dishes, grilled food and nut-based sharbat share the table.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174",
+      "https://wanderlog.com/place/details/7215267/royal-restaurant"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "alauddin",
+    "name": "Alauddin Sweetmeat",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4667670017
+    ],
+    "category_ids": [
+      "desserts"
+    ],
+    "dish_tags": [
+      "Kalo Jaam",
+      "Mishti"
+    ],
+    "signature_food": "Kalo Jaam",
+    "neighborhood": "Chawkbazar",
+    "address": "Chawk Circular Road, Chawkbazar",
+    "story": "A historic sweet-shop name in Chawkbazar. A reported food walk specifically sampled kalo jaam here.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174",
+      "https://www.thedailystar.net/news-detail-48623"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "nurani",
+    "name": "Nurani Cold Drinks",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4667670016
+    ],
+    "category_ids": [
+      "drinks"
+    ],
+    "dish_tags": [
+      "Lemonade",
+      "Lacchi"
+    ],
+    "signature_food": "Lemonade",
+    "neighborhood": "Chawkbazar",
+    "address": "118 Chawkbazar, Chawk Circular Road",
+    "story": "A small refreshment stop documented in recent local reporting. Lemonade and lacchi offer a pause between heavier dishes.",
+    "source_urls": [
+      "https://www.thedailystar.net/my-dhaka/news/chawk-bazars-nurani-cold-drink-3616836",
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "jagannath",
+    "name": "Jagannath Vojanaloy",
+    "name_bn": null,
+    "osm": [
+      "node",
+      13157922305
+    ],
+    "category_ids": [
+      "bhaat",
+      "desserts"
+    ],
+    "dish_tags": [
+      "Bhaat",
+      "Pushpanno",
+      "Shama Danar Sweets"
+    ],
+    "signature_food": "Bhaat",
+    "neighborhood": "Tatibazar",
+    "address": "110 Tatibazar",
+    "story": "An upstairs vegetarian dining room with rice dishes and sweets. Goethe-Institut documents its unusually broad table of choices.",
+    "source_urls": [
+      "https://www.goethe.de/ins/bd/en/kul/all/odf.html"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "madina",
+    "name": "Madina Mishtanno Bhandar",
+    "name_bn": null,
+    "osm": [
+      "node",
+      3363718948
+    ],
+    "category_ids": [
+      "snacks"
+    ],
+    "dish_tags": [
+      "Luchi",
+      "Labra"
+    ],
+    "signature_food": "Luchi",
+    "neighborhood": "Lalbagh",
+    "address": "92 Lalbagh Road",
+    "story": "Morning visitors come for freshly fried luchi with vegetable labra. The small benches are part of this well-documented breakfast stop.",
+    "source_urls": [
+      "https://www.goethe.de/ins/bd/en/kul/all/odf.html"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "jhunu",
+    "name": "Jhunu Polao Ghor",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4068043233
+    ],
+    "category_ids": [
+      "morog"
+    ],
+    "dish_tags": [
+      "Morog Polao"
+    ],
+    "signature_food": "Morog Polao",
+    "neighborhood": "Narinda",
+    "address": "Narinda Road",
+    "story": "A Narinda polao stop featured on the reported Old Dhaka food walk. Chicken and aromatic rice are its signature pairing.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "boarding",
+    "name": "Beauty Boarding",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4668098175
+    ],
+    "category_ids": [
+      "bhaat"
+    ],
+    "dish_tags": [
+      "Bhaat",
+      "Bhorta"
+    ],
+    "signature_food": "Bhaat",
+    "neighborhood": "Bangla Bazar",
+    "address": "1 Srish Das Lane, Bangla Bazar",
+    "story": "A boarding-house dining room connected with the old city’s literary gatherings. Its food offers a quieter counterpoint to the biryani trail.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174",
+      "https://www.goethe.de/ins/bd/en/kul/all/odf.html"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "ananda",
+    "name": "Ananda Confectionery",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4715559651
+    ],
+    "category_ids": [
+      "snacks",
+      "desserts"
+    ],
+    "dish_tags": [
+      "Bakarkhani",
+      "Bread",
+      "Jilapi",
+      "Firni"
+    ],
+    "signature_food": "Bakarkhani",
+    "neighborhood": "Bangshal",
+    "address": "Abul Hasnat Road, Sat Rawza",
+    "story": "A family bakery on Abul Hasnat Road, documented again in 2026. Bread and traditional snacks anchor the selection; some sweets are seasonal.",
+    "source_urls": [
+      "https://www.thedailystar.net/news/bangladesh/news/century-flavour-ananda-confectionery-4112331",
+      "https://www.tbsnews.net/features/food/three-bakeries-baking-loaves-love-484622",
+      "https://vymaps.com/BD/Ananda-Bakery-59732/"
+    ],
+    "flagship": false,
+    "menu_note": "Bakarkhani is documented in historical customer reporting; Ramadan sweets are seasonal. Confirm today’s selection locally.",
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "bismillah",
+    "name": "Bismillah Kabab Ghar",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4667886552
+    ],
+    "category_ids": [
+      "kebab"
+    ],
+    "dish_tags": [
+      "Kebab",
+      "Paratha"
+    ],
+    "signature_food": "Kebab",
+    "neighborhood": "Nazira Bazar",
+    "address": "28 Kazi Alauddin Road",
+    "story": "A kebab stop in the dense Nazira Bazar food cluster. Local reporting pairs its grilled food with paratha.",
+    "source_urls": [
+      "https://dailynewnation.com/news/140250",
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "buddhu",
+    "name": "Buddhur Purir Dokan",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4668098176
+    ],
+    "category_ids": [
+      "snacks"
+    ],
+    "dish_tags": [
+      "Daal Puri",
+      "Dim Puri",
+      "Chicken Keema Puri"
+    ],
+    "signature_food": "Daal Puri",
+    "neighborhood": "Sutrapur",
+    "address": "Sutrapur, near Dalpotti",
+    "story": "A family puri shop described in a 2024 local feature. Lentil, egg and chicken fillings make it a distinctive snack stop.",
+    "source_urls": [
+      "https://www.thedailystar.net/my-dhaka/news/buddhur-puri-the-beloved-delicacy-sutrapur-3730301",
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "shomsher",
+    "name": "Shomsher Ali’r Bhuna Khichuri",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4667670015
+    ],
+    "category_ids": [
+      "khichuri"
+    ],
+    "dish_tags": [
+      "Bhuna Khichuri"
+    ],
+    "signature_food": "Bhuna Khichuri",
+    "neighborhood": "Bangshal",
+    "address": "118 Bangshal Road, near Sat Rawza",
+    "story": "A focused khichuri stop on Bangshal Road. Its identity and specialty are documented independently of the biryani establishments around it.",
+    "source_urls": [
+      "https://thefinancialexpress.com.bd/food/top-5-places-for-khichuri-in-dhaka",
+      "https://www.jagonews24.com/lifestyle/news/552486"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "star",
+    "name": "Star Kabab — Johnson Road",
+    "name_bn": null,
+    "osm": [
+      "node",
+      9526559777
+    ],
+    "category_ids": [
+      "khichuri",
+      "kebab",
+      "biryani"
+    ],
+    "dish_tags": [
+      "Morog Khichuri",
+      "Mutton Bhuna Khichuri",
+      "Kacchi",
+      "Kebab"
+    ],
+    "signature_food": "Morog Khichuri",
+    "neighborhood": "Johnson Road",
+    "address": "49 Johnson Road",
+    "story": "The Johnson Road branch has a branch-specific delivery menu documenting chicken and mutton bhuna khichuri. It adds a verified chicken-khichuri stop to this atlas.",
+    "source_urls": [
+      "https://www.foodpanda.com.bd/restaurant/mxff/star-kabab-and-restaurant-johnson-road",
+      "https://www.foodpanda.com.bd/bn/restaurant/mxff/star-kabab-and-restaurant-johnson-road/reviews"
+    ],
+    "flagship": false,
+    "menu_note": "Morog Khichuri is indexed from the menu’s Chicken Bhuna Khichuri. Menu availability may change.",
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "aftab",
+    "name": "Aftab Restaurant",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4715559652
+    ],
+    "category_ids": [
+      "khichuri",
+      "bhaat",
+      "desserts"
+    ],
+    "dish_tags": [
+      "Khichuri",
+      "Bhaat",
+      "Bhorta",
+      "Firni"
+    ],
+    "signature_food": "Khichuri",
+    "neighborhood": "Chankharpul",
+    "address": "Nazimuddin Road, Chankharpul",
+    "story": "A student-budget dining stop documented in a 2012 report. Its mapped location remains in OSM, but current operation has not been independently confirmed.",
+    "source_urls": [
+      "https://childrights.thedailystar.net/campus/2012/07/03/edibles.htm"
+    ],
+    "flagship": false,
+    "operating_status": "Current operation uncertain. Specialty reporting dates to 2012; confirm before visiting.",
+    "historic_status": "Historically documented; current operation uncertain",
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "cafe",
+    "name": "New Cafe Corner",
+    "name_bn": null,
+    "osm": [
+      "node",
+      4668159172
+    ],
+    "category_ids": [
+      "snacks"
+    ],
+    "dish_tags": [
+      "Crumb Mutton Chop",
+      "Luchi",
+      "Dal"
+    ],
+    "signature_food": "Crumb Mutton Chop",
+    "neighborhood": "Bangla Bazar",
+    "address": "28 Northbrook Hall Road",
+    "story": "A long-standing snack and breakfast stop. Recent reporting follows its crumb-coated mutton chops and the appeal of a simple old-city breakfast.",
+    "source_urls": [
+      "https://www.thedailystar.net/my-dhaka/news/old-dhakas-hidden-gems-where-history-meets-crumb-mutton-chops-3708056",
+      "https://www.thedailystar.net/life-living/food-recipes/news/the-best-breakfast-places-dhaka-city-2211541"
+    ],
+    "flagship": false,
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "manik",
+    "name": "Manik Chan Polao",
+    "name_bn": null,
+    "category_ids": [
+      "khichuri",
+      "biryani"
+    ],
+    "dish_tags": [
+      "Bhuna Khichuri",
+      "Mutton Biryani"
+    ],
+    "signature_food": "Bhuna Khichuri",
+    "neighborhood": "Armanitola",
+    "address": "Digu Babu Lane, off Mitford Road",
+    "story": "An outdoor food stall rather than a conventional restaurant. A 2025 report describes Thursday mutton bhuna khichuri and Wednesday mutton biryani; schedules should be checked locally.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/78-years-flavour-story-manik-chans-polao-old-dhaka-1260066",
+      "https://www.dhakatribune.com/feature/290134/মানিক-চানের-পোলাও-manik-chan-polao-food-cart"
+    ],
+    "flagship": false,
+    "coordinates": [
+      90.3994543,
+      23.7135699
+    ],
+    "coordinate_source": "https://www.google.com/maps?cid=2388796456597262702",
+    "coordinate_precision": "Place coordinates resolved from the publisher-linked Google Maps place, not the map viewport. Outdoor stall position may vary.",
+    "operating_status": "Documented in October 2025. Outdoor stall; service days and location should be reconfirmed.",
+    "reviewed_on": "2026-11-11"
+  },
+  {
+    "id": "makhan",
+    "name": "Haji Makhan Biryani",
+    "name_bn": null,
+    "category_ids": [
+      "biryani"
+    ],
+    "dish_tags": [
+      "Beef Biryani"
+    ],
+    "signature_food": "Beef Biryani",
+    "neighborhood": "Johnson Road",
+    "address": "Near Ray Shaheb Bazar, Johnson Road",
+    "story": "A small beef-biryani establishment featured in the Old Dhaka food-map coverage. A 2023 visitor report supplies the place link; current operation remains unconfirmed.",
+    "source_urls": [
+      "https://www.tbsnews.net/features/panorama/exploring-past-through-old-dhaka-food-map-665174",
+      "https://www.localguidesconnect.com/t/73-years-old-haji-makhan-biryani-of-old-dhaka/396908"
+    ],
+    "flagship": false,
+    "coordinates": [
+      90.412328125,
+      23.7129375
+    ],
+    "coordinate_source": "https://maps.app.goo.gl/s3UKkWAgxRWqCUUp8",
+    "coordinate_precision": "Decoded center of the publisher-linked place code 7MMGPC76+5WG; approximate storefront, not surveyed entrance.",
+    "operating_status": "Current operation uncertain. Visitor location report dates to 2023; confirm before visiting.",
+    "historic_status": "Historically documented; current operation uncertain",
+    "reviewed_on": "2026-11-11"
+  }
+]

@@ -42,6 +42,40 @@ DAY6_EXPORTS = ('exports/day06_telluride.png', 'exports/day06_telluride_linkedin
                 'exports/day06_telluride_3000x3750.png')
 
 
+DAY23_FILES = ('map.html', 'app.js', 'core.js', 'routing-worker.js', 'style.css',
+               'README.md', 'DATA_SOURCES.md', 'RESEARCH_NOTES.md', 'qa-review.json',
+               'curated.json', 'extract_osm.py', 'extract_water.py', 'prepare_data.py',
+               'data/restaurants.geojson', 'data/streets.geojson', 'data/context.geojson',
+               'data/neighborhoods.geojson', 'data/landmarks.geojson', 'data/routes.geojson',
+               'data/network.json', 'data/qa.json', 'data/sources.json',
+               'vendor/maplibre-gl.js', 'vendor/maplibre-gl.css', 'vendor/MAPLIBRE-LICENSE.txt',
+               'vendor/turf.min.js', 'vendor/TURF-LICENSE.txt', 'vendor/noto-bengali.ttf',
+               'vendor/NOTO-OFL.txt')
+
+
+def package_day23(root: Path, destination: Path) -> None:
+    """Package the local Old Dhaka atlas; exclude test harnesses and raw caches."""
+    source = root / 'maps/day23-taste'
+    if not (source / 'map.html').is_file():
+        return
+    qa = json.loads((source / 'data/qa.json').read_text())
+    if not qa['passed'] or qa['restaurants'] != 22 or qa['unreachable_pairs']:
+        raise ValueError('Day 23 geographic checks failed')
+    target = destination / 'day23-taste'
+    for name in DAY23_FILES:
+        if not (source / name).is_file():
+            raise ValueError(f'Day 23 asset missing: {name}')
+        relative = Path('index.html' if name == 'map.html' else name)
+        if target.is_symlink() or any((target / part).is_symlink()
+                                     for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 23 symlink: {name}')
+    for name in DAY23_FILES:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 23 Old Dhaka culinary atlas')
+
+
 DAY12_FILES = ('map.html', 'app.js', 'core.js', 'particles.js', 'style.css',
                'README.md', 'DATA_SOURCES.md', 'qa-review.json',
                'data/transmission.geojson', 'data/context.geojson',
@@ -421,6 +455,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day23(root, destination)
     package_day12(root, destination)
     package_day11(root, destination)
     package_day10(root, destination)

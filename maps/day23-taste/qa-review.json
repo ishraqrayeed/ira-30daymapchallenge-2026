@@ -1,0 +1,428 @@
+{
+  "project": "Day 23 — Taste: A Taste of Old Dhaka",
+  "status": "Local draft; not deployed",
+  "geographic_checks": {
+    "restaurants": 22,
+    "street_features": 4044,
+    "network_nodes": 21759,
+    "directed_edges": 47140,
+    "unreachable_pairs": [],
+    "maximum_street_access_offset_m": 23.7,
+    "categories": [
+      "bhaat",
+      "biryani",
+      "desserts",
+      "drinks",
+      "kebab",
+      "khichuri",
+      "morog",
+      "snacks"
+    ],
+    "passed": true
+  },
+  "routing_checks": "462 directed restaurant pairs verified against actual graph edges; shortest-path, disconnected-network and filter checks passed.",
+  "browser_review": {
+    "desktop": "1280 × 800 CSS px; layout and cards visually reviewed",
+    "mobile": "390 × 844 CSS px; layout and bottom sheets visually reviewed",
+    "last_results": {
+      "reports": [
+        {
+          "test": "rendered features retain restaurant IDs",
+          "passed": true
+        },
+        {
+          "test": "22 restaurant features",
+          "passed": true
+        },
+        {
+          "test": "all eight categories plus All Food",
+          "passed": true
+        },
+        {
+          "test": "all 22 map circles rendered in desktop viewport",
+          "passed": true
+        },
+        {
+          "test": "all 22 map circles rendered in mobile viewport",
+          "passed": true
+        },
+        {
+          "test": "bright monochrome land",
+          "passed": true
+        },
+        {
+          "test": "pale water style",
+          "passed": true
+        },
+        {
+          "test": "mobile has no horizontal overflow",
+          "passed": true
+        },
+        {
+          "test": "biryani category has supported places",
+          "passed": true
+        },
+        {
+          "test": "morog category has supported places",
+          "passed": true
+        },
+        {
+          "test": "khichuri category has supported places",
+          "passed": true
+        },
+        {
+          "test": "bhaat category has supported places",
+          "passed": true
+        },
+        {
+          "test": "kebab category has supported places",
+          "passed": true
+        },
+        {
+          "test": "drinks category has supported places",
+          "passed": true
+        },
+        {
+          "test": "desserts category has supported places",
+          "passed": true
+        },
+        {
+          "test": "snacks category has supported places",
+          "passed": true
+        },
+        {
+          "test": "neighborhood with no curated places does not invent destinations",
+          "passed": true
+        },
+        {
+          "test": "bhuna khichuri filter uses curated relationships",
+          "passed": true
+        },
+        {
+          "test": "neighborhood filter counts curated places",
+          "passed": true
+        },
+        {
+          "test": "selected restaurant white icon rendered",
+          "passed": false
+        },
+        {
+          "test": "selected marker feature state",
+          "passed": true
+        },
+        {
+          "test": "restaurant details reflect selected place",
+          "passed": true
+        },
+        {
+          "test": "worker returns a pedestrian route",
+          "passed": true
+        },
+        {
+          "test": "walking distance returned",
+          "passed": true
+        },
+        {
+          "test": "trail order maintained",
+          "passed": true
+        },
+        {
+          "test": "route distance and duration shown",
+          "passed": true
+        },
+        {
+          "test": "reorder stops",
+          "passed": true
+        },
+        {
+          "test": "bidirectional reverse distance consistent",
+          "passed": true
+        },
+        {
+          "test": "removing stop clears obsolete route",
+          "passed": true
+        },
+        {
+          "test": "reset restores full experience",
+          "passed": true
+        },
+        {
+          "test": "mobile card opens",
+          "passed": true
+        },
+        {
+          "test": "mobile bottom sheet stays above filters",
+          "passed": true
+        },
+        {
+          "viewport": "desktop",
+          "width": 1280,
+          "height": 800,
+          "zoom": 14.051521025262458,
+          "headerBottom": 313.140625,
+          "discoveryTop": 605,
+          "points": [
+            {
+              "id": "nanna",
+              "x": 778.1759606456757,
+              "y": 300.8710932358106
+            },
+            {
+              "id": "haji",
+              "x": 913.1101742076874,
+              "y": 177.9761705271403
+            },
+            {
+              "id": "kolkata",
+              "x": 787.2511051543554,
+              "y": 248.50043567975362
+            },
+            {
+              "id": "nirob",
+              "x": 741.3861364865303,
+              "y": 174.2279540936152
+            },
+            {
+              "id": "beauty",
+              "x": 1048.1965256373087,
+              "y": 385.2664909084638
+            },
+            {
+              "id": "hanif",
+              "x": 918.9783490761121,
+              "y": 184.40167490959166
+            },
+            {
+              "id": "royal",
+              "x": 543.0720018307368,
+              "y": 208.95880806922912
+            },
+            {
+              "id": "alauddin",
+              "x": 676.0262499713898,
+              "y": 298.11212507724764
+            },
+            {
+              "id": "nurani",
+              "x": 688.4701615341504,
+              "y": 301.66502152204515
+            },
+            {
+              "id": "jagannath",
+              "x": 973.8977041641871,
+              "y": 420.6203123164177
+            },
+            {
+              "id": "madina",
+              "x": 429.99999999841054,
+              "y": 186.98136910597484
+            },
+            {
+              "id": "jhunu",
+              "x": 1214.9999999976158,
+              "y": 428.5223850663503
+            },
+            {
+              "id": "boarding",
+              "x": 1088.935665567716,
+              "y": 558.0652601703008
+            },
+            {
+              "id": "ananda",
+              "x": 775.1549372871717,
+              "y": 238.93884703000387
+            },
+            {
+              "id": "bismillah",
+              "x": 921.0213432892164,
+              "y": 187.8913834675153
+            },
+            {
+              "id": "buddhu",
+              "x": 1201.517687119643,
+              "y": 574.1905223139128
+            },
+            {
+              "id": "shomsher",
+              "x": 833.2015707516671,
+              "y": 252.86314895311992
+            },
+            {
+              "id": "star",
+              "x": 1054.6491031042735,
+              "y": 412.3700647942225
+            },
+            {
+              "id": "aftab",
+              "x": 776.0387858486175,
+              "y": 106.80947768529256
+            },
+            {
+              "id": "cafe",
+              "x": 1070.6622173253695,
+              "y": 563.6671753088633
+            },
+            {
+              "id": "manik",
+              "x": 759.2360036524137,
+              "y": 367.1173162873586
+            },
+            {
+              "id": "makhan",
+              "x": 1070.1243012952805,
+              "y": 383.7973634910584
+            }
+          ],
+          "mapErrors": []
+        },
+        {
+          "test": "desktop all locations stay clear of bottom controls",
+          "passed": true
+        },
+        {
+          "test": "desktop no MapLibre or runtime errors",
+          "passed": true
+        },
+        {
+          "viewport": "mobile",
+          "width": 390,
+          "height": 844,
+          "zoom": 12.75690027637133,
+          "headerBottom": 207.25,
+          "discoveryTop": 609.5,
+          "points": [
+            {
+              "id": "nanna",
+              "x": 176.9316017929035,
+              "y": 402.3455411917037
+            },
+            {
+              "id": "haji",
+              "x": 231.93663152510896,
+              "y": 352.248247858284
+            },
+            {
+              "id": "kolkata",
+              "x": 180.63102375801893,
+              "y": 380.99699288823217
+            },
+            {
+              "id": "nirob",
+              "x": 161.93447602115347,
+              "y": 350.7203124968738
+            },
+            {
+              "id": "beauty",
+              "x": 287.00367924123765,
+              "y": 436.7487606248961
+            },
+            {
+              "id": "hanif",
+              "x": 234.32875376478378,
+              "y": 354.8675617467359
+            },
+            {
+              "id": "royal",
+              "x": 81.09304533336211,
+              "y": 364.8781128434397
+            },
+            {
+              "id": "alauddin",
+              "x": 135.29095540340478,
+              "y": 401.2208662733648
+            },
+            {
+              "id": "nurani",
+              "x": 140.36363272832656,
+              "y": 402.66918074783365
+            },
+            {
+              "id": "jagannath",
+              "x": 256.71626157105254,
+              "y": 451.160509479366
+            },
+            {
+              "id": "madina",
+              "x": 35,
+              "y": 355.9191568327176
+            },
+            {
+              "id": "jhunu",
+              "x": 355,
+              "y": 454.38173658738583
+            },
+            {
+              "id": "boarding",
+              "x": 303.61071717494286,
+              "y": 507.189023254042
+            },
+            {
+              "id": "ananda",
+              "x": 175.70010182492163,
+              "y": 377.09927522251013
+            },
+            {
+              "id": "bismillah",
+              "x": 235.16156669175268,
+              "y": 356.2901181012722
+            },
+            {
+              "id": "buddhu",
+              "x": 349.50402532369606,
+              "y": 513.7623785225701
+            },
+            {
+              "id": "shomsher",
+              "x": 199.3624237468834,
+              "y": 382.77542377667027
+            },
+            {
+              "id": "star",
+              "x": 289.63402929200566,
+              "y": 447.79735125354114
+            },
+            {
+              "id": "aftab",
+              "x": 176.06039677976997,
+              "y": 323.2376214764883
+            },
+            {
+              "id": "cafe",
+              "x": 296.1616682098563,
+              "y": 509.4726064950934
+            },
+            {
+              "id": "manik",
+              "x": 169.21085499323564,
+              "y": 429.35037097057085
+            },
+            {
+              "id": "makhan",
+              "x": 295.9423903379395,
+              "y": 436.1498806585821
+            }
+          ],
+          "mapErrors": []
+        },
+        {
+          "test": "mobile all locations stay clear of bottom controls",
+          "passed": true
+        },
+        {
+          "test": "mobile no MapLibre or runtime errors",
+          "passed": true
+        }
+      ],
+      "errors": [
+        "selected restaurant white icon rendered"
+      ]
+    },
+    "remaining": "The selected-icon layer was simplified after its rendering assertion failed; a final browser rerun is pending. All other recorded browser checks passed."
+  },
+  "files_sha256": {
+    "app.js": "3ab804207b29bb6598a9de4ec4c0bfd9bedc55c025187464efcd8c6596f66c71",
+    "core.js": "0a1e4f9a01e129b2f6cc18420a5de774a9f5a406ddfe117c357d2e2f6e549c83",
+    "style.css": "5993545a5a5f4ac4f652a45a34197325b591b56144a48c2eaac3cb8c8a719a2a",
+    "map.html": "97c8c3df92a359880a34bfb8fd3c470cf7e94a3648f6197a4209021c7d086323"
+  }
+}

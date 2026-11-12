@@ -1,0 +1,12 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const core=require('./core.js'),read=n=>JSON.parse(fs.readFileSync(path.join(__dirname,'data',n),'utf8'));
+const graph=read('network.json'),places=read('restaurants.geojson').features.map(f=>f.properties);
+const small={coordinates:[[0,0],[1,0],[0,1],[1,1],[9,9]],adjacency:[[[1,10],[2,1]],[[3,1]],[[1,1],[3,9]],[],[]]};
+assert.deepEqual(core.path(small,0,3).nodes,[0,2,1,3]);assert.equal(core.path(small,0,3).metres,3);assert.throws(()=>core.path(small,0,4),/walkable route/);assert.throws(()=>core.path(small,3,0),/walkable route/);assert.throws(()=>core.path(small,-1,3),/access point/);
+let pairCount=0;
+for(const a of places)for(const b of places){if(a.id===b.id)continue;const result=core.route(graph,[a,b]);assert.equal(result.legs.length,1);let sum=0;const leg=result.legs[0];for(let i=1;i<leg.nodes.length;i++){const edge=graph.adjacency[leg.nodes[i-1]].find(e=>e[0]===leg.nodes[i]);assert.ok(edge,'every route step is a real network edge');sum+=edge[1];assert.deepEqual(leg.coordinates[i],graph.coordinates[leg.nodes[i]])}assert.ok(Math.abs(sum-result.metres)<.001);assert.equal(leg.nodes[0],a.walk_node);assert.equal(leg.nodes.at(-1),b.walk_node);assert.ok(a.walk_node===b.walk_node?result.metres===0:result.metres>0);pairCount++}
+assert.throws(()=>core.route(graph,[places[0]]),/2 and 5/);assert.throws(()=>core.route(graph,places.slice(0,6)),/2 and 5/);assert.throws(()=>core.route(graph,[places[0],places[0]]),/once/);assert.throws(()=>core.route(graph,[{...places[0],walk_offset_m:200},places[1]]),/access/);
+const s={category:'khichuri',dish:'',neighborhood:''};assert.equal(places.filter(p=>core.matches(p,s)).length,4);s.category='all';s.dish='Bhuna Khichuri';assert.equal(places.filter(p=>core.matches(p,s)).length,2);s.neighborhood='Lalbagh';assert.equal(places.filter(p=>core.matches(p,s)).length,0);
+assert.equal(new Set(places.map(p=>p.id)).size,22);assert.equal(new Set(places.flatMap(p=>p.category_ids)).size,8);for(const p of places){assert.ok(p.latitude>23.70&&p.latitude<23.725&&p.longitude>90.38&&p.longitude<90.425);assert.ok(p.source_urls.length>=2);assert.ok(p.walk_offset_m<100);assert.equal(p.photo_url,null)}
+console.log(`PASS: ${pairCount} directed restaurant pairs follow OSM graph edges; shortest paths, disconnected networks, access limits and filters verified.`);

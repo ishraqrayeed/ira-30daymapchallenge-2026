@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#FAFAF8"><title>A Taste of Old Dhaka · Day 23</title><link rel="stylesheet" href="vendor/maplibre-gl.css"><link rel="stylesheet" href="style.css"></head>
+<body>
+<main id="experience">
+ <div id="map" aria-label="Interactive culinary map of historic Old Dhaka"></div>
+ <header class="editorial"><p class="eyebrow">30DAYMAPCHALLENGE 2026 <span>/ DAY 23 / TASTE</span></p><h1>A TASTE OF<br><span>OLD DHAKA</span></h1><p class="subtitle">A culinary journey through the streets of Puran Dhaka.</p><p class="invitation"><span class="tiny-dot"></span> Follow your appetite. Find a story.</p></header>
+ <nav class="top-actions" aria-label="Map actions"><button id="trail-toggle" aria-expanded="false" aria-controls="panel">Your food trail <span id="trail-count">0</span></button><button id="reset">Reset ↺</button></nav>
+ <aside id="panel" class="panel" aria-label="Place and food trail details" hidden><button id="close-panel" class="close" aria-label="Close details">×</button><div id="panel-content"></div></aside>
+ <section class="discovery" aria-label="Explore Old Dhaka food">
+  <div class="explore-row"><p id="result-count" role="status" aria-live="polite">Preparing your food map…</p><div class="selects"><label><span>Find a place</span><select id="place"><option value="">Choose a destination</option></select></label><label><span>By dish</span><select id="dish"><option value="">Every dish</option></select></label><label><span>By neighborhood</span><select id="neighborhood"><option value="">All neighborhoods</option></select></label></div></div>
+  <div id="categories" class="categories" role="group" aria-label="Food categories"></div>
+ </section>
+ <footer><span>Old Dhaka, Bangladesh <span class="footer-extra">· Curated places, not a complete inventory</span></span><span><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a> · <a href="DATA_SOURCES.md" target="_blank">Sources & notes</a></span></footer>
+ <div id="toast" role="status" aria-live="polite"></div>
+ <div id="map-error" role="alert" hidden></div>
+</main>
+<script src="vendor/maplibre-gl.js"></script><script src="vendor/turf.min.js"></script><script src="core.js"></script><script src="app.js"></script>
+</body></html>
