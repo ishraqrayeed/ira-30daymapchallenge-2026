@@ -1,0 +1,4 @@
+importScripts('core.js');
+let graph;
+async function load(){if(!graph)graph=fetch('data/graph.json.gz').then(async r=>{if(!r.ok)throw Error('The prepared highway graph is not available yet.');let data=await r.arrayBuffer();if(new Uint8Array(data)[0]===31)data=await new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();return new RoadTripCore.Graph(JSON.parse(new TextDecoder().decode(data)))}).catch(e=>{graph=null;throw e});return graph}
+self.onmessage=async({data})=>{try{const g=await load();let result;if(data.type==='init')result={nodes:g.nodes.length,edges:g.edges.length,states:g.data.states.filter(s=>s!=='DC').length};else if(data.type==='snap')result=g.snap(data.coordinate,data.maxMetres,data.geometry??null,data.ref??null);else if(data.type==='route')result=g.route(data.stops);else throw Error('Unknown routing request.');self.postMessage({id:data.id,result})}catch(e){self.postMessage({id:data.id,error:e.message})}};

@@ -42,6 +42,44 @@ DAY6_EXPORTS = ('exports/day06_telluride.png', 'exports/day06_telluride_linkedin
                 'exports/day06_telluride_3000x3750.png')
 
 
+DAY24_FILES = ('map.html', 'app.js', 'core.js', 'session.js', 'routing-worker.js', 'style.css',
+               'README.md', 'DATA_SOURCES.md', 'qa-review.json', 'routing-tests.json', 'session-tests.json',
+               'download_data.py', 'prepare_states.py', 'prepare_graph.py', 'optimize_display.py',
+               'prepare_shields.py', 'refresh_turns.py', 'data/states.geojson', 'data/state-labels.json',
+               'data/census-source.json', 'data/graph.json.gz', 'data/graph.qa.json',
+               'data/highways.geojson.gz', 'data/shields.geojson', 'data/sources.json',
+               'vendor/maplibre-gl.js', 'vendor/maplibre-gl.css', 'vendor/MAPLIBRE-LICENSE.txt',
+               'vendor/turf.min.js', 'vendor/TURF-LICENSE.txt', 'vendor/barlow-regular.ttf',
+               'vendor/barlow-semibold.ttf', 'vendor/barlow-condensed-bold.ttf', 'vendor/BARLOW-OFL.txt')
+
+
+def package_day24(root: Path, destination: Path) -> None:
+    """Package the static game, excluding raw OSM caches and browser test utilities."""
+    source = root / 'maps/day24-network'
+    if not (source / 'map.html').is_file():
+        return
+    qa = json.loads((source / 'data/graph.qa.json').read_text())
+    routing = json.loads((source / 'routing-tests.json').read_text())
+    session = json.loads((source / 'session-tests.json').read_text())
+    if not qa['passed'] or qa['state_count'] != 48 or not routing['passed'] or not session['passed']:
+        raise ValueError('Day 24 graph, routing or budget validation failed')
+    if routing['graph_sha256'] != hashlib.sha256((source / 'data/graph.json.gz').read_bytes()).hexdigest():
+        raise ValueError('Day 24 routing checks do not match the packaged graph')
+    target = destination / 'day24-network'
+    for name in DAY24_FILES:
+        if not (source / name).is_file():
+            raise ValueError(f'Day 24 asset missing: {name}')
+        relative = Path('index.html' if name == 'map.html' else name)
+        if target.is_symlink() or any((target / part).is_symlink()
+                                     for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 24 symlink: {name}')
+    for name in DAY24_FILES:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 24 browser-only 1,000-mile road trip')
+
+
 DAY23_FILES = ('map.html', 'app.js', 'core.js', 'routing-worker.js', 'style.css',
                'README.md', 'DATA_SOURCES.md', 'RESEARCH_NOTES.md', 'qa-review.json',
                'curated.json', 'extract_osm.py', 'extract_water.py', 'prepare_data.py',
@@ -455,6 +493,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day24(root, destination)
     package_day23(root, destination)
     package_day12(root, destination)
     package_day11(root, destination)

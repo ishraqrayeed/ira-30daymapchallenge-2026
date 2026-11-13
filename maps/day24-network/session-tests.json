@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "tests": [
+    "Over-budget additions preserve accepted stops, route, states, distance, history and record callbacks.",
+    "Invalid moves and reorders preserve the last valid trip.",
+    "Routing failures never commit a candidate or change the score.",
+    "Removal, undo and clear operate only on accepted snapshots.",
+    "Exactly 1,609,344 m is accepted; an additional centimetre and nontrivial floating overages are rejected.",
+    "Late asynchronous responses cannot overwrite a newer accepted edit.",
+    "Clearing cancels in-flight work without a ghost stop or route.",
+    "Undo during validation cancels the proposal without losing the accepted start.",
+    "Personal best ranks unique states first, then actual distance, for eligible trips only.",
+    "Only a compatible legacy 1,000-mile record migrates; other old modes, graph versions and over-budget scores do not."
+  ]
+}
