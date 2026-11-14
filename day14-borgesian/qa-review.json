@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "reviewed_utc": "2026-11-14T19:37:48.702067+00:00",
+  "browser": "Google Chrome on macOS",
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "browser_checks_passed": 26,
+  "checks": [
+    "Bottom panel and legend removed; compact zoom controls available",
+    "New subtitle displayed",
+    "Automatic playback on initial load and actual iframe reload",
+    "Complete Denver opening extent",
+    "Original bench position and source link",
+    "No technical bench detail line",
+    "Larger bench stays clear of mobile callout and controls",
+    "Grass texture and leafy tree models",
+    "Crown picking identifies real tree features",
+    "2D/3D preserves location and zoom",
+    "Reset returns to Denver",
+    "Aerial circuit visits all source-verified landmarks",
+    "Original bench retained as final target",
+    "Manual pan cancels playback",
+    "Reduced-motion autoplay and reset are immediate",
+    "No application load error"
+  ],
+  "unit_tests": "9 Python tests and 4 camera path tests passed; data preparation rerun successfully with identical geographic counts.",
+  "data_validation": "302 parks; 24,483 OSM features; 51 Washington Park bench nodes; final node/5711818758 with 9 trees within 30 m",
+  "bench_models": {
+    "scale": 2.1,
+    "direction_counts": {
+      "osm": 3,
+      "nearest trail": 614,
+      "display fallback": 20
+    },
+    "rule": "Recorded OSM direction first; otherwise face closest mapped trail within 50 m; inference labeled in popup."
+  },
+  "trees": {
+    "forms": [
+      "spreading",
+      "rounded",
+      "upright",
+      "weeping",
+      "evergreen"
+    ],
+    "renderer": "Three.js instanced smooth foliage, alpha-cutout leaf textures and branches",
+    "palette": "Stylized autumn gold, orange, copper, rust red, muted green evergreens",
+    "max_models": {
+      "narrow": 100,
+      "desktop": 250
+    }
+  },
+  "journey": {
+    "duration_seconds": "approximately 58.6",
+    "park_section_seconds": 50,
+    "route": [
+      "North entry",
+      "Smith Lake",
+      "North playground",
+      "South playground",
+      "Grasmere Lake",
+      "South tennis courts",
+      "Grasmere western view",
+      "Original bench node/5711818758"
+    ],
+    "intermediate_pauses": false,
+    "camera_path_samples_inside_official_park_boundary": 501,
+    "camera_tests_passed": 4
+  },
+  "reduced_motion_method": "Browser harness exercises production media-query branch through iframe matchMedia override. System settings unchanged.",
+  "limits": [
+    "No physical iPhone or mobile Safari check",
+    "No live deployment requested or performed",
+    "Tree form, leaf colour and dimensions are illustrative; source points and available tags retained."
+  ],
+  "sha256": {
+    "map.html": "47171ca18e58a29d59284cfc7cf6f963966963b027abc7489e42a7208d71aa15",
+    "app.js": "acb2ce8286827209b6185ef9437add8c5124543976a1c223ba2f2514f64e7f8b",
+    "tree-layer.js": "89c331126254148b729a4ac024f60280346dc8d0b7712d155c5bd554622e01f9",
+    "camera-path.js": "cf53910a1f7d01519e8025f3d3423b6110874750ca5944a7ce8dcd8c2b05792a",
+    "ground-texture.js": "672a685263b24abf54505c8d81bc26c092be42ddb49d8500094a1ce127788955",
+    "style.css": "d3ca9ca69fabb7dc4714e0a5863d098b984fd290bbd56fe076e50f1c588e363f",
+    "data/basemap.json": "add4f97d992ec3463bb009cea7024785c8107f3a9627a03b274b6910e1881c9f",
+    "data/boundary.geojson": "74ffb059e1ebb8018c590402e4e7d05bdc51a113074ce1e5af3325ecdb736db6",
+    "data/interiors.geojson": "3241b8ed7dcad6a854c56b719a9ad03e6786811042c747454c6d8cd4c95d2498",
+    "data/park-points.geojson": "f228b7975c7e11adecebec6446c3e21233a1548b1ecc2d36193a3315a5142a42",
+    "data/parks.geojson": "e0563033667a032295d47ca3e694d9d372dd797231f380e3e00bc9964a83ff59",
+    "data/qa.json": "3788bf3155e8db9cac5a595619ca11b4f9a96335e54de31b39350d12df6121fe",
+    "data/sources.json": "9f92786386021abe956b7dc26d9916cc528ec2af6dc401650674725d5d8cdcc5"
+  },
+  "popup": {
+    "desktop": "Automatic left or right callout with 64px offset",
+    "narrow": "Compact callout above the bench with 74px offset",
+    "narrow_clearance_checked": true,
+    "content": "Bench title and View source link only",
+    "persistent_bench_labels": false,
+    "guided_bench_title": "The Bench"
+  },
+  "ground": {
+    "texture": "Locally generated decorative lawn grain and blades",
+    "elevation": "Flat; no terrain elevation model"
+  },
+  "trails": "Thicker cream strokes and darker outlines",
+  "presentation_mode": "Autoplay on load/reload; bottom panel and legend removed. Compact +/\u2212 buttons and manual zoom gestures enabled; manual zoom pauses flight.",
+  "subtitle": "A city becomes a park. A park becomes a bench to relax on.",
+  "view_toggle": "Button text displays current mode; tooltip describes the switch action.",
+  "manual_zoom_update": "Restored wheel, pinch, double-click, keyboard and compact navigation buttons.",
+  "manual_zoom_smoke": "Passed in Chrome at 390\u00d7844: + increases zoom and pauses autoplay; \u2212 decreases zoom; wheel/pinch/keyboard handlers enabled; controls clear top tools; current-mode label matches pitch.",
+  "verification_scope": "Full 26-check presentation suite passed before zoom restoration. Latest zoom and mode-label changes passed targeted real-browser checks and JavaScript syntax validation."
+}

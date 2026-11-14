@@ -52,6 +52,8 @@ git add -- .gitignore .github AGENTS.md README.md PLAN.md \
   LICENSE requirements.txt environment.yml src scripts templates assets tests maps docs flagship \
   data/raw/.gitkeep data/interim/.gitkeep data/processed/.gitkeep \
   ':(exclude)maps/**/*.png'
+# Day 14 lives at the repository root, as requested for its public route.
+if [[ -d day14-borgesian ]]; then git add -- day14-borgesian; fi
 # Day 6 explicitly requires downloadable print exports. Keep other screenshot PNGs excluded.
 if [[ -f maps/day06-vintage/exports/day06_telluride.png ]]; then
   git add -- maps/day06-vintage/exports/day06_telluride.png \

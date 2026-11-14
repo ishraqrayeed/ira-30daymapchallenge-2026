@@ -1,0 +1,66 @@
+<!doctype html><meta charset="utf-8"><title>Day 14 browser checks</title>
+<style>body{font:14px Arial;background:#eee;color:#183d30;margin:20px;display:flex;gap:24px}iframe{width:390px;height:844px;border:1px solid #aaa;flex:none}section{max-width:650px}li{margin:12px 0;white-space:pre-wrap}.fail{color:#a22}button{padding:12px}</style>
+<iframe title="Real Day 14 map"></iframe><section><h1>Day 14 · real browser checks</h1><p>390 × 844 viewport. Camera, geometry target, popups, free exploration, toggle, reset, tour and reduced-motion branch.</p><ol id="results"></ol><strong id="status">Running…</strong></section>
+<script>
+const target=new URLSearchParams(location.search).get('target')||'./map.html';
+const frame=document.querySelector('iframe');frame.src=target;
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const results=[];const resourceErrors=[];
+function check(ok,message){results.push({passed:!!ok,message});const li=document.createElement('li');li.textContent=(ok?'PASS · ':'FAIL · ')+message;li.className=ok?'':'fail';document.querySelector('ol').append(li);if(!ok)throw Error(message);}
+async function until(fn,max=30000){const start=Date.now();while(!fn()){if(Date.now()-start>max)throw Error('Timeout waiting for map');await sleep(100);} }
+(async()=>{
+ await until(()=>frame.contentWindow.parkMap?.getLayer('interior-labels'));
+ let w=frame.contentWindow,m=w.parkMap,d=w.document;
+ m.on('error',e=>resourceErrors.push(e.error?.message));window.testMap=m;
+ const q=await fetch(new URL('data/qa.json',new URL(target,location.href))).then(r=>r.json());
+ const settled=async()=>{await sleep(1200);await until(()=>!m.isMoving());await sleep(100);};
+ const contains=()=>q.bounds.every(c=>m.getBounds().contains(c));
+ check(w.innerWidth===390&&w.innerHeight===844,'iPhone-sized viewport 390 × 844');
+ check(!d.querySelector('.journey')&&!d.querySelector('.key'),'Bottom box and legend removed');
+ check(!!d.querySelector('.maplibregl-ctrl-zoom-in')&&!!d.querySelector('.maplibregl-ctrl-zoom-out')&&!d.querySelector('[data-stop]'),'Compact zoom buttons restored without bottom panel');
+ check(m.scrollZoom.isEnabled()&&m.doubleClickZoom.isEnabled()&&m.touchZoomRotate.isEnabled()&&m.boxZoom.isEnabled(),'Wheel, pinch and double-click zoom enabled');
+ check(d.querySelector('.title p').textContent==='A city becomes a park. A park becomes a bench to relax on.','Updated subtitle displayed');
+ await until(()=>w.parkPlayback.running||m.getZoom()>19);
+ check(true,'Fly-through starts automatically once map is ready');
+ w.parkPlayback.stop();w.goToStop(0,false,true);await settled();
+ check(m.getPitch()===0&&contains(),'City opening frames the complete Denver boundary');
+ w.goToStop(1);await settled();check(Math.abs(m.getPitch()-50)<.001,'Park perspective remains available for QA');
+ w.goToStop(2);await settled();
+ const point=m.project(q.bench.coordinates);
+ check(point.x>25&&point.x<365&&point.y>210&&point.y<680,'Original bench is in the unobstructed map area');
+ let popup=d.querySelector('.bench-callout');
+ check(popup?.querySelector('a').href.endsWith(q.bench.osm),'Minimal bench popup links to its real OSM source');
+ check(!/Backrest|inferred|Faces trail/.test(popup.textContent),'Technical bench details removed');
+ const r=popup.getBoundingClientRect(),controls=d.querySelector('.tools').getBoundingClientRect();
+ check(!(r.left<point.x+50&&r.right>point.x-50&&r.top<point.y+15&&r.bottom>point.y-65),'Callout does not cover the larger bench');
+ check(r.top>controls.bottom&&r.left>=0&&r.right<=390,'Mobile callout clears controls and fits the screen');
+ check(m.hasImage('lawn-texture')&&!!m.getLayer('grass-detail'),'Grass texture is available');
+ await until(()=>w.parkTrees?.trees?.length>0&&w.parkTrees.meshes?.length>0);
+ check(true,'Leafy models render at actual mapped tree positions');
+ const tree=w.parkTrees.trees[0],v=tree.sphere.center,a=w.parkTrees.camera.projectionMatrix.elements;
+ const divisor=a[3]*v.x+a[7]*v.y+a[11]*v.z+a[15];
+ const crown={x:((a[0]*v.x+a[4]*v.y+a[8]*v.z+a[12])/divisor+1)*w.innerWidth/2,y:(1-(a[1]*v.x+a[5]*v.y+a[9]*v.z+a[13])/divisor)*w.innerHeight/2};
+ const hit=w.parkTrees.pick(crown);check(hit?.properties.kind==='tree','Leafy crowns remain clickable');
+ const center=m.getCenter(),zoom=m.getZoom();d.getElementById('dimension').click();await settled();
+ check(m.getPitch()===0&&center.distanceTo(m.getCenter())<.001&&Math.abs(zoom-m.getZoom())<1e-8,'2D toggle preserves location and zoom');
+ d.getElementById('dimension').click();await settled();check(Math.abs(m.getPitch()-50)<.001,'Return to 3D');
+ d.getElementById('reset').click();await settled();check(m.getPitch()===0&&contains(),'Reset returns to Denver');
+ const samples=[],record=()=>samples.push(m.getCenter().toArray());m.on('move',record);
+ w.parkPlayback.play();await until(()=>!w.parkPlayback.running,70000);await settled();m.off('move',record);
+ check(Object.values(q.tour_landmarks).every(l=>samples.some(c=>Math.hypot((c[0]-l.coordinates[0])*85600,(c[1]-l.coordinates[1])*111320)<20)),'Slow aerial loop visits lakes, playgrounds and tennis courts');
+ check(d.querySelector('.bench-callout a')?.href.endsWith(q.bench.osm)&&m.getZoom()>20,'Automatic loop ends at the original bench');
+ w.parkPlayback.play();await sleep(200);m.fire('dragstart');const stopped=m.getCenter();await sleep(180);
+ check(!w.parkPlayback.running&&stopped.distanceTo(m.getCenter())<.001,'Manual exploration stops playback');
+ const original=w.matchMedia.bind(w);w.matchMedia=query=>query==='(prefers-reduced-motion: reduce)'?{matches:true}:original(query);
+ w.parkPlayback.play();check(!m.isMoving()&&!w.parkPlayback.running&&Math.abs(m.getZoom()-20.2)<.01,'Reduced-motion autoplay lands immediately');
+ d.getElementById('reset').click();check(!m.isMoving()&&m.getPitch()===0&&contains(),'Reduced-motion reset remains immediate');w.matchMedia=original;
+ check(d.getElementById('error').hidden,'No application load error');
+ const oldMap=m;frame.contentWindow.location.reload();
+ await until(()=>frame.contentWindow.parkMap&&frame.contentWindow.parkMap!==oldMap);
+ w=frame.contentWindow;m=w.parkMap;d=w.document;window.testMap=m;
+ await until(()=>w.parkPlayback?.running||m.getZoom()>19);
+ check(true,'Reload automatically starts playback again');w.parkPlayback.stop();
+ document.getElementById('status').textContent='ALL '+results.length+' CHECKS PASSED';
+ window.reviewResults={passed:true,checks:results,userAgent:navigator.userAgent};
+})().catch(e=>{document.getElementById('status').textContent='FAILED: '+e.message+' '+JSON.stringify({resources:resourceErrors,sources:window.testMap&&Object.fromEntries(Object.keys(window.testMap.getStyle().sources).map(k=>[k,window.testMap.isSourceLoaded(k)])),pitch:window.testMap?.getPitch(),zoom:window.testMap?.getZoom(),visibility:window.testMap?.getLayoutProperty('amenities-3d','visibility'),solidCount:window.testMap?.getSource('point-solids')?._data?.features?.length});window.reviewResults={passed:false,checks:results,error:e.message};});
+</script>

@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><title>Day 14 zoom smoke check</title><style>body{display:flex;gap:20px;font:16px Arial}iframe{width:390px;height:844px;border:1px solid #ccc}p{max-width:500px;white-space:pre-wrap}</style><iframe src="map.html" title="Actual map"></iframe><p id="result">Checking zoom controls…</p><script>
+(async()=>{
+const frame=document.querySelector('iframe'),sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(fn){const begin=Date.now();while(!fn()){if(Date.now()-begin>30000)throw Error('Timeout');await sleep(80);}}
+await until(()=>frame.contentWindow.parkPlayback?.running);const w=frame.contentWindow,m=w.parkMap,d=w.document;
+const before=m.getZoom();d.querySelector('.maplibregl-ctrl-zoom-in').click();await sleep(1500);
+if(w.parkPlayback.running||m.getZoom()<before+.8)throw Error('Zoom in did not pause flight and increase zoom');
+const high=m.getZoom();d.querySelector('.maplibregl-ctrl-zoom-out').click();await sleep(1500);
+if(m.getZoom()>high-.8)throw Error('Zoom out did not decrease zoom');
+if(!m.scrollZoom.isEnabled()||!m.touchZoomRotate.isEnabled()||!m.keyboard.isEnabled())throw Error('Zoom gestures unavailable');
+const group=d.querySelector('.maplibregl-ctrl-group').getBoundingClientRect(),tools=d.querySelector('.tools').getBoundingClientRect();
+if(group.top<tools.bottom)throw Error('Controls overlap');
+if(d.getElementById('dimension').textContent!==(m.getPitch()>5?'3D view':'2D view'))throw Error('Mode label does not match camera');
+document.getElementById('result').textContent='PASS: + zooms in and pauses autoplay; − zooms out; wheel/pinch/keyboard handlers enabled; mobile controls do not overlap; mode label matches camera.';
+})().catch(e=>document.getElementById('result').textContent='FAIL: '+e.message);
+</script>

@@ -18,7 +18,7 @@ Use public data, document sources and limitations, and keep each workflow reprod
 | 11 | [Senses: Sound](maps/day11-sound/README.md) |
 | 12 | [Power](maps/day12-power/README.md) |
 | 13 | [Interactions](maps/day13-interactions/README.md) |
-| 14 | [Borgesian map](maps/day14-borgesian/README.md) |
+| 14 | [Borgesian map](day14-borgesian/README.md) |
 | 15 | [Inside out](maps/day15-inside-out/README.md) |
 | 16 | [Collaborative map](maps/day16-collaborative/README.md) |
 | 17 | [Light & dark](maps/day17-light-dark/README.md) |

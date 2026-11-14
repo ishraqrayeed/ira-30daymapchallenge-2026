@@ -140,6 +140,13 @@ Southwest with an artistic electric pulse.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day13-interactions/) ·
 [Map and methods](maps/day13-interactions/README.md).
 
+## Day 14 — Borgesian Map
+
+**Denver, City of 280+ Parks** — follow the map from Denver’s park system to
+Washington Park and a real mapped bench.
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day14-borgesian/) ·
+[Data and reproduction](day14-borgesian/README.md).
+
 ## Project layout
 
 - `maps/`: daily maps, code, and methods.

@@ -80,6 +80,41 @@ def package_day13(root: Path, destination: Path) -> None:
     print('Packaged Day 13 browser-only 1,000-mile road trip')
 
 
+DAY14_FILES = ('map.html', 'app.js', 'tree-layer.js', 'camera-path.js', 'ground-texture.js', 'vendor/three.module.js', 'vendor/THREE-LICENSE.txt', 'style.css', 'README.md', 'requirements.txt', 'qa-review.json',
+               'prepare_data.py', 'extract_osm.py', 'validate_data.py', 'orient_benches.py',
+               'data/basemap.json', 'data/parks.geojson', 'data/park-points.geojson',
+               'data/boundary.geojson', 'data/interiors.geojson', 'data/qa.json',
+               'data/sources.json', 'vendor/maplibre-gl.js', 'vendor/maplibre-gl.css',
+               'vendor/MAPLIBRE-LICENSE.txt', 'vendor/maplibre-gl-csp-worker.js')
+
+
+def package_day14(root: Path, destination: Path) -> None:
+    source = root / 'day14-borgesian'
+    if not (source / 'map.html').is_file():
+        return
+    qa = json.loads((source / 'data/qa.json').read_text())
+    parks = json.loads((source / 'data/parks.geojson').read_text())['features']
+    interiors = json.loads((source / 'data/interiors.geojson').read_text())['features']
+    if (not qa['passed'] or len(parks) != qa['parks_mapped'] or
+            len({f['properties']['id'] for f in parks}) != len(parks) or
+            not any(f['properties'].get('osm') == qa['bench']['osm'] and
+                    f['geometry']['coordinates'] == qa['bench']['coordinates']
+                    for f in interiors)):
+        raise ValueError('Day 14 park count or tour bench validation failed')
+    target = destination / 'day14-borgesian'
+    for name in DAY14_FILES:
+        if not (source / name).is_file():
+            raise ValueError(f'Day 14 asset missing: {name}')
+        relative = Path('index.html' if name == 'map.html' else name)
+        if any((target / part).is_symlink() for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 14 symlink: {name}')
+    for name in DAY14_FILES:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print(f"Packaged Day 14: {len(parks)} parks and verified OSM bench")
+
+
 DAY23_FILES = ('map.html', 'app.js', 'core.js', 'routing-worker.js', 'style.css',
                'README.md', 'DATA_SOURCES.md', 'RESEARCH_NOTES.md', 'qa-review.json',
                'curated.json', 'extract_osm.py', 'extract_water.py', 'prepare_data.py',
@@ -493,6 +528,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day14(root, destination)
     package_day13(root, destination)
     # Day 23 remains a source-only draft; this release publishes Day 13.
     package_day12(root, destination)
