@@ -133,6 +133,13 @@ Southwest with an artistic electric pulse.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day12-power/) ·
 [Sources and methods](maps/day12-power/README.md).
 
+## Day 13 — Interactions
+
+**The Great American Road Trip** — a browser-only route-planning game:
+1,000 miles. How many states can you visit?
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day13-interactions/) ·
+[Map and methods](maps/day13-interactions/README.md).
+
 ## Project layout
 
 - `maps/`: daily maps, code, and methods.

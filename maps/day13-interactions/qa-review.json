@@ -1,8 +1,8 @@
 {
-  "project": "Day 24 \u2014 Network: The Great American Road Trip",
+  "project": "Day 13 \u2014 Interactions: The Great American Road Trip",
   "review_date": "2026-11-13",
   "game": "Most states within 1,000 highway miles",
-  "status": "Source only; not deployed",
+  "status": "Approved for publication by user",
   "graph_unchanged_during_gameplay_revision": true,
   "graph_sha256": "28574a3770894627740d64178ce3ef2a4dd976494a93cd524508b3fbb0bf669c",
   "tests": {
@@ -459,5 +459,15 @@
     "session.js": "64bb0b89f2c38fc85fb0e32ff5e77345db2fc169c94a0ae9472abcc50f4a4709",
     "style.css": "8f4ff04063ec9800567799ceb45b585872bec71735ad9019638ec3f2b1775ee7",
     "routing-worker.js": "9773edf8cb46c45427b7d0c71cd9bae9cfb5faf972c2a1f0dc3a16611fea0604"
+  },
+  "day13_relocation": {
+    "from": "maps/day24-network",
+    "to": "maps/day13-interactions",
+    "gameplay_and_graph_unchanged": true,
+    "core_session_routing_tests": "PASS",
+    "pages_package": "PASS",
+    "desktop_browser": "Map, highways, labels and ready controls verified in Chrome",
+    "mobile_browser": "390 x 844 review viewport checked",
+    "publication": "Approved by user"
   }
 }
