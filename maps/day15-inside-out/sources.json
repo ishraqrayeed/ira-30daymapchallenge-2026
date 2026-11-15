@@ -1,0 +1,47 @@
+{
+  "retrieved_utc": "2026-11-14T23:44:11.901473+00:00",
+  "osm_query": "[out:json][timeout:90];(way[highway][ref~\"550\"](37.78,-107.80,38.04,-107.62);node[name=\"Red Mountain Pass\"](37.8,-107.8,38.0,-107.6););out body;>;out skel qt;",
+  "osm_base_timestamp": {
+    "timestamp_osm_base": "2026-11-14T23:43:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elevation_service": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+  "export_parameters": {
+    "bbox": "253410,4184630,270080,4213960",
+    "bboxSR": 26913,
+    "imageSR": 26913,
+    "size": "1667,2933",
+    "format": "tiff",
+    "pixelType": "F32",
+    "interpolation": "RSP_BilinearInterpolation",
+    "renderingRule": "{\"rasterFunction\": \"None\"}",
+    "f": "image"
+  },
+  "files": {
+    "elevation.tif": "c519ccfc13b2a41a4aa97cd417d92c5004cfbd8b369899531c818d2c11abf29f",
+    "service.json": "2288d6bedae945ed1c7f651ac1587c0d0f17c0738ef8543e414867252d6361bf",
+    "osm.json": "b4d4be908be82a850b4ba32489f99c0cd41e8f62368117ca5d2ff7b6c3fb3fe9",
+    "catalog.json": "87e11df29e3b6fdaaf3f60bfbd2552d3352649107cfa5303440ca4dec1dafad9"
+  },
+  "elevation_resolution_note": "USGS multi-resolution 3DEP dynamic service, exported/resampled to a 10 m UTM grid; this is not a claim of uniform native 10 m source resolution.",
+  "service_metadata": {
+    "description": "The USGS 3D Elevation Program (3DEP) Bare Earth DEM Dynamic service is based on multi-resolution USGS DEM sources and provides dynamic functions for visualization. These functions include: Hillshade, Aspect Map, Hillshade Stretched, Multi-directional Hillshade, Slope Map, Elevation Tinted Hillshade, Contour. In addition the OGC Web Map Service (WMS) and Web Coverage Service (WCS) interfaces are enabled. Data available in this map service reflects all 3DEP DEM data published as of October 26, 2026.",
+    "copyrightText": "USGS National Map 3D Elevation Program (3DEP). October 27, 2026.",
+    "pixelSizeX": 0.9999999900119095,
+    "pixelSizeY": 0.9999999900119095,
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    }
+  },
+  "photograph": {
+    "author": "Adam Silverman",
+    "account": "wej12",
+    "post_url": "https://www.instagram.com/p/DBHaQE2vHJG/",
+    "source_url": "https://www.instagram.com/p/DBHaQE2vHJG/media/?size=l",
+    "photo_date": "2024-09-27",
+    "post_date": "2024-10-14",
+    "rights": "Copyright Adam Silverman; supplied post used in local comparison, no open license asserted.",
+    "sha256": "030ee4fc2eef6df65fec71cb29f0d444000c68f1338805e847e86e4f11ab4939"
+  }
+}

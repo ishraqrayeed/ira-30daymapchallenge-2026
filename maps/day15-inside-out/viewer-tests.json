@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "viewer_sha256": "54e6c10756ddfe28248fe32c4a0fa44405e08827d81e8a65371664c40ddba76c",
+  "controls_sha256": "6b2f7df940a94e9aefe48466d8722c882e1430072c1dd680e978e0d70527ff00",
+  "checks": [
+    "same GIS/3D vertices",
+    "three columns and portrait credit",
+    "no height control or old markers",
+    "road-only scene",
+    "closed ribbon count and two material groups",
+    "default/overhead fit",
+    "damped mouse orbit",
+    "wheel zoom",
+    "pan and pointer cancellation",
+    "reset",
+    "keyboard orbit",
+    "mobile fit",
+    "mesh replacement",
+    "inertia settles",
+    "rotation underneath road",
+    "GIS/3D endpoint orientation"
+  ],
+  "gpu_browser_visual_review": false
+}

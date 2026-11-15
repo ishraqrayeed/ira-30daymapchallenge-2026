@@ -1,0 +1,26 @@
+{
+  "camera": {
+    "azimuth": 120,
+    "elevation": 45,
+    "roll": 0
+  },
+  "anchors": [],
+  "resolution": [
+    3200,
+    4000
+  ],
+  "vertical_scale": 6,
+  "width_m": 24.0,
+  "thickness_m": 3.0,
+  "projection": "perspective",
+  "route_vertices": 117,
+  "terrain_vertices": 0,
+  "mesh": {
+    "vertices": 468,
+    "faces": 466,
+    "edges": 932,
+    "closed_manifold": true,
+    "euler_characteristic": 2,
+    "centerline_vertices": 117
+  }
+}

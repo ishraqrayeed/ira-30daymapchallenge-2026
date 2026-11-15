@@ -1,0 +1,33 @@
+{
+  "name": "Bear Creek switchbacks",
+  "chainage_from_ouray_m": [
+    8800,
+    9700
+  ],
+  "photo_reference": "data/milliondollarhighway.jpeg",
+  "match_status": "Best visual match; user selected Bear Creek candidate. Exact camera position and photographic geolocation are not independently verified.",
+  "match_evidence": [
+    "Compact, connected alternating bends on one north-south alignment, rather than the two offset pairs above Ironton.",
+    "A broader leading bend followed by closely spaced, sharper reversing curves matches the reference sequence.",
+    "The approach and exit extend beyond the concentrated reversals; the mesh retains real spacing rather than rearranging the hairpins."
+  ],
+  "camera": {
+    "azimuth": 120,
+    "elevation": 45,
+    "roll": 0,
+    "focal_length_mm": 45
+  },
+  "default_vertical_scale": 6,
+  "ribbon_width_m": 24,
+  "ribbon_thickness_m": 3,
+  "photo_display": {
+    "author": "Adam Silverman",
+    "account": "wej12",
+    "post_url": "https://www.instagram.com/p/DBHaQE2vHJG/",
+    "source_url": "https://www.instagram.com/p/DBHaQE2vHJG/media/?size=l",
+    "photo_date": "2024-09-27",
+    "post_date": "2024-10-14",
+    "rights": "Copyright Adam Silverman; supplied post used in local comparison, no open license asserted."
+  },
+  "comparison_orientation": "south-up, matching the photograph; camera looks southward from the northern approach"
+}

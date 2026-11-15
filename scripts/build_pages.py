@@ -88,6 +88,38 @@ DAY14_FILES = ('map.html', 'app.js', 'tree-layer.js', 'camera-path.js', 'ground-
                'vendor/MAPLIBRE-LICENSE.txt', 'vendor/maplibre-gl-csp-worker.js')
 
 
+def package_day15(root: Path, destination: Path) -> None:
+    """Package the static poster without changing an earlier day's route."""
+    source = root / 'maps/day15-inside-out'
+    if not (source / 'map.png').is_file():
+        return
+    qa = json.loads((source / 'qa.json').read_text())
+    composition = json.loads((source / 'composition.json').read_text())
+    viewer = json.loads((source / 'viewer-tests.json').read_text())
+    if not qa['passed'] or not composition['mesh']['closed_manifold'] or not viewer['passed']:
+        raise ValueError('Day 15 geographic or mesh validation failed')
+    if viewer['viewer_sha256'] != hashlib.sha256((source / 'viewer.js').read_bytes()).hexdigest():
+        raise ValueError('Day 15 viewer checks do not match the packaged code')
+    if viewer['controls_sha256'] != hashlib.sha256((source / 'vendor/OrbitControls.js').read_bytes()).hexdigest():
+        raise ValueError('Day 15 checks do not match the packaged orbit controls')
+    files = ('map.html', 'viewer.js', 'viewer.css', 'vendor/three.module.js', 'vendor/OrbitControls.js', 'vendor/THREE-LICENSE.txt', 'map.png', 'road.blend', 'README.md', 'requirements.txt',
+             'qa.json', 'composition.json', 'sources.json', 'visual-review.json',
+             'download_data.py', 'prepare_data.py', 'build_scene.py', 'validate.py',
+             'test_viewer.mjs', 'viewer-tests.json', 'segment.json', 'data/route.json', 'data/instagram-reference.jpg', 'review/segment-candidates.png')
+    target = destination / 'day15-inside-out'
+    for name in files:
+        relative = Path('index.html' if name == 'map.html' else name)
+        if not (source / name).is_file():
+            raise ValueError(f'Day 15 asset missing: {name}')
+        if any((target / part).is_symlink() for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 15 symlink: {name}')
+    for name in files:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 15 US 550 poster and Blender scene')
+
+
 def package_day14(root: Path, destination: Path) -> None:
     source = root / 'day14-borgesian'
     if not (source / 'map.html').is_file():
@@ -528,6 +560,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day15(root, destination)
     package_day14(root, destination)
     package_day13(root, destination)
     # Day 23 remains a source-only draft; this release publishes Day 13.

@@ -1,0 +1,48 @@
+{
+  "poster": {
+    "reviewed": true,
+    "resolution": [
+      3200,
+      4000
+    ],
+    "thumbnail_review": [
+      400,
+      500
+    ],
+    "full_size_detail_reviewed": true,
+    "road_only": true,
+    "road_continuous_and_hairpins_readable": true,
+    "amber_top_and_dark_edge_visible": true,
+    "old_location_markers_removed": true,
+    "notes": "Wider isolated ribbon with the southern exit extended by 50 m. Camera and south-up GIS follow the photograph. No climb/scale caption is displayed.",
+    "display_width_m": 24
+  },
+  "interactive_viewer": {
+    "desktop_native_chrome_review": true,
+    "photo_gis_and_3d_visible_simultaneously": true,
+    "portrait_photo_uncropped_with_watermark_and_credit": true,
+    "road_only": true,
+    "damped_orbit_drag_verified": true,
+    "overhead_and_reset_verified": true,
+    "height_selector_removed": true,
+    "default_camera_elevation_degrees": 45,
+    "mobile_emulation": {
+      "viewport": [
+        390,
+        844
+      ],
+      "stacked_sections_inspected": true,
+      "road_ends_and_camera_controls_fit": true
+    },
+    "console": "No application-origin runtime errors observed. Chrome reported unrelated injected-extension errors.",
+    "limitation": "Physical-device multi-touch was not tested; pinch/pan have automated controller coverage. Free orbit underneath the road is allowed. Reset restores the checked default angle.",
+    "climb_caption_removed": true,
+    "comparison_orientation": "South-up GIS and overhead view, north arrow downward; default 3D looks southward along the road from the northern approach.",
+    "selected_length_m": 900,
+    "centered_headings_captions_and_controls": true,
+    "resource_footer_removed": true,
+    "arrow_buttons_removed": true
+  },
+  "photo_match": "Bear Creek candidate selected by the user after top-down comparison. Alignment, curve sequence and spacing are preserved; exact photographic camera coordinates are not independently known.",
+  "publishing": "Local only; not deployed."
+}

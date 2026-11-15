@@ -147,6 +147,13 @@ Washington Park and a real mapped bench.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day14-borgesian/) ·
 [Data and reproduction](day14-borgesian/README.md).
 
+## Day 15 — Inside Out
+
+**The Road Carved Into the Mountains** — Switchbacks of the Million Dollar Highway.
+Compare a credited photograph, the GIS alignment, and a rotatable 3D road ribbon.
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day15-inside-out/) ·
+[Data and reproduction](maps/day15-inside-out/README.md).
+
 ## Project layout
 
 - `maps/`: daily maps, code, and methods.

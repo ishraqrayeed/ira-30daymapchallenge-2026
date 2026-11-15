@@ -72,6 +72,10 @@ fi
 if [[ -f maps/day09-urban-rural/data/history.json ]]; then
   git add -- maps/day09-urban-rural/data/history/*.png
 fi
+# Day 15 includes its Blender-rendered poster and reviewed segment comparison.
+if [[ -f maps/day15-inside-out/map.png ]]; then
+  git add -- maps/day15-inside-out/map.png maps/day15-inside-out/review/segment-candidates.png
+fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"
 fi
