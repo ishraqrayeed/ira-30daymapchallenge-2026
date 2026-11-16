@@ -1,0 +1,3532 @@
+{
+  "stations": 116,
+  "observations": 57329,
+  "station_audits": [
+    {
+      "station": "gces",
+      "correlation": 0.9999999936670139,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.055040842235939635,
+      "residual_mad_hz": 0.18100974249500723,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 608,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 161
+      },
+      "kept": 447,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "rvdi",
+      "correlation": 0.9999999988945752,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.02907587128402156,
+      "residual_mad_hz": 0.08182560180421206,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 550,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 31
+      },
+      "kept": 519,
+      "observation_types": [
+        "L1",
+        "L2",
+        "L5",
+        "C1",
+        "P1",
+        "P2",
+        "C2",
+        "C5",
+        "D1",
+        "D2",
+        "D5",
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "station": "flkw",
+      "correlation": 0.9999999941411325,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.013539245592710358,
+      "residual_mad_hz": 0.1565815300050417,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 562,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 47
+      },
+      "kept": 515,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "ka21",
+      "correlation": 0.9999999890769676,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.04336597913584228,
+      "residual_mad_hz": 0.21376954661923264,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 83
+      },
+      "kept": 474,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "ands",
+      "correlation": 0.9999999953110752,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0339398984299919,
+      "residual_mad_hz": 0.1561454991701794,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 489,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 1
+      },
+      "kept": 488,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "ict4",
+      "correlation": 0.999999929827638,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -362.0602261892579,
+      "residual_mad_hz": 0.7869456936591632,
+      "sign_disagreements": 6,
+      "counts": {
+        "raw": 536,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 56
+      },
+      "kept": 480,
+      "observation_types": [
+        "C1",
+        "P1",
+        "L1",
+        "D1",
+        "P2",
+        "L2",
+        "D2",
+        "C5",
+        "L5",
+        "D5",
+        "C2",
+        "C6",
+        "L6",
+        "D6",
+        "C7",
+        "L7",
+        "D7",
+        "C8",
+        "L8",
+        "D8"
+      ]
+    },
+    {
+      "station": "masa",
+      "correlation": 0.9999999942589731,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.05268079019720062,
+      "residual_mad_hz": 0.18851069612878746,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 27
+      },
+      "kept": 530,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyfd",
+      "correlation": 0.9999999956176024,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.03144430692532296,
+      "residual_mad_hz": 0.14774951449680884,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 575,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 53
+      },
+      "kept": 522,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "sgpo",
+      "correlation": 0.9999999992159947,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.007203406094959064,
+      "residual_mad_hz": 0.059823072462222626,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 600,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 115
+      },
+      "kept": 485,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L3",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P1",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "jime",
+      "correlation": 0.9999999914806468,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.021183791729953327,
+      "residual_mad_hz": 0.1717751769785707,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 608,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 90
+      },
+      "kept": 518,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "tn29",
+      "correlation": 0.999999993908907,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.04765067352036567,
+      "residual_mad_hz": 0.16094068523216265,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 593,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 107
+      },
+      "kept": 486,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "mrc1",
+      "correlation": 0.9999999992570131,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.02087769636500525,
+      "residual_mad_hz": 0.061164888512621474,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 576,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 61
+      },
+      "kept": 515,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L3",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P1",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "azbr",
+      "correlation": 0.9999999961837879,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.008978903500519664,
+      "residual_mad_hz": 0.1213050286643238,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 635,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 166
+      },
+      "kept": 469,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azds",
+      "correlation": 0.9999999949497804,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.018339815561631667,
+      "residual_mad_hz": 0.13086929106904677,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 630,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 166
+      },
+      "kept": 464,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azfl",
+      "correlation": 0.9999999918996424,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.015818490094261506,
+      "residual_mad_hz": 0.21756824316025813,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 577,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 124
+      },
+      "kept": 453,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azfm",
+      "correlation": 0.999999993854568,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.01779009691108513,
+      "residual_mad_hz": 0.15603787043528428,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 611,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 150
+      },
+      "kept": 461,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azgb",
+      "correlation": 0.9999999964491709,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.01129924578117425,
+      "residual_mad_hz": 0.1177599393794253,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 599,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 135
+      },
+      "kept": 464,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azpg",
+      "correlation": 0.9999999944358579,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.06398301399178763,
+      "residual_mad_hz": 0.16683699901557247,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 594,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 145
+      },
+      "kept": 449,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azrv",
+      "correlation": 0.999999994313456,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.026743378764422232,
+      "residual_mad_hz": 0.15353260606275398,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 595,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 124
+      },
+      "kept": 471,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azsf",
+      "correlation": 0.9999999956764793,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.07267489419109552,
+      "residual_mad_hz": 0.10871158647603352,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 596,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 122
+      },
+      "kept": 474,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "S1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azsv",
+      "correlation": 0.9999999916506804,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.025045531033697443,
+      "residual_mad_hz": 0.1725550059309171,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 606,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 148
+      },
+      "kept": 458,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "aztp",
+      "correlation": 0.999999994049942,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.008363481327364752,
+      "residual_mad_hz": 0.15028862715234936,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 547,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 90
+      },
+      "kept": 457,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "dunn",
+      "correlation": 0.9999999951024322,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.031827031898501446,
+      "residual_mad_hz": 0.1433924222949372,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 618,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 115
+      },
+      "kept": 503,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "fl75",
+      "correlation": 0.9999999949918681,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.05068630508753813,
+      "residual_mad_hz": 0.15430308692452854,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 574,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 82
+      },
+      "kept": 492,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "flbn",
+      "correlation": 0.9999999954608488,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.007601369788972079,
+      "residual_mad_hz": 0.13872291443431095,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 576,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 71
+      },
+      "kept": 505,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "flcb",
+      "correlation": 0.9999999899732905,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.02029350568909649,
+      "residual_mad_hz": 0.16862687690246503,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 472,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 31
+      },
+      "kept": 441,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "ka14",
+      "correlation": 0.9999999959259803,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.03502253618444229,
+      "residual_mad_hz": 0.14077839706465056,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 580,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 98
+      },
+      "kept": 482,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "S1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "lbll",
+      "correlation": 0.9999999951143128,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0032943466790129605,
+      "residual_mad_hz": 0.1507755679440379,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 574,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 61
+      },
+      "kept": 513,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "lflo",
+      "correlation": 0.9999999991395372,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.014664847883750554,
+      "residual_mad_hz": 0.05163860163906975,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 531,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 25
+      },
+      "kept": 506,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "C2"
+      ]
+    },
+    {
+      "station": "lpsb",
+      "correlation": 0.9999999976129899,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.007212795234067926,
+      "residual_mad_hz": 0.08959211624369345,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 546,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 48
+      },
+      "kept": 498,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mabn",
+      "correlation": 0.9999999967746815,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.03321430027426686,
+      "residual_mad_hz": 0.1300070870329364,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 551,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 26
+      },
+      "kept": 525,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mafa",
+      "correlation": 0.9999999954401128,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.04870991527513979,
+      "residual_mad_hz": 0.1331534722737615,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 531,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 16
+      },
+      "kept": 515,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mawr",
+      "correlation": 0.9999999929768131,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.07406940322721312,
+      "residual_mad_hz": 0.1936908925129046,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 533,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 23
+      },
+      "kept": 510,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mtnt",
+      "correlation": 0.9999999947990873,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.01743052327242367,
+      "residual_mad_hz": 0.15080266836901046,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 545,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 35
+      },
+      "kept": 510,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "mwrd",
+      "correlation": 0.9999999971001033,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.02265017083800558,
+      "residual_mad_hz": 0.1198818211487378,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 601,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 112
+      },
+      "kept": 489,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "S1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nybt",
+      "correlation": 0.9999999964057441,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.013214640993055582,
+      "residual_mad_hz": 0.13366873534346269,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 597,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 72
+      },
+      "kept": 525,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyet",
+      "correlation": 0.9999999941061529,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.0284115321300078,
+      "residual_mad_hz": 0.16105525104342178,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 523,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 17
+      },
+      "kept": 506,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyfs",
+      "correlation": 0.9999999871759931,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.013674910570500742,
+      "residual_mad_hz": 0.25344390446622356,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 35
+      },
+      "kept": 522,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyfv",
+      "correlation": 0.999999996003932,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.057943035383004826,
+      "residual_mad_hz": 0.14245035318822374,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 590,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 62
+      },
+      "kept": 528,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyhc",
+      "correlation": 0.9999999926687565,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.05243130854842093,
+      "residual_mad_hz": 0.1978410581418757,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 543,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 26
+      },
+      "kept": 517,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyhs",
+      "correlation": 0.9999999945878829,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.011613784078804201,
+      "residual_mad_hz": 0.17401905174460808,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 573,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 51
+      },
+      "kept": 522,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nymd",
+      "correlation": 0.9999999938284637,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.04046723220903914,
+      "residual_mad_hz": 0.18870062708879232,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 583,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 60
+      },
+      "kept": 523,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nymx",
+      "correlation": 0.9999999955298725,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.002320885217613977,
+      "residual_mad_hz": 0.1654945354659958,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 570,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 46
+      },
+      "kept": 524,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nypd",
+      "correlation": 0.9999999937689876,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.018027452456408355,
+      "residual_mad_hz": 0.2094353417196544,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 582,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 51
+      },
+      "kept": 531,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyrh",
+      "correlation": 0.9999999959360901,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.032124084881616,
+      "residual_mad_hz": 0.15483130790676114,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 589,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 66
+      },
+      "kept": 523,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nysb",
+      "correlation": 0.9999999959737323,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.008544794910676501,
+      "residual_mad_hz": 0.1439317564601197,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 551,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 31
+      },
+      "kept": 520,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nywl",
+      "correlation": 0.9999999944330114,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.04410196989806536,
+      "residual_mad_hz": 0.16910440383685454,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 589,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 63
+      },
+      "kept": 526,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nywv",
+      "correlation": 0.9999999931456147,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.010280295407028461,
+      "residual_mad_hz": 0.19117386642801648,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 558,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 36
+      },
+      "kept": 522,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "okcb",
+      "correlation": 0.9999999954041514,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.03220300995667458,
+      "residual_mad_hz": 0.16010562711494458,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 598,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 85
+      },
+      "kept": 513,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "pbch",
+      "correlation": 0.9999999947279965,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.020441627079662794,
+      "residual_mad_hz": 0.16539036270273755,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 53
+      },
+      "kept": 504,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "pcla",
+      "correlation": 0.9999999940720231,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.06208284300680589,
+      "residual_mad_hz": 0.17476395143307855,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 574,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 108
+      },
+      "kept": 466,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "rrw1",
+      "correlation": 0.9999999958892243,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.030158818189875092,
+      "residual_mad_hz": 0.1693889791320089,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 600,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 116
+      },
+      "kept": 484,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "rsbg",
+      "correlation": 0.9999999994612968,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.0039598611605242695,
+      "residual_mad_hz": 0.04091270885328413,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 57
+      },
+      "kept": 500,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "C2"
+      ]
+    },
+    {
+      "station": "tn13",
+      "correlation": 0.9999999962934102,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.04760249382717774,
+      "residual_mad_hz": 0.16750171771435163,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 589,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 103
+      },
+      "kept": 486,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn14",
+      "correlation": 0.999999994271472,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.008807287373429062,
+      "residual_mad_hz": 0.18615847237829186,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 583,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 96
+      },
+      "kept": 487,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn18",
+      "correlation": 0.9999999947924484,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.03360340306085163,
+      "residual_mad_hz": 0.15625603791636422,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 558,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 64
+      },
+      "kept": 494,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn25",
+      "correlation": 0.9999999954024106,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.023385462123314937,
+      "residual_mad_hz": 0.13936051357813994,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 616,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 127
+      },
+      "kept": 489,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn27",
+      "correlation": 0.9999999970682434,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.023058324681528575,
+      "residual_mad_hz": 0.11938800345467371,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 586,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 98
+      },
+      "kept": 488,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn30",
+      "correlation": 0.999999995610651,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.006186559658317492,
+      "residual_mad_hz": 0.15193411453398653,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 601,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 109
+      },
+      "kept": 492,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn32",
+      "correlation": 0.9999999921217341,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0014703940198614873,
+      "residual_mad_hz": 0.1542811388011387,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 629,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 139
+      },
+      "kept": 490,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn33",
+      "correlation": 0.9999999959281392,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.017601154311705614,
+      "residual_mad_hz": 0.14437727613130846,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 611,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 122
+      },
+      "kept": 489,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn41",
+      "correlation": 0.9999999956347674,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.07909239951004565,
+      "residual_mad_hz": 0.16509716062864754,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 606,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 115
+      },
+      "kept": 491,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn43",
+      "correlation": 0.9999999959029904,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0029085718452961373,
+      "residual_mad_hz": 0.1405595886495803,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 611,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 119
+      },
+      "kept": 492,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "tn45",
+      "correlation": 0.9999999963370445,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0020286382143126502,
+      "residual_mad_hz": 0.15034884390831849,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 612,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 120
+      },
+      "kept": 492,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "wach",
+      "correlation": 0.9999999937063424,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.03289609750743239,
+      "residual_mad_hz": 0.1637283674314176,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 582,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 88
+      },
+      "kept": 494,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "xcty",
+      "correlation": 0.9999999943716771,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0788592449185046,
+      "residual_mad_hz": 0.17425233813889918,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 580,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 82
+      },
+      "kept": 498,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "zefr",
+      "correlation": 0.9999999959556464,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.012972857373597435,
+      "residual_mad_hz": 0.1505546428991238,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 546,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 41
+      },
+      "kept": 505,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "ka12",
+      "correlation": 0.999999991325481,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.008163561460605706,
+      "residual_mad_hz": 0.17200070515218613,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 75
+      },
+      "kept": 482,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "masb",
+      "correlation": 0.99999999300576,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.05182071491890383,
+      "residual_mad_hz": 0.18155167740042089,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 549,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 28
+      },
+      "kept": 521,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "ka18",
+      "correlation": 0.9999999962734175,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.013036965962555769,
+      "residual_mad_hz": 0.15331462191977607,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 485,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 1
+      },
+      "kept": 484,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "matu",
+      "correlation": 0.9999999946500536,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.032346680915679826,
+      "residual_mad_hz": 0.17427533137117734,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 527,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 17
+      },
+      "kept": 510,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "wdbn",
+      "correlation": 0.9999999653640926,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.05667664743009482,
+      "residual_mad_hz": 0.2471924340404712,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 605,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 89
+      },
+      "kept": 516,
+      "observation_types": [
+        "C1",
+        "L1",
+        "L2",
+        "P2",
+        "P1",
+        "C2",
+        "C5",
+        "L5",
+        "C6",
+        "L6",
+        "C7",
+        "L7",
+        "C8",
+        "L8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8"
+      ]
+    },
+    {
+      "station": "kar4",
+      "correlation": 0.9999999965856055,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.046152380719831854,
+      "residual_mad_hz": 0.11711679595373425,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 564,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 85
+      },
+      "kept": 479,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "S1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mant",
+      "correlation": 0.9999999930973111,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.05509599625156625,
+      "residual_mad_hz": 0.19218626748750012,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 564,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 36
+      },
+      "kept": 528,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "dp5a",
+      "correlation": 0.9999999935352623,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.056232203483432386,
+      "residual_mad_hz": 0.1728894650464099,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 565,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 78
+      },
+      "kept": 487,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mawm",
+      "correlation": 0.999999995220354,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.0377173936226427,
+      "residual_mad_hz": 0.17224336271942775,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 556,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 30
+      },
+      "kept": 526,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "id01",
+      "correlation": 0.9999999908550334,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0014130913623375818,
+      "residual_mad_hz": 0.24651282900322258,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 564,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 81
+      },
+      "kept": 483,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mada",
+      "correlation": 0.9999999923610076,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.04809333931780202,
+      "residual_mad_hz": 0.18679644908706905,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 567,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 40
+      },
+      "kept": 527,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mapl",
+      "correlation": 0.9999999951920738,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.06040258360599182,
+      "residual_mad_hz": 0.16275097177253883,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 533,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 27
+      },
+      "kept": 506,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "dp3a",
+      "correlation": 0.9999999952205024,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.0488315472694012,
+      "residual_mad_hz": 0.14263693587417947,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 567,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 82
+      },
+      "kept": 485,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2"
+      ]
+    },
+    {
+      "station": "mash",
+      "correlation": 0.9999999937987794,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.08193939338207201,
+      "residual_mad_hz": 0.1850550161011597,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 567,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 42
+      },
+      "kept": 525,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "kar2",
+      "correlation": 0.9999999963363173,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.014295570918875455,
+      "residual_mad_hz": 0.14363205118525002,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 487,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 0
+      },
+      "kept": 487,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "azam",
+      "correlation": 0.9999999958207434,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.012075430285449329,
+      "residual_mad_hz": 0.12478263008847534,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 615,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 146
+      },
+      "kept": 469,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "mami",
+      "correlation": 0.9999999948308008,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.027935039689509722,
+      "residual_mad_hz": 0.18786142719420695,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 580,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 51
+      },
+      "kept": 529,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "ccrm",
+      "correlation": 0.9999999936030961,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0743990836544981,
+      "residual_mad_hz": 0.16995739757646788,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 560,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 72
+      },
+      "kept": 488,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "tn22",
+      "correlation": 0.9999999957587219,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.030058181872846035,
+      "residual_mad_hz": 0.1461553181288764,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 586,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 97
+      },
+      "kept": 489,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "kgmn",
+      "correlation": 0.9999999953160421,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.02482899685855955,
+      "residual_mad_hz": 0.1437375976796602,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 600,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 140
+      },
+      "kept": 460,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "macm",
+      "correlation": 0.9999999961375416,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.02335140602872343,
+      "residual_mad_hz": 0.12735825325717087,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 566,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 41
+      },
+      "kept": 525,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "dp2a",
+      "correlation": 0.9999999929141788,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.01258842376796565,
+      "residual_mad_hz": 0.17841982139810852,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 555,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 67
+      },
+      "kept": 488,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2"
+      ]
+    },
+    {
+      "station": "tn16",
+      "correlation": 0.9999999959087655,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.03179887669193704,
+      "residual_mad_hz": 0.16200021942347576,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 546,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 58
+      },
+      "kept": 488,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "laud",
+      "correlation": 0.9999999937461097,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.04683995228361937,
+      "residual_mad_hz": 0.161820067201063,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 508,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 30
+      },
+      "kept": 478,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "azst",
+      "correlation": 0.999999995540013,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.06225942013475105,
+      "residual_mad_hz": 0.1118416712160979,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 590,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 130
+      },
+      "kept": 460,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "S1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "ccmk",
+      "correlation": 0.9999999883577728,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0062837811142344435,
+      "residual_mad_hz": 0.17529887424097979,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 565,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 79
+      },
+      "kept": 486,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyil",
+      "correlation": 0.99999999553646,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.021633542811855477,
+      "residual_mad_hz": 0.1761549173373851,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 566,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 38
+      },
+      "kept": 528,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "crst",
+      "correlation": 0.9999999943026389,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.01233923051063357,
+      "residual_mad_hz": 0.1663513866312769,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 494,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 53
+      },
+      "kept": 441,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "tn42",
+      "correlation": 0.9999999959957692,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0012099882112579508,
+      "residual_mad_hz": 0.15208091433407844,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 597,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 107
+      },
+      "kept": 490,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "azyc",
+      "correlation": 0.9999999965249251,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0042065080756401585,
+      "residual_mad_hz": 0.10912589451379517,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 611,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 152
+      },
+      "kept": 459,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "dp1a",
+      "correlation": 0.9999999949029186,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.06827392558956547,
+      "residual_mad_hz": 0.18615150813307935,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 567,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 81
+      },
+      "kept": 486,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2"
+      ]
+    },
+    {
+      "station": "nylv",
+      "correlation": 0.9999999956885005,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.05093257224643821,
+      "residual_mad_hz": 0.15837228568705086,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 591,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 62
+      },
+      "kept": 529,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "gnvl",
+      "correlation": 0.999999996730614,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.03371038145928651,
+      "residual_mad_hz": 0.11777336608815858,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 599,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 98
+      },
+      "kept": 501,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "tn39",
+      "correlation": 0.9999999960295756,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.00913834127482005,
+      "residual_mad_hz": 0.15458685555461216,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 565,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 73
+      },
+      "kept": 492,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "azva",
+      "correlation": 0.9999999919734487,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.025133417545021075,
+      "residual_mad_hz": 0.18088724684434965,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 592,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 123
+      },
+      "kept": 469,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "dp6b",
+      "correlation": 0.999999995710993,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.07529422228185467,
+      "residual_mad_hz": 0.15960192469947287,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 69
+      },
+      "kept": 488,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2"
+      ]
+    },
+    {
+      "station": "talh",
+      "correlation": 0.999999995271228,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0048554954876181,
+      "residual_mad_hz": 0.1492685285263633,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 602,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 109
+      },
+      "kept": 493,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "nyml",
+      "correlation": 0.999999995634299,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.03968833546844053,
+      "residual_mad_hz": 0.1363576626469012,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 557,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 33
+      },
+      "kept": 524,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "tn1b",
+      "correlation": 0.9999999966362014,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.00449273342314882,
+      "residual_mad_hz": 0.14702506077048838,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 606,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 114
+      },
+      "kept": 492,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "azup",
+      "correlation": 0.999999995247674,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.058486053994442955,
+      "residual_mad_hz": 0.1087227395772743,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 599,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 140
+      },
+      "kept": 459,
+      "observation_types": [
+        "P1",
+        "L1",
+        "D1",
+        "S1",
+        "C1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "dlnd",
+      "correlation": 0.9999999940634933,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.0153165585552415,
+      "residual_mad_hz": 0.1579017404383194,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 571,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 74
+      },
+      "kept": 497,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "nycl",
+      "correlation": 0.9999999946470243,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.024665901544722146,
+      "residual_mad_hz": 0.15322357715058388,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 578,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 53
+      },
+      "kept": 525,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "tn35",
+      "correlation": 0.999999995902848,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.032006107159077146,
+      "residual_mad_hz": 0.15770284366197185,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 610,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 120
+      },
+      "kept": 490,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "azbh",
+      "correlation": 0.9999999900706977,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.035179917978439335,
+      "residual_mad_hz": 0.21054717372546605,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 406,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 76
+      },
+      "kept": 330,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "nyrm",
+      "correlation": 0.9999999952687835,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.013213966785315279,
+      "residual_mad_hz": 0.1649825152795188,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 581,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 53
+      },
+      "kept": 528,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "tn17",
+      "correlation": 0.9999999961146665,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.05212462885549485,
+      "residual_mad_hz": 0.14984444427921062,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 599,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 115
+      },
+      "kept": 484,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "brtw",
+      "correlation": 0.9999999948121661,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0010939450664864125,
+      "residual_mad_hz": 0.14676606424859528,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 596,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 87
+      },
+      "kept": 509,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "station": "azgv",
+      "correlation": 0.9999999942794034,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.03724888638532775,
+      "residual_mad_hz": 0.14453127940362265,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 616,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 154
+      },
+      "kept": 462,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2"
+      ]
+    },
+    {
+      "station": "tn44",
+      "correlation": 0.9999999963846237,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": -0.0306822238053428,
+      "residual_mad_hz": 0.11852111197003978,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 631,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 140
+      },
+      "kept": 491,
+      "observation_types": [
+        "C1",
+        "L1",
+        "D1",
+        "S1",
+        "P2",
+        "L2",
+        "D2",
+        "S2",
+        "C2",
+        "C5",
+        "L5",
+        "D5",
+        "S5"
+      ]
+    },
+    {
+      "station": "pltk",
+      "correlation": 0.9999999950067036,
+      "measured_sign_multiplier": 1,
+      "median_residual_hz": 0.04904638958760188,
+      "residual_mad_hz": 0.1567619366062445,
+      "sign_disagreements": 0,
+      "counts": {
+        "raw": 560,
+        "missing_orbit": 0,
+        "implausible": 0,
+        "below_mask": 55
+      },
+      "kept": 505,
+      "observation_types": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "L1",
+        "L2",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "P2",
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "excluded_stations": [
+    {
+      "station": "ict4",
+      "reason": "Large common (>100 Hz) or noisy (>25 Hz MAD) residual",
+      "median_residual_hz": -362.0602261892579
+    },
+    {
+      "station": "stay",
+      "reason": "Too few valid observations",
+      "classification": "unavailable_or_failed_scientific_quality"
+    },
+    {
+      "station": "mcso",
+      "reason": "Too few valid observations",
+      "classification": "unavailable_or_failed_scientific_quality"
+    },
+    {
+      "station": "nylp",
+      "reason": "Too few valid observations",
+      "classification": "unavailable_or_failed_scientific_quality"
+    }
+  ]
+}

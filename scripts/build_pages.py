@@ -88,6 +88,36 @@ DAY14_FILES = ('map.html', 'app.js', 'tree-layer.js', 'camera-path.js', 'ground-
                'vendor/MAPLIBRE-LICENSE.txt', 'vendor/maplibre-gl-csp-worker.js')
 
 
+def package_day16(root: Path, destination: Path) -> None:
+    """Package only the reviewed GNSS documentary; exclude raw data and old experiments."""
+    source = root / 'maps/day16-collaborative'
+    if not (source / 'map.html').is_file():
+        return
+    qa = json.loads((source / 'data/validation.json').read_text())
+    browser = json.loads((source / 'browser-qa.json').read_text())
+    if not qa['passed'] or not browser['passed']:
+        raise ValueError('Day 16 scientific or browser checks failed')
+    if qa['dataset_sha256'] != hashlib.sha256((source / 'data/observations.json').read_bytes()).hexdigest():
+        raise ValueError('Day 16 validation does not match the dataset')
+    files = ['map.html', 'app.js', 'core.js', 'earth.js', 'particles.js', 'style.css',
+             'README.md', 'DATA_SOURCES.md', 'requirements.txt', 'browser-qa.json',
+             'exports/day16-invisible-symphony.png']
+    for folder in ['data', 'vendor', 'scripts']:
+        files.extend(str(p.relative_to(source)) for p in sorted((source / folder).iterdir()) if p.is_file())
+    target = destination / 'day16-collaborative'
+    for name in files:
+        relative = Path('index.html' if name == 'map.html' else name)
+        if not (source / name).is_file():
+            raise ValueError(f'Day 16 asset missing: {name}')
+        if any((target / part).is_symlink() for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 16 symlink: {name}')
+    for name in files:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 16 measured GNSS Doppler documentary')
+
+
 def package_day15(root: Path, destination: Path) -> None:
     """Package the static poster without changing an earlier day's route."""
     source = root / 'maps/day15-inside-out'
@@ -560,6 +590,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day16(root, destination)
     package_day15(root, destination)
     package_day14(root, destination)
     package_day13(root, destination)

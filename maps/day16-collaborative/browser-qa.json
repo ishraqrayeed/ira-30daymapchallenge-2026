@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "replay": true,
+  "paused": true,
+  "seek": true,
+  "satellite": true,
+  "station": true,
+  "method": true,
+  "reducedMotion": true,
+  "ambient": true,
+  "pair": {
+    "station": "LFLO",
+    "prn": "G04",
+    "hasApproach": true,
+    "hasRecede": true,
+    "synchronized": true,
+    "label": true
+  },
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "earthChartClear": true,
+      "headerClear": true,
+      "footerClear": true,
+      "noHorizontalOverflow": true,
+      "earthHeight": 237.59375,
+      "graphHeight": 294.796875
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "earthChartClear": true,
+      "headerClear": true,
+      "footerClear": true,
+      "noHorizontalOverflow": true,
+      "earthHeight": 163.796875,
+      "graphHeight": 241.53125
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "earthChartClear": true,
+      "headerClear": true,
+      "footerClear": true,
+      "noHorizontalOverflow": true,
+      "earthHeight": 172.796875,
+      "graphHeight": 205.9375
+    }
+  ],
+  "mobile": {
+    "stacked": true,
+    "noHorizontalOverflow": true
+  },
+  "pageErrors": []
+}

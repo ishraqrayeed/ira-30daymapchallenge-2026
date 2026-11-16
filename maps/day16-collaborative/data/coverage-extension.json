@@ -1,0 +1,689 @@
+{
+  "original_headers": 1436,
+  "additional_headers": 342,
+  "additional_doppler_conus_candidates": [
+    {
+      "id": "az36",
+      "doppler": true,
+      "lon": -111.20526369957972,
+      "lat": 32.47715719136958,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azaz",
+      "doppler": true,
+      "lon": -111.6538864612827,
+      "lat": 32.76126758896186,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azbf",
+      "doppler": true,
+      "lon": -112.63586213749328,
+      "lat": 33.43109067331441,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azbo",
+      "doppler": true,
+      "lon": -109.99537337105996,
+      "lat": 32.612103262199184,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azbz",
+      "doppler": true,
+      "lon": -109.92623310696085,
+      "lat": 31.387997961916838,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azcb",
+      "doppler": true,
+      "lon": -109.39216703376088,
+      "lat": 35.20346489273836,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azcj",
+      "doppler": true,
+      "lon": -112.12433780364013,
+      "lat": 34.33380880461071,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azcr",
+      "doppler": true,
+      "lon": -111.83023525995898,
+      "lat": 33.85107502512231,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azcs",
+      "doppler": true,
+      "lon": -111.89359143988516,
+      "lat": 33.66002802317118,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azcv",
+      "doppler": true,
+      "lon": -111.06256290820355,
+      "lat": 31.65540132269748,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azda",
+      "doppler": true,
+      "lon": -109.59843207772263,
+      "lat": 31.456735730585223,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azfc",
+      "doppler": true,
+      "lon": -111.5202117951089,
+      "lat": 35.304165721665896,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azfr",
+      "doppler": true,
+      "lon": -113.36087720635966,
+      "lat": 35.18654900147534,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azgc",
+      "doppler": true,
+      "lon": -109.21330040536364,
+      "lat": 32.95788623099618,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azgd",
+      "doppler": true,
+      "lon": -112.69724677546738,
+      "lat": 32.95512374590749,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azgm",
+      "doppler": true,
+      "lon": -111.46628462767279,
+      "lat": 35.75157521879552,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azhb",
+      "doppler": true,
+      "lon": -110.19618982670123,
+      "lat": 34.81599564413975,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azhv",
+      "doppler": true,
+      "lon": -110.63509741708172,
+      "lat": 35.03265949033761,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azla",
+      "doppler": true,
+      "lon": -114.35044946784431,
+      "lat": 34.56363597097826,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azlp",
+      "doppler": true,
+      "lon": -111.50002496485621,
+      "lat": 36.946858071851125,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azlq",
+      "doppler": true,
+      "lon": -113.63419148132589,
+      "lat": 33.59914338454589,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azms",
+      "doppler": true,
+      "lon": -112.04002442695759,
+      "lat": 32.881508530755006,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azor",
+      "doppler": true,
+      "lon": -110.80840513118345,
+      "lat": 32.617020578229706,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azp0",
+      "doppler": true,
+      "lon": -112.08375088282436,
+      "lat": 33.79652360460502,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azp2",
+      "doppler": true,
+      "lon": -112.24624167851906,
+      "lat": 33.39766524230495,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azp3",
+      "doppler": true,
+      "lon": -112.07443771877155,
+      "lat": 33.60159694379991,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azpd",
+      "doppler": true,
+      "lon": -114.28256851939761,
+      "lat": 34.13867617784519,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azpf",
+      "doppler": true,
+      "lon": -109.7966790272115,
+      "lat": 35.08002413288438,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azpl",
+      "doppler": true,
+      "lon": -110.87048703243158,
+      "lat": 31.49028551156319,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azsi",
+      "doppler": true,
+      "lon": -112.88998918695609,
+      "lat": 35.325320786128295,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azsj",
+      "doppler": true,
+      "lon": -109.32205624938051,
+      "lat": 34.605365492323294,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azsn",
+      "doppler": true,
+      "lon": -110.21154588769018,
+      "lat": 31.903542334318463,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azso",
+      "doppler": true,
+      "lon": -110.56014271886949,
+      "lat": 31.715944267634203,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azss",
+      "doppler": true,
+      "lon": -109.08905982174912,
+      "lat": 32.239587346425644,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azsu",
+      "doppler": true,
+      "lon": -109.7330732360697,
+      "lat": 31.9051804477958,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azsx",
+      "doppler": true,
+      "lon": -110.73756626646615,
+      "lat": 32.17482925949935,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azsz",
+      "doppler": true,
+      "lon": -111.89324775294166,
+      "lat": 34.83258813887885,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azts",
+      "doppler": true,
+      "lon": -111.31630467252403,
+      "lat": 32.074017479590594,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "aztw",
+      "doppler": true,
+      "lon": -112.32822770401913,
+      "lat": 33.69593358920788,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "aztx",
+      "doppler": true,
+      "lon": -113.55715378116746,
+      "lat": 35.4863008207032,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azwd",
+      "doppler": true,
+      "lon": -112.71832683681401,
+      "lat": 33.96465567263695,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azwi",
+      "doppler": true,
+      "lon": -109.88486659272341,
+      "lat": 32.24661634402755,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azwp",
+      "doppler": true,
+      "lon": -113.61645029884929,
+      "lat": 34.70715281463054,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azya",
+      "doppler": true,
+      "lon": -114.59746228913426,
+      "lat": 32.68945001922309,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "azyh",
+      "doppler": true,
+      "lon": -112.46068169396929,
+      "lat": 34.609552705402535,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ],
+      "state": "AZ"
+    },
+    {
+      "id": "flai",
+      "doppler": true,
+      "lon": -82.69022994963926,
+      "lat": 27.44973102105217,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ],
+      "state": "FL"
+    },
+    {
+      "id": "flck",
+      "doppler": true,
+      "lon": -83.03084816930304,
+      "lat": 29.133854531572233,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ],
+      "state": null
+    },
+    {
+      "id": "flmk",
+      "doppler": true,
+      "lon": -81.04908436888284,
+      "lat": 24.725934038442833,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ],
+      "state": "FL"
+    },
+    {
+      "id": "flsi",
+      "doppler": true,
+      "lon": -82.15879715155866,
+      "lat": 26.47475452263361,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ],
+      "state": "FL"
+    },
+    {
+      "id": "mamv",
+      "doppler": true,
+      "lon": -70.76379192848817,
+      "lat": 41.35011509111593,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "MA"
+    },
+    {
+      "id": "matb",
+      "doppler": true,
+      "lon": -71.2714783657646,
+      "lat": 42.63000084879175,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "MA"
+    },
+    {
+      "id": "mawt",
+      "doppler": true,
+      "lon": -73.22717059469943,
+      "lat": 42.639235178497685,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ],
+      "state": "MA"
+    },
+    {
+      "id": "pmtl",
+      "doppler": true,
+      "lon": -73.5204149738696,
+      "lat": 45.557071967245875,
+      "conus_candidate": true,
+      "observation_lines": [
+        "     9    C1    C2    D1    D2    L1    L2    P2    S1    S2# / TYPES OF OBSERV"
+      ],
+      "state": null
+    },
+    {
+      "id": "sbst",
+      "doppler": true,
+      "lon": -80.49082479147916,
+      "lat": 27.813179007952975,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ],
+      "state": "FL"
+    },
+    {
+      "id": "sgpo",
+      "doppler": true,
+      "lon": -97.48480949942872,
+      "lat": 36.60417825997703,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    27    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV ",
+        "          D6    D7    D8    L1    L2    L3    L5    L6    L7# / TYPES OF OBSERV ",
+        "          L8    P1    P2    S1    S2    S5    S6    S7    S8# / TYPES OF OBSERV "
+      ],
+      "state": "OK"
+    },
+    {
+      "id": "tn4d",
+      "doppler": true,
+      "lon": -89.1599790123755,
+      "lat": 35.31974069532157,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ],
+      "state": "TN"
+    }
+  ],
+  "failed": 0,
+  "date": "2026-11-01",
+  "new_state_candidates": [
+    {
+      "id": "sgpo",
+      "doppler": true,
+      "lon": -97.48480949942872,
+      "lat": 36.60417825997703,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    27    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV ",
+        "          D6    D7    D8    L1    L2    L3    L5    L6    L7# / TYPES OF OBSERV ",
+        "          L8    P1    P2    S1    S2    S5    S6    S7    S8# / TYPES OF OBSERV "
+      ],
+      "state": "OK"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "passed": true,
+  "desktopLimit": 72,
+  "mobileLimit": 48,
+  "epochs": [
+    {
+      "epoch": 0,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 1,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 2,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 3,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 4,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 5,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 6,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 7,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 8,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 9,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 10,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 11,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 12,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 13,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 14,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 15,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 16,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 17,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 18,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 19,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 20,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 21,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 22,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 23,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 24,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 25,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 26,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 27,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 28,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 29,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 30,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 31,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 32,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 33,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 34,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 35,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 36,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 37,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 38,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 39,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 40,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 41,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 42,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 43,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 44,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 45,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 46,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 47,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 48,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 49,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 50,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 51,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 52,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 53,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 54,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 55,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 56,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 57,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 58,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 59,
+      "links": 72,
+      "states": 11
+    },
+    {
+      "epoch": 60,
+      "links": 72,
+      "states": 11
+    }
+  ]
+}

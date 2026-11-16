@@ -1,0 +1,3252 @@
+{
+  "date": "2026-11-01",
+  "candidates": 1436,
+  "with_doppler": 158,
+  "scan_failures": 0,
+  "method": "One receiver per eligible state first; preserve validated current sample; fill least represented states using WGS84 maximin distance. Target 120, cap 20 per state. No Doppler magnitude ranking.",
+  "target_receivers": 120,
+  "state_cap": 20,
+  "known_quality_exclusions": [
+    "ict5"
+  ],
+  "selected": [
+    {
+      "id": "gces",
+      "lat": 36.048003027777774,
+      "lon": -112.12915534166666,
+      "state": "AZ",
+      "key": "rinex/2026/305/gces/gces3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "rvdi",
+      "lat": 41.04199463333333,
+      "lon": -73.58122169722222,
+      "state": "CT",
+      "key": "rinex/2026/305/rvdi/rvdi3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    14    L1    L2    L5    C1    P1    P2    C2    C5    D1# / TYPES OF OBSERV",
+        "          D2    D5    S1    S2    S5                        # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "flkw",
+      "lat": 24.553690105555557,
+      "lon": -81.75428324444445,
+      "state": "FL",
+      "key": "rinex/2026/305/flkw/flkw3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka21",
+      "lat": 40.79148314444444,
+      "lon": -89.19605685833334,
+      "state": "IL",
+      "key": "rinex/2026/305/ka21/ka213050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ands",
+      "lat": 41.5962447,
+      "lon": -87.13167112222222,
+      "state": "IN",
+      "key": "rinex/2026/305/ands/ands3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ict4",
+      "lat": 37.61904899722222,
+      "lon": -97.63250049444444,
+      "state": "KS",
+      "key": "rinex/2026/305/ict4/ict43050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    P1    L1    D1    P2    L2    D2    C5    L5# / TYPES OF OBSERV",
+        "          D5    C2    C6    L6    D6    C7    L7    D7    C8# / TYPES OF OBSERV",
+        "          L8    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "masa",
+      "lat": 42.86275634444445,
+      "lon": -70.8902680138889,
+      "state": "MA",
+      "key": "rinex/2026/305/masa/masa3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyfd",
+      "lat": 42.42828288888889,
+      "lon": -79.33965226388888,
+      "state": "NY",
+      "key": "rinex/2026/305/nyfd/nyfd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "sgpo",
+      "doppler": true,
+      "lon": -97.48480949942872,
+      "lat": 36.60417825997703,
+      "conus_candidate": true,
+      "observation_lines": [
+        "    27    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV ",
+        "          D6    D7    D8    L1    L2    L3    L5    L6    L7# / TYPES OF OBSERV ",
+        "          L8    P1    P2    S1    S2    S5    S6    S7    S8# / TYPES OF OBSERV "
+      ],
+      "state": "OK"
+    },
+    {
+      "id": "jime",
+      "lat": 45.523118455555554,
+      "lon": -122.99052966944444,
+      "state": "OR",
+      "key": "rinex/2026/305/jime/jime3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn29",
+      "lat": 35.246194377777776,
+      "lon": -84.56837900555556,
+      "state": "TN",
+      "key": "rinex/2026/305/tn29/tn293050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mrc1",
+      "lat": 38.49909970277778,
+      "lon": -77.37064996388888,
+      "state": "VA",
+      "key": "rinex/2026/305/mrc1/mrc13050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    27    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV ",
+        "          D6    D7    D8    L1    L2    L3    L5    L6    L7# / TYPES OF OBSERV ",
+        "          L8    P1    P2    S1    S2    S5    S6    S7    S8# / TYPES OF OBSERV "
+      ]
+    },
+    {
+      "id": "azbr",
+      "lat": 32.25898639444444,
+      "lon": -110.801448525,
+      "state": "AZ",
+      "key": "rinex/2026/305/azbr/azbr3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azds",
+      "lat": 35.533132725,
+      "lon": -114.35923503888888,
+      "state": "AZ",
+      "key": "rinex/2026/305/azds/azds3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azfl",
+      "lat": 35.177309638888886,
+      "lon": -111.65703993055556,
+      "state": "AZ",
+      "key": "rinex/2026/305/azfl/azfl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azfm",
+      "lat": 34.85223639722222,
+      "lon": -114.59510572222221,
+      "state": "AZ",
+      "key": "rinex/2026/305/azfm/azfm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azgb",
+      "lat": 33.395358047222224,
+      "lon": -110.77145604444445,
+      "state": "AZ",
+      "key": "rinex/2026/305/azgb/azgb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azpg",
+      "lat": 36.908668230555556,
+      "lon": -111.46269175555555,
+      "state": "AZ",
+      "key": "rinex/2026/305/azpg/azpg3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azrv",
+      "lat": 34.131930680555556,
+      "lon": -109.281023175,
+      "state": "AZ",
+      "key": "rinex/2026/305/azrv/azrv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azsf",
+      "lat": 32.802035813888885,
+      "lon": -109.71191549166667,
+      "state": "AZ",
+      "key": "rinex/2026/305/azsf/azsf3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azsv",
+      "lat": 34.26499467222222,
+      "lon": -111.24051699722223,
+      "state": "AZ",
+      "key": "rinex/2026/305/azsv/azsv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "aztp",
+      "lat": 33.445687924999994,
+      "lon": -111.93764456944444,
+      "state": "AZ",
+      "key": "rinex/2026/305/aztp/aztp3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dunn",
+      "lat": 29.062157055555556,
+      "lon": -82.37093178888888,
+      "state": "FL",
+      "key": "rinex/2026/305/dunn/dunn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "fl75",
+      "lat": 30.612531730555556,
+      "lon": -83.14668796944446,
+      "state": "FL",
+      "key": "rinex/2026/305/fl75/fl753050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "flbn",
+      "lat": 29.59414843333333,
+      "lon": -81.28710246944445,
+      "state": "FL",
+      "key": "rinex/2026/305/flbn/flbn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "flcb",
+      "lat": 29.842606352777775,
+      "lon": -84.69515523055556,
+      "state": "FL",
+      "key": "rinex/2026/305/flcb/flcb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka14",
+      "lat": 39.48048310277778,
+      "lon": -88.18505406666667,
+      "state": "IL",
+      "key": "rinex/2026/305/ka14/ka143050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "lbll",
+      "lat": 26.74759561388889,
+      "lon": -81.4534199888889,
+      "state": "FL",
+      "key": "rinex/2026/305/lbll/lbll3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "lflo",
+      "lat": 43.98360532777778,
+      "lon": -124.10770970277777,
+      "state": "OR",
+      "key": "rinex/2026/305/lflo/lflo3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    P1    L1    D1    C1    P2    L2    D2    C2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "lpsb",
+      "lat": 44.05122801388889,
+      "lon": -123.09008706944444,
+      "state": "OR",
+      "key": "rinex/2026/305/lpsb/lpsb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    P1    L1    D1    C1    P2    L2    D2    C2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mabn",
+      "lat": 42.67000747222222,
+      "lon": -72.5412956611111,
+      "state": "MA",
+      "key": "rinex/2026/305/mabn/mabn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mafa",
+      "lat": 41.61975333611111,
+      "lon": -70.54092273333333,
+      "state": "MA",
+      "key": "rinex/2026/305/mafa/mafa3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mawr",
+      "lat": 42.04171375833333,
+      "lon": -71.30418281388889,
+      "state": "MA",
+      "key": "rinex/2026/305/mawr/mawr3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mtnt",
+      "lat": 25.86577229166667,
+      "lon": -80.90700183333334,
+      "state": "FL",
+      "key": "rinex/2026/305/mtnt/mtnt3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mwrd",
+      "lat": 41.66825080555555,
+      "lon": -87.59752950277777,
+      "state": "IL",
+      "key": "rinex/2026/305/mwrd/mwrd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nybt",
+      "lat": 42.98833168611111,
+      "lon": -78.12233420277776,
+      "state": "NY",
+      "key": "rinex/2026/305/nybt/nybt3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyet",
+      "lat": 44.209690925000004,
+      "lon": -73.54052101111111,
+      "state": "NY",
+      "key": "rinex/2026/305/nyet/nyet3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyfs",
+      "lat": 42.20467389444445,
+      "lon": -78.14387951111112,
+      "state": "NY",
+      "key": "rinex/2026/305/nyfs/nyfs3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyfv",
+      "lat": 42.939175952777774,
+      "lon": -74.353343625,
+      "state": "NY",
+      "key": "rinex/2026/305/nyfv/nyfv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyhc",
+      "lat": 41.958337713888895,
+      "lon": -75.29274991111112,
+      "state": "NY",
+      "key": "rinex/2026/305/nyhc/nyhc3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyhs",
+      "lat": 42.25233176111111,
+      "lon": -73.7575506,
+      "state": "NY",
+      "key": "rinex/2026/305/nyhs/nyhs3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nymd",
+      "lat": 41.40682124722222,
+      "lon": -74.44280557777778,
+      "state": "NY",
+      "key": "rinex/2026/305/nymd/nymd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nymx",
+      "lat": 43.47011487777778,
+      "lon": -76.23192002777778,
+      "state": "NY",
+      "key": "rinex/2026/305/nymx/nymx3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nypd",
+      "lat": 44.65252643611111,
+      "lon": -75.04181401111111,
+      "state": "NY",
+      "key": "rinex/2026/305/nypd/nypd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyrh",
+      "lat": 40.923367613888885,
+      "lon": -72.71405011666667,
+      "state": "NY",
+      "key": "rinex/2026/305/nyrh/nyrh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nysb",
+      "lat": 42.67918534166667,
+      "lon": -75.5131948388889,
+      "state": "NY",
+      "key": "rinex/2026/305/nysb/nysb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nywl",
+      "lat": 42.89868368333333,
+      "lon": -76.85203566388888,
+      "state": "NY",
+      "key": "rinex/2026/305/nywl/nywl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nywv",
+      "lat": 42.01239825277778,
+      "lon": -76.52158164444444,
+      "state": "NY",
+      "key": "rinex/2026/305/nywv/nywv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "okcb",
+      "lat": 27.266037838888888,
+      "lon": -80.855334,
+      "state": "FL",
+      "key": "rinex/2026/305/okcb/okcb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "pbch",
+      "lat": 26.84629403611111,
+      "lon": -80.21925549166667,
+      "state": "FL",
+      "key": "rinex/2026/305/pbch/pbch3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "pcla",
+      "lat": 30.469022825,
+      "lon": -87.18942119166667,
+      "state": "FL",
+      "key": "rinex/2026/305/pcla/pcla3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "rrw1",
+      "lat": 42.35112329722222,
+      "lon": -89.05802738333333,
+      "state": "IL",
+      "key": "rinex/2026/305/rrw1/rrw13050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "rsbg",
+      "lat": 43.23501715277778,
+      "lon": -123.35938687222222,
+      "state": "OR",
+      "key": "rinex/2026/305/rsbg/rsbg3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    P1    L1    D1    C1    P2    L2    D2    C2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn13",
+      "lat": 35.943627344444444,
+      "lon": -83.20734563611111,
+      "state": "TN",
+      "key": "rinex/2026/305/tn13/tn133050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn14",
+      "lat": 36.407593383333335,
+      "lon": -84.06518348055555,
+      "state": "TN",
+      "key": "rinex/2026/305/tn14/tn143050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn18",
+      "lat": 36.36584211666667,
+      "lon": -82.1784100138889,
+      "state": "TN",
+      "key": "rinex/2026/305/tn18/tn183050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn25",
+      "lat": 35.367076250000004,
+      "lon": -86.18911353611111,
+      "state": "TN",
+      "key": "rinex/2026/305/tn25/tn253050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn27",
+      "lat": 36.39600998888889,
+      "lon": -85.31748205,
+      "state": "TN",
+      "key": "rinex/2026/305/tn27/tn273050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn30",
+      "lat": 35.55163045833333,
+      "lon": -87.57395551944444,
+      "state": "TN",
+      "key": "rinex/2026/305/tn30/tn303050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn32",
+      "lat": 36.396829858333334,
+      "lon": -86.40547437500001,
+      "state": "TN",
+      "key": "rinex/2026/305/tn32/tn323050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn33",
+      "lat": 36.558706380555556,
+      "lon": -87.31944998333333,
+      "state": "TN",
+      "key": "rinex/2026/305/tn33/tn333050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn41",
+      "lat": 36.126361744444445,
+      "lon": -88.51274974444445,
+      "state": "TN",
+      "key": "rinex/2026/305/tn41/tn413050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn43",
+      "lat": 35.228576394444445,
+      "lon": -88.60392757777777,
+      "state": "TN",
+      "key": "rinex/2026/305/tn43/tn433050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn45",
+      "lat": 35.299276625,
+      "lon": -89.65962064722223,
+      "state": "TN",
+      "key": "rinex/2026/305/tn45/tn453050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "wach",
+      "lat": 27.514184152777776,
+      "lon": -81.88239939166667,
+      "state": "FL",
+      "key": "rinex/2026/305/wach/wach3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "xcty",
+      "lat": 29.631009580555556,
+      "lon": -83.10815592499999,
+      "state": "FL",
+      "key": "rinex/2026/305/xcty/xcty3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "zefr",
+      "lat": 28.22759532222222,
+      "lon": -82.16463729166668,
+      "state": "FL",
+      "key": "rinex/2026/305/zefr/zefr3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "stay",
+      "lat": 44.830706886111116,
+      "lon": -122.82086081388888,
+      "state": "OR",
+      "key": "rinex/2026/305/stay/stay3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    L1    L2    P2    P1    C2    C5    L5    C6# / TYPES OF OBSERV",
+        "          L6    C7    L7    C8    L8    D1    D2    D5    D6# / TYPES OF OBSERV",
+        "          D7    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka12",
+      "lat": 39.873712675,
+      "lon": -88.92556250555556,
+      "state": "IL",
+      "key": "rinex/2026/305/ka12/ka123050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "masb",
+      "lat": 42.11142135277778,
+      "lon": -72.087223625,
+      "state": "MA",
+      "key": "rinex/2026/305/masb/masb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka18",
+      "lat": 41.09869418611111,
+      "lon": -87.85077636666666,
+      "state": "IL",
+      "key": "rinex/2026/305/ka18/ka183050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "matu",
+      "lat": 41.98104014444445,
+      "lon": -70.04358565555556,
+      "state": "MA",
+      "key": "rinex/2026/305/matu/matu3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "wdbn",
+      "lat": 45.170863491666665,
+      "lon": -122.87005431666665,
+      "state": "OR",
+      "key": "rinex/2026/305/wdbn/wdbn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    L1    L2    P2    P1    C2    C5    L5    C6# / TYPES OF OBSERV",
+        "          L6    C7    L7    C8    L8    D1    D2    D5    D6# / TYPES OF OBSERV",
+        "          D7    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "kar4",
+      "lat": 40.13161796388889,
+      "lon": -88.28996824166667,
+      "state": "IL",
+      "key": "rinex/2026/305/kar4/kar43050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mant",
+      "lat": 41.269495227777774,
+      "lon": -70.08358108333333,
+      "state": "MA",
+      "key": "rinex/2026/305/mant/mant3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mcso",
+      "lat": 44.97380998055556,
+      "lon": -122.955750675,
+      "state": "OR",
+      "key": "rinex/2026/305/mcso/mcso3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    L1    L2    P2    P1    C2    C5    L5    C6# / TYPES OF OBSERV",
+        "          L6    C7    L7    C8    L8    D1    D2    D5    D6# / TYPES OF OBSERV",
+        "          D7    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp5a",
+      "lat": 41.989570847222225,
+      "lon": -88.15722133888889,
+      "state": "IL",
+      "key": "rinex/2026/305/dp5a/dp5a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mawm",
+      "lat": 42.56129360833333,
+      "lon": -71.93311877500001,
+      "state": "MA",
+      "key": "rinex/2026/305/mawm/mawm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "id01",
+      "lat": 39.603217369444444,
+      "lon": -87.71346839722223,
+      "state": "IL",
+      "key": "rinex/2026/305/id01/id013050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mada",
+      "lat": 41.63969001666667,
+      "lon": -71.02816992222222,
+      "state": "MA",
+      "key": "rinex/2026/305/mada/mada3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mapl",
+      "lat": 41.938708588888886,
+      "lon": -70.65507253055556,
+      "state": "MA",
+      "key": "rinex/2026/305/mapl/mapl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp3a",
+      "lat": 41.76485935555556,
+      "lon": -88.17690760277779,
+      "state": "IL",
+      "key": "rinex/2026/305/dp3a/dp3a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mash",
+      "lat": 42.14049694444444,
+      "lon": -73.36419024722221,
+      "state": "MA",
+      "key": "rinex/2026/305/mash/mash3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "kar2",
+      "lat": 41.992705952777776,
+      "lon": -87.86504907777777,
+      "state": "IL",
+      "key": "rinex/2026/305/kar2/kar23050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azam",
+      "lat": 31.73003179722222,
+      "lon": -111.07136158055555,
+      "state": "AZ",
+      "key": "rinex/2026/305/azam/azam3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mami",
+      "lat": 42.27206172222222,
+      "lon": -71.04868567222222,
+      "state": "MA",
+      "key": "rinex/2026/305/mami/mami3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ccrm",
+      "lat": 42.087464644444445,
+      "lon": -88.00738846388889,
+      "state": "IL",
+      "key": "rinex/2026/305/ccrm/ccrm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn22",
+      "lat": 35.39048449166667,
+      "lon": -85.37805551666666,
+      "state": "TN",
+      "key": "rinex/2026/305/tn22/tn223050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "kgmn",
+      "lat": 35.23105005277778,
+      "lon": -114.00235363888889,
+      "state": "AZ",
+      "key": "rinex/2026/305/kgmn/kgmn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "macm",
+      "lat": 41.69131228888889,
+      "lon": -69.96709679166666,
+      "state": "MA",
+      "key": "rinex/2026/305/macm/macm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp2a",
+      "lat": 41.90037876388889,
+      "lon": -87.96534908055555,
+      "state": "IL",
+      "key": "rinex/2026/305/dp2a/dp2a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn16",
+      "lat": 35.90273021666667,
+      "lon": -84.60122021944444,
+      "state": "TN",
+      "key": "rinex/2026/305/tn16/tn163050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "laud",
+      "lat": 26.196211508333334,
+      "lon": -80.17306509722222,
+      "state": "FL",
+      "key": "rinex/2026/305/laud/laud3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azst",
+      "lat": 33.16780807222222,
+      "lon": -111.63528905277778,
+      "state": "AZ",
+      "key": "rinex/2026/305/azst/azst3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ccmk",
+      "lat": 41.58970758888889,
+      "lon": -87.69319163611111,
+      "state": "IL",
+      "key": "rinex/2026/305/ccmk/ccmk3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyil",
+      "lat": 43.78268722777778,
+      "lon": -74.27774601944445,
+      "state": "NY",
+      "key": "rinex/2026/305/nyil/nyil3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "crst",
+      "lat": 30.72607623333333,
+      "lon": -86.50617231388888,
+      "state": "FL",
+      "key": "rinex/2026/305/crst/crst3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn42",
+      "lat": 36.13682575,
+      "lon": -89.24815216666667,
+      "state": "TN",
+      "key": "rinex/2026/305/tn42/tn423050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azyc",
+      "lat": 34.87927695277778,
+      "lon": -114.1469932638889,
+      "state": "AZ",
+      "key": "rinex/2026/305/azyc/azyc3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp1a",
+      "lat": 41.86738117777778,
+      "lon": -88.14269075555556,
+      "state": "IL",
+      "key": "rinex/2026/305/dp1a/dp1a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nylv",
+      "lat": 43.796466275,
+      "lon": -75.48543884444445,
+      "state": "NY",
+      "key": "rinex/2026/305/nylv/nylv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "gnvl",
+      "lat": 29.686549761111113,
+      "lon": -82.27687753611112,
+      "state": "FL",
+      "key": "rinex/2026/305/gnvl/gnvl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn39",
+      "lat": 35.191408644444444,
+      "lon": -87.00743883055556,
+      "state": "TN",
+      "key": "rinex/2026/305/tn39/tn393050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azva",
+      "lat": 31.95407701111111,
+      "lon": -110.77030067777778,
+      "state": "AZ",
+      "key": "rinex/2026/305/azva/azva3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp6b",
+      "lat": 41.96733263055556,
+      "lon": -87.97942420277778,
+      "state": "IL",
+      "key": "rinex/2026/305/dp6b/dp6b3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "talh",
+      "lat": 30.396529244444444,
+      "lon": -84.35585040833332,
+      "state": "FL",
+      "key": "rinex/2026/305/talh/talh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyml",
+      "lat": 44.870950369444444,
+      "lon": -74.28815776111111,
+      "state": "NY",
+      "key": "rinex/2026/305/nyml/nyml3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn1b",
+      "lat": 36.47763678055556,
+      "lon": -82.81166405555555,
+      "state": "TN",
+      "key": "rinex/2026/305/tn1b/tn1b3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azup",
+      "lat": 33.48092460833333,
+      "lon": -111.62001296944443,
+      "state": "AZ",
+      "key": "rinex/2026/305/azup/azup3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dlnd",
+      "lat": 29.056366397222224,
+      "lon": -81.26319518888889,
+      "state": "FL",
+      "key": "rinex/2026/305/dlnd/dlnd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nycl",
+      "lat": 42.58437259166667,
+      "lon": -76.21133830833334,
+      "state": "NY",
+      "key": "rinex/2026/305/nycl/nycl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn35",
+      "lat": 36.103938497222224,
+      "lon": -87.62265426944444,
+      "state": "TN",
+      "key": "rinex/2026/305/tn35/tn353050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azbh",
+      "lat": 35.107493419444445,
+      "lon": -114.60498816388888,
+      "state": "AZ",
+      "key": "rinex/2026/305/azbh/azbh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyrm",
+      "lat": 43.177795430555555,
+      "lon": -75.48719640277778,
+      "state": "NY",
+      "key": "rinex/2026/305/nyrm/nyrm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn17",
+      "lat": 35.81338479722222,
+      "lon": -84.00487896666667,
+      "state": "TN",
+      "key": "rinex/2026/305/tn17/tn173050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "brtw",
+      "lat": 27.949628577777776,
+      "lon": -81.7828397,
+      "state": "FL",
+      "key": "rinex/2026/305/brtw/brtw3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azgv",
+      "lat": 35.25437306111111,
+      "lon": -114.2542685388889,
+      "state": "AZ",
+      "key": "rinex/2026/305/azgv/azgv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nylp",
+      "lat": 43.16524669166667,
+      "lon": -78.75371827222222,
+      "state": "NY",
+      "key": "rinex/2026/305/nylp/nylp3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn44",
+      "lat": 35.64042395,
+      "lon": -88.91907265277779,
+      "state": "TN",
+      "key": "rinex/2026/305/tn44/tn443050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "pltk",
+      "lat": 29.663380702777776,
+      "lon": -81.68774553333334,
+      "state": "FL",
+      "key": "rinex/2026/305/pltk/pltk3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    }
+  ],
+  "eligible": [
+    {
+      "id": "ands",
+      "lat": 41.5962447,
+      "lon": -87.13167112222222,
+      "state": "IN",
+      "key": "rinex/2026/305/ands/ands3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azam",
+      "lat": 31.73003179722222,
+      "lon": -111.07136158055555,
+      "state": "AZ",
+      "key": "rinex/2026/305/azam/azam3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azbh",
+      "lat": 35.107493419444445,
+      "lon": -114.60498816388888,
+      "state": "AZ",
+      "key": "rinex/2026/305/azbh/azbh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azbr",
+      "lat": 32.25898639444444,
+      "lon": -110.801448525,
+      "state": "AZ",
+      "key": "rinex/2026/305/azbr/azbr3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azds",
+      "lat": 35.533132725,
+      "lon": -114.35923503888888,
+      "state": "AZ",
+      "key": "rinex/2026/305/azds/azds3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azfl",
+      "lat": 35.177309638888886,
+      "lon": -111.65703993055556,
+      "state": "AZ",
+      "key": "rinex/2026/305/azfl/azfl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azfm",
+      "lat": 34.85223639722222,
+      "lon": -114.59510572222221,
+      "state": "AZ",
+      "key": "rinex/2026/305/azfm/azfm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azgb",
+      "lat": 33.395358047222224,
+      "lon": -110.77145604444445,
+      "state": "AZ",
+      "key": "rinex/2026/305/azgb/azgb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azgv",
+      "lat": 35.25437306111111,
+      "lon": -114.2542685388889,
+      "state": "AZ",
+      "key": "rinex/2026/305/azgv/azgv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azpg",
+      "lat": 36.908668230555556,
+      "lon": -111.46269175555555,
+      "state": "AZ",
+      "key": "rinex/2026/305/azpg/azpg3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azrv",
+      "lat": 34.131930680555556,
+      "lon": -109.281023175,
+      "state": "AZ",
+      "key": "rinex/2026/305/azrv/azrv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azsf",
+      "lat": 32.802035813888885,
+      "lon": -109.71191549166667,
+      "state": "AZ",
+      "key": "rinex/2026/305/azsf/azsf3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azst",
+      "lat": 33.16780807222222,
+      "lon": -111.63528905277778,
+      "state": "AZ",
+      "key": "rinex/2026/305/azst/azst3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azsv",
+      "lat": 34.26499467222222,
+      "lon": -111.24051699722223,
+      "state": "AZ",
+      "key": "rinex/2026/305/azsv/azsv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "aztp",
+      "lat": 33.445687924999994,
+      "lon": -111.93764456944444,
+      "state": "AZ",
+      "key": "rinex/2026/305/aztp/aztp3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azup",
+      "lat": 33.48092460833333,
+      "lon": -111.62001296944443,
+      "state": "AZ",
+      "key": "rinex/2026/305/azup/azup3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azva",
+      "lat": 31.95407701111111,
+      "lon": -110.77030067777778,
+      "state": "AZ",
+      "key": "rinex/2026/305/azva/azva3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "azyc",
+      "lat": 34.87927695277778,
+      "lon": -114.1469932638889,
+      "state": "AZ",
+      "key": "rinex/2026/305/azyc/azyc3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "bkvl",
+      "lat": 28.473802786111108,
+      "lon": -82.45367140555555,
+      "state": "FL",
+      "key": "rinex/2026/305/bkvl/bkvl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "brtw",
+      "lat": 27.949628577777776,
+      "lon": -81.7828397,
+      "state": "FL",
+      "key": "rinex/2026/305/brtw/brtw3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ccmk",
+      "lat": 41.58970758888889,
+      "lon": -87.69319163611111,
+      "state": "IL",
+      "key": "rinex/2026/305/ccmk/ccmk3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ccrm",
+      "lat": 42.087464644444445,
+      "lon": -88.00738846388889,
+      "state": "IL",
+      "key": "rinex/2026/305/ccrm/ccrm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "crst",
+      "lat": 30.72607623333333,
+      "lon": -86.50617231388888,
+      "state": "FL",
+      "key": "rinex/2026/305/crst/crst3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dlnd",
+      "lat": 29.056366397222224,
+      "lon": -81.26319518888889,
+      "state": "FL",
+      "key": "rinex/2026/305/dlnd/dlnd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp1a",
+      "lat": 41.86738117777778,
+      "lon": -88.14269075555556,
+      "state": "IL",
+      "key": "rinex/2026/305/dp1a/dp1a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp2a",
+      "lat": 41.90037876388889,
+      "lon": -87.96534908055555,
+      "state": "IL",
+      "key": "rinex/2026/305/dp2a/dp2a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp3a",
+      "lat": 41.76485935555556,
+      "lon": -88.17690760277779,
+      "state": "IL",
+      "key": "rinex/2026/305/dp3a/dp3a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp5a",
+      "lat": 41.989570847222225,
+      "lon": -88.15722133888889,
+      "state": "IL",
+      "key": "rinex/2026/305/dp5a/dp5a3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dp6b",
+      "lat": 41.96733263055556,
+      "lon": -87.97942420277778,
+      "state": "IL",
+      "key": "rinex/2026/305/dp6b/dp6b3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    C1    L1    D1    S1    P2    L2    D2    S2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "dunn",
+      "lat": 29.062157055555556,
+      "lon": -82.37093178888888,
+      "state": "FL",
+      "key": "rinex/2026/305/dunn/dunn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "fl75",
+      "lat": 30.612531730555556,
+      "lon": -83.14668796944446,
+      "state": "FL",
+      "key": "rinex/2026/305/fl75/fl753050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "flbn",
+      "lat": 29.59414843333333,
+      "lon": -81.28710246944445,
+      "state": "FL",
+      "key": "rinex/2026/305/flbn/flbn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "flcb",
+      "lat": 29.842606352777775,
+      "lon": -84.69515523055556,
+      "state": "FL",
+      "key": "rinex/2026/305/flcb/flcb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "flkw",
+      "lat": 24.553690105555557,
+      "lon": -81.75428324444445,
+      "state": "FL",
+      "key": "rinex/2026/305/flkw/flkw3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "gces",
+      "lat": 36.048003027777774,
+      "lon": -112.12915534166666,
+      "state": "AZ",
+      "key": "rinex/2026/305/gces/gces3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "gnvl",
+      "lat": 29.686549761111113,
+      "lon": -82.27687753611112,
+      "state": "FL",
+      "key": "rinex/2026/305/gnvl/gnvl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ict4",
+      "lat": 37.61904899722222,
+      "lon": -97.63250049444444,
+      "state": "KS",
+      "key": "rinex/2026/305/ict4/ict43050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    P1    L1    D1    P2    L2    D2    C5    L5# / TYPES OF OBSERV",
+        "          D5    C2    C6    L6    D6    C7    L7    D7    C8# / TYPES OF OBSERV",
+        "          L8    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ict5",
+      "lat": 37.78667793333333,
+      "lon": -97.6257598361111,
+      "state": "KS",
+      "key": "rinex/2026/305/ict5/ict53050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    L1    D1    P1    P2    L2    D2    C5    L5# / TYPES OF OBSERV",
+        "          D5    C2    C6    L6    D6    C7    L7    D7    C8# / TYPES OF OBSERV",
+        "          L8    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "id01",
+      "lat": 39.603217369444444,
+      "lon": -87.71346839722223,
+      "state": "IL",
+      "key": "rinex/2026/305/id01/id013050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "jime",
+      "lat": 45.523118455555554,
+      "lon": -122.99052966944444,
+      "state": "OR",
+      "key": "rinex/2026/305/jime/jime3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka12",
+      "lat": 39.873712675,
+      "lon": -88.92556250555556,
+      "state": "IL",
+      "key": "rinex/2026/305/ka12/ka123050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka14",
+      "lat": 39.48048310277778,
+      "lon": -88.18505406666667,
+      "state": "IL",
+      "key": "rinex/2026/305/ka14/ka143050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka18",
+      "lat": 41.09869418611111,
+      "lon": -87.85077636666666,
+      "state": "IL",
+      "key": "rinex/2026/305/ka18/ka183050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ka21",
+      "lat": 40.79148314444444,
+      "lon": -89.19605685833334,
+      "state": "IL",
+      "key": "rinex/2026/305/ka21/ka213050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "kar2",
+      "lat": 41.992705952777776,
+      "lon": -87.86504907777777,
+      "state": "IL",
+      "key": "rinex/2026/305/kar2/kar23050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "kar4",
+      "lat": 40.13161796388889,
+      "lon": -88.28996824166667,
+      "state": "IL",
+      "key": "rinex/2026/305/kar4/kar43050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "kgmn",
+      "lat": 35.23105005277778,
+      "lon": -114.00235363888889,
+      "state": "AZ",
+      "key": "rinex/2026/305/kgmn/kgmn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "laud",
+      "lat": 26.196211508333334,
+      "lon": -80.17306509722222,
+      "state": "FL",
+      "key": "rinex/2026/305/laud/laud3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "lbll",
+      "lat": 26.74759561388889,
+      "lon": -81.4534199888889,
+      "state": "FL",
+      "key": "rinex/2026/305/lbll/lbll3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "lflo",
+      "lat": 43.98360532777778,
+      "lon": -124.10770970277777,
+      "state": "OR",
+      "key": "rinex/2026/305/lflo/lflo3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    P1    L1    D1    C1    P2    L2    D2    C2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "lpsb",
+      "lat": 44.05122801388889,
+      "lon": -123.09008706944444,
+      "state": "OR",
+      "key": "rinex/2026/305/lpsb/lpsb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    P1    L1    D1    C1    P2    L2    D2    C2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mabn",
+      "lat": 42.67000747222222,
+      "lon": -72.5412956611111,
+      "state": "MA",
+      "key": "rinex/2026/305/mabn/mabn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "macm",
+      "lat": 41.69131228888889,
+      "lon": -69.96709679166666,
+      "state": "MA",
+      "key": "rinex/2026/305/macm/macm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mada",
+      "lat": 41.63969001666667,
+      "lon": -71.02816992222222,
+      "state": "MA",
+      "key": "rinex/2026/305/mada/mada3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mafa",
+      "lat": 41.61975333611111,
+      "lon": -70.54092273333333,
+      "state": "MA",
+      "key": "rinex/2026/305/mafa/mafa3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mami",
+      "lat": 42.27206172222222,
+      "lon": -71.04868567222222,
+      "state": "MA",
+      "key": "rinex/2026/305/mami/mami3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mant",
+      "lat": 41.269495227777774,
+      "lon": -70.08358108333333,
+      "state": "MA",
+      "key": "rinex/2026/305/mant/mant3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mapl",
+      "lat": 41.938708588888886,
+      "lon": -70.65507253055556,
+      "state": "MA",
+      "key": "rinex/2026/305/mapl/mapl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "masa",
+      "lat": 42.86275634444445,
+      "lon": -70.8902680138889,
+      "state": "MA",
+      "key": "rinex/2026/305/masa/masa3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "masb",
+      "lat": 42.11142135277778,
+      "lon": -72.087223625,
+      "state": "MA",
+      "key": "rinex/2026/305/masb/masb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mash",
+      "lat": 42.14049694444444,
+      "lon": -73.36419024722221,
+      "state": "MA",
+      "key": "rinex/2026/305/mash/mash3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "matu",
+      "lat": 41.98104014444445,
+      "lon": -70.04358565555556,
+      "state": "MA",
+      "key": "rinex/2026/305/matu/matu3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mawm",
+      "lat": 42.56129360833333,
+      "lon": -71.93311877500001,
+      "state": "MA",
+      "key": "rinex/2026/305/mawm/mawm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mawr",
+      "lat": 42.04171375833333,
+      "lon": -71.30418281388889,
+      "state": "MA",
+      "key": "rinex/2026/305/mawr/mawr3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mcso",
+      "lat": 44.97380998055556,
+      "lon": -122.955750675,
+      "state": "OR",
+      "key": "rinex/2026/305/mcso/mcso3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    L1    L2    P2    P1    C2    C5    L5    C6# / TYPES OF OBSERV",
+        "          L6    C7    L7    C8    L8    D1    D2    D5    D6# / TYPES OF OBSERV",
+        "          D7    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mrc1",
+      "lat": 38.49909970277778,
+      "lon": -77.37064996388888,
+      "state": "VA",
+      "key": "rinex/2026/305/mrc1/mrc13050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    27    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV ",
+        "          D6    D7    D8    L1    L2    L3    L5    L6    L7# / TYPES OF OBSERV ",
+        "          L8    P1    P2    S1    S2    S5    S6    S7    S8# / TYPES OF OBSERV "
+      ]
+    },
+    {
+      "id": "mtnt",
+      "lat": 25.86577229166667,
+      "lon": -80.90700183333334,
+      "state": "FL",
+      "key": "rinex/2026/305/mtnt/mtnt3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "mwrd",
+      "lat": 41.66825080555555,
+      "lon": -87.59752950277777,
+      "state": "IL",
+      "key": "rinex/2026/305/mwrd/mwrd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    10    P1    L1    D1    S1    C1    P2    L2    D2    S2# / TYPES OF OBSERV",
+        "          C2                                                # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nybh",
+      "lat": 42.10975871944444,
+      "lon": -75.82742430555555,
+      "state": "NY",
+      "key": "rinex/2026/305/nybh/nybh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nybt",
+      "lat": 42.98833168611111,
+      "lon": -78.12233420277776,
+      "state": "NY",
+      "key": "rinex/2026/305/nybt/nybt3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyci",
+      "lat": 40.76063085,
+      "lon": -73.19772425555556,
+      "state": "NY",
+      "key": "rinex/2026/305/nyci/nyci3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nycl",
+      "lat": 42.58437259166667,
+      "lon": -76.21133830833334,
+      "state": "NY",
+      "key": "rinex/2026/305/nycl/nycl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nycp",
+      "lat": 42.18791069444444,
+      "lon": -77.14343177222223,
+      "state": "NY",
+      "key": "rinex/2026/305/nycp/nycp3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nycs",
+      "lat": 42.667464233333334,
+      "lon": -74.486380725,
+      "state": "NY",
+      "key": "rinex/2026/305/nycs/nycs3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nydv",
+      "lat": 42.54892412222222,
+      "lon": -77.69795070833334,
+      "state": "NY",
+      "key": "rinex/2026/305/nydv/nydv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyet",
+      "lat": 44.209690925000004,
+      "lon": -73.54052101111111,
+      "state": "NY",
+      "key": "rinex/2026/305/nyet/nyet3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyfd",
+      "lat": 42.42828288888889,
+      "lon": -79.33965226388888,
+      "state": "NY",
+      "key": "rinex/2026/305/nyfd/nyfd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyfs",
+      "lat": 42.20467389444445,
+      "lon": -78.14387951111112,
+      "state": "NY",
+      "key": "rinex/2026/305/nyfs/nyfs3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyfv",
+      "lat": 42.939175952777774,
+      "lon": -74.353343625,
+      "state": "NY",
+      "key": "rinex/2026/305/nyfv/nyfv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyhb",
+      "lat": 42.717415655555556,
+      "lon": -78.84647270555556,
+      "state": "NY",
+      "key": "rinex/2026/305/nyhb/nyhb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyhc",
+      "lat": 41.958337713888895,
+      "lon": -75.29274991111112,
+      "state": "NY",
+      "key": "rinex/2026/305/nyhc/nyhc3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyhl",
+      "lat": 44.30877307777777,
+      "lon": -75.44936525277778,
+      "state": "NY",
+      "key": "rinex/2026/305/nyhl/nyhl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyhs",
+      "lat": 42.25233176111111,
+      "lon": -73.7575506,
+      "state": "NY",
+      "key": "rinex/2026/305/nyhs/nyhs3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyil",
+      "lat": 43.78268722777778,
+      "lon": -74.27774601944445,
+      "state": "NY",
+      "key": "rinex/2026/305/nyil/nyil3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nykt",
+      "lat": 41.936946225,
+      "lon": -74.0311778611111,
+      "state": "NY",
+      "key": "rinex/2026/305/nykt/nykt3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nylc",
+      "lat": 41.481086375000004,
+      "lon": -73.65149727500001,
+      "state": "NY",
+      "key": "rinex/2026/305/nylc/nylc3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nylp",
+      "lat": 43.16524669166667,
+      "lon": -78.75371827222222,
+      "state": "NY",
+      "key": "rinex/2026/305/nylp/nylp3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nylv",
+      "lat": 43.796466275,
+      "lon": -75.48543884444445,
+      "state": "NY",
+      "key": "rinex/2026/305/nylv/nylv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nymd",
+      "lat": 41.40682124722222,
+      "lon": -74.44280557777778,
+      "state": "NY",
+      "key": "rinex/2026/305/nymd/nymd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyml",
+      "lat": 44.870950369444444,
+      "lon": -74.28815776111111,
+      "state": "NY",
+      "key": "rinex/2026/305/nyml/nyml3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nymx",
+      "lat": 43.47011487777778,
+      "lon": -76.23192002777778,
+      "state": "NY",
+      "key": "rinex/2026/305/nymx/nymx3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nynb",
+      "lat": 41.495233575,
+      "lon": -74.02555399444444,
+      "state": "NY",
+      "key": "rinex/2026/305/nynb/nynb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyon",
+      "lat": 42.44023599444444,
+      "lon": -75.11181445277778,
+      "state": "NY",
+      "key": "rinex/2026/305/nyon/nyon3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nypb",
+      "lat": 44.680727588888885,
+      "lon": -73.45398021666666,
+      "state": "NY",
+      "key": "rinex/2026/305/nypb/nypb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nypd",
+      "lat": 44.65252643611111,
+      "lon": -75.04181401111111,
+      "state": "NY",
+      "key": "rinex/2026/305/nypd/nypd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nypf",
+      "lat": 43.09319961944445,
+      "lon": -77.52531658333334,
+      "state": "NY",
+      "key": "rinex/2026/305/nypf/nypf3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyrb",
+      "lat": 44.30387746388889,
+      "lon": -74.0783608361111,
+      "state": "NY",
+      "key": "rinex/2026/305/nyrb/nyrb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyrh",
+      "lat": 40.923367613888885,
+      "lon": -72.71405011666667,
+      "state": "NY",
+      "key": "rinex/2026/305/nyrh/nyrh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyrm",
+      "lat": 43.177795430555555,
+      "lon": -75.48719640277778,
+      "state": "NY",
+      "key": "rinex/2026/305/nyrm/nyrm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nysb",
+      "lat": 42.67918534166667,
+      "lon": -75.5131948388889,
+      "state": "NY",
+      "key": "rinex/2026/305/nysb/nysb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nysm",
+      "lat": 42.192059566666664,
+      "lon": -78.74735924722222,
+      "state": "NY",
+      "key": "rinex/2026/305/nysm/nysm3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyst",
+      "lat": 43.061603049999995,
+      "lon": -73.80417575833333,
+      "state": "NY",
+      "key": "rinex/2026/305/nyst/nyst3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nyvh",
+      "lat": 41.08229339166667,
+      "lon": -73.81781861111111,
+      "state": "NY",
+      "key": "rinex/2026/305/nyvh/nyvh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nywg",
+      "lat": 42.35106381111111,
+      "lon": -76.87592394722222,
+      "state": "NY",
+      "key": "rinex/2026/305/nywg/nywg3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nywl",
+      "lat": 42.89868368333333,
+      "lon": -76.85203566388888,
+      "state": "NY",
+      "key": "rinex/2026/305/nywl/nywl3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nywt",
+      "lat": 44.02824813611111,
+      "lon": -75.92110407777778,
+      "state": "NY",
+      "key": "rinex/2026/305/nywt/nywt3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "nywv",
+      "lat": 42.01239825277778,
+      "lon": -76.52158164444444,
+      "state": "NY",
+      "key": "rinex/2026/305/nywv/nywv3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "okcb",
+      "lat": 27.266037838888888,
+      "lon": -80.855334,
+      "state": "FL",
+      "key": "rinex/2026/305/okcb/okcb3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "ormd",
+      "lat": 29.298192169444444,
+      "lon": -81.10889865277777,
+      "state": "FL",
+      "key": "rinex/2026/305/ormd/ormd3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "pbch",
+      "lat": 26.84629403611111,
+      "lon": -80.21925549166667,
+      "state": "FL",
+      "key": "rinex/2026/305/pbch/pbch3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "pcla",
+      "lat": 30.469022825,
+      "lon": -87.18942119166667,
+      "state": "FL",
+      "key": "rinex/2026/305/pcla/pcla3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "pima",
+      "lat": 32.227957625,
+      "lon": -111.01863253055555,
+      "state": "AZ",
+      "key": "rinex/2026/305/pima/pima3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "pltk",
+      "lat": 29.663380702777776,
+      "lon": -81.68774553333334,
+      "state": "FL",
+      "key": "rinex/2026/305/pltk/pltk3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "rrw1",
+      "lat": 42.35112329722222,
+      "lon": -89.05802738333333,
+      "state": "IL",
+      "key": "rinex/2026/305/rrw1/rrw13050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     9    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "rsbg",
+      "lat": 43.23501715277778,
+      "lon": -123.35938687222222,
+      "state": "OR",
+      "key": "rinex/2026/305/rsbg/rsbg3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "     8    P1    L1    D1    C1    P2    L2    D2    C2      # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "rvdi",
+      "lat": 41.04199463333333,
+      "lon": -73.58122169722222,
+      "state": "CT",
+      "key": "rinex/2026/305/rvdi/rvdi3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    14    L1    L2    L5    C1    P1    P2    C2    C5    D1# / TYPES OF OBSERV",
+        "          D2    D5    S1    S2    S5                        # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "stay",
+      "lat": 44.830706886111116,
+      "lon": -122.82086081388888,
+      "state": "OR",
+      "key": "rinex/2026/305/stay/stay3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    L1    L2    P2    P1    C2    C5    L5    C6# / TYPES OF OBSERV",
+        "          L6    C7    L7    C8    L8    D1    D2    D5    D6# / TYPES OF OBSERV",
+        "          D7    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "talh",
+      "lat": 30.396529244444444,
+      "lon": -84.35585040833332,
+      "state": "FL",
+      "key": "rinex/2026/305/talh/talh3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn11",
+      "lat": 36.3616642,
+      "lon": -82.39276553055556,
+      "state": "TN",
+      "key": "rinex/2026/305/tn11/tn113050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn12",
+      "lat": 36.248045741666665,
+      "lon": -83.28641679166667,
+      "state": "TN",
+      "key": "rinex/2026/305/tn12/tn123050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn13",
+      "lat": 35.943627344444444,
+      "lon": -83.20734563611111,
+      "state": "TN",
+      "key": "rinex/2026/305/tn13/tn133050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn14",
+      "lat": 36.407593383333335,
+      "lon": -84.06518348055555,
+      "state": "TN",
+      "key": "rinex/2026/305/tn14/tn143050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn15",
+      "lat": 36.002294875,
+      "lon": -83.77055028888888,
+      "state": "TN",
+      "key": "rinex/2026/305/tn15/tn153050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn16",
+      "lat": 35.90273021666667,
+      "lon": -84.60122021944444,
+      "state": "TN",
+      "key": "rinex/2026/305/tn16/tn163050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn17",
+      "lat": 35.81338479722222,
+      "lon": -84.00487896666667,
+      "state": "TN",
+      "key": "rinex/2026/305/tn17/tn173050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn18",
+      "lat": 36.36584211666667,
+      "lon": -82.1784100138889,
+      "state": "TN",
+      "key": "rinex/2026/305/tn18/tn183050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn19",
+      "lat": 36.40832234444444,
+      "lon": -84.52806159444444,
+      "state": "TN",
+      "key": "rinex/2026/305/tn19/tn193050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn1b",
+      "lat": 36.47763678055556,
+      "lon": -82.81166405555555,
+      "state": "TN",
+      "key": "rinex/2026/305/tn1b/tn1b3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn21",
+      "lat": 35.06437862777778,
+      "lon": -85.20721230555556,
+      "state": "TN",
+      "key": "rinex/2026/305/tn21/tn213050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn22",
+      "lat": 35.39048449166667,
+      "lon": -85.37805551666666,
+      "state": "TN",
+      "key": "rinex/2026/305/tn22/tn223050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn23",
+      "lat": 35.91964188888889,
+      "lon": -84.99933200277778,
+      "state": "TN",
+      "key": "rinex/2026/305/tn23/tn233050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn24",
+      "lat": 36.13436747222222,
+      "lon": -85.49940220277777,
+      "state": "TN",
+      "key": "rinex/2026/305/tn24/tn243050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn25",
+      "lat": 35.367076250000004,
+      "lon": -86.18911353611111,
+      "state": "TN",
+      "key": "rinex/2026/305/tn25/tn253050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn26",
+      "lat": 35.44309566388888,
+      "lon": -84.63010133333333,
+      "state": "TN",
+      "key": "rinex/2026/305/tn26/tn263050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn27",
+      "lat": 36.39600998888889,
+      "lon": -85.31748205,
+      "state": "TN",
+      "key": "rinex/2026/305/tn27/tn273050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn28",
+      "lat": 35.70156430833334,
+      "lon": -85.74542840555556,
+      "state": "TN",
+      "key": "rinex/2026/305/tn28/tn283050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn29",
+      "lat": 35.246194377777776,
+      "lon": -84.56837900555556,
+      "state": "TN",
+      "key": "rinex/2026/305/tn29/tn293050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn30",
+      "lat": 35.55163045833333,
+      "lon": -87.57395551944444,
+      "state": "TN",
+      "key": "rinex/2026/305/tn30/tn303050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn31",
+      "lat": 36.17030038055555,
+      "lon": -86.87067111388889,
+      "state": "TN",
+      "key": "rinex/2026/305/tn31/tn313050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn32",
+      "lat": 36.396829858333334,
+      "lon": -86.40547437500001,
+      "state": "TN",
+      "key": "rinex/2026/305/tn32/tn323050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn33",
+      "lat": 36.558706380555556,
+      "lon": -87.31944998333333,
+      "state": "TN",
+      "key": "rinex/2026/305/tn33/tn333050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn34",
+      "lat": 35.42631793333333,
+      "lon": -86.71219659166667,
+      "state": "TN",
+      "key": "rinex/2026/305/tn34/tn343050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn35",
+      "lat": 36.103938497222224,
+      "lon": -87.62265426944444,
+      "state": "TN",
+      "key": "rinex/2026/305/tn35/tn353050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn36",
+      "lat": 35.25576898888889,
+      "lon": -87.32604785833333,
+      "state": "TN",
+      "key": "rinex/2026/305/tn36/tn363050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn37",
+      "lat": 35.60382849444444,
+      "lon": -87.09381353888888,
+      "state": "TN",
+      "key": "rinex/2026/305/tn37/tn373050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn39",
+      "lat": 35.191408644444444,
+      "lon": -87.00743883055556,
+      "state": "TN",
+      "key": "rinex/2026/305/tn39/tn393050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn40",
+      "lat": 35.64740030833333,
+      "lon": -88.40120697222223,
+      "state": "TN",
+      "key": "rinex/2026/305/tn40/tn403050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn41",
+      "lat": 36.126361744444445,
+      "lon": -88.51274974444445,
+      "state": "TN",
+      "key": "rinex/2026/305/tn41/tn413050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn42",
+      "lat": 36.13682575,
+      "lon": -89.24815216666667,
+      "state": "TN",
+      "key": "rinex/2026/305/tn42/tn423050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn43",
+      "lat": 35.228576394444445,
+      "lon": -88.60392757777777,
+      "state": "TN",
+      "key": "rinex/2026/305/tn43/tn433050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn44",
+      "lat": 35.64042395,
+      "lon": -88.91907265277779,
+      "state": "TN",
+      "key": "rinex/2026/305/tn44/tn443050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn45",
+      "lat": 35.299276625,
+      "lon": -89.65962064722223,
+      "state": "TN",
+      "key": "rinex/2026/305/tn45/tn453050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn46",
+      "lat": 35.22127428611111,
+      "lon": -88.31835680277777,
+      "state": "TN",
+      "key": "rinex/2026/305/tn46/tn463050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "tn48",
+      "lat": 36.29605006944444,
+      "lon": -88.29658720555555,
+      "state": "TN",
+      "key": "rinex/2026/305/tn48/tn483050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    13    C1    L1    D1    S1    P2    L2    D2    S2    C2# / TYPES OF OBSERV",
+        "          C5    L5    D5    S5                              # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "wach",
+      "lat": 27.514184152777776,
+      "lon": -81.88239939166667,
+      "state": "FL",
+      "key": "rinex/2026/305/wach/wach3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "wdbn",
+      "lat": 45.170863491666665,
+      "lon": -122.87005431666665,
+      "state": "OR",
+      "key": "rinex/2026/305/wdbn/wdbn3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    20    C1    L1    L2    P2    P1    C2    C5    L5    C6# / TYPES OF OBSERV",
+        "          L6    C7    L7    C8    L8    D1    D2    D5    D6# / TYPES OF OBSERV",
+        "          D7    D8                                          # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "xcty",
+      "lat": 29.631009580555556,
+      "lon": -83.10815592499999,
+      "state": "FL",
+      "key": "rinex/2026/305/xcty/xcty3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    },
+    {
+      "id": "zefr",
+      "lat": 28.22759532222222,
+      "lon": -82.16463729166668,
+      "state": "FL",
+      "key": "rinex/2026/305/zefr/zefr3050.26o.gz",
+      "doppler": true,
+      "observation_lines": [
+        "    25    C1    C2    C5    C6    C7    C8    D1    D2    D5# / TYPES OF OBSERV",
+        "          D6    D7    D8    L1    L2    L5    L6    L7    L8# / TYPES OF OBSERV",
+        "          P2    S1    S2    S5    S6    S7    S8            # / TYPES OF OBSERV"
+      ]
+    }
+  ]
+}
