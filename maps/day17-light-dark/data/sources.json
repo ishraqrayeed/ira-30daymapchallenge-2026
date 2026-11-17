@@ -1,0 +1,49 @@
+{
+  "retrieved_utc": "2026-11-17T06:06:38.670613+00:00",
+  "flight": {
+    "url": "https://adsb.aero/api/v1/flights/a6bbef%3A2025-10-15T23%3A57%3A13Z",
+    "sha256": "4b13c6b2d9caeadfd4429a4422e233c56842b0442251d1c70d723d28db989997",
+    "upstream": "adsb.lol via adsb.aero",
+    "access": "public unauthenticated API",
+    "license": "ODbL-1.0",
+    "license_url": "https://www.adsb.lol/docs/open-data/historical"
+  },
+  "raster": {
+    "url": "https://zenodo.org/records/17294744/files/nightlights.average_viirs.v21_m_500m_s_20240101_20241231_go_epsg4326_v20250904.tif",
+    "sha256": "e6edde68952052f8c53050e2ce7082bab08ddd0e15a696f999215e2d57194c53",
+    "md5": "0b976892d40c2d0d99177c727289eaf2",
+    "license": "CC-BY-4.0",
+    "year": 2024,
+    "credit": "EOG Annual VNL V2; OpenLandMap / Tomislav Hengl v0.4",
+    "native_crs": "EPSG:4326",
+    "native_resolution": [
+      0.00416666666666667,
+      0.00416666666666667
+    ]
+  },
+  "software": {
+    "rasterio": "1.3.9",
+    "gdal": "3.6.4"
+  },
+  "outputs": {
+    "bounds.json": "9bc099043503f3dd52e1ac9153f6428bcd019b784858c1b97c3912152ec91c6f",
+    "den-brightness.tif": "6070429d3044fecd4c342991676a301a74af380d0f65daa9be6e1b6cd48a0b6b",
+    "den-hybrid-proxy.tif": "4f5d48c75c4f2f8f5be46bc94058825389c1300da0fef6ede4307929b2c72f9a",
+    "den-hybrid.png": "d8dc2fe8e6ff327c1d3fad19e9bcce5ab526e7991216a5d7bacd4eb1a7b436e0",
+    "den-iss.png": "1530e907ed0820907dd2d62b6d04f1e3e30ae353a73785c7490ede317c385218",
+    "den-iss.tif": "8f47588480593d0f3951796b8515a41f0b88b39de18c9a9f3f5279ff033a13a4",
+    "den-lights.png": "bfea962a9434dfa503436bdce0d0f4270b6ae2411a7c04fbd5030cc3078fa857",
+    "hybrid-qa.json": "29d57857b9dd85faab7d0f9256ce1fec736abe3620620e767bffaa91130323f0",
+    "jfk-brightness.tif": "9bd3535085ecefa713bc971ee1a842ae003ed637273a4b345419498530dec266",
+    "jfk-hybrid-proxy.tif": "c5d90c69a5276686076c54ed6a1f70b676924949536cc6cb3e2cdbfb6f338dd6",
+    "jfk-hybrid.png": "bce05b190268b47a639eb228eeb9498fc83be0927a733eccde263209b0b82ea6",
+    "jfk-iss.png": "69c640aa3fcfa79bb38371acd59b68926c21c7aae77c5c473c2e3ea5d047937a",
+    "jfk-iss.tif": "6e24e0596ebc22bc2108f23b16af69bfaaefbd6b04d7f72ac22c4b36223e191a",
+    "jfk-lights.png": "d0c0649570276631aecdc06cbcb5b2747de2701134a6bd09bf3df790763f76f7",
+    "nasa-selection.json": "6d963b68762dd72563c4cbe4e0971e01c1a93de8a1280193212b717d14c791ff",
+    "nasa-sources.json": "1ffa40f213e3bdf339a975aa738bb1dced916dce15143f7182018404ead54dd2",
+    "profiles.csv": "3274737ca4cb6e3aae2f673010aa6c9fb626961750f68290ac6054e2471d9b5a",
+    "replay.json": "54c543b02a9f0ace7ca41aed312782874a742ff43bf196c9f1d0052eef83dc6c",
+    "routes.geojson": "c790f22d25b992b099175f0b0704fe8e161ff785942ab13ebc459fddca6aaf8b"
+  }
+}

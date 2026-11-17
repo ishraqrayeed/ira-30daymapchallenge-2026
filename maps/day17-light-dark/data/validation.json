@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checks": {
+    "flight_identity": true,
+    "original_hashes": true,
+    "shared_display_scale": true,
+    "fixed_cinematic_curve": true,
+    "jfk_5_statute_miles": true,
+    "jfk_recorded_endpoint": true,
+    "jfk_direction_and_time": true,
+    "jfk_georeferenced": true,
+    "jfk_route_in_frame": true,
+    "jfk_raster_track_alignment": true,
+    "jfk_native_profiles_verified": true,
+    "den_5_statute_miles": true,
+    "den_recorded_endpoint": true,
+    "den_direction_and_time": true,
+    "den_georeferenced": true,
+    "den_route_in_frame": true,
+    "den_raster_track_alignment": true,
+    "den_native_profiles_verified": true,
+    "ratio_verified": true,
+    "selected_windows_do_not_cross_gap": true,
+    "jfk_nasa_route_coverage": true,
+    "jfk_nasa_shared_resolution": true,
+    "jfk_nasa_same_crs": true,
+    "jfk_nasa_hashes": true,
+    "den_nasa_route_coverage": true,
+    "den_nasa_shared_resolution": true,
+    "den_nasa_same_crs": true,
+    "den_nasa_hashes": true,
+    "hybrid_display_qa": true,
+    "ratio_rounds_to_12_8": true
+  },
+  "panels": [
+    {
+      "panel": "jfk",
+      "length_miles": 5.00000000000038,
+      "native_profile_median": 25.5,
+      "endpoint_airport_distance_m": 990.325686310576,
+      "start_utc": "2025-10-15T23:57:13.760000Z",
+      "end_utc": "2025-10-15T23:58:37.955722Z"
+    },
+    {
+      "panel": "den",
+      "length_miles": 5.000000000000242,
+      "native_profile_median": 2.0,
+      "endpoint_airport_distance_m": 2943.555991245276,
+      "start_utc": "2025-10-16T03:47:31.547472Z",
+      "end_utc": "2025-10-16T03:49:34.540000Z"
+    }
+  ],
+  "gaps": [
+    {
+      "from": "2025-10-16T03:11:05.070000Z",
+      "to": "2025-10-16T03:12:08.670000Z",
+      "seconds": 63.60000014305115
+    }
+  ],
+  "analysis": "Native values; no color curve, display warp, bloom or inferred gap positions used for sampling.",
+  "replay_sha256": "54c543b02a9f0ace7ca41aed312782874a742ff43bf196c9f1d0052eef83dc6c"
+}

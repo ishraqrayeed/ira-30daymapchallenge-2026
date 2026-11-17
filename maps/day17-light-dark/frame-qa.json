@@ -1,0 +1,216 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "viewport": "desktop",
+      "frame": "opening",
+      "noOverflow": true,
+      "chartAxes": true,
+      "statistic": true,
+      "brooklynLabelVisible": true,
+      "sharedMileageReadout": true,
+      "chartPlanesSynchronized": true,
+      "denLabelVisible": true,
+      "oneIconControl": true,
+      "progress": 0,
+      "paths": [
+        {
+          "id": "jfk",
+          "count": 0,
+          "fullCount": 3054,
+          "planeVisible": true,
+          "x": 6477.008018017623,
+          "y": 1780.8958416646021,
+          "angle": 1.0153739662772918,
+          "visibleOnscreen": true
+        },
+        {
+          "id": "den",
+          "count": 0,
+          "fullCount": 3006,
+          "planeVisible": true,
+          "x": -938.5118093099397,
+          "y": 380.29227882479597,
+          "angle": -3.1522042962631334,
+          "visibleOnscreen": true
+        }
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "frame": "middle",
+      "noOverflow": true,
+      "chartAxes": true,
+      "statistic": true,
+      "brooklynLabelVisible": true,
+      "sharedMileageReadout": true,
+      "chartPlanesSynchronized": true,
+      "denLabelVisible": true,
+      "oneIconControl": true,
+      "progress": 2.590909090909091,
+      "paths": [
+        {
+          "id": "jfk",
+          "count": 1578,
+          "fullCount": 3054,
+          "planeVisible": true,
+          "x": 2814.542627682604,
+          "y": 3756.217624716734,
+          "angle": 1.233671995884321,
+          "visibleOnscreen": true
+        },
+        {
+          "id": "den",
+          "count": 1554,
+          "fullCount": 3006,
+          "planeVisible": true,
+          "x": -982.7578296045514,
+          "y": -3789.1369733975216,
+          "angle": -3.1522042318120302,
+          "visibleOnscreen": true
+        }
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "frame": "final",
+      "noOverflow": true,
+      "chartAxes": true,
+      "statistic": true,
+      "brooklynLabelVisible": true,
+      "sharedMileageReadout": true,
+      "chartPlanesSynchronized": true,
+      "denLabelVisible": true,
+      "oneIconControl": true,
+      "progress": 5,
+      "paths": [
+        {
+          "id": "jfk",
+          "count": 3054,
+          "fullCount": 3054,
+          "planeVisible": true,
+          "x": -618.6437013833389,
+          "y": 2582.795006083843,
+          "angle": -3.9247149487555424,
+          "visibleOnscreen": true
+        },
+        {
+          "id": "den",
+          "count": 3006,
+          "fullCount": 3006,
+          "planeVisible": true,
+          "x": -1022.2379560441516,
+          "y": -7665.990223809745,
+          "angle": -3.1496742691254305,
+          "visibleOnscreen": true
+        }
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "frame": "opening",
+      "noOverflow": true,
+      "chartAxes": true,
+      "statistic": true,
+      "brooklynLabelVisible": true,
+      "sharedMileageReadout": true,
+      "chartPlanesSynchronized": true,
+      "denLabelVisible": true,
+      "oneIconControl": true,
+      "progress": 0,
+      "paths": [
+        {
+          "id": "jfk",
+          "count": 0,
+          "fullCount": 3054,
+          "planeVisible": true,
+          "x": 6477.008018017623,
+          "y": 1780.8958416646021,
+          "angle": 1.0153739662772918,
+          "visibleOnscreen": true
+        },
+        {
+          "id": "den",
+          "count": 0,
+          "fullCount": 3006,
+          "planeVisible": true,
+          "x": -938.5118093099397,
+          "y": 380.29227882479597,
+          "angle": -3.1522042962631334,
+          "visibleOnscreen": true
+        }
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "frame": "middle",
+      "noOverflow": true,
+      "chartAxes": true,
+      "statistic": true,
+      "brooklynLabelVisible": true,
+      "sharedMileageReadout": true,
+      "chartPlanesSynchronized": true,
+      "denLabelVisible": true,
+      "oneIconControl": true,
+      "progress": 2.590909090909091,
+      "paths": [
+        {
+          "id": "jfk",
+          "count": 1578,
+          "fullCount": 3054,
+          "planeVisible": true,
+          "x": 2814.542627682604,
+          "y": 3756.217624716734,
+          "angle": 1.233671995884321,
+          "visibleOnscreen": true
+        },
+        {
+          "id": "den",
+          "count": 1554,
+          "fullCount": 3006,
+          "planeVisible": true,
+          "x": -982.7578296045514,
+          "y": -3789.1369733975216,
+          "angle": -3.1522042318120302,
+          "visibleOnscreen": true
+        }
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "frame": "final",
+      "noOverflow": true,
+      "chartAxes": true,
+      "statistic": true,
+      "brooklynLabelVisible": true,
+      "sharedMileageReadout": true,
+      "chartPlanesSynchronized": true,
+      "denLabelVisible": true,
+      "oneIconControl": true,
+      "progress": 5,
+      "paths": [
+        {
+          "id": "jfk",
+          "count": 3054,
+          "fullCount": 3054,
+          "planeVisible": true,
+          "x": -618.6437013833389,
+          "y": 2582.795006083843,
+          "angle": -3.9247149487555424,
+          "visibleOnscreen": true
+        },
+        {
+          "id": "den",
+          "count": 3006,
+          "fullCount": 3006,
+          "planeVisible": true,
+          "x": -1022.2379560441516,
+          "y": -7665.990223809745,
+          "angle": -3.1496742691254305,
+          "visibleOnscreen": true
+        }
+      ]
+    }
+  ],
+  "pageErrors": []
+}

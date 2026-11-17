@@ -51,7 +51,10 @@ fi
 git add -- .gitignore .github AGENTS.md README.md PLAN.md \
   LICENSE requirements.txt environment.yml src scripts templates assets tests maps docs flagship \
   data/raw/.gitkeep data/interim/.gitkeep data/processed/.gitkeep \
-  ':(exclude)maps/**/*.png'
+  ':(exclude)maps/**/*.png' \
+  ':(exclude)maps/day17-light-dark/exports/*.mp4' \
+  ':(exclude)maps/day17-light-dark/scripts/capture.cjs' \
+  ':(exclude)maps/day17-light-dark/video-qa.json'
 # Day 14 lives at the repository root, as requested for its public route.
 if [[ -d day14-borgesian ]]; then git add -- day14-borgesian; fi
 # Day 6 explicitly requires downloadable print exports. Keep other screenshot PNGs excluded.
@@ -75,6 +78,11 @@ fi
 # Day 15 includes its Blender-rendered poster and reviewed segment comparison.
 if [[ -f maps/day15-inside-out/map.png ]]; then
   git add -- maps/day15-inside-out/map.png maps/day15-inside-out/review/segment-candidates.png
+fi
+# Day 17 hybrid raster textures and requested final-frame screenshot are public assets.
+if [[ -f maps/day17-light-dark/map.html ]]; then
+  git add -- maps/day17-light-dark/data/jfk-hybrid.png \
+    maps/day17-light-dark/data/den-hybrid.png maps/day17-light-dark/exports/final-frame.png
 fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"

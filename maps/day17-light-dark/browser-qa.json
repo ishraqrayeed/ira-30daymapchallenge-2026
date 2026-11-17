@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "plays": true,
+  "pauses": true,
+  "replays": true,
+  "openingPlanes": true,
+  "reducedMotion": true,
+  "layouts": [
+    {
+      "width": 1920,
+      "noOverflow": true,
+      "noVerticalOverflow": true,
+      "sameDimensions": true,
+      "stacked": true,
+      "renderers": true,
+      "oneIconControl": true,
+      "chartPlanesSynchronized": true,
+      "endpointsVisible": true
+    },
+    {
+      "width": 1440,
+      "noOverflow": true,
+      "noVerticalOverflow": true,
+      "sameDimensions": true,
+      "stacked": true,
+      "renderers": true,
+      "oneIconControl": true,
+      "chartPlanesSynchronized": true,
+      "endpointsVisible": true
+    },
+    {
+      "width": 1366,
+      "noOverflow": true,
+      "noVerticalOverflow": true,
+      "sameDimensions": true,
+      "stacked": true,
+      "renderers": true,
+      "oneIconControl": true,
+      "chartPlanesSynchronized": true,
+      "endpointsVisible": true
+    },
+    {
+      "width": 390,
+      "noOverflow": true,
+      "noVerticalOverflow": true,
+      "sameDimensions": true,
+      "stacked": true,
+      "renderers": true,
+      "oneIconControl": true,
+      "chartPlanesSynchronized": true,
+      "endpointsVisible": true
+    },
+    {
+      "width": 375,
+      "noOverflow": true,
+      "noVerticalOverflow": true,
+      "sameDimensions": true,
+      "stacked": true,
+      "renderers": true,
+      "oneIconControl": true,
+      "chartPlanesSynchronized": true,
+      "endpointsVisible": true
+    }
+  ],
+  "pageErrors": [],
+  "webkit": {
+    "width": 390,
+    "noOverflow": true,
+    "noVerticalOverflow": true,
+    "sameDimensions": true,
+    "stacked": true,
+    "renderers": true,
+    "oneIconControl": true,
+    "chartPlanesSynchronized": true,
+    "endpointsVisible": true
+  }
+}

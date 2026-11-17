@@ -154,6 +154,13 @@ Compare a credited photograph, the GIS alignment, and a rotatable 3D road ribbon
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day15-inside-out/) ·
 [Data and reproduction](maps/day15-inside-out/README.md).
 
+## Day 17 — Light & Dark
+
+**The First 5, the Last 5** — A flight home from JFK to Denver. Replay the first
+and last five recorded miles, with VIIRS brightness and ISS photographic detail.
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day17-light-dark/) ·
+[Data and methods](maps/day17-light-dark/README.md).
+
 ## Project layout
 
 - `maps/`: daily maps, code, and methods.

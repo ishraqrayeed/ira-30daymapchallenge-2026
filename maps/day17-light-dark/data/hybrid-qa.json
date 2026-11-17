@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "label": "VIIRS brightness \u00b7 ISS detail \u00b7 Contrast enhanced",
+  "method": "GDAL bilinear VIIRS envelope; mask-normalized 120 m Gaussian; ISS detail ratio to a continuous mask-normalized 350 m local mean, clipped .15\u20133 and mixed at .75 gain; 60 m feather to VIIRS-only fallback where photography is absent.",
+  "artifact_cause": "Old nearest-neighbor VIIRS envelope and native-cell-by-cell photo normalization produced visible rectangular transitions; audited views contain no missing source coverage.",
+  "interpretation": "Cartographic composite, not observed/calibrated 25 m radiance or a statistic. No native-cell mean conservation claim; all statistics come from the separate original VIIRS raster.",
+  "curve": "(log1p(clip(proxy,0,600))/log1p(600))^1.15",
+  "bloom_threshold_proxy": 80,
+  "bloom_sigma_m": [
+    75,
+    175
+  ],
+  "bloom_gain_rgb": [
+    8,
+    6,
+    3
+  ],
+  "palette": [
+    "#050C19",
+    "#0D1B2B",
+    "#384344",
+    "#807C64",
+    "#D4C49B",
+    "#FFF1CC"
+  ],
+  "palette_stops": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "missing_photo_falls_back_to_viirs": true,
+  "valid_dark_field_stays_zero": true,
+  "same_parameters_all_panels_and_frames": true,
+  "panels": [
+    {
+      "panel": "jfk",
+      "checked_20km_square": {
+        "viirs_nodata_pixels": 0,
+        "iss_missing_pixels": 0,
+        "pixels": 640000
+      },
+      "finite_proxy": true,
+      "passed": true,
+      "outputs": {
+        "jfk-hybrid.png": "4cebff04aedfef8a9ed8a85b44f122acef4530d78381695d937029a08889bf1a"
+      }
+    },
+    {
+      "panel": "den",
+      "checked_20km_square": {
+        "viirs_nodata_pixels": 0,
+        "iss_missing_pixels": 0,
+        "pixels": 640000
+      },
+      "finite_proxy": true,
+      "passed": true,
+      "outputs": {
+        "den-hybrid.png": "72ac97f6922eba0f718e4f79b9dfda69375b4f12cb0fb8db99d711778383d274"
+      }
+    }
+  ]
+}

@@ -88,6 +88,41 @@ DAY14_FILES = ('map.html', 'app.js', 'tree-layer.js', 'camera-path.js', 'ground-
                'vendor/MAPLIBRE-LICENSE.txt', 'vendor/maplibre-gl-csp-worker.js')
 
 
+def package_day17(root: Path, destination: Path) -> None:
+    """Package the reviewed five-mile replay; never include raw photo/VIIRS caches."""
+    source = root / 'maps/day17-light-dark'
+    if not (source / 'map.html').is_file():
+        return
+    for name in ['data/validation.json', 'data/hybrid-qa.json', 'browser-qa.json', 'frame-qa.json', 'drag-qa.json']:
+        if not json.loads((source / name).read_text())['passed']:
+            raise ValueError(f'Day 17 checks failed: {name}')
+    validation = json.loads((source / 'data/validation.json').read_text())
+    if validation['replay_sha256'] != hashlib.sha256((source / 'data/replay.json').read_bytes()).hexdigest():
+        raise ValueError('Day 17 validation does not match the flight data')
+    files = ['map.html', 'app.js', 'core.js', 'style.css', 'README.md', 'requirements.txt',
+             'browser-qa.json', 'frame-qa.json', 'drag-qa.json', 'vendor/three.module.js',
+             'vendor/THREE-LICENSE.txt', 'data/replay.json', 'data/routes.geojson',
+             'data/profiles.csv', 'data/bounds.json', 'data/sources.json',
+             'data/nasa-selection.json', 'data/nasa-sources.json', 'data/hybrid-qa.json',
+             'data/validation.json', 'data/jfk-hybrid.png', 'data/den-hybrid.png',
+             'data/jfk-brightness.tif', 'data/den-brightness.tif',
+             'data/jfk-iss.tif', 'data/den-iss.tif',
+             'exports/final-frame.png']
+    files.extend(str(p.relative_to(source)) for p in sorted((source / 'scripts').glob('*')) if p.is_file() and p.name != 'capture.cjs')
+    target = destination / 'day17-light-dark'
+    for name in files:
+        relative = Path('index.html' if name == 'map.html' else name)
+        if not (source / name).is_file():
+            raise ValueError(f'Day 17 asset missing: {name}')
+        if any((target / part).is_symlink() for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 17 symlink: {name}')
+    for name in files:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 17 five-mile night-flight replay')
+
+
 def package_day16(root: Path, destination: Path) -> None:
     """Package only the reviewed GNSS documentary; exclude raw data and old experiments."""
     source = root / 'maps/day16-collaborative'
@@ -590,6 +625,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day17(root, destination)
     package_day16(root, destination)
     package_day15(root, destination)
     package_day14(root, destination)

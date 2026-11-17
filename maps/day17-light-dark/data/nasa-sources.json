@@ -1,0 +1,644 @@
+{
+  "jfk": {
+    "photo": "ISS072-E-184896",
+    "date": "2024-10-27",
+    "catalog_resolution_m": 11.98,
+    "photo_page": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS072&roll=E&frame=184896",
+    "source": "NASA Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+    "georeference": "NASA ExplorePhotos official Web Mercator tiles, z12",
+    "display_resolution_m": 25.0,
+    "native_tile_resolution_m_at_equator": 38.21851414258813,
+    "tiles": [
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1203/1537.png",
+        "sha256": "49dafb46c6fd4122c33ed13aafecdd49cb8f6bf0ffaa241f610c86f6ce4ce7ad"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1537.png",
+        "sha256": "0ff1c641896a80313d34d263a4285d22488334f623c8bdce5bea86e1e7a647b0"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1537.png",
+        "sha256": "19a364b1b25c90a1c7a5c4e32c92981be3d055bd052d979a815bdd32e1f822ce"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1537.png",
+        "sha256": "5a22a10dc74a76394b723ebc828572c2beac5cf6ab0f42f6d3f35ed1d46cbb54"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1537.png",
+        "sha256": "a795b294ea8f41bec82a2d015f2e32aa130982c652b05f09c2bea7c5ec0dee1d"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1537.png",
+        "sha256": "f3694501862472b3901c3db7a71c678290773ea2457486b807ca294bc9370c5c"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1537.png",
+        "sha256": "1c50aed382d1d7e61b6d4ff801c6288efc24419a8eadbb1881990f8bdb206707"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1537.png",
+        "sha256": "66e19f14f3a03f6d5d826dab4eb4b326ff02a0414c00395c1f4b2fe0aa106cfa"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1203/1538.png",
+        "sha256": "2f0e1178f3992e9c2535ff05339f8d1b254d5c033d31330b1c20ea865b5e2426"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1538.png",
+        "sha256": "ba76ba99e7fe0588ef08220f3193ae01482ec878c2ebae1040557552fb49b1a4"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1538.png",
+        "sha256": "9923cdfc220243635e67a533e754ae81aa4c1975c7562f7e524628c3152ec496"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1538.png",
+        "sha256": "50b885a5eac1fcfcdad8580378dff53b2d1d1406ba3de6ddeda1aae39c0d52e8"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1538.png",
+        "sha256": "177942ba7c131b2534d98f05e26462efefb57ff1c389e0fc289a312e64f60268"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1538.png",
+        "sha256": "b99c0f367d73d61fa2bb1e92f69ff2470214c3e7c1f3276f8fa3bf1e1a70e12e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1538.png",
+        "sha256": "698b933cc32bb56e92de792150eeae100e875b23fdbbd0f93a10e3d5b8963973"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1538.png",
+        "sha256": "a5cecdc17159633ca84941cbee0d944bc9638980aca95d7b62869eeff82c748c"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1211/1538.png",
+        "sha256": "3b6deb740487e2204344d486d5c199ddc998906e9549863b46b4ee0716f628cc"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1203/1539.png",
+        "sha256": "e29c8bd29e883023c937c24cfe8b994f841c911bd7a2f4b895e2ad79aecba809"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1539.png",
+        "sha256": "0ac32c6a6cb1aae0cd702f60894886b3985ba24ad1f1dcc82fe750d897e796fc"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1539.png",
+        "sha256": "d8c5b48404f0a4393aa66f11f3ca3bcafcb4b30eb75b87f9ea109afaaeb0543e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1539.png",
+        "sha256": "9993dbc52917bb1a26374929dcff6474a352bd861011c455fc05eabd5d6b4366"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1539.png",
+        "sha256": "a04d8dd6205355cd34541301582fb91fff93fabcbc2f642ff583ba0daee6bfc5"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1539.png",
+        "sha256": "03698ab743d70c9c1ecb57b1e5332726e3fd760c997474f8b8e9256e25d432ec"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1539.png",
+        "sha256": "10f20f0a3ce16da70eda8d423825f029b5041af954adf0e9f5a477a72252e1a4"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1539.png",
+        "sha256": "923d7990ce480516211002bd4b62f486146ce100e069cd5fd1852ef810bf6a12"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1211/1539.png",
+        "sha256": "ebbbd9da36d7051dfd445845919bb82424a87aaef7f7e44540eb43b287f43de7"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1212/1539.png",
+        "sha256": "53eb119cb518bcfcf432c03103406e7922404ba9f21abb5ffe26c2f2922cb190"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1203/1540.png",
+        "sha256": "459ee15a6494c2c0850f7942269a005e56222e997547ed6609d752a8dda94a01"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1540.png",
+        "sha256": "1e1af0371d17086ba8eac20fbc4a4f05da174c4109b9538c8e5cda1ee931f28d"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1540.png",
+        "sha256": "d2a11dedad1588162a5bcfba6885364858d029c54828f3170443e6b3d2cdea80"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1540.png",
+        "sha256": "c7cb2261f69ffb9a1be88882bfa1e7308a366f054f9658bd0ff22155cc4057e7"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1540.png",
+        "sha256": "fbbd04c8b4d49ddf5a153a0a17bdb5ccc3bc9bcc64ba94039828d86e57c615af"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1540.png",
+        "sha256": "3c1ee0ffc0c0b34b3b7a68b75ac2edb49855947d9358440973e5cb8a099498a5"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1540.png",
+        "sha256": "75f51a217de80659c0720cbb3ba7caf7efe6a0b311a5fae6ff6b90c40abcba56"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1540.png",
+        "sha256": "1fbba1ee8605bc7a6ddc595d457cb99698b26bc80cd59eace7468bf332a80bce"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1211/1540.png",
+        "sha256": "bf4470958067ca4ef2cbbfc6c200d980dffabce1dd7ac61c85ff6765a1aa75ca"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1212/1540.png",
+        "sha256": "0bcbd4d40205917bb4197b8769a0839e94ebcb417258cb9fcd4e22c0d7152d35"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1203/1541.png",
+        "sha256": "0ef77afeb4b19a1f48cbd0c80f7e43d6c15664dd2ffcb7a695ddee93fc02b7d9"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1541.png",
+        "sha256": "483040c53a52b62542e78b14fb4ad6258196f55533962b58d6583db392e3ec16"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1541.png",
+        "sha256": "edd0db2991fd4a244ba409a5bed374f4cc3187df5135c1aa35d702ff9e786c64"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1541.png",
+        "sha256": "3594925af6313489beb447365c21ceecabf1d87201e922d68a9519b1ec86adfa"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1541.png",
+        "sha256": "8fd737430be9f41420fcde50fef5f8c213f46b98478c29ebb0036912caf2f0e4"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1541.png",
+        "sha256": "7f98ff0ce1041d74f9f83ecdd3ae9b9c21a59f0abd9caab9aa9bb3dc4eabada3"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1541.png",
+        "sha256": "0080a1678eacf74e9cd1e59c406530e5a9752d44f4b450a5331640aa4a108c8f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1541.png",
+        "sha256": "5da019606fcec40758db35fb6ccbc74c47aa406210655fdd17ee25d0e12471b6"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1211/1541.png",
+        "sha256": "a422fe257bab85a28487c524e674bb208dc7a087f71104800b3f7410052b68be"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1212/1541.png",
+        "sha256": "19916fd99c3a3ca39bb6b29c083d3985571d550ef82b053cf5a1a7658902a581"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1203/1542.png",
+        "sha256": "4efcdbed6ceec3415bba4ed9b8a7593bcc7c713f3bc973cb6d645763c84b0ae8"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1542.png",
+        "sha256": "730fef2f0ba0fada9e369153560e465d107c95d0f28d042680199b72fa3997ba"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1542.png",
+        "sha256": "426d721cde1c76437cf8d40c5689fac4a542c398d2f7d4a0a73d001233bf8faf"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1542.png",
+        "sha256": "db98756ff949449139781c9cab52725eef91dfd5b3b16077802df35cbb00de17"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1542.png",
+        "sha256": "4a776118cdaae42791bc2e45f4f94c837a5eba40b8c6e30922f415ac0547f95f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1542.png",
+        "sha256": "bb01d017788850ccdd91f2d97b6b949a56f01a47d606fa0baded17473514c1fe"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1542.png",
+        "sha256": "edac95c2760a045d1912664494c0fb039aecb08bdb026d3d2fd6056ac8d7252d"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1542.png",
+        "sha256": "75b8cae1bf16e75e8ddb55d8ecc6c30980312b273fe6236445c6f0d8d3b05455"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1211/1542.png",
+        "sha256": "ce1e22cced943e55b5e435d07789c6627fc35a88a9df7431f443eae7e7dd111d"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1212/1542.png",
+        "sha256": "c40176a91642d786abce4f48e53f366d3796cb79669d56e37edcde55cc0df959"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1203/1543.png",
+        "sha256": "9ca04a5791c2bb0692830d907db948fad9e6bef8bb3780ea61abe8b5dfc3a43f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1543.png",
+        "sha256": "7b0eed71f115f2ca2e001609b8676618c7f5ade36a40400bdde7b4bb33fd34de"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1543.png",
+        "sha256": "2e605d36efce2cb6cd2d5907fecbb081d9c8020c1d2a4c2d4957350c585a10fe"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1543.png",
+        "sha256": "93a42367910e82f0740b5e713a2d821833679caa27d3ebe695df442553298e6c"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1543.png",
+        "sha256": "35810467e9c6c1c01e5b0e4840ba315ce37e17ad81e9969d0eaec3c21abe24dc"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1543.png",
+        "sha256": "266ef4b2ce677968991d840bbeef61c0b5175d41a0b1f6dfa084496001e69a12"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1543.png",
+        "sha256": "53803e534fb4e0295a52588b9546e9812ae1ab2a63c8ecbb42e2912e26e6e0ba"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1543.png",
+        "sha256": "1ce4f02c293c30a7d5c2e6ea37e3dd184db94827610034b0127f55f528536fe7"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1211/1543.png",
+        "sha256": "a712f92162668ff491e46038b2b8282797672ca95415e50b412668191633ab48"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1212/1543.png",
+        "sha256": "9ac5d2bc0f833f514c296c2eeb3309fc863b776e3772808610ff21608af8abee"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1204/1544.png",
+        "sha256": "44a555530022e23e9a7fe43d48271211f7b2554b30721d0fb06e40dd097bcb01"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1544.png",
+        "sha256": "88c7decc4f06f27478fadb7ae28c8b45db0d1f64a8b4a0901c15cf1013521866"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1544.png",
+        "sha256": "f3443502a1ef641fa98fade9727b1fbdaa90cf036f94cb852e895bd5def31768"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1544.png",
+        "sha256": "4722dfa180ee3b116751446efcfac19080a98cc5a5f6b740970eb8ff8970e5b5"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1544.png",
+        "sha256": "a00c194fee9447be755f3912fa18fac3c4b37603fc1a55d4aa251720b135a44e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1209/1544.png",
+        "sha256": "5722ee69d06a06fb0815c1b6bab1a9a9adb4f2d7b767f1818782156ad5cbb6f6"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1210/1544.png",
+        "sha256": "8af9bd3063a61cb7ce4bcd87418f6f886bdbcc6290276c7c13120bedebbbc602"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1205/1545.png",
+        "sha256": "8120c03ba0823d38692ec68bb15cd4474d9ee87662e4870530dc57fff0c917d1"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1206/1545.png",
+        "sha256": "eefdd140b263e40403c96a269b8d4a18de4bb17f90606ce150a735e5a00fb01e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1207/1545.png",
+        "sha256": "5ede98656939366de3bc3aead7400cdc372e968a82089d431f372f998d1ebce6"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS072-E-184896/12/1208/1545.png",
+        "sha256": "89a43d70a0f432dd6f97e7afbd862024acbdd4725737a1ee71e757f8ff59c322"
+      }
+    ],
+    "curve": "(luminance/255)^0.8; common navy-to-ivory palette",
+    "bloom_threshold": 170,
+    "bloom_sigma_m": 37.5,
+    "bloom_gain_rgb": [
+      22,
+      17,
+      10
+    ],
+    "noncomparable_photometric_exposures": true,
+    "outputs": {
+      "jfk-iss.tif": "6e24e0596ebc22bc2108f23b16af69bfaaefbd6b04d7f72ac22c4b36223e191a",
+      "jfk-iss.png": "69c640aa3fcfa79bb38371acd59b68926c21c7aae77c5c473c2e3ea5d047937a"
+    }
+  },
+  "den": {
+    "photo": "ISS070-E-103355",
+    "date": "2024-02-28",
+    "catalog_resolution_m": 24.19,
+    "photo_page": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS070&roll=E&frame=103355",
+    "source": "NASA Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+    "georeference": "NASA ExplorePhotos official Web Mercator tiles, z12",
+    "display_resolution_m": 25.0,
+    "native_tile_resolution_m_at_equator": 38.21851414258813,
+    "tiles": [
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1548.png",
+        "sha256": "0b5e9279c54dbc362ade4edc2be1fb34a0feae7eb11656efce13e6b2d1d1eaac"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1548.png",
+        "sha256": "7ef4c7c7839322a4c7f7c18604a661e38c44fd1af18471c5e7df8ec45c674c7d"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1548.png",
+        "sha256": "8e063b9e998cd2864b3dde185672c543119fdc3c784775630585056347c9d3b5"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1548.png",
+        "sha256": "1a395a3d69901e1a6aff51d225405e92c366ee7ff206ad130562202b20998359"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1548.png",
+        "sha256": "d0daa9fbe64a4fdd845916906da315d4e80c04b14e8850b6a2720d48691bac11"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1548.png",
+        "sha256": "70ddc13634b65b6d66cb266083a6b8dc1f8caaead96db47861293760fe8e99f6"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1548.png",
+        "sha256": "8658af05f6238ea1a1267544581cafa037ded36526ec2284376f4698a8bbf1a9"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1549.png",
+        "sha256": "32ae2c3572666e94408d49c1135a1ed1bfdf9f8aeeae7ef84bfe9c003c01ca71"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1549.png",
+        "sha256": "d1b15e22064daa4d341b063fcaa0cec45918e5360de7d1400d521d4a6afdfd4e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1549.png",
+        "sha256": "d60ceef012fac6ef2bd57e1df9d395391e2371b513ba2970ae6126d38249a83a"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1549.png",
+        "sha256": "5b2867b40f7040ca0cf60ceebd78642be1f41aea624cb62958c470f4f2ed5c40"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1549.png",
+        "sha256": "cbcaec0fece464ecdbaf3757dddbf87e1fc3409b585c9c6edf10a55910efe55e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1549.png",
+        "sha256": "cf0581a64c26498583a6f51f06bcba24aeae7bb5935b6469a671fa178f14d70d"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1549.png",
+        "sha256": "d8d5f63b9fb4a00a34ca14686ce992da72f0b7d63a219690ccf1784ac6282e25"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/859/1549.png",
+        "sha256": "9255ea8d1c4785fad9ca5a000476bb8f9b9c8d56dadd906bfcdab0a36a037753"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/860/1549.png",
+        "sha256": "5880c3fe317e78f6b52ab540002d668a55f29ab298b525656fada71e57f2ebe5"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1550.png",
+        "sha256": "26f007a674d6adea5bcc70742e4ff273ccea51c9f2db4ff16b56b5191e5a8650"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1550.png",
+        "sha256": "dd279ca9049c8cf97ea4b349a9e416939beddb93bd0f768b9120447a7a925ed2"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1550.png",
+        "sha256": "563153198c708061bec8e8266297825de7d05f6cd596420247594fe8eb74b876"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1550.png",
+        "sha256": "ca72564d768a7e228e18a88f0b9bc3f0d9f2db2d8a88266283451816170d2c8f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1550.png",
+        "sha256": "649f7827b11842ecb4a00c37c517ab4c3a8257798748681c06e1dc91c0052cd3"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1550.png",
+        "sha256": "ceb89b20bd9db2e885b3ae9e9442d569c29dc7b63c87ef059e66b6026a6a3b56"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1550.png",
+        "sha256": "eacc901d732e0c409fdd89c4780b13e9496850edbc94fe208f7c524106f19b7e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/859/1550.png",
+        "sha256": "38d2c5188b040ea49d008619410ed5bd6fae1e0afd3938937709dacae68a43b0"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/860/1550.png",
+        "sha256": "0441edf9603db812c4574a00beca8174e62a0c13a95906c811a7a3b8ece25839"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1551.png",
+        "sha256": "3f72b6b7cf6a79265a3f9062584ff6c780256fc811c66ca6af2071e45a297b7b"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1551.png",
+        "sha256": "46355f54c5decdaed53482e6df898f781c36a6c37df590da8cac357c5e528986"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1551.png",
+        "sha256": "c2323f36e0ceb29a2ad0b228628bcc0a9cd8474754c85ae1ad3947585e684321"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1551.png",
+        "sha256": "ab75bc493b49c338ce8a4126280c990659c1967178956a90b652254938990f04"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1551.png",
+        "sha256": "7cf68763954aa8f16f129ff9f086ea8e29b5f7a6495925ed945993b441293aa4"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1551.png",
+        "sha256": "3239a67ab65eb0cc1b633cf83c547aee3251210699085a00f1214570f0734727"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1551.png",
+        "sha256": "ae65e8f0f9a4e16201ed4b0f8d42fade733b9cf28145ef10fa0545cf7633d3b2"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/859/1551.png",
+        "sha256": "55e8a39cd901b91ba93d5b96f1b1520bf0dd209be967c67f9136de0d281019b7"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/860/1551.png",
+        "sha256": "cde00d81b2629533b562ab0ec533f3cfed6fa788a8f2d49093ecc38e88408310"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1552.png",
+        "sha256": "0c2289698822d381b237315fd27b23a65394261d0d5bce3a6fb5cf0fd80754d6"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1552.png",
+        "sha256": "5bfc52b32a0b931306b59bdd38e5b0b2dd1a4a5edc2efb1e0d6ccf1cbf972447"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1552.png",
+        "sha256": "6c31e89cfb325d0906abf61423fa54928be0d23e80f87a65387cc56027adba77"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1552.png",
+        "sha256": "2fd1ded1d18e5ba681df780bd72423c03387313b2cf20bc5dc72ea5e0a65a9bc"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1552.png",
+        "sha256": "cb08abb9e0bb7d7a3c1a90ad647404c3f60c29882b65ab47e4618130d74696d8"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1552.png",
+        "sha256": "0401865d9256d9a4dac9638e19d66e2b46d1b3998b438b6b3bef18516643c21f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1552.png",
+        "sha256": "a2d386958eaae644bef1092de5f31ca6936be0a544148b89116dffc4e3faa7cd"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/859/1552.png",
+        "sha256": "4f6cc8b23789a3d28d4d638ebdbd57ba1fc8b23019d194d096714e41fc3e50eb"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/860/1552.png",
+        "sha256": "9ffd797c5facf5ef0e2a6c3a352144dca06c9f35b721e1d6a6913d80617ec85f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1553.png",
+        "sha256": "477d9a271a31039f9185919e14ac5a6bb275eb52c73337b78adc1359cf4188ef"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1553.png",
+        "sha256": "e3cfa514b5ee468380472af670c29cc6fff4472f5273887456bf850d157dfe3d"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1553.png",
+        "sha256": "5db73b4e7c934ceeb5ace4ec052cd8a4ef3565acf8a01d5c3dcc1ed9b6379ae1"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1553.png",
+        "sha256": "ae4f27d8d9d9dd708d715a3987b0c27c9952a1a1c0026df4032a0a248b5cf116"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1553.png",
+        "sha256": "e3f63de20487072c8b93cae47a1a7208c06df0d88beeb1558df73eb8c00c74b7"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1553.png",
+        "sha256": "99516a8f05fbd496aebfa003bdbe6c5bc20be53997b96dce2015f82120ef6fac"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1553.png",
+        "sha256": "af1be29745cf6854a6d2da1a921a6a6915769185df093bf98311a66fc95de282"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/859/1553.png",
+        "sha256": "b5c18e38504df1989f4927705a84cca7012a7dfcb1414d5b6a58d58b7c8ff602"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/860/1553.png",
+        "sha256": "356d46cf1a26764135ce8c61ccf55af41b14aa526d249d4909bf404c76d8f4c9"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1554.png",
+        "sha256": "bb5ac1a0778ec330f04befe2e9d61edcb5c5e4b6cfae15112d819102d7344f2c"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1554.png",
+        "sha256": "b2c5b33b61f455048422f91705b6a891967ec5e1fbb952ca1a36444df2ee6594"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1554.png",
+        "sha256": "08f153382b08d1ecf10e01cadee6ee45bf42d5b0c4460a9f5cf13997f642a80a"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1554.png",
+        "sha256": "f12e1829e0c49f9d61b113876720273b0a5e5d32116b6f4d883758a03fa71a09"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1554.png",
+        "sha256": "8d161f68f33935eee552aff2d6e4fcee69d244f71d3abb465992328a6c05ae65"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1554.png",
+        "sha256": "a1fc23e0762d752c9eb5c6ac069fec3254b8668e6b3c585a0477d53d3155f3e4"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1554.png",
+        "sha256": "4d0e2b96a5773c4c24a9a7ebe29156409d5721be33eb5cf236f037f768316033"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/859/1554.png",
+        "sha256": "4ae82aee4eafa2671874e061b5789cbe8b4f4acb5a7893708556bd18664717e6"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/860/1554.png",
+        "sha256": "0266ce4fc934df0c0d56347b3412d94695f68c21e02ab240f340b7f7f403f8ef"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/852/1555.png",
+        "sha256": "9e6ca97b03d865a9e27051e985f22a52e559b1848f4c11bbbfa30e7e2436f8f8"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/853/1555.png",
+        "sha256": "79e6d0ba943a61e9d3e5abb8d61a117cbbbf30fee777dd949cf720ed228d15e0"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/854/1555.png",
+        "sha256": "0ab73de2d7abb7300395389c4e3366f14b6a758265340eb2115773a2e9d93153"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/855/1555.png",
+        "sha256": "5643f71f5b7a502579e49590f9a35b974058eb3e6c275f226c269b6ef1e815d7"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/856/1555.png",
+        "sha256": "e2768dbf679fea408ce6a39cc629d96277d697e073d94d31ae7a2ec7a4af7640"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/857/1555.png",
+        "sha256": "edc94fbdbde77bb7fb19b6766a280a82f1a300df9e6fc764ab0dae9ac5864d7f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/858/1555.png",
+        "sha256": "bc97b5cb957858f433a485e9df001ff8999826f23c7598218d5d2598b970875f"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/859/1555.png",
+        "sha256": "3ba39293331ba60b85bbdebb128c129d1326a2b01119ecadd2b67d76b7a3730e"
+      },
+      {
+        "url": "https://eol.jsc.nasa.gov/images/MapTiles/tiled_astronaut_photos/ISS070-E-103355/12/860/1555.png",
+        "sha256": "673b7bc74527add376eec21edd31c4c27782202b03df05150ad26468611dc043"
+      }
+    ],
+    "curve": "(luminance/255)^0.8; common navy-to-ivory palette",
+    "bloom_threshold": 170,
+    "bloom_sigma_m": 37.5,
+    "bloom_gain_rgb": [
+      22,
+      17,
+      10
+    ],
+    "noncomparable_photometric_exposures": true,
+    "outputs": {
+      "den-iss.tif": "8f47588480593d0f3951796b8515a41f0b88b39de18c9a9f3f5279ff033a13a4",
+      "den-iss.png": "1530e907ed0820907dd2d62b6d04f1e3e30ae353a73785c7490ede317c385218"
+    }
+  }
+}

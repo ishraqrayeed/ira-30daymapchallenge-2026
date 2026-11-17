@@ -26,3 +26,7 @@ data/processed/*
 
 # Day 11 raw OSM responses, source recordings and superseded draft assets
 data/day11-traffic/
+
+# Day 17 derived georeferenced crops; original source caches remain ignored.
+!maps/day17-light-dark/data/*-brightness.tif
+!maps/day17-light-dark/data/*-iss.tif

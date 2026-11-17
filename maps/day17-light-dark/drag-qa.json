@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "kind": "map",
+      "id": "jfk",
+      "engine": "chromium",
+      "miles": 3.5000000657497226,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "kind": "map",
+      "id": "den",
+      "engine": "chromium",
+      "miles": 3.499999753719254,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "kind": "chart",
+      "id": "jfk",
+      "engine": "chromium",
+      "miles": 3.49999989273259,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "kind": "chart",
+      "id": "den",
+      "engine": "chromium",
+      "miles": 3.49999989273259,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "keyboardEnd": true
+    },
+    {
+      "kind": "map",
+      "id": "jfk",
+      "engine": "webkit",
+      "miles": 3.5073074988197512,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "kind": "map",
+      "id": "den",
+      "engine": "webkit",
+      "miles": 3.472966386475067,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "kind": "chart",
+      "id": "jfk",
+      "engine": "webkit",
+      "miles": 3.493589743589744,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "kind": "chart",
+      "id": "den",
+      "engine": "webkit",
+      "miles": 3.493589743589744,
+      "paused": true,
+      "synchronized": true,
+      "released": true,
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "keyboardEnd": true
+    }
+  ]
+}
