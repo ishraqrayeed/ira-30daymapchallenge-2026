@@ -161,6 +161,13 @@ and last five recorded miles, with VIIRS brightness and ISS photographic detail.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day17-light-dark/) ·
 [Data and methods](maps/day17-light-dark/README.md).
 
+## Day 18 — NULL
+
+**The Great American Nothing** — Follow westbound I-70 from St. Louis to Denver
+and reveal stretches of repetitive landscape.
+[Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day18-null/) ·
+[Data and methods](day18-null/README.md).
+
 ## Project layout
 
 - `maps/`: daily maps, code, and methods.

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbf8f1">
+  <title>The Great American Nothing · Day 18</title>
+  <link rel="stylesheet" href="./vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./vendor/maplibre-gl.js"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main id="poster">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow edition">30DayMapChallenge 2026 · Day 18 · NULL</p>
+        <h1>The Great American Nothing</h1>
+        <p class="subtitle" id="subtitle">How boring is the drive from St. Louis to Denver?</p>
+      </div>
+      <div class="result" id="result">
+        <p class="result-headline"><span id="gap-value">—</span> miles of more of the same</p>
+        <p class="result-caption" id="result-caption">Longest high-monotony stretch</p>
+        <p id="result-places" hidden></p>
+      </div>
+    </header>
+    <aside class="story-index" id="story-index" aria-label="Callouts reached on the journey">
+      <p class="story-intro">850 miles west. Some scenery changes. Some doesn't.</p>
+    </aside>
+    <section class="cartography" aria-label="I-70 corridor, north up">
+      <div id="map"></div>
+      <div class="vignette" aria-hidden="true"></div>
+      <div class="north" aria-label="North is up">↑<span>N</span></div>
+      <svg class="story-leader" id="story-leader" aria-hidden="true"></svg>
+      <div class="legend">
+        <span><i class="route-key"></i>I-70 westbound</span>
+        <span><i class="moderate-key"></i>Moderate</span>
+        <span><i class="high-key"></i>High</span>
+        <span><i class="extreme-key"></i>Extreme monotony</span>
+      </div>
+    </section>
+    <section class="journey" aria-label="Journey controls and measurements">
+      <div class="readouts">
+        <div><p class="eyebrow">Near</p><p id="place">St. Louis, MO</p></div>
+        <div><p class="eyebrow">Miles traveled</p><p id="traveled">—</p></div>
+        <div><p class="eyebrow">Driving Monotony Index</p><p><span id="monotony">—</span> <small>/ 100</small></p></div>
+      </div>
+      <div class="timeline">
+        <canvas id="profile" height="24" aria-hidden="true"></canvas>
+        <input type="range" id="seek" min="0" max="1" step="0.01" value="0" aria-label="Journey distance" disabled>
+        <div class="ends"><span>St. Louis</span><span>Denver</span></div>
+      </div>
+      <div class="controls">
+        <button id="play" class="play" disabled>Pause</button>
+        <button id="replay" disabled>Replay</button>
+        <button id="skip" disabled>Skip to end</button>
+        <button id="explore" disabled>Explore map</button>
+      </div>
+      <p id="status" role="status">Loading corridor…</p>
+    </section>
+    <footer>
+      <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a> ·
+      <a href="https://www.mrlc.gov/">USGS NLCD &amp; 3DEP</a> ·
+      <a href="./README.md">Methods</a>
+    </footer>
+  </main>
+</body>
+</html>

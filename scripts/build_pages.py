@@ -88,6 +88,31 @@ DAY14_FILES = ('map.html', 'app.js', 'tree-layer.js', 'camera-path.js', 'ground-
                'vendor/MAPLIBRE-LICENSE.txt', 'vendor/maplibre-gl-csp-worker.js')
 
 
+def package_day18(root: Path, destination: Path) -> None:
+    """Package the corridor experience and processed assets for static hosting."""
+    source = root / 'day18-null'
+    if not (source / 'map.html').is_file():
+        return
+    target = destination / 'day18-null'
+    files = ('map.html', 'style.css', 'app.js', 'README.md', 'prepare.py', 'requirements.txt',
+             'validate.py', 'monotony.py', 'source/topeka-preclosure.json', 'assets/journey.json',
+             'assets/monotony.geojson', 'assets/monotony.json', 'assets/monotony-diagnostics.json',
+             'DIAGNOSTICS.md', 'assets/states.geojson',
+             'assets/qa.json', 'vendor/maplibre-gl.js', 'vendor/maplibre-gl.css',
+             'vendor/MAPLIBRE-LICENSE.txt')
+    for name in files:
+        relative = Path('index.html' if name == 'map.html' else name)
+        if not (source / name).is_file():
+            raise ValueError(f'Day 18 asset missing: {name}')
+        if any((target / part).is_symlink() for part in [relative, *relative.parents]):
+            raise ValueError(f'Refusing to overwrite a Day 18 symlink: {name}')
+    for name in files:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 18 westbound I-70 journey')
+
+
 def package_day17(root: Path, destination: Path) -> None:
     """Package the reviewed five-mile replay; never include raw photo/VIIRS caches."""
     source = root / 'maps/day17-light-dark'
@@ -625,6 +650,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day18(root, destination)
     package_day17(root, destination)
     package_day16(root, destination)
     package_day15(root, destination)

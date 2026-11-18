@@ -22,7 +22,7 @@ Use public data, document sources and limitations, and keep each workflow reprod
 | 15 | [Inside out](maps/day15-inside-out/README.md) |
 | 16 | [Collaborative map](maps/day16-collaborative/README.md) |
 | 17 | [Light & dark](maps/day17-light-dark/README.md) |
-| 18 | [NULL](maps/day18-null/README.md) |
+| 18 | [NULL](day18-null/README.md) |
 | 19 | [Senses: Smell](maps/day19-smell/README.md) |
 | 20 | [Hexagons](maps/day20-hexagons/README.md) |
 | 21 | [OpenStreetMap](maps/day21-openstreetmap/README.md) |
