@@ -88,6 +88,28 @@ DAY14_FILES = ('map.html', 'app.js', 'tree-layer.js', 'camera-path.js', 'ground-
                'vendor/MAPLIBRE-LICENSE.txt', 'vendor/maplibre-gl-csp-worker.js')
 
 
+def package_day19(root: Path, destination: Path) -> None:
+    """Package the static poster and its reproduction notes."""
+    source = root / 'maps/day19-smell'
+    if not (source / 'map.html').is_file():
+        return
+    target = destination / 'day19-smell'
+    files = ('map.html', 'README.md', 'render.py', 'requirements.txt',
+             'assets/cinnamon.png', 'exports/where-cinnamon-grows.png',
+             'exports/where-cinnamon-grows.pdf')
+    for name in files:
+        relative = Path('index.html' if name == 'map.html' else name)
+        if not (source / name).is_file():
+            raise ValueError(f'Day 19 asset missing: {name}')
+        if any((target / part).is_symlink() for part in (relative, *relative.parents)):
+            raise ValueError(f'Refusing to overwrite a Day 19 symlink: {name}')
+    for name in files:
+        output = target / ('index.html' if name == 'map.html' else name)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / name, output)
+    print('Packaged Day 19 Kerinci Highlands poster')
+
+
 def package_day18(root: Path, destination: Path) -> None:
     """Package the corridor experience and processed assets for static hosting."""
     source = root / 'day18-null'
@@ -650,6 +672,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day19(root, destination)
     package_day18(root, destination)
     package_day17(root, destination)
     package_day16(root, destination)

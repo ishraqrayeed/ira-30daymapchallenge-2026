@@ -168,6 +168,13 @@ and reveal stretches of repetitive landscape.
 [Open the map](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day18-null/) ·
 [Data and methods](day18-null/README.md).
 
+## Day 19 — Smell
+
+**Where Cinnamon Grows** follows the curls of cinnamon bark into the terrain of
+Sumatra’s Kerinci Highlands.
+[View the poster](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day19-smell/) ·
+[Sources and reproduction](maps/day19-smell/README.md).
+
 ## Project layout
 
 - `maps/`: daily maps, code, and methods.
