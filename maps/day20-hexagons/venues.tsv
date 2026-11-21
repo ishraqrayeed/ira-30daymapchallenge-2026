@@ -1,0 +1,9 @@
+venue_id	venue_name	venue_address	city	address_source	coordinate_source	precision	match_prefix
+highland	Highland Park	Highland Park Drive and Kirkwall Street, Broomfield, CO 80021	Broomfield	highland-city	highland-city	municipal park pin	Highland Park
+city-park	City Park Fields	450 N. 111th St., Lafayette, CO 80026	Lafayette	city-park	esri-city-park-street	address geocode	450 N 111th St, Lafayette
+whitetail	Whitetail Park	2550 Autumn Ridge Blvd, Lafayette, CO 80026	Lafayette	whitetail	esri-whitetail-street	address geocode	2550 Autumn Ridge Blvd, Lafayette
+spc	Sports Performance Center	555 Aspen Ridge Dr Suite F, Lafayette, CO 80026	Lafayette	albion-spc	geo-albion-spc	street interpolation	555 ASPEN RIDGE DR, LAFAYETTE
+pleasant	Pleasant View Fields Sports Complex	3805 47th St., Boulder, CO 80301	Boulder	pleasant	geo-pleasant	street interpolation	3805 47TH ST, BOULDER
+foothills	Foothills Community Park	800 Cherry Ave, Boulder, CO 80304	Boulder	foothills	esri-foothills	street interpolation	800 Cherry Ave, Boulder
+martin	Martin Park	3600 Eastman Ave, Boulder, CO 80305	Boulder	martin	esri-martin	extended street interpolation	3600 Eastman Ave, Boulder
+dawson	Alexander Dawson School Sports Fields	10455 Dawson Dr, Lafayette, CO 80026	Lafayette	kick-contact	geo-dawson	street interpolation	10455 DAWSON DR, LAFAYETTE

@@ -1,0 +1,14 @@
+source_id	name	city	state	league_hint	provider_match
+play-co	Albion SC Boulder County	Longmont	CO	MLS Next 2	albion
+play-co	Broomfield SC	Broomfield	CO		broomfield
+play-co	Albion SC Denver	Denver	CO	""	""
+play-co	Royal Peak Football Club	Bayfield	CO	""	""
+play-albion	Albion SC Colorado	Longmont	CO		albion-overlap-review
+play-ca	Scripps Ranch Soccer Club	San Diego	CA	N1	""
+play-ca	Stanford Strikers FC	Palo Alto	CA	ECNL RL Boys; N1	""
+play-ca	West Coast SC	Tracy	CA	ECNL RL Girls; N1	""
+play-ca	Strikers Football Club Costa Mesa	Costa Mesa	CA	N1	""
+play-fl	Supreme FC	Miami	FL	ECNL Boys; ECNL RL Boys	""
+play-fl	Pinecrest Premier	Miami	FL	""	""
+play-fl	Florida Prime Soccer	St. Augustine	FL	""	""
+play-fl	Tropical Soccer	Lakeland	FL	""	""

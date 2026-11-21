@@ -197,3 +197,11 @@ See [hosting instructions](docs/HOSTING.md) for the GitHub connection and deploy
 Source attribution and limitations are documented with each map.
 
 [Daily workflow and next-day notes](docs/WORKFLOW.md) · [Design reference](docs/DESIGN.md)
+
+## Day 20 — Hexagons
+
+**Where America Learns to Play Soccer** maps 2,307 US Club Soccer directory locations
+across all 50 states and D.C. Select a hex to see the clubs listed there.
+
+[Open the atlas](https://ishraqrayeed.github.io/ira-30daymapchallenge-2026/day20-hexagons/) ·
+[Data and methods](maps/day20-hexagons/CLUBS.md)

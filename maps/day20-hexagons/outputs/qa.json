@@ -1,0 +1,174 @@
+{
+  "table_rows": 14,
+  "mapped_pairs": 10,
+  "geocoding_failures": 0,
+  "unmapped_rows": 4,
+  "distinct_mapped_providers": 4,
+  "distinct_mapped_venues": 8,
+  "distinct_mapped_programs": 7,
+  "pairs_by_venue_city": {
+    "Broomfield": 1,
+    "Boulder": 3,
+    "Lafayette": 6
+  },
+  "cells": {
+    "4": 1,
+    "5": 4,
+    "6": 6
+  },
+  "sources": {
+    "Play Club Soccer": {
+      "records": 13,
+      "provider_proxy_keys": 13,
+      "unique_record_keys": 13,
+      "geography": {
+        "CA": 4,
+        "CO": 5,
+        "FL": 4
+      },
+      "advertised_totals": {
+        "CO": 19,
+        "CA": 203,
+        "FL": 92
+      },
+      "verified_programs": 0,
+      "verified_pairs": 0,
+      "exclusive_pairs": 0
+    },
+    "US Club Soccer": {
+      "records": 102,
+      "provider_proxy_keys": 102,
+      "unique_record_keys": 102,
+      "geography": {
+        "CA": 30,
+        "CO": 42,
+        "FL": 30
+      },
+      "advertised_totals": {
+        "CA": 711,
+        "CO": 42,
+        "FL": 345
+      },
+      "verified_programs": 0,
+      "verified_pairs": 0,
+      "exclusive_pairs": 0
+    },
+    "US Youth Soccer": {
+      "records": 54,
+      "provider_proxy_keys": 0,
+      "unique_record_keys": 54,
+      "geography": {
+        "unparsed": 54
+      },
+      "advertised_totals": {},
+      "verified_programs": 0,
+      "verified_pairs": 0,
+      "exclusive_pairs": 0
+    },
+    "AYSO": {
+      "records": 661,
+      "provider_proxy_keys": 658,
+      "unique_record_keys": 659,
+      "geography": {
+        "AL": 12,
+        "AZ": 25,
+        "CA": 214,
+        "CO": 3,
+        "CT": 4,
+        "FL": 18,
+        "GA": 1,
+        "HI": 22,
+        "IA": 6,
+        "ID": 3,
+        "IL": 31,
+        "KS": 5,
+        "KY": 1,
+        "LA": 1,
+        "MD": 4,
+        "MI": 76,
+        "MS": 1,
+        "MT": 6,
+        "NC": 4,
+        "NE": 4,
+        "NJ": 1,
+        "NM": 7,
+        "NV": 16,
+        "NY": 55,
+        "OH": 1,
+        "OK": 2,
+        "OR": 6,
+        "PA": 64,
+        "SC": 1,
+        "TN": 23,
+        "TX": 6,
+        "UT": 17,
+        "VA": 2,
+        "WA": 2,
+        "WI": 9,
+        "WV": 2,
+        "WY": 2,
+        "unparsed": 4
+      },
+      "advertised_totals": {},
+      "verified_programs": 0,
+      "verified_pairs": 0,
+      "exclusive_pairs": 0
+    },
+    "CSA maps": {
+      "records": 0,
+      "provider_proxy_keys": 0,
+      "verified_programs": 0,
+      "verified_pairs": 0,
+      "exclusive_pairs": 0
+    },
+    "Albion": {
+      "records": 5,
+      "unique_providers": 1,
+      "verified_programs": 2,
+      "verified_pairs": 5,
+      "exclusive_pairs": 5
+    },
+    "Broomfield Soccer Club": {
+      "records": 2,
+      "unique_providers": 1,
+      "verified_programs": 1,
+      "verified_pairs": 1,
+      "exclusive_pairs": 0
+    },
+    "CSA schedules": {
+      "records": 2,
+      "unique_providers": 2,
+      "verified_programs": 2,
+      "verified_pairs": 2,
+      "exclusive_pairs": 0
+    },
+    "City of Boulder": {
+      "records": 1,
+      "unique_providers": 1,
+      "verified_programs": 1,
+      "verified_pairs": 0,
+      "exclusive_pairs": 0
+    },
+    "Kick2Build": {
+      "records": 2,
+      "unique_providers": 1,
+      "verified_programs": 2,
+      "verified_pairs": 1,
+      "exclusive_pairs": 0
+    },
+    "Lafayette Recreation": {
+      "records": 3,
+      "unique_providers": 1,
+      "verified_programs": 3,
+      "verified_pairs": 3,
+      "exclusive_pairs": 3
+    },
+    "YMCA": {
+      "records": 2,
+      "unique_providers": 1,
+      "verified_programs": 1,
+      "verified_pairs": 0,
+      "exclusive_pairs": 0
+    }
+  }
+}

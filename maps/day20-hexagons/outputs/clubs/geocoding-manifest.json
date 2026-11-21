@@ -1,0 +1,66 @@
+[
+  {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
+    "benchmark": "Public_AR_Current",
+    "batch_size": 1000,
+    "responses": 1000,
+    "outcomes": {
+      "No_Match": 451,
+      "Match": 537,
+      "Tie": 12
+    },
+    "input_sha256": "c7b5cbf4ce95d5c5779cc8ec3309f4ec2c0e146559e11c0ad0f7060bffe52676",
+    "retrieval_utc": "2026-11-21",
+    "response_sha256": "53fdb9d134c7dfd60f4d5fae12b90aedfd5dc84027c3babe8ccc71dbd75a2934",
+    "cache": "census-clubs-c7b5cbf4ce95d5c5-results.csv",
+    "status": "retrieved"
+  },
+  {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
+    "benchmark": "Public_AR_Current",
+    "batch_size": 1000,
+    "responses": 1000,
+    "outcomes": {
+      "Match": 896,
+      "No_Match": 97,
+      "Tie": 7
+    },
+    "input_sha256": "f28c8be220e7bf6c6475f4a14ef63d23cc7380260b6cc98c6e4d51bb25b7b1d8",
+    "retrieval_utc": "2026-11-21",
+    "response_sha256": "a9d6e174b9d125362a13e72a176f8984daf3e9d5aa804ebd9abaccf495c3f3b5",
+    "cache": "census-clubs-f28c8be220e7bf6c-results.csv",
+    "status": "retrieved"
+  },
+  {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
+    "benchmark": "Public_AR_Current",
+    "batch_size": 1000,
+    "responses": 1000,
+    "outcomes": {
+      "Match": 911,
+      "Tie": 8,
+      "No_Match": 81
+    },
+    "input_sha256": "5f5d60d66cedb08354c44b4c566b8e3c22372cacde51098f8f4f64dfcc9f7efa",
+    "retrieval_utc": "2026-11-21",
+    "response_sha256": "2cd1ae1611f528500f03362e3493adb380d3be15f2bb3a072adae8fe47706c19",
+    "cache": "census-clubs-5f5d60d66cedb083-results.csv",
+    "status": "retrieved"
+  },
+  {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
+    "benchmark": "Public_AR_Current",
+    "batch_size": 518,
+    "responses": 518,
+    "outcomes": {
+      "Match": 471,
+      "No_Match": 44,
+      "Tie": 3
+    },
+    "input_sha256": "94d7dbb0db3d2018e62bbb2c993b6fc7035148df584b081b3c81feb7ed20cda0",
+    "retrieval_utc": "2026-11-21",
+    "response_sha256": "2e9f7c16540808844c632ea6248617d81b218ccd205c1fd34ae56ca57fd07ba7",
+    "cache": "census-clubs-94d7dbb0db3d2018-results.csv",
+    "status": "retrieved"
+  }
+]

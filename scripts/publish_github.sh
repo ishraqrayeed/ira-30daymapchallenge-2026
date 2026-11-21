@@ -84,6 +84,10 @@ if [[ -f maps/day17-light-dark/map.html ]]; then
   git add -- maps/day17-light-dark/data/jfk-hybrid.png \
     maps/day17-light-dark/data/den-hybrid.png maps/day17-light-dark/exports/final-frame.png
 fi
+# Day 20's illustrated player is an asset used by the live map.
+if [[ -f maps/day20-hexagons/outputs/clubs/dribbling-engraving.png ]]; then
+  git add -- maps/day20-hexagons/outputs/clubs/dribbling-engraving.png
+fi
 if ! git diff --cached --quiet; then
   git commit -m "$commit_message"
 fi

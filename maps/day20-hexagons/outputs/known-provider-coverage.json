@@ -1,0 +1,40 @@
+{
+  "broomfield": {
+    "Play Club Soccer": "discovered",
+    "US Club Soccer": "discovered",
+    "US Youth Soccer": "federation links only; directs to CSA",
+    "CSA maps": "widget shell only; no captured club or field records",
+    "CSA schedules": "discovered and joint venue evidence",
+    "AYSO": "no match in retrieved locator payload",
+    "Broomfield Soccer Club": "verified jointly with CSA schedule and park record"
+  },
+  "albion": {
+    "Play Club Soccer": "discovered; second profile overlaps",
+    "US Club Soccer": "discovered",
+    "US Youth Soccer": "federation links only; directs to CSA",
+    "CSA maps": "widget shell only; no captured club or field records",
+    "CSA schedules": "discovered as a league participant; Juniors venue evidence from Albion",
+    "AYSO": "no match in retrieved locator payload",
+    "Albion": "verified with facility address records and geocodes"
+  },
+  "kick2build": {
+    "US Youth Soccer": "federation links only; directs to CSA",
+    "CSA maps": "widget shell only; no captured club or field records",
+    "CSA schedules": "discovered and joint venue evidence",
+    "AYSO": "no match in retrieved locator payload",
+    "Kick2Build": "competitive verified jointly with CSA; Sankofa venue unresolved"
+  },
+  "lafayette-rec": {
+    "US Youth Soccer": "federation links only; directs to CSA",
+    "CSA maps": "widget shell only; no captured club or field records",
+    "AYSO": "no match in retrieved locator payload",
+    "Lafayette Recreation": "verified with city guide and address geocode"
+  },
+  "ymca": {
+    "US Youth Soccer": "federation links only; directs to CSA",
+    "CSA maps": "widget shell only; no captured club or field records",
+    "AYSO": "no match in retrieved locator payload",
+    "YMCA": "discovered; no specific season venue recovered",
+    "City of Boulder": "same partnership; no specific season venue recovered"
+  }
+}

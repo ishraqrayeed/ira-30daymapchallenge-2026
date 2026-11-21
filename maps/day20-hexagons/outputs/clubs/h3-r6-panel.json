@@ -1,0 +1,66 @@
+{
+  "scope": "US Club Soccer listed locations, including offices",
+  "resolution": 6,
+  "hexes": {
+    "862681a5fffffff": {
+      "provider_count": 1,
+      "clubs": [
+        {
+          "club_id": 31524,
+          "name": "Westy Soccer Club",
+          "city": "Westminster",
+          "state": "CO",
+          "website": "https://www.westysoccer.org"
+        }
+      ]
+    },
+    "862681a77ffffff": {
+      "provider_count": 1,
+      "clubs": [
+        {
+          "club_id": 5640,
+          "name": "Broomfield Soccer Club",
+          "city": "Broomfield",
+          "state": "CO",
+          "website": "https://www.broomfieldsoccerclub.org/"
+        }
+      ]
+    },
+    "862681b47ffffff": {
+      "provider_count": 1,
+      "clubs": [
+        {
+          "club_id": 38189,
+          "name": "Patriot FC",
+          "city": "Erie",
+          "state": "CO",
+          "website": ""
+        }
+      ]
+    },
+    "862681b4fffffff": {
+      "provider_count": 1,
+      "clubs": [
+        {
+          "club_id": 36878,
+          "name": "Erie United",
+          "city": "Erie",
+          "state": "CO",
+          "website": ""
+        }
+      ]
+    },
+    "862681b5fffffff": {
+      "provider_count": 1,
+      "clubs": [
+        {
+          "club_id": 5663,
+          "name": "ALBION SC Boulder County",
+          "city": "Lafayette",
+          "state": "CO",
+          "website": ""
+        }
+      ]
+    }
+  }
+}

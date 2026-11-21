@@ -1,0 +1,5 @@
+# Directory source extract contains public contact/discovery addresses.
+outputs/directory-records.csv
+
+# Row-level geocodes remain local. The public map uses hex counts and listed cities.
+outputs/clubs/clubs.csv

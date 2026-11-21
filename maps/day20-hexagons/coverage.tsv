@@ -1,0 +1,17 @@
+source	provider_id	result
+Play Club Soccer	broomfield	discovered
+Play Club Soccer	albion	discovered; second profile overlaps
+US Club Soccer	broomfield	discovered
+US Club Soccer	albion	discovered
+US Youth Soccer	all	federation links only; directs to CSA
+CSA maps	all	widget shell only; no captured club or field records
+CSA schedules	broomfield	discovered and joint venue evidence
+CSA schedules	albion	discovered as a league participant; Juniors venue evidence from Albion
+CSA schedules	kick2build	discovered and joint venue evidence
+AYSO	all	no match in retrieved locator payload
+Broomfield Soccer Club	broomfield	verified jointly with CSA schedule and park record
+Albion	albion	verified with facility address records and geocodes
+Kick2Build	kick2build	competitive verified jointly with CSA; Sankofa venue unresolved
+Lafayette Recreation	lafayette-rec	verified with city guide and address geocode
+YMCA	ymca	discovered; no specific season venue recovered
+City of Boulder	ymca	same partnership; no specific season venue recovered

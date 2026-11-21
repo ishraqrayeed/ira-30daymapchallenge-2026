@@ -1,0 +1,68 @@
+{
+  "resolution": 3,
+  "regions": {
+    "us": {
+      "cells": 710,
+      "occupied": 288,
+      "offshore_center_cells": 99,
+      "uncovered_land_share": 3.681012299018815e-12
+    },
+    "ak": {
+      "cells": 216,
+      "occupied": 1,
+      "offshore_center_cells": 86,
+      "uncovered_land_share": 0.0
+    },
+    "hi": {
+      "cells": 10,
+      "occupied": 7,
+      "offshore_center_cells": 8,
+      "uncovered_land_share": 0.0
+    }
+  },
+  "peaks": [
+    {
+      "h3": "8326c8fffffffff",
+      "listed_clubs": 114
+    },
+    {
+      "h3": "832a10fffffffff",
+      "listed_clubs": 107
+    },
+    {
+      "h3": "832759fffffffff",
+      "listed_clubs": 77
+    },
+    {
+      "h3": "83488bfffffffff",
+      "listed_clubs": 77
+    },
+    {
+      "h3": "8329a0fffffffff",
+      "listed_clubs": 60
+    },
+    {
+      "h3": "8344a1fffffffff",
+      "listed_clubs": 59
+    },
+    {
+      "h3": "832aa8fffffffff",
+      "listed_clubs": 51
+    },
+    {
+      "h3": "832830fffffffff",
+      "listed_clubs": 43
+    },
+    {
+      "h3": "832ab3fffffffff",
+      "listed_clubs": 40
+    },
+    {
+      "h3": "8344a9fffffffff",
+      "listed_clubs": 34
+    }
+  ],
+  "occupied_cells": 296,
+  "mapped_clubs": 2307,
+  "intro_end_ms": 2500
+}

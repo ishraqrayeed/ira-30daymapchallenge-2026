@@ -1,0 +1,21 @@
+{
+  "advertised_total": 4625,
+  "pages": 47,
+  "records_downloaded": 4625,
+  "unique_directory_ids": 4622,
+  "duplicate_records": 3,
+  "selected_clubs": 4402,
+  "mapped_clubs": 2307,
+  "submitted_clubs": 3584,
+  "missing_street": 818,
+  "unmatched_clubs": 1277,
+  "mapped_states": 50,
+  "mapped_dc": true,
+  "mapped_boulder_inset": 5,
+  "cells": {
+    "3": 296,
+    "4": 621,
+    "5": 1176,
+    "6": 5
+  }
+}

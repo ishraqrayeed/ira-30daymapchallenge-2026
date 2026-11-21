@@ -110,6 +110,26 @@ def package_day19(root: Path, destination: Path) -> None:
     print('Packaged Day 19 Kerinci Highlands poster')
 
 
+def package_day20(root: Path, destination: Path) -> None:
+    """Publish the club atlas using only its reviewed browser assets."""
+    source = root / 'maps/day20-hexagons/outputs/clubs'
+    if not (source / 'map.html').is_file():
+        return
+    target = destination / 'day20-hexagons'
+    files = {'map.html': 'index.html', 'reveal.js': 'reveal.js',
+             'national-r3.svg': 'national-r3.svg', 'h3-r3-panel.json': 'h3-r3-panel.json',
+             'dribbling-engraving.png': 'dribbling-engraving.png'}
+    for name, output in files.items():
+        if not (source / name).is_file():
+            raise ValueError(f'Day 20 asset missing: {name}')
+        if target.is_symlink() or (target / output).is_symlink():
+            raise ValueError(f'Refusing to overwrite a Day 20 symlink: {output}')
+    target.mkdir(parents=True, exist_ok=True)
+    for name, output in files.items():
+        shutil.copyfile(source / name, target / output)
+    print('Packaged Day 20 interactive soccer club atlas')
+
+
 def package_day18(root: Path, destination: Path) -> None:
     """Package the corridor experience and processed assets for static hosting."""
     source = root / 'day18-null'
@@ -672,6 +692,7 @@ def build(root: Path = ROOT, destination: Path | None = None) -> Path:
             target9.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source9 / name, target9)
         print('Packaged Day 9 Cesium landscape and processed GIS layers')
+    package_day20(root, destination)
     package_day19(root, destination)
     package_day18(root, destination)
     package_day17(root, destination)

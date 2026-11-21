@@ -1,0 +1,1530 @@
+[
+  {
+    "city": "Midland",
+    "state": "TX",
+    "raw_listings": 66,
+    "distinct_directory_ids": 66,
+    "mapped_clubs": 48,
+    "records_with_street": 65,
+    "distinct_streets": 63,
+    "repeated_street_club_ids": [
+      [
+        23534,
+        35527
+      ],
+      [
+        31806,
+        36933
+      ]
+    ],
+    "distinct_matched_addresses": 47,
+    "repeated_coordinates": [
+      {
+        "club_ids": [
+          23534,
+          35527
+        ],
+        "same_exact_address": true
+      }
+    ],
+    "repeated_club_names": [],
+    "city_variants": {
+      "Midland": 66
+    },
+    "sources": [
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=15&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=2&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=21&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=23&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=24&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=25&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=27&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=4&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=41&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=42&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=43&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=45&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=46&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=8&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=9&per_page=100"
+    ],
+    "records": [
+      {
+        "club_id": 30609,
+        "name": "Goalbusters WTX",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=2&per_page=100"
+      },
+      {
+        "club_id": 29637,
+        "name": "Hodges FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100"
+      },
+      {
+        "club_id": 30521,
+        "name": "Cruz Azul",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100"
+      },
+      {
+        "club_id": 29645,
+        "name": "Pink Unicorns",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=4&per_page=100"
+      },
+      {
+        "club_id": 31794,
+        "name": "Lady Royals FC",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=4&per_page=100"
+      },
+      {
+        "club_id": 31655,
+        "name": "FC Dallas Midland-Odessa",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=4&per_page=100"
+      },
+      {
+        "club_id": 30551,
+        "name": "Glitter Girls",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 35382,
+        "name": "Midland Dinos",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 33902,
+        "name": "The Eagles WTX",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=8&per_page=100"
+      },
+      {
+        "club_id": 33994,
+        "name": "Midland Chivas",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=8&per_page=100"
+      },
+      {
+        "club_id": 34668,
+        "name": "Real Sport FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=9&per_page=100"
+      },
+      {
+        "club_id": 31846,
+        "name": "Spider-Man United WTX",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100"
+      },
+      {
+        "club_id": 34802,
+        "name": "WTX Venomous Vipers",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100"
+      },
+      {
+        "club_id": 31859,
+        "name": "Midland Champions Wtx",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100"
+      },
+      {
+        "club_id": 35422,
+        "name": "Pink Ladie Tigers",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100"
+      },
+      {
+        "club_id": 35432,
+        "name": "WTX Aztecs",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=15&per_page=100"
+      },
+      {
+        "club_id": 29787,
+        "name": "Joga FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100"
+      },
+      {
+        "club_id": 23533,
+        "name": "WTX Riot",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100"
+      },
+      {
+        "club_id": 23534,
+        "name": "Wonder Girls",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100"
+      },
+      {
+        "club_id": 26505,
+        "name": "West Texas Storm",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=21&per_page=100"
+      },
+      {
+        "club_id": 24131,
+        "name": "Pixy Stix FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 25557,
+        "name": "WTX Lightning SC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=23&per_page=100"
+      },
+      {
+        "club_id": 32740,
+        "name": "Wolfpack West Texas SC",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=23&per_page=100"
+      },
+      {
+        "club_id": 29729,
+        "name": "WTX Rios FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=24&per_page=100"
+      },
+      {
+        "club_id": 35465,
+        "name": "WTX Lethal",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=25&per_page=100"
+      },
+      {
+        "club_id": 27177,
+        "name": "Avengers FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=27&per_page=100"
+      },
+      {
+        "club_id": 30450,
+        "name": "Sidewinders FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=27&per_page=100"
+      },
+      {
+        "club_id": 25507,
+        "name": "Shrapnel F.C.",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100"
+      },
+      {
+        "club_id": 26239,
+        "name": "West Texas Heat",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 26253,
+        "name": "Skittles",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27321,
+        "name": "FLAME FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27322,
+        "name": "Outlaws",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27324,
+        "name": "Spartans FC (TX)",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27178,
+        "name": "WTX Chaos FC",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27342,
+        "name": "Midland Arsenal 2015",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27364,
+        "name": "Texans 432 FC",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 35526,
+        "name": "Tall City Freeze FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100"
+      },
+      {
+        "club_id": 35527,
+        "name": "Thunder Birds WTX19",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100"
+      },
+      {
+        "club_id": 29771,
+        "name": "Atlas FC",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 35530,
+        "name": "West Texas Tornadoes",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 35532,
+        "name": "WTX Fenix",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 30462,
+        "name": "Herricanes FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 30465,
+        "name": "Cheetahs FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100"
+      },
+      {
+        "club_id": 34344,
+        "name": "Red Machine",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100"
+      },
+      {
+        "club_id": 29514,
+        "name": "Flash FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100"
+      },
+      {
+        "club_id": 29541,
+        "name": "TROJANS - MTX",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100"
+      },
+      {
+        "club_id": 29586,
+        "name": "Pink Flamingos",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100"
+      },
+      {
+        "club_id": 12094,
+        "name": "Pumas FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100"
+      },
+      {
+        "club_id": 32092,
+        "name": "Tall City Mambas WTX",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100"
+      },
+      {
+        "club_id": 33298,
+        "name": "Mambas Elite FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100"
+      },
+      {
+        "club_id": 31372,
+        "name": "WTX Saints",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100"
+      },
+      {
+        "club_id": 33299,
+        "name": "Greenwood Rangers",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100"
+      },
+      {
+        "club_id": 31601,
+        "name": "Lone Star Legends",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100"
+      },
+      {
+        "club_id": 31661,
+        "name": "MTX Valor",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100"
+      },
+      {
+        "club_id": 34293,
+        "name": "Legends Football Club",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100"
+      },
+      {
+        "club_id": 34408,
+        "name": "Unicorn Nation",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100"
+      },
+      {
+        "club_id": 31806,
+        "name": "Galaxy FC WTX",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=41&per_page=100"
+      },
+      {
+        "club_id": 36933,
+        "name": "Galaxy FC Midland TX",
+        "city": "Midland",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=41&per_page=100"
+      },
+      {
+        "club_id": 27873,
+        "name": "Midland United Futbol Club",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=42&per_page=100"
+      },
+      {
+        "club_id": 29727,
+        "name": "FC Permian",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=42&per_page=100"
+      },
+      {
+        "club_id": 37144,
+        "name": "WTX M4 Soccer Academy",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=42&per_page=100"
+      },
+      {
+        "club_id": 37152,
+        "name": "Midland Sharks FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=42&per_page=100"
+      },
+      {
+        "club_id": 37237,
+        "name": "Red Cannon FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=43&per_page=100"
+      },
+      {
+        "club_id": 37272,
+        "name": "Shadow FC WTX",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=43&per_page=100"
+      },
+      {
+        "club_id": 37765,
+        "name": "Onyx FC",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=45&per_page=100"
+      },
+      {
+        "club_id": 38000,
+        "name": "Envy",
+        "city": "Midland",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=46&per_page=100"
+      }
+    ]
+  },
+  {
+    "city": "Odessa",
+    "state": "TX",
+    "raw_listings": 72,
+    "distinct_directory_ids": 72,
+    "mapped_clubs": 42,
+    "records_with_street": 71,
+    "distinct_streets": 68,
+    "repeated_street_club_ids": [
+      [
+        29652,
+        31899
+      ],
+      [
+        29655,
+        24130
+      ],
+      [
+        31832,
+        36860
+      ]
+    ],
+    "distinct_matched_addresses": 40,
+    "repeated_coordinates": [
+      {
+        "club_ids": [
+          29652,
+          31899
+        ],
+        "same_exact_address": true
+      },
+      {
+        "club_ids": [
+          29655,
+          24130
+        ],
+        "same_exact_address": true
+      }
+    ],
+    "repeated_club_names": [],
+    "city_variants": {
+      "Odessa": 70,
+      "Odessa ": 1,
+      "odessa": 1
+    },
+    "sources": [
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=10&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=17&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=2&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=21&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=25&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=27&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=36&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=39&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=4&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=40&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=42&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=44&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=46&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=7&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=8&per_page=100"
+    ],
+    "records": [
+      {
+        "club_id": 29894,
+        "name": "WTX Avengers",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=2&per_page=100"
+      },
+      {
+        "club_id": 12199,
+        "name": "WTX WolfPack FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100"
+      },
+      {
+        "club_id": 30619,
+        "name": "WTX Manchester FC Girls",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100"
+      },
+      {
+        "club_id": 30621,
+        "name": "Odessa West Texas",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100"
+      },
+      {
+        "club_id": 29652,
+        "name": "Hawks SC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=4&per_page=100"
+      },
+      {
+        "club_id": 29655,
+        "name": "West Texas Rapids FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=4&per_page=100"
+      },
+      {
+        "club_id": 30550,
+        "name": "Dribblin' Divas",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 30636,
+        "name": "WTX Cobras FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 35379,
+        "name": "Odessa Bronchos",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 35380,
+        "name": "Odessa Twisters Futbol Club",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 31808,
+        "name": "WTX Striking Vipers",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 11249,
+        "name": "West Texas Storm United FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=7&per_page=100"
+      },
+      {
+        "club_id": 26419,
+        "name": "Arsenal WTX",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=8&per_page=100"
+      },
+      {
+        "club_id": 31827,
+        "name": "United Family Soccer",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=8&per_page=100"
+      },
+      {
+        "club_id": 34751,
+        "name": "WTX Bulls",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=10&per_page=100"
+      },
+      {
+        "club_id": 31832,
+        "name": "FC Tornados",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=10&per_page=100"
+      },
+      {
+        "club_id": 31844,
+        "name": "Glitter Kickers 2012",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100"
+      },
+      {
+        "club_id": 31845,
+        "name": "Odessa Soccerbots",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100"
+      },
+      {
+        "club_id": 34803,
+        "name": "WTX Xtreme Dollz",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100"
+      },
+      {
+        "club_id": 34808,
+        "name": "West Texas Goalden cheetahs FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100"
+      },
+      {
+        "club_id": 34816,
+        "name": "World Sport FC WTX",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100"
+      },
+      {
+        "club_id": 13450,
+        "name": "Statik Futbol Club",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100"
+      },
+      {
+        "club_id": 31899,
+        "name": "Titans SC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100"
+      },
+      {
+        "club_id": 34842,
+        "name": "OD~MID UNITED",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100"
+      },
+      {
+        "club_id": 27103,
+        "name": "Bronchos Elite",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100"
+      },
+      {
+        "club_id": 13884,
+        "name": "Odessa Predators - Tournament Team",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100"
+      },
+      {
+        "club_id": 30271,
+        "name": "TXMAMBAS Soccer Club",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=17&per_page=100"
+      },
+      {
+        "club_id": 26444,
+        "name": "Eliminators",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100"
+      },
+      {
+        "club_id": 23528,
+        "name": "Odessa Lightning",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100"
+      },
+      {
+        "club_id": 23532,
+        "name": "MOJO FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=18&per_page=100"
+      },
+      {
+        "club_id": 32047,
+        "name": "Invictus WTX",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=21&per_page=100"
+      },
+      {
+        "club_id": 23770,
+        "name": "Uproar Elite",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 24059,
+        "name": "TIGRES",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 24130,
+        "name": "Relentless FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 24328,
+        "name": "Odessa FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 27123,
+        "name": "Cherry Blossoms",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=25&per_page=100"
+      },
+      {
+        "club_id": 29741,
+        "name": "West Texas Cobras",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=27&per_page=100"
+      },
+      {
+        "club_id": 22590,
+        "name": "Dynamite Divas",
+        "city": "Odessa ",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100"
+      },
+      {
+        "club_id": 22591,
+        "name": "Odessa United",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100"
+      },
+      {
+        "club_id": 26237,
+        "name": "Cheetah Girls",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 18970,
+        "name": "Ajax of West Texas",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 22792,
+        "name": "Shooting Stars- WTX ",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 11247,
+        "name": "Revolution FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 22795,
+        "name": "Tigers (TX)",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27345,
+        "name": "Relentless Odessa",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27374,
+        "name": "Scorpions (TX)",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 27922,
+        "name": "Flamingos FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100"
+      },
+      {
+        "club_id": 29766,
+        "name": "Desert FC - Odessa",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100"
+      },
+      {
+        "club_id": 29769,
+        "name": "The Valkyries Odessa",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 30652,
+        "name": "Fury FC (TX)",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 35528,
+        "name": "West Texas Raptors",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 35529,
+        "name": "Royalty FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 35531,
+        "name": "WTX Crude Odessa",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 29800,
+        "name": "Savage FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 8343,
+        "name": "Legacy United FC (Midland/Odessa)",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100"
+      },
+      {
+        "club_id": 29513,
+        "name": "Odessa Red Raiders",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100"
+      },
+      {
+        "club_id": 35543,
+        "name": "Lady Lions FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100"
+      },
+      {
+        "club_id": 29568,
+        "name": "Dragon Kings",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=33&per_page=100"
+      },
+      {
+        "club_id": 31373,
+        "name": "WTX ROYALTY",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100"
+      },
+      {
+        "club_id": 31405,
+        "name": "MUSTANGS",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100"
+      },
+      {
+        "club_id": 31407,
+        "name": "Flames FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=34&per_page=100"
+      },
+      {
+        "club_id": 33300,
+        "name": "DFO",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100"
+      },
+      {
+        "club_id": 33307,
+        "name": "Dynamite F.C",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100"
+      },
+      {
+        "club_id": 33309,
+        "name": "WTX Reign",
+        "city": "odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100"
+      },
+      {
+        "club_id": 33335,
+        "name": "Tejas Lobos F.C",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100"
+      },
+      {
+        "club_id": 33390,
+        "name": "WTX Force FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=36&per_page=100"
+      },
+      {
+        "club_id": 34409,
+        "name": "Odessa Gladiators FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100"
+      },
+      {
+        "club_id": 36835,
+        "name": "WTX Outlaws FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=39&per_page=100"
+      },
+      {
+        "club_id": 36860,
+        "name": "Tempo FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=40&per_page=100"
+      },
+      {
+        "club_id": 37149,
+        "name": "Ballistix FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=42&per_page=100"
+      },
+      {
+        "club_id": 37709,
+        "name": "WTX RISE FC",
+        "city": "Odessa",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=44&per_page=100"
+      },
+      {
+        "club_id": 30464,
+        "name": "West Texas Toros FC",
+        "city": "Odessa",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=46&per_page=100"
+      }
+    ]
+  },
+  {
+    "city": "Dallas",
+    "state": "TX",
+    "raw_listings": 49,
+    "distinct_directory_ids": 49,
+    "mapped_clubs": 31,
+    "records_with_street": 48,
+    "distinct_streets": 43,
+    "repeated_street_club_ids": [
+      [
+        32101,
+        34184
+      ],
+      [
+        26248,
+        26249,
+        26251,
+        26269,
+        26270
+      ]
+    ],
+    "distinct_matched_addresses": 30,
+    "repeated_coordinates": [
+      {
+        "club_ids": [
+          32101,
+          34184
+        ],
+        "same_exact_address": true
+      }
+    ],
+    "repeated_club_names": [],
+    "city_variants": {
+      "Dallas": 47,
+      "DALLAS": 1,
+      "Dallas ": 1
+    },
+    "sources": [
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=1&per_page=250",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=10&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=17&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=2&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=21&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=26&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=36&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=37&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=41&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=44&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=45&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=6&per_page=100",
+      "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=9&per_page=100"
+    ],
+    "records": [
+      {
+        "club_id": 26289,
+        "name": "Master Joga",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=1&per_page=250"
+      },
+      {
+        "club_id": 4051,
+        "name": "HPSA Scots",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=2&per_page=100"
+      },
+      {
+        "club_id": 30679,
+        "name": "Bandits",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100"
+      },
+      {
+        "club_id": 26379,
+        "name": "Esmeraldas FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=3&per_page=100"
+      },
+      {
+        "club_id": 31804,
+        "name": "Texas Premier SC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=5&per_page=100"
+      },
+      {
+        "club_id": 34889,
+        "name": "Inspire FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=6&per_page=100"
+      },
+      {
+        "club_id": 32820,
+        "name": "FC Dragons Dallas",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=9&per_page=100"
+      },
+      {
+        "club_id": 34756,
+        "name": "Mind & Power Academy",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=10&per_page=100"
+      },
+      {
+        "club_id": 34757,
+        "name": "Aztecas FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100"
+      },
+      {
+        "club_id": 13875,
+        "name": "Otis FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100"
+      },
+      {
+        "club_id": 3719,
+        "name": "DKSC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100"
+      },
+      {
+        "club_id": 13275,
+        "name": "Rebano Sagrado",
+        "city": "DALLAS",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=11&per_page=100"
+      },
+      {
+        "club_id": 13410,
+        "name": "Texas Tigres",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=12&per_page=100"
+      },
+      {
+        "club_id": 32101,
+        "name": "LALIGA ACADEMY Dallas",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=13&per_page=100"
+      },
+      {
+        "club_id": 12141,
+        "name": "PST Attack Soccer Club",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100"
+      },
+      {
+        "club_id": 12174,
+        "name": "Dallas South FC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100"
+      },
+      {
+        "club_id": 13888,
+        "name": "Mesquite Soccer Club",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100"
+      },
+      {
+        "club_id": 34996,
+        "name": "Sharks FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=16&per_page=100"
+      },
+      {
+        "club_id": 4061,
+        "name": "ATHLETICO ESPAÑOL",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=17&per_page=100"
+      },
+      {
+        "club_id": 26507,
+        "name": "Buen Pastor FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=21&per_page=100"
+      },
+      {
+        "club_id": 32053,
+        "name": "Pro Touch Soccer Center",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 27072,
+        "name": "Dallas Texas Tigres",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 24031,
+        "name": "Oak Cliff Black Knights",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 24062,
+        "name": "Southwest Sports Club",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=22&per_page=100"
+      },
+      {
+        "club_id": 19510,
+        "name": "Dallas Legends",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=26&per_page=100"
+      },
+      {
+        "club_id": 19757,
+        "name": "Supra United FC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=26&per_page=100"
+      },
+      {
+        "club_id": 12176,
+        "name": "Dallas Pegasus Soccer Club",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=26&per_page=100"
+      },
+      {
+        "club_id": 20071,
+        "name": "Soccerplex United",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100"
+      },
+      {
+        "club_id": 11238,
+        "name": "Barcelona SC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=28&per_page=100"
+      },
+      {
+        "club_id": 26248,
+        "name": "FC Stampede",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 26249,
+        "name": "FC Xpress",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 26250,
+        "name": "Juve Boys With Skills",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 26251,
+        "name": "Ladybugs SC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 26269,
+        "name": "Power SC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 26270,
+        "name": "East Texas SC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=29&per_page=100"
+      },
+      {
+        "club_id": 26072,
+        "name": "East Dallas FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100"
+      },
+      {
+        "club_id": 28000,
+        "name": "FC LONESTAR",
+        "city": "Dallas ",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=30&per_page=100"
+      },
+      {
+        "club_id": 29864,
+        "name": "Elite FC (Dallas)",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=31&per_page=100"
+      },
+      {
+        "club_id": 29993,
+        "name": "Leoncitos FC",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=32&per_page=100"
+      },
+      {
+        "club_id": 12179,
+        "name": "Dallas Cosmos Soccer Club",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=35&per_page=100"
+      },
+      {
+        "club_id": 35566,
+        "name": "Texas Club League",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=36&per_page=100"
+      },
+      {
+        "club_id": 35592,
+        "name": "Hawks FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=37&per_page=100"
+      },
+      {
+        "club_id": 35617,
+        "name": "Evolution FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100"
+      },
+      {
+        "club_id": 34184,
+        "name": "Pegasus Futbol",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=38&per_page=100"
+      },
+      {
+        "club_id": 18813,
+        "name": "Club America Nido Dallas",
+        "city": "Dallas",
+        "mapped": false,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=41&per_page=100"
+      },
+      {
+        "club_id": 37885,
+        "name": "Dallas Dynamic Kickers FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=44&per_page=100"
+      },
+      {
+        "club_id": 25695,
+        "name": "Attack FC",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=44&per_page=100"
+      },
+      {
+        "club_id": 34249,
+        "name": "Puede Network",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=45&per_page=100"
+      },
+      {
+        "club_id": 37939,
+        "name": "Sharks FC NTX",
+        "city": "Dallas",
+        "mapped": true,
+        "source_url": "https://usclubsoccer.org/wp-json/gotsoccer/v1/clubs?page=45&per_page=100"
+      }
+    ]
+  }
+]

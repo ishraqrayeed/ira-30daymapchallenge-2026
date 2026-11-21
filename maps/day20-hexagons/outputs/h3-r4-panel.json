@@ -1,0 +1,199 @@
+{
+  "scope": "Verified Colorado pilot sample; Boulder, Broomfield and Lafayette postal addresses",
+  "resolution": 4,
+  "hexes": {
+    "842681bffffffff": {
+      "provider_count": 4,
+      "providers": [
+        {
+          "provider_id": "broomfield",
+          "name": "Broomfield Soccer Club",
+          "programs": [
+            {
+              "program_id": "junior-academy",
+              "program_name": "Junior Academy",
+              "program_type": "competitive",
+              "season": "2026 Fall",
+              "published_age": "U10",
+              "normalized_age": "Born 2016-08-01 to 2017-07-31; age 9–10 during fall season",
+              "program_url": "https://www.broomfieldsoccerclub.org/newpage49c4eb9f",
+              "registration_status": "",
+              "venues": [
+                {
+                  "venue_id": "highland",
+                  "venue_name": "Highland Park",
+                  "venue_address": "Highland Park Drive and Kirkwall Street, Broomfield, CO 80021",
+                  "latitude": 39.9216907666831,
+                  "longitude": -105.060776046966,
+                  "evidence_urls": "https://www.broomfieldsoccerclub.org/faqs4780ae9f | https://playmetricssports.com/g/leagues/1017-2261-93bfc69f/teams/58189/team_view.html | https://www.cjsa.org/wp-content/uploads/sites/276/2025/08/2026-2027-Player-Registration-Matrix.pdf | https://www.broomfield.org/facilities/facility/details/highlandpark-23"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "provider_id": "albion",
+          "name": "ALBION SC Boulder County",
+          "programs": [
+            {
+              "program_id": "juniors-boulder",
+              "program_name": "Juniors – Boulder",
+              "program_type": "beginner development",
+              "season": "2026 Fall",
+              "published_age": "U5–U8",
+              "normalized_age": "Born 2018-08-01 to 2022-07-31 under affiliate matrix",
+              "program_url": "https://www.albionscbouldercounty.org/juniors/albion-sc-juniors",
+              "registration_status": "",
+              "venues": [
+                {
+                  "venue_id": "pleasant",
+                  "venue_name": "Pleasant View Fields Sports Complex",
+                  "venue_address": "3805 47th St., Boulder, CO 80301",
+                  "latitude": 40.043677329474,
+                  "longitude": -105.244251851095,
+                  "evidence_urls": "https://www.albionscbouldercounty.org/juniors/albion-sc-juniors | https://teamsideline.com/sites/AlbionJuniors/home | https://teamsideline.com/sites/AlbionJuniors/locations | https://www.cjsa.org/wp-content/uploads/sites/276/2025/08/2026-2027-Player-Registration-Matrix.pdf | https://bouldercolorado.gov/locations/pleasant-view-fields-sports-complex | https://geocoding.geo.census.gov/geocoder/locations/address?street=3805+47th+St&city=Boulder&state=CO&benchmark=Public_AR_Current&format=json"
+                },
+                {
+                  "venue_id": "foothills",
+                  "venue_name": "Foothills Community Park",
+                  "venue_address": "800 Cherry Ave, Boulder, CO 80304",
+                  "latitude": 40.05543568463,
+                  "longitude": -105.286427081718,
+                  "evidence_urls": "https://www.albionscbouldercounty.org/juniors/albion-sc-juniors | https://teamsideline.com/sites/AlbionJuniors/home | https://teamsideline.com/sites/AlbionJuniors/locations | https://www.cjsa.org/wp-content/uploads/sites/276/2025/08/2026-2027-Player-Registration-Matrix.pdf | https://bouldercolorado.gov/locations/foothills-community-park | https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=800+Cherry+Ave%2C+Boulder%2C+CO+80304&outFields=Match_addr%2CAddr_type%2CPlaceName&maxLocations=1&f=json"
+                },
+                {
+                  "venue_id": "martin",
+                  "venue_name": "Martin Park",
+                  "venue_address": "3600 Eastman Ave, Boulder, CO 80305",
+                  "latitude": 39.989017007857,
+                  "longitude": -105.251371067503,
+                  "evidence_urls": "https://www.albionscbouldercounty.org/juniors/albion-sc-juniors | https://teamsideline.com/sites/AlbionJuniors/home | https://teamsideline.com/sites/AlbionJuniors/locations | https://www.cjsa.org/wp-content/uploads/sites/276/2025/08/2026-2027-Player-Registration-Matrix.pdf | https://bouldercolorado.gov/locations/martin-park | https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=3600+Eastman+Ave%2C+Boulder%2C+CO+80305&outFields=Match_addr%2CAddr_type%2CPlaceName&maxLocations=1&f=json"
+                }
+              ]
+            },
+            {
+              "program_id": "juniors-east",
+              "program_name": "Juniors – East County",
+              "program_type": "beginner development",
+              "season": "2026 Fall",
+              "published_age": "U5–U8",
+              "normalized_age": "Born 2018-08-01 to 2022-07-31 under affiliate matrix",
+              "program_url": "https://www.albionscbouldercounty.org/juniors/east-county-juniors",
+              "registration_status": "",
+              "venues": [
+                {
+                  "venue_id": "whitetail",
+                  "venue_name": "Whitetail Park",
+                  "venue_address": "2550 Autumn Ridge Blvd, Lafayette, CO 80026",
+                  "latitude": 39.970215810449,
+                  "longitude": -105.094520284373,
+                  "evidence_urls": "https://www.albionscbouldercounty.org/juniors/albion-sc-juniors | https://www.albionscbouldercounty.org/juniors/east-county-juniors | https://teamsideline.com/sites/AlbionJuniors/home | https://www.cjsa.org/wp-content/uploads/sites/276/2025/08/2026-2027-Player-Registration-Matrix.pdf | https://www.lafayetteco.gov/Facilities/Facility/Details/Whitetail-Park-55 | https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=2550+Autumn+Ridge+Blvd%2C+Lafayette%2C+CO+80026&outFields=Match_addr%2CAddr_type&maxLocations=1&f=json"
+                },
+                {
+                  "venue_id": "spc",
+                  "venue_name": "Sports Performance Center",
+                  "venue_address": "555 Aspen Ridge Dr Suite F, Lafayette, CO 80026",
+                  "latitude": 40.002153697442,
+                  "longitude": -105.105996096403,
+                  "evidence_urls": "https://www.albionscbouldercounty.org/juniors/albion-sc-juniors | https://www.albionscbouldercounty.org/juniors/east-county-juniors | https://teamsideline.com/sites/AlbionJuniors/home | https://www.cjsa.org/wp-content/uploads/sites/276/2025/08/2026-2027-Player-Registration-Matrix.pdf | https://www.albionsccolorado.org/facilities | https://geocoding.geo.census.gov/geocoder/locations/address?street=555+Aspen+Ridge+Dr&city=Lafayette&state=CO&benchmark=Public_AR_Current&format=json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "provider_id": "kick2build",
+          "name": "Kick2Build",
+          "programs": [
+            {
+              "program_id": "competitive",
+              "program_name": "Competitive Youth Soccer Club",
+              "program_type": "competitive",
+              "season": "2026 Fall",
+              "published_age": "U9",
+              "normalized_age": "Born 2017-08-01 to 2018-07-31 under affiliate matrix",
+              "program_url": "https://kick2build.org/youth-soccer-club",
+              "registration_status": "",
+              "venues": [
+                {
+                  "venue_id": "dawson",
+                  "venue_name": "Alexander Dawson School Sports Fields",
+                  "venue_address": "10455 Dawson Dr, Lafayette, CO 80026",
+                  "latitude": 40.058474049079,
+                  "longitude": -105.103034334042,
+                  "evidence_urls": "https://kick2build.org/youth-soccer-club | https://kick2build.org/contact/ | https://playmetricssports.com/g/leagues/1017-2262-661fd0f8/teams/67127/team_view.html | https://playmetricssports.com/g/leagues/1017-2262-661fd0f8/divisions/16222/division_view.html | https://www.cjsa.org/wp-content/uploads/sites/276/2025/08/2026-2027-Player-Registration-Matrix.pdf | https://geocoding.geo.census.gov/geocoder/locations/address?street=10455+Dawson+Dr&city=Lafayette&state=CO&benchmark=Public_AR_Current&format=json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "provider_id": "lafayette-rec",
+          "name": "Lafayette Recreation",
+          "programs": [
+            {
+              "program_id": "tiny-tyke",
+              "program_name": "Tiny Tyke Soccer",
+              "program_type": "beginner class",
+              "season": "2026 Fall",
+              "published_age": "Age 3",
+              "normalized_age": "3 years",
+              "program_url": "https://www.lafayetteco.gov/118/Youth",
+              "registration_status": "",
+              "venues": [
+                {
+                  "venue_id": "city-park",
+                  "venue_name": "City Park Fields",
+                  "venue_address": "450 N. 111th St., Lafayette, CO 80026",
+                  "latitude": 40.001577796257,
+                  "longitude": -105.093283262657,
+                  "evidence_urls": "https://www.lafayetteco.gov/118/Youth | https://www.lafayetteco.gov/DocumentCenter/View/46436/2026-Summer-Community-Services-Activity-Guide | https://www.lafayetteco.gov/facilities/facility/details/City-Park-44 | https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=450+N+111th+St%2C+Lafayette%2C+CO+80026&outFields=Match_addr%2CAddr_type&maxLocations=1&f=json"
+                }
+              ]
+            },
+            {
+              "program_id": "pee-wee",
+              "program_name": "Pee Wee Soccer",
+              "program_type": "beginner class",
+              "season": "2026 Fall",
+              "published_age": "Ages 4–5",
+              "normalized_age": "4–5 years",
+              "program_url": "https://www.lafayetteco.gov/118/Youth",
+              "registration_status": "",
+              "venues": [
+                {
+                  "venue_id": "city-park",
+                  "venue_name": "City Park Fields",
+                  "venue_address": "450 N. 111th St., Lafayette, CO 80026",
+                  "latitude": 40.001577796257,
+                  "longitude": -105.093283262657,
+                  "evidence_urls": "https://www.lafayetteco.gov/118/Youth | https://www.lafayetteco.gov/DocumentCenter/View/46436/2026-Summer-Community-Services-Activity-Guide | https://www.lafayetteco.gov/facilities/facility/details/City-Park-44 | https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=450+N+111th+St%2C+Lafayette%2C+CO+80026&outFields=Match_addr%2CAddr_type&maxLocations=1&f=json"
+                }
+              ]
+            },
+            {
+              "program_id": "youth",
+              "program_name": "Youth Soccer",
+              "program_type": "recreational",
+              "season": "2026 Fall",
+              "published_age": "Grades K–8",
+              "normalized_age": "Grades K–8 (includes under-10 children)",
+              "program_url": "https://www.lafayetteco.gov/118/Youth",
+              "registration_status": "",
+              "venues": [
+                {
+                  "venue_id": "city-park",
+                  "venue_name": "City Park Fields",
+                  "venue_address": "450 N. 111th St., Lafayette, CO 80026",
+                  "latitude": 40.001577796257,
+                  "longitude": -105.093283262657,
+                  "evidence_urls": "https://www.lafayetteco.gov/118/Youth | https://www.lafayetteco.gov/DocumentCenter/View/46436/2026-Summer-Community-Services-Activity-Guide | https://www.lafayetteco.gov/facilities/facility/details/City-Park-44 | https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=450+N+111th+St%2C+Lafayette%2C+CO+80026&outFields=Match_addr%2CAddr_type&maxLocations=1&f=json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
